@@ -1,6 +1,6 @@
 <template>
-  <h1>Card 卡片</h1>
-  <h2>基本使用</h2>
+  <h1 class="title">Card 卡片</h1>
+  <h3 class="Subtitle">基本使用</h3>
 
   <p>基本使用</p>
   <p>title 自定义卡片的主标题</p>
@@ -29,17 +29,17 @@
 
   <p>阴影显示时机</p>
   <p>shadow 属性可以配置阴影显示时机</p>
-  <tyh-card shadow="always">
+  <tyh-card class="small" shadow="always">
     <template v-slot:title>主标题</template>
     <template v-slot:subtitle>副标题</template>
     <p>总是显示阴影</p>
   </tyh-card>
-  <tyh-card shadow="hover">
+  <tyh-card class="small" shadow="hover">
     <template v-slot:title>主标题</template>
     <template v-slot:subtitle>副标题</template>
     <p>鼠标移入显示</p>
   </tyh-card>
-  <tyh-card shadow="noShadow">
+  <tyh-card class="small" shadow="noShadow">
     <template v-slot:title>主标题</template>
     <template v-slot:subtitle>副标题</template>
     <p>从不显示</p>
@@ -59,4 +59,9 @@ export default {
 </script>
 
 <style scoped>
+.small {
+  width: 240px;
+  margin-left: 10px;
+  display: inline-block;
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <h1>List 列表</h1>
-  <h2>基本使用</h2>
+  <h1 class="title">List 列表</h1>
+  <h3 class="Subtitle">基本使用</h3>
 
   <p>基本使用</p>
   <p>content 属性可以绑定需要展示的数组元素</p>
@@ -48,6 +48,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-</style>

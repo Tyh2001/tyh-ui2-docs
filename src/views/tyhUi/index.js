@@ -392,6 +392,23 @@ export default {
   <tyh-crumbs-item>文章管理</tyh-crumbs-item>
   <tyh-crumbs-item>设置</tyh-crumbs-item>
 </tyh-crumbs>`
+  },
+  // icon
+  icon: {
+    icon1: `
+<tyh-icon icon="tyh-ui-tyhui" />
+<tyh-icon icon="tyh-ui-huojian-01" />
+<tyh-icon icon="tyh-ui-PaperPlane-01" />
+    `,
+    icon2: `
+<tyh-icon color="skyblue" icon="tyh-ui-tyhui" />
+<tyh-icon color="orange" icon="tyh-ui-huojian-01" />
+<tyh-icon color="pink" icon="tyh-ui-PaperPlane-01" />`,
+    icon3: `
+<tyh-icon size="50" icon="tyh-ui-tyhui" />
+<tyh-icon size="40" icon="tyh-ui-huojian-01" />
+<tyh-icon size="30" icon="tyh-ui-PaperPlane-01" />
+    `
   }
 }
 

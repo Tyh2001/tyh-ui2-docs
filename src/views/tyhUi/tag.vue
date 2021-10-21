@@ -1,8 +1,8 @@
 <template>
-  <h1>Tag 标签</h1>
-  <h2>基本使用</h2>
+  <h1 class="title">Tag 标签</h1>
+  <h3 class="Subtitle">基本使用</h3>
 
-  <p>基本使用</p>
+  <p class="Subtitle">基本使用</p>
   <tyh-tag>标签一</tyh-tag>
   <tyh-tag color="primary">标签二</tyh-tag>
   <tyh-tag color="success">标签三</tyh-tag>
@@ -30,4 +30,7 @@ export default {
 </script>
 
 <style scoped>
+.tyh-tag {
+  margin-left: 10px;
+}
 </style>

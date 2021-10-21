@@ -1,6 +1,6 @@
 <template>
-  <h1>Link 链接</h1>
-  <h2>基本使用</h2>
+  <h1 class="title">Link 链接</h1>
+  <h3 class="Subtitle">基本使用</h3>
 
   <p>基本使用</p>
   <tyh-link url="">链接一</tyh-link>
@@ -41,4 +41,7 @@ export default {
 </script>
 
 <style scoped>
+.tyh-link {
+  margin-left: 10px;
+}
 </style>

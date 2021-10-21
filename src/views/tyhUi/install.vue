@@ -1,6 +1,6 @@
 <template>
-  <h1>快速上手</h1>
-  <h2>安装</h2>
+  <h1 class="title">快速上手</h1>
+  <h3 class="Subtitle">安装</h3>
   <p>推荐使用 npm 的方式安装</p>
   <highlightjs autodetect :code="ins1" />
 
@@ -18,6 +18,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-</style>

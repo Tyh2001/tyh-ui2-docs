@@ -16,7 +16,9 @@
         {{ list.title }}
       </tyh-menu-item>
       <tyh-menu-item color="#000">
-        <tyh-link url="https://tianyuhao.icu/tyhui">v2</tyh-link>
+        <tyh-link target="_blank" url="https://tianyuhao.icu/tyhui">
+          v2
+        </tyh-link>
       </tyh-menu-item>
     </div>
   </tyh-menu>

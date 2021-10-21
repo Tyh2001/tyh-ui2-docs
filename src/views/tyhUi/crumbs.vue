@@ -1,6 +1,6 @@
 <template>
-  <h1>Crumbs 面包屑</h1>
-  <h2>基本使用</h2>
+  <h1 class="title">Crumbs 面包屑</h1>
+  <h3 class="Subtitle">基本使用</h3>
 
   <p>基本使用</p>
   <tyh-crumbs>
@@ -45,6 +45,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-</style>

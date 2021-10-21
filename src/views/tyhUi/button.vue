@@ -1,6 +1,6 @@
 <template>
-  <h1>Button 按钮</h1>
-  <h2>基本使用</h2>
+  <h1 class="title">Button 按钮</h1>
+  <h3 class="Subtitle">基本使用</h3>
 
   <p>基本使用</p>
   <tyh-button>默认按钮</tyh-button>
@@ -57,4 +57,7 @@ export default {
 </script>
 
 <style scoped>
+.tyh-button {
+  margin-left: 10px;
+}
 </style>
