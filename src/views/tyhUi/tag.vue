@@ -1,13 +1,30 @@
 <template>
-  <h1>tag</h1>
+  <h1>Tag 标签</h1>
+  <h2>基本使用</h2>
+
+  <p>基本使用</p>
+  <tyh-tag>标签一</tyh-tag>
+  <tyh-tag color="primary">标签二</tyh-tag>
+  <tyh-tag color="success">标签三</tyh-tag>
+  <tyh-tag color="danger">标签四</tyh-tag>
+  <tyh-tag color="warning">标签五</tyh-tag>
+  <highlightjs autodetect :code="tag1" />
+
+  <p>不同尺寸</p>
+  <p>size 属性可以配置不同的尺寸</p>
+  <tyh-tag color="primary">标签</tyh-tag>
+  <tyh-tag size="small" color="primary">标签</tyh-tag>
+  <tyh-tag size="mini" color="primary">标签</tyh-tag>
+  <highlightjs autodetect :code="tag2" />
 </template>
 
 <script>
+import index from './index'
 export default {
   name: '',
   setup () {
-
-    return {}
+    const { tag1, tag2 } = index.tag
+    return { tag1, tag2 }
   }
 }
 </script>

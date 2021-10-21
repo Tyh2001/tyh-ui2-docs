@@ -1,5 +1,5 @@
 <template>
-  <h1>icon</h1>
+  <h1>Icon 图标</h1>
 </template>
 
 <script>

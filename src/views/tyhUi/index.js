@@ -165,6 +165,233 @@ export default {
   <p>从不显示</p>
 </tyh-card>
     `
+  },
+  // 标签
+  tag: {
+    tag1: `
+<tyh-tag>标签一</tyh-tag>
+<tyh-tag color="primary">标签二</tyh-tag>
+<tyh-tag color="success">标签三</tyh-tag>
+<tyh-tag color="danger">标签四</tyh-tag>
+<tyh-tag color="warning">标签五</tyh-tag>
+    `,
+    tag2: `
+<tyh-tag color="primary">标签</tyh-tag>
+<tyh-tag size="small" color="primary">标签</tyh-tag>
+<tyh-tag size="mini" color="primary">标签</tyh-tag>
+    `
+  },
+  // 链接
+  link: {
+    lin1: `
+<tyh-link url="">链接一</tyh-link>
+<tyh-link url="" color="primary">链接二</tyh-link>
+<tyh-link url="" color="success">链接三</tyh-link>
+<tyh-link url="" color="danger">链接四</tyh-link>
+<tyh-link url="" color="warning">链接五</tyh-link>
+    `,
+    lin2: `
+<tyh-link underline>链接一</tyh-link>
+<tyh-link underline color="primary">链接二</tyh-link>
+<tyh-link underline color="success">链接三</tyh-link>
+<tyh-link underline color="danger">链接四</tyh-link>
+<tyh-link underline color="warning">链接五</tyh-link>
+    `,
+    lin3: `
+<tyh-link hoverline>链接一</tyh-link>
+<tyh-link hoverline color="primary">链接二</tyh-link>
+<tyh-link hoverline color="success">链接三</tyh-link>
+<tyh-link hoverline color="danger">链接四</tyh-link>
+<tyh-link hoverline color="warning">链接五</tyh-link>
+    `
+  },
+  // 文本框
+  input: {
+    inp1: `
+<template>
+  <tyh-input v-model="text1" />
+</template>
+
+<script>
+import { ref } from 'vue'
+export default {
+  setup () {
+    const text1 = ref('')
+    
+    return { text1 }
+  }
+}
+</script>
+    `,
+    inp2: `
+<template>
+  <tyh-input inpType="text" v-model="text2" />
+  <tyh-input inpType="password" v-model="text3" />
+</template>
+
+<script>
+import { ref } from 'vue'
+export default {
+  setup () {
+    const text2 = ref('')
+    const text3 = ref('')
+    return { text2, text3 }
+  }
+}
+</script>
+    `,
+    inp3: `
+<template>
+  <tyh-input size="big" v-model="text4" />
+  <tyh-input size="medium" v-model="text5" />
+  <tyh-input size="small" v-model="text6" />
+  <tyh-input size="mini" v-model="text7" />
+</template>
+
+<script>
+import { ref } from 'vue'
+export default {
+  setup () {
+    const text4 = ref('')
+    const text5 = ref('')
+    const text6 = ref('')
+    const text7 = ref('')
+    return {
+      text4,
+      text5,
+      text6,
+      text7
+    }
+  }
+}
+</script>
+    `,
+    inp4: `
+<template>
+  <tyh-input v-model="text8" clear />
+</template>
+
+<script>
+import { ref } from 'vue'
+export default {
+  setup () {
+    const text8 = ref('')
+    return { text8 }
+  }
+}
+</script>
+    `,
+    inp5: `
+<template>
+  <tyh-input v-model="text9" showIcon="tyh-ui-huojian-01" />
+</template>
+
+<script>
+import { ref } from 'vue'
+export default {
+  setup () {
+    const text9 = ref('')
+    return { text9 }
+  }
+}
+</script>
+    `,
+    inp6: `
+<template>
+  <tyh-input v-model="text10" prohibit" />
+</template>
+
+<script>
+import { ref } from 'vue'
+export default {
+  setup () {
+    const text10 = ref('')
+    return { text10 }
+  }
+}
+</script>
+    `
+  },
+  // 导航栏
+  menu: {
+    men1: `
+<tyh-menu>
+  <tyh-menu-item>首页</tyh-menu-item>
+  <tyh-menu-item>内容</tyh-menu-item>
+  <tyh-menu-item>设置</tyh-menu-item>
+  <tyh-menu-item>回收站</tyh-menu-item>
+</tyh-menu>
+    `,
+    men2: `
+<tyh-menu backgroundColor="#eee">
+  <tyh-menu-item color="#000">首页</tyh-menu-item>
+  <tyh-menu-item color="#000">内容</tyh-menu-item>
+  <tyh-menu-item color="#000">设置</tyh-menu-item>
+  <tyh-menu-item color="#000">回收站</tyh-menu-item>
+</tyh-menu>
+    `,
+    men3: `
+<tyh-menu>
+  <tyh-menu-item prohibit url="/home">首页</tyh-menu-item>
+  <tyh-menu-item prohibit url="/abc">内容</tyh-menu-item>
+  <tyh-menu-item>设置</tyh-menu-item>
+  <tyh-menu-item>回收站</tyh-menu-item>
+</tyh-menu>
+    `,
+    men4: `
+<tyh-menu>
+  <tyh-menu-item url="/home">
+    <tyh-icon icon="tyh-ui-home-01" color="#fff" />
+    首页
+  </tyh-menu-item>
+  <tyh-menu-item url="/abc">
+    <tyh-icon icon="tyh-ui-PaperPlane-01" color="#fff" />
+    内容
+  </tyh-menu-item>
+  <tyh-menu-item url="">
+    <tyh-icon icon="tyh-ui-setting-01" color="#fff" />
+    设置
+  </tyh-menu-item>
+  <tyh-menu-item url="">
+    <tyh-icon icon="tyh-ui-trash-01" color="#fff" />
+    回收站
+  </tyh-menu-item>
+</tyh-menu>
+    `,
+  },
+  // 分割线
+  division: {
+    div1: `<tyh-division>这是分割线</tyh-division>`,
+    div2: `
+<tyh-division position="left">这是左边文字</tyh-division>
+<tyh-division position="center">这是中间文字</tyh-division>
+<tyh-division position="right">这是右边文字</tyh-division>
+    `
+  },
+  // 面包屑
+  crumbs: {
+    cru1: `
+<tyh-crumbs>
+  <tyh-crumbs-item to="/">首页</tyh-crumbs-item>
+  <tyh-crumbs-item>学员管理</tyh-crumbs-item>
+  <tyh-crumbs-item>文章管理</tyh-crumbs-item>
+  <tyh-crumbs-item>设置</tyh-crumbs-item>
+</tyh-crumbs>
+    `,
+    cru2: `
+<tyh-crumbs separator="tyh-ui-right-02">
+  <tyh-crumbs-item to="/">首页</tyh-crumbs-item>
+  <tyh-crumbs-item>学员管理</tyh-crumbs-item>
+  <tyh-crumbs-item>文章管理</tyh-crumbs-item>
+  <tyh-crumbs-item>设置</tyh-crumbs-item>
+</tyh-crumbs>`,
+    cru3: `
+  <tyh-crumbs>
+  <tyh-crumbs-item to="/">首页</tyh-crumbs-item>
+  <tyh-crumbs-item to="/student">学员管理</tyh-crumbs-item>
+  <tyh-crumbs-item>文章管理</tyh-crumbs-item>
+  <tyh-crumbs-item>设置</tyh-crumbs-item>
+</tyh-crumbs>`
   }
 }
 
