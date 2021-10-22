@@ -2,11 +2,15 @@
   <div id="conponentIndex">
     <!-- 左侧列表 -->
     <div class="contentList">
-      <ul ref="ulList">
+      <ul>
         <li v-for="(item, index) in listPush" :key="index">
-          <router-link :to="item.url" :style="highLightStyle(item)">
+          <p
+            class="urlPush"
+            :style="highLightStyle(index)"
+            @click="listPushClick(index)"
+          >
             {{ item.name }}
-          </router-link>
+          </p>
         </li>
       </ul>
     </div>
@@ -18,7 +22,7 @@
 </template>
 
 <script>
-import { useRoute } from 'vue-router'
+import { useRouter, useRoute } from 'vue-router'
 export default {
   name: '',
   setup () {
@@ -35,17 +39,24 @@ export default {
       { name: 'Icon 图标', url: '/component/icon' },
       { name: 'Crumbs 面包屑', url: '/component/crumbs' }
     ]
+    const router = useRouter()
+    const route = useRoute()
+    // 点击跳转
+    function listPushClick (index) {
+      router.push(listPush[index].url)
+    }
 
     // 高亮显示
-    const route = useRoute()
-    function highLightStyle (item) {
-      if (item.url === route.path) {
+    function highLightStyle (index) {
+      if (listPush[index].url === route.path) {
         return { color: '#409eff' }
       }
     }
+
     return {
       listPush,
-      highLightStyle
+      highLightStyle,
+      listPushClick
     }
   }
 }
@@ -76,13 +87,14 @@ export default {
       li {
         list-style: none;
         line-height: 40px;
-        a {
+        .urlPush {
           padding-left: 20px;
           width: 100%;
           display: inline-block;
           text-decoration: none;
           color: #333;
           font-size: 14px;
+          cursor: pointer;
           &:hover {
             background: rgb(247, 247, 247);
           }
