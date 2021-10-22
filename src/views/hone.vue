@@ -1,8 +1,10 @@
 <template>
   <div id="top-list">
     <img draggable="false" class="logo" src="./images/logo.png" alt="" />
-    <h1 class="MainTitle">网站快速搭建工具</h1>
-    <p class="Subtitle">tyh-ui 是一套基于 Vue 2.0 的桌面端轻量级 UI 组件库</p>
+    <h1 class="MainTitle">Tyh UI</h1>
+    <p class="Subtitle">
+      tyh-ui 的下一代 ui 组件库，基于 vue3.0 版本，全面拥抱 vue3.0
+    </p>
 
     <div class="btnBox">
       <tyh-button type="primary" round @click="$router.push('/component')">
@@ -17,38 +19,36 @@
     <!-- 概述 -->
     <div class="summary">
       <div class="summary-left">
-        <h2 class="summary-title">开发靠个人</h2>
+        <h2 class="summary-title">
+          <tyh-icon icon="tyh-ui-huojian-01" size="22" color="#67a1ff" />
+          简洁至上
+        </h2>
         <p class="summary-content">
-          Tyh-ui 是由 tyh2001 独立开发的一款基于 Vue 2.0 的桌面端轻量级 UI
-          组件库。
-          <br /><br />
-          如果您在使用中有什么问题或 BUG 不妨可以来仓库的 Lssuse
-          中反馈一下，我也非常乐意来进行改进。
+          tyh-ui
+          整体非常简洁明了，虽没有很多高级的组件，但它是使用最简单的方式达到实用的效果。
         </p>
       </div>
       <div class="summary-right">
-        <h2 class="summary-title">轻量易维护</h2>
+        <h2 class="summary-title">
+          <tyh-icon icon="tyh-ui-channel-01" size="22" color="#bd34fe" />
+          轻量容易
+        </h2>
         <p class="summary-content">
-          Tyh-ui
-          是一个极其轻量的组件库，它并没有那么多复杂的目录结构和冗余的代码，清晰明了。
-          <br /><br />
-          但同时 Tyh-ui
-          还有很多地方需要维护改进，远远不够完美，我正在努力改进中，也很需要您一个小小的
-          Star。
+          使用方便，配置简单，目录清晰，结构简单，组件轻量级，上手简单，像复制粘贴一样容易。
         </p>
       </div>
     </div>
   </div>
 
-  <FooterList />
+  <Footer />
 </template>
 
 <script>
-import FooterList from '../components/FooterList.vue'
+import Footer from '../components/Footer.vue'
 export default {
   name: 'home',
   components: {
-    FooterList
+    Footer
   }
 }
 </script>
@@ -70,12 +70,14 @@ export default {
     text-align: center;
     color: #515a6e;
     margin-top: 20px;
+    font-size: 40px;
   }
   // 副标题
   .Subtitle {
     text-align: center;
     color: #515a6e;
     margin-top: 20px;
+    font-size: 22px;
   }
   // 开始按钮
   .btnBox {
