@@ -57,7 +57,7 @@
   <ConfigTable :configures="configures" />
 
   <h3 class="Subtitle">tyh-menu-item 子组件</h3>
-  <ConfiguresTable :configures="configures2" />
+  <ConfigTable :configures="configures2" />
 </template>
 
 <script>

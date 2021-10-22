@@ -35,7 +35,7 @@
   <highlightjs autodetect :code="cru3" />
 
   <h3 class="Subtitle">tyh-Crumbs 组件</h3>
-  <ConfiguresTable :configures="configures" />
+  <ConfigTable :configures="configures" />
 
   <h3 class="Subtitle">tyh-Crumbs-Item 子组件</h3>
   <ConfigTable :configures="configures2" />
