@@ -135,7 +135,6 @@ export default {
     }
     .code {
       margin-top: 30px;
-      text-align: center;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -149,4 +148,3 @@ export default {
   }
 }
 </style>
-
