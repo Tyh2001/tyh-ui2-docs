@@ -22,6 +22,9 @@
   <tyh-icon size="30" icon="tyh-ui-PaperPlane-01" />
   <highlightjs autodetect :code="icon3" />
 
+  <h3 class="Subtitle">配置项</h3>
+  <ConfigTable :configures="configures" />
+
   <h3 class="Subtitle">Icon 集合</h3>
   <p>点击即可复制代码</p>
   <div id="allIcon">
@@ -42,8 +45,11 @@
 
 <script>
 import index from './index'
+import ConfigTable from '@/components/ConfigTable.vue'
 export default {
-  name: '',
+  components: {
+    ConfigTable
+  },
   setup () {
     const { icon1, icon2, icon3 } = index.icon
     const iconList = [
@@ -99,7 +105,12 @@ export default {
       'tyh-ui-jihao-01',
       'tyh-ui-zhaopian-01'
     ]
-    return { icon1, icon2, icon3, iconList }
+    const configures = [
+      { param: 'icon', explain: 'icon 的类名', type: 'string', value: '——', default: '——' },
+      { param: 'color', explain: 'icon 的颜色', type: 'string', value: '——', default: '#606266' },
+      { param: 'size', explain: 'icon 的尺寸', type: 'string', value: '——', default: '——' }
+    ]
+    return { icon1, icon2, icon3, iconList, configures }
   }
 }
 </script>

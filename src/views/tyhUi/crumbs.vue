@@ -33,15 +33,30 @@
     <tyh-crumbs-item>设置</tyh-crumbs-item>
   </tyh-crumbs>
   <highlightjs autodetect :code="cru3" />
+
+  <h3 class="Subtitle">tyh-Crumbs 组件</h3>
+  <ConfiguresTable :configures="configures" />
+
+  <h3 class="Subtitle">tyh-Crumbs-Item 子组件</h3>
+  <ConfigTable :configures="configures2" />
 </template>
 
 <script>
 import index from './index'
+import ConfigTable from '@/components/ConfigTable.vue'
 export default {
-  name: '',
+  components: {
+    ConfigTable
+  },
   setup () {
+    const configures = [
+      { param: 'separator', explain: '分隔符，icon 的类名', type: 'string', value: '——', default: 'tyh-ui-xiexian-01' }
+    ]
+    const configures2 = [
+      { param: 'to', explain: '跳转的路径', type: 'string', value: '——', default: '——' }
+    ]
     const { cru1, cru2, cru3 } = index.crumbs
-    return { cru1, cru2, cru3 }
+    return { cru1, cru2, cru3, configures, configures2 }
   }
 }
 </script>

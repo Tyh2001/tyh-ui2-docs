@@ -16,15 +16,25 @@
   <tyh-tag size="small" color="primary">标签</tyh-tag>
   <tyh-tag size="mini" color="primary">标签</tyh-tag>
   <highlightjs autodetect :code="tag2" />
+
+  <h3 class="Subtitle">配置项</h3>
+  <ConfigTable :configures="configures" />
 </template>
 
 <script>
 import index from './index'
+import ConfigTable from '@/components/ConfigTable.vue'
 export default {
-  name: '',
+  components: {
+    ConfigTable
+  },
   setup () {
     const { tag1, tag2 } = index.tag
-    return { tag1, tag2 }
+    const configures = [
+      { param: 'color', explain: '标签的颜色类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
+      { param: 'size', explain: '标签的尺寸', type: 'string', value: ' — / small / mini', default: '最大尺寸' }
+    ]
+    return { tag1, tag2, configures }
   }
 }
 </script>

@@ -34,13 +34,19 @@
   <p>prohibit 属性可以配置文本框禁用状态</p>
   <tyh-input v-model="text10" prohibit />
   <highlightjs autodetect :code="inp6" />
+
+  <h3 class="Subtitle">配置项</h3>
+  <ConfigTable :configures="configures" />
 </template>
 
 <script>
 import { ref } from 'vue'
 import index from './index'
+import ConfigTable from '@/components/ConfigTable.vue'
 export default {
-  name: '',
+  components: {
+    ConfigTable
+  },
   setup () {
     const text1 = ref('')
     const text2 = ref('')
@@ -53,6 +59,18 @@ export default {
     const text9 = ref('')
     const text10 = ref('')
     const { inp1, inp2, inp3, inp4, inp5, inp6 } = index.input
+    const configures = [
+      { param: 'v-model', explain: '绑定值', type: 'string / number', value: '——', default: '——' },
+      { param: 'inpType', explain: '类型', type: 'string', value: 'text / password / success / danger / warning', default: 'text' },
+      { param: 'innerText', explain: '输入框占位文本', type: 'string', value: '——', default: '——' },
+      { param: 'size', explain: '文本框尺寸', type: 'string', value: 'big / medium / small / mini', default: 'medium' },
+      { param: 'max', explain: '最大输入上限', type: 'string', value: '——', default: '——' },
+      { param: 'clear', explain: '是否可以清空文本框', type: 'boolean', value: '——', default: 'fasle' },
+      { param: 'showIcon', explain: '左侧显示的图标', type: 'string', value: '——', default: '——' },
+      { param: 'prohibit', explain: '是否禁用', type: 'boolean', value: '——', default: 'fasle' },
+      { param: 'autofocus', explain: '是否自动获取焦点', type: 'boolean', value: '——', default: 'fasle' },
+      { param: 'name', explain: '原生 name 属性', type: 'string', value: '——', default: '——' }
+    ]
     return {
       text1,
       text2,
@@ -69,7 +87,8 @@ export default {
       inp3,
       inp4,
       inp5,
-      inp6
+      inp6,
+      configures
     }
   }
 }

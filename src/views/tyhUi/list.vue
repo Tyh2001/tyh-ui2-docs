@@ -26,12 +26,18 @@
     footer="这是页脚"
   />
   <highlightjs autodetect :code="lis3" />
+
+  <h3 class="Subtitle">配置项</h3>
+  <ConfigTable :configures="configures" />
 </template>
 
 <script>
 import index from './index'
+import ConfigTable from '@/components/ConfigTable.vue'
 export default {
-  name: '',
+  components: {
+    ConfigTable
+  },
   setup () {
     const arr = [
       { name: '小明1', age: 11 },
@@ -43,8 +49,16 @@ export default {
       { name: '小明7', age: 17 },
       { name: '小明8', age: 18 }
     ]
+    const configures = [
+      { param: 'header', explain: '表头信息', type: 'string / number', value: '——', default: '——' },
+      { param: 'footer', explain: '页脚信息', type: 'string / number', value: '——', default: '——' },
+      { param: 'content', explain: '主体内容', type: 'array / string', value: '——', default: '——' },
+      { param: 'iskey', explain: '循环对象键名', type: 'string', value: '——', default: '——' },
+      { param: 'zebra', explain: '是否显示斑马纹', type: 'boolean', value: '——', default: '——' },
+      { param: 'num', explain: '是否显示序号', type: 'boolean', value: '——', default: 'false' }
+    ]
     const { lis1, lis2, lis3 } = index.list
-    return { arr, lis1, lis2, lis3 }
+    return { arr, lis1, lis2, lis3, configures }
   }
 }
 </script>

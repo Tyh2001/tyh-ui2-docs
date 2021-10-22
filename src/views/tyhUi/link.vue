@@ -27,15 +27,28 @@
   <tyh-link hoverline color="danger">链接四</tyh-link>
   <tyh-link hoverline color="warning">链接五</tyh-link>
   <highlightjs autodetect :code="lin3" />
+
+  <h3 class="Subtitle">配置项</h3>
+  <ConfigTable :configures="configures" />
 </template>
 
 <script>
 import index from './index'
+import ConfigTable from '@/components/ConfigTable.vue'
 export default {
-  name: '',
+  components: {
+    ConfigTable
+  },
   setup () {
     const { lin1, lin2, lin3 } = index.link
-    return { lin1, lin2, lin3 }
+    const configures = [
+      { param: 'url', explain: '跳转的路径', type: 'string', value: '——', default: '——' },
+      { param: 'color', explain: '链接的字体颜色', type: 'string', value: 'primary / success / danger / warning', default: '——' },
+      { param: 'underline', explain: '下划线', type: 'boolean', value: '——', default: 'fasle' },
+      { param: 'hoverline', explain: '鼠标移入下划线', type: 'boolean', value: '——', default: 'fasle' },
+      { param: 'target', explain: '以新的窗口打开', type: 'string', value: '同原生 target 属性 _blank', default: '——' }
+    ]
+    return { lin1, lin2, lin3, configures }
   }
 }
 </script>

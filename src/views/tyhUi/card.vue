@@ -45,15 +45,27 @@
     <p>从不显示</p>
   </tyh-card>
   <highlightjs autodetect :code="car3" />
+
+  <h3 class="Subtitle">配置项</h3>
+  <ConfigTable :configures="configures" />
 </template>
 
 <script>
 import index from './index'
+import ConfigTable from '@/components/ConfigTable.vue'
 export default {
-  name: '',
+  components: {
+    ConfigTable
+  },
   setup () {
     const { car1, car2, car3 } = index.card
-    return { car1, car2, car3 }
+    const configures = [
+      { param: 'simple', explain: '简约卡片', type: 'boolean', value: '——', default: 'false' },
+      { param: 'shadow', explain: '阴影显示时机', type: 'string', value: 'always / hover / noShadow', default: '——' },
+      { param: 'title（具名插槽）', explain: '自定义卡片的主标题', type: '——', value: '——', default: '——' },
+      { param: 'subtitle（具名插槽）', explain: '自定义卡片的副标题', type: '——', value: '——', default: '——' }
+    ]
+    return { car1, car2, car3, configures }
   }
 }
 </script>

@@ -52,15 +52,33 @@
     </tyh-menu-item>
   </tyh-menu>
   <highlightjs autodetect :code="men4" />
+
+  <h3 class="Subtitle">tyh-menu 组件</h3>
+  <ConfigTable :configures="configures" />
+
+  <h3 class="Subtitle">tyh-menu-item 子组件</h3>
+  <ConfiguresTable :configures="configures2" />
 </template>
 
 <script>
 import index from './index'
+import ConfigTable from '@/components/ConfigTable.vue'
 export default {
-  name: '',
+  components: {
+    ConfigTable
+  },
   setup () {
     const { men1, men2, men3, men4 } = index.menu
-    return { men1, men2, men3, men4 }
+    const configures = [
+      { param: 'backgroundColor', explain: '导航栏背景色', type: 'string', value: '——', default: '——' },
+      { param: 'buttomShadow', explain: '底部是否显示阴影', type: 'boolean', value: '——', default: 'false' }
+    ]
+    const configures2 = [
+      { param: 'url', explain: '跳转的路径', type: 'string', value: '——', default: '——' },
+      { param: 'prohibit', explain: '是否禁用', type: 'boolean', value: '——', default: '——' },
+      { param: 'color', explain: '文字颜色', type: 'string', value: '——', default: '#fff' }
+    ]
+    return { men1, men2, men3, men4, configures, configures2 }
   }
 }
 </script>

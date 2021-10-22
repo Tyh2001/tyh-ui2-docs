@@ -11,7 +11,6 @@
 <script>
 import index from './index'
 export default {
-  name: '',
   setup () {
     const { ins1, ins2 } = index.install
     return { ins1, ins2 }
