@@ -1,18 +1,18 @@
 <template>
   <h1 class="title">Input 输入框</h1>
-  <h3 class="Subtitle">基本使用</h3>
 
-  <p>基本使用</p>
+  <h3 class="Subtitle">基本使用</h3>
+  <p>输入框的基本用法</p>
   <tyh-input v-model="text1" />
   <highlightjs autodetect :code="inp1" />
 
-  <p>密码框</p>
+  <h3 class="Subtitle">输入框类型</h3>
   <p>inpType 属性可以规定文本框类型</p>
   <tyh-input inpType="text" v-model="text2" /><br />
   <tyh-input class="size-input" inpType="password" v-model="text3" />
   <highlightjs autodetect :code="inp2" />
 
-  <p>不同尺寸</p>
+  <h3 class="Subtitle">不同尺寸</h3>
   <p>size 属性可以配置文本框尺寸</p>
   <tyh-input size="big" v-model="text4" /><br />
   <tyh-input class="size-input" size="medium" v-model="text5" /><br />
@@ -20,17 +20,17 @@
   <tyh-input class="size-input" size="mini" v-model="text7" /><br />
   <highlightjs autodetect :code="inp3" />
 
-  <p>带有清空按钮</p>
+  <h3 class="Subtitle">可清空</h3>
   <p>clear 属性可以配置带有清空按钮的文本框</p>
   <tyh-input v-model="text8" clear />
   <highlightjs autodetect :code="inp4" />
 
-  <p>其他图标</p>
+  <h3 class="Subtitle">带有 icon</h3>
   <p>showIcon 属性可以配置文本框带有其他图标，直接传递 icon 的名字传递即可</p>
   <tyh-input v-model="text9" showIcon="tyh-ui-huojian-01" />
   <highlightjs autodetect :code="inp5" />
 
-  <p>禁用状态</p>
+  <h3 class="Subtitle">禁用状态</h3>
   <p>prohibit 属性可以配置文本框禁用状态</p>
   <tyh-input v-model="text10" prohibit />
   <highlightjs autodetect :code="inp6" />

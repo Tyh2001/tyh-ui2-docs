@@ -1,20 +1,20 @@
 <template>
   <h1 class="title">List 列表</h1>
-  <h3 class="Subtitle">基本使用</h3>
 
-  <p>基本使用</p>
+  <h3 class="Subtitle">基本使用</h3>
+  <p>列表的基本使用</p>
   <p>content 属性可以绑定需要展示的数组元素</p>
   <p>iskey 属性可以绑定数组中每个元素的键值</p>
   <tyh-list :content="arr" iskey="name" />
   <highlightjs autodetect :code="lis1" />
 
-  <p>有表头和页脚的列表</p>
+  <h3 class="Subtitle">配置表头和页脚</h3>
   <p>header 表头内容</p>
   <p>footer 页脚内容</p>
   <tyh-list :content="arr" iskey="name" header="这是头部" footer="这是页脚" />
   <highlightjs autodetect :code="lis2" />
 
-  <p>有斑马纹和序号</p>
+  <h3 class="Subtitle">斑马纹</h3>
   <p>zebra 是否显示斑马纹</p>
   <p>num 是否显示序号</p>
   <tyh-list

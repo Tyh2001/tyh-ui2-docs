@@ -1,8 +1,8 @@
 <template>
   <h1 class="title">Card 卡片</h1>
-  <h3 class="Subtitle">基本使用</h3>
 
-  <p>基本使用</p>
+  <h3 class="Subtitle">基本使用</h3>
+  <p>卡片的基础用法</p>
   <p>title 自定义卡片的主标题</p>
   <p>subtitle 自定义卡片的副标题</p>
   <tyh-card>
@@ -15,7 +15,7 @@
   </tyh-card>
   <highlightjs autodetect :code="car1" />
 
-  <p>简约卡片</p>
+  <h3 class="Subtitle">简约卡片</h3>
   <p>simple 属性可以配置简约卡片</p>
   <tyh-card simple>
     <template v-slot:title>主标题</template>
@@ -27,7 +27,7 @@
   </tyh-card>
   <highlightjs autodetect :code="car2" />
 
-  <p>阴影显示时机</p>
+  <h3 class="Subtitle">阴影显示时机</h3>
   <p>shadow 属性可以配置阴影显示时机</p>
   <tyh-card class="small" shadow="always">
     <template v-slot:title>主标题</template>

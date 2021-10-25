@@ -1,8 +1,8 @@
 <template>
   <h1 class="title">Crumbs 面包屑</h1>
-  <h3 class="Subtitle">基本使用</h3>
 
-  <p>基本使用</p>
+  <h3 class="Subtitle">基本使用</h3>
+  <p>面包屑的基本用法</p>
   <tyh-crumbs>
     <tyh-crumbs-item to="/">首页</tyh-crumbs-item>
     <tyh-crumbs-item>学员管理</tyh-crumbs-item>
@@ -11,7 +11,7 @@
   </tyh-crumbs>
   <highlightjs autodetect :code="cru1" />
 
-  <p>不同的分隔符</p>
+  <h3 class="Subtitle">不同的分隔符</h3>
   <p>通过给父组件separator 属性可以配置不同的分隔符，使用 icon 类名</p>
   <tyh-crumbs separator="tyh-ui-right-02">
     <tyh-crumbs-item to="/">首页</tyh-crumbs-item>
@@ -21,7 +21,7 @@
   </tyh-crumbs>
   <highlightjs autodetect :code="cru2" />
 
-  <p>跳转</p>
+  <h3 class="Subtitle">跳转路由</h3>
   <p>
     通过给子组件to
     属性可以配置跳转路径，添加该属性后文章点击会跳转，并且加粗显示
@@ -34,10 +34,10 @@
   </tyh-crumbs>
   <highlightjs autodetect :code="cru3" />
 
-  <h3 class="Subtitle">tyh-Crumbs 组件</h3>
+  <h3 class="Subtitle">tyh-crumbs 组件</h3>
   <ConfigTable :configures="configures" />
 
-  <h3 class="Subtitle">tyh-Crumbs-Item 子组件</h3>
+  <h3 class="Subtitle">tyh-crumbs-item 子组件</h3>
   <ConfigTable :configures="configures2" />
 </template>
 

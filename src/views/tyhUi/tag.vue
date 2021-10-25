@@ -1,8 +1,8 @@
 <template>
   <h1 class="title">Tag 标签</h1>
-  <h3 class="Subtitle">基本使用</h3>
 
-  <p class="Subtitle">基本使用</p>
+  <h3 class="Subtitle">基本使用</h3>
+  <p>标签的基本使用</p>
   <tyh-tag>标签一</tyh-tag>
   <tyh-tag color="primary">标签二</tyh-tag>
   <tyh-tag color="success">标签三</tyh-tag>
@@ -10,7 +10,7 @@
   <tyh-tag color="warning">标签五</tyh-tag>
   <highlightjs autodetect :code="tag1" />
 
-  <p>不同尺寸</p>
+  <h3 class="Subtitle">不同尺寸</h3>
   <p>size 属性可以配置不同的尺寸</p>
   <tyh-tag color="primary">标签</tyh-tag>
   <tyh-tag size="small" color="primary">标签</tyh-tag>
@@ -41,6 +41,6 @@ export default {
 
 <style scoped>
 .tyh-tag {
-  margin-left: 10px;
+  margin-right: 13px;
 }
 </style>

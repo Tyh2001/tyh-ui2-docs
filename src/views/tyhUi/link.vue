@@ -1,8 +1,8 @@
 <template>
   <h1 class="title">Link 链接</h1>
-  <h3 class="Subtitle">基本使用</h3>
 
-  <p>基本使用</p>
+  <h3 class="Subtitle">基本使用</h3>
+  <p>链接的基本使用</p>
   <tyh-link url="">链接一</tyh-link>
   <tyh-link url="" color="primary">链接二</tyh-link>
   <tyh-link url="" color="success">链接三</tyh-link>
@@ -10,7 +10,7 @@
   <tyh-link url="" color="warning">链接五</tyh-link>
   <highlightjs autodetect :code="lin1" />
 
-  <p>带有下划线</p>
+  <h3 class="Subtitle">带有下划线</h3>
   <p>underline 属性可以配置带有下划线</p>
   <tyh-link underline>链接一</tyh-link>
   <tyh-link underline color="primary">链接二</tyh-link>
@@ -19,7 +19,7 @@
   <tyh-link underline color="warning">链接五</tyh-link>
   <highlightjs autodetect :code="lin2" />
 
-  <p>鼠标移入带有下划线</p>
+  <h3 class="Subtitle">hover 下划线</h3>
   <p>hoverline 属性可以配置鼠标移入带有下划线</p>
   <tyh-link hoverline>链接一</tyh-link>
   <tyh-link hoverline color="primary">链接二</tyh-link>
@@ -55,6 +55,6 @@ export default {
 
 <style scoped>
 .tyh-link {
-  margin-left: 10px;
+  margin-right: 13px;
 }
 </style>

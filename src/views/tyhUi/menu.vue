@@ -1,8 +1,8 @@
 <template>
   <h1 class="title">Menu 导航栏</h1>
-  <h3 class="Subtitle">基本使用</h3>
 
-  <p>基本使用</p>
+  <h3 class="Subtitle">基本使用</h3>
+  <p>导航栏的基本使用</p>
   <tyh-menu>
     <tyh-menu-item>首页</tyh-menu-item>
     <tyh-menu-item>内容</tyh-menu-item>
@@ -11,7 +11,7 @@
   </tyh-menu>
   <highlightjs autodetect :code="men1" />
 
-  <p>配置颜色</p>
+  <h3 class="Subtitle">颜色配置</h3>
   <p>通过 backgroundColor 属性可以配置导航栏背景色</p>
   <p>通过 color 属性可以配置子菜单颜色</p>
   <tyh-menu backgroundColor="#eee">
@@ -22,7 +22,7 @@
   </tyh-menu>
   <highlightjs autodetect :code="men2" />
 
-  <p>禁用状态</p>
+  <h3 class="Subtitle">禁用状态</h3>
   <p>通过 prohibit 属性可以配置子组件链接是否禁用</p>
   <tyh-menu>
     <tyh-menu-item prohibit url="/home">首页</tyh-menu-item>
@@ -32,7 +32,8 @@
   </tyh-menu>
   <highlightjs autodetect :code="men3" />
 
-  <p>带有 icon 的</p>
+
+  <h3 class="Subtitle">带有 icon</h3>
   <tyh-menu>
     <tyh-menu-item url="/home">
       <tyh-icon icon="tyh-ui-home-01" color="#fff" />

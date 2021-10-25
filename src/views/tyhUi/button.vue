@@ -1,8 +1,8 @@
 <template>
   <h1 class="title">Button 按钮</h1>
-  <h3 class="Subtitle">基本使用</h3>
 
-  <p>基本使用</p>
+  <h3 class="Subtitle">基本使用</h3>
+  <p>按钮的基础用法</p>
   <tyh-button>默认按钮</tyh-button>
   <tyh-button type="primary">主要按钮</tyh-button>
   <tyh-button type="success">成功按钮</tyh-button>
@@ -10,7 +10,7 @@
   <tyh-button type="warning">警告按钮</tyh-button>
   <highlightjs autodetect :code="btn1" />
 
-  <p>朴素的按钮</p>
+  <h3 class="Subtitle">朴素的按钮</h3>
   <p>simple 属性可以配置朴素的按钮</p>
   <tyh-button simple type="primary">主要按钮</tyh-button>
   <tyh-button simple type="success">成功按钮</tyh-button>
@@ -18,7 +18,7 @@
   <tyh-button simple type="warning">警告按钮</tyh-button>
   <highlightjs autodetect :code="btn2" />
 
-  <p>图标按钮</p>
+  <h3 class="Subtitle">图标按钮</h3>
   <p>icon 属性可以配置图标按钮</p>
   <tyh-button icon="tyh-ui-setting-01" type="primary"></tyh-button>
   <tyh-button icon="tyh-ui-phone-01" type="success"></tyh-button>
@@ -26,7 +26,7 @@
   <tyh-button icon="tyh-ui-PaperPlane-01" type="warning">飞机</tyh-button>
   <highlightjs autodetect :code="btn3" />
 
-  <p>禁用状态</p>
+  <h3 class="Subtitle">禁用状态</h3>
   <p>prohibit 属性可以配置禁用状态</p>
   <tyh-button prohibit>默认按钮</tyh-button>
   <tyh-button prohibit type="primary">主要按钮</tyh-button>
@@ -35,7 +35,7 @@
   <tyh-button prohibit type="warning">警告按钮</tyh-button>
   <highlightjs autodetect :code="btn4" />
 
-  <p>圆角按钮</p>
+  <h3 class="Subtitle">圆角按钮</h3>
   <p>round 属性可以配置圆角按钮</p>
   <tyh-button round>默认按钮</tyh-button>
   <tyh-button round type="primary">主要按钮</tyh-button>
@@ -71,6 +71,6 @@ export default {
 
 <style scoped>
 .tyh-button {
-  margin-left: 10px;
+  margin-right: 13px;
 }
 </style>
