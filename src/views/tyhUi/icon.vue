@@ -48,6 +48,7 @@
 <script>
 import index from './index'
 import ConfigTable from '@/components/ConfigTable.vue'
+import Clipboard from 'clipboard'
 export default {
   components: {
     ConfigTable
@@ -112,7 +113,15 @@ export default {
       { param: 'color', explain: 'icon 的颜色', type: 'string', value: '——', default: '#606266' },
       { param: 'size', explain: 'icon 的尺寸', type: 'string', value: '——', default: '——' }
     ]
-    return { icon1, icon2, icon3, iconList, configures }
+    // 复制
+    function copy () {
+      const clipboard = new Clipboard('.allIcon-li')
+      // 复制成功
+      clipboard.on('success', e => {
+        clipboard.destroy()
+      })
+    }
+    return { icon1, icon2, icon3, iconList, configures, copy }
   }
 }
 </script>

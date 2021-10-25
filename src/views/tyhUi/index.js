@@ -44,6 +44,18 @@ createApp(App).use(tyhUi).mount('#app')
 <tyh-button round type="success">成功按钮</tyh-button>
 <tyh-button round type="danger">危险按钮</tyh-button>
 <tyh-button round type="warning">警告按钮</tyh-button>
+    `,
+    btn6: `
+<tyh-button type="primary">正常大小</tyh-button>
+<tyh-button size="small" type="primary">中等按钮</tyh-button>
+<tyh-button size="mini" type="primary">小型按钮</tyh-button>
+    `,
+    btn7: `
+<tyh-button big>默认按钮</tyh-button>
+<tyh-button big type="primary">主要按钮</tyh-button>
+<tyh-button big type="success">成功按钮</tyh-button>
+<tyh-button big type="danger">危险按钮</tyh-button>
+<tyh-button big type="warning">警告按钮</tyh-button>
     `
   },
   // 列表
@@ -179,6 +191,43 @@ export default {
 <tyh-tag color="primary">标签</tyh-tag>
 <tyh-tag size="small" color="primary">标签</tyh-tag>
 <tyh-tag size="mini" color="primary">标签</tyh-tag>
+    `,
+    tag3: `
+<tyh-tag round>标签一</tyh-tag>
+<tyh-tag round color="primary">标签二</tyh-tag>
+<tyh-tag round color="success">标签三</tyh-tag>
+<tyh-tag round color="danger">标签四</tyh-tag>
+<tyh-tag round color="warning">标签五</tyh-tag>
+    `,
+    tag4: `
+<template>
+  <tyh-tag v-show="show1" @close="show1 = false">标签一</tyh-tag>
+  <tyh-tag v-show="show2" color="primary" @close="show2 = false">标签二</tyh-tag>
+  <tyh-tag v-show="show3" color="success" @close="show3 = false">标签三</tyh-tag>
+  <tyh-tag v-show="show4" color="danger" @close="show4 = false">标签四</tyh-tag>
+  <tyh-tag v-show="show5" color="warning" @close="show5 = false">标签五</tyh-tag>
+</template>
+
+<script>
+import { ref } from 'vue'
+export default {
+  setup () {
+    const show1 = ref(true)
+    const show2 = ref(true)
+    const show3 = ref(true)
+    const show4 = ref(true)
+    const show5 = ref(true)
+
+    return {
+      show1,
+      show2,
+      show3,
+      show4,
+      show5
+    }
+  }
+}
+</script>
     `
   },
   // 链接

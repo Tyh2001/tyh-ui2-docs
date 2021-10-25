@@ -32,7 +32,6 @@
   </tyh-menu>
   <highlightjs autodetect :code="men3" />
 
-
   <h3 class="Subtitle">带有 icon</h3>
   <tyh-menu>
     <tyh-menu-item url="/home">
