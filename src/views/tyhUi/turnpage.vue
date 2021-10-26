@@ -47,6 +47,9 @@
     <tyh-turn-page-item direction="left" url="/component/crumbs">
       Crumbs 面包屑
     </tyh-turn-page-item>
+    <tyh-turn-page-item direction="right" url="/component/backtop">
+      BackTop 回到顶部
+    </tyh-turn-page-item>
   </tyh-turn-page>
 </template>
 

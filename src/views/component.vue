@@ -18,6 +18,10 @@
     <div class="content">
       <router-view />
     </div>
+
+    <tyh-backTop>
+      <tyh-icon icon="tyh-ui-huojian-01" color="#409eff" />
+    </tyh-backTop>
   </div>
 </template>
 
@@ -39,6 +43,7 @@ export default {
       { name: 'Icon 图标', url: '/component/icon' },
       { name: 'Crumbs 面包屑', url: '/component/crumbs' },
       { name: 'TurnPage 翻页', url: '/component/turnpage' },
+      { name: 'BackTop 回到顶部', url: '/component/backtop' },
     ]
     const router = useRouter()
     const route = useRoute()

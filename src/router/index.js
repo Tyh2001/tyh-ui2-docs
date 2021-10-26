@@ -61,6 +61,10 @@ const routes = [
           {
             path: '/component/turnpage',
             component: () => import('@/views/TyhUi/turnpage.vue')
+          },
+          {
+            path: '/component/backtop',
+            component: () => import('@/views/TyhUi/backtop.vue')
           }
         ]
       }
