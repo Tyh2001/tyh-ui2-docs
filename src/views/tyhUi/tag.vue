@@ -27,18 +27,19 @@
   <highlightjs autodetect :code="tag3" />
 
   <h3 class="Subtitle">可关闭</h3>
+  <p>设置 isclose 属性可以定义一个标签是否可移除</p>
   <p>动态编辑标签可以通过点击标签关闭按钮后触发的 close 事件来实现</p>
-  <tyh-tag v-show="show1" @close="show1 = false">标签一</tyh-tag>
-  <tyh-tag v-show="show2" color="primary" @close="show2 = false">
+  <tyh-tag v-show="show1" isclose @close="show1 = false">标签一</tyh-tag>
+  <tyh-tag v-show="show2" color="primary" isclose @close="show2 = false">
     标签二
   </tyh-tag>
-  <tyh-tag v-show="show3" color="success" @close="show3 = false">
+  <tyh-tag v-show="show3" color="success" isclose @close="show3 = false">
     标签三
   </tyh-tag>
-  <tyh-tag v-show="show4" color="danger" @close="show4 = false">
+  <tyh-tag v-show="show4" color="danger" isclose @close="show4 = false">
     标签四
   </tyh-tag>
-  <tyh-tag v-show="show5" color="warning" @close="show5 = false">
+  <tyh-tag v-show="show5" color="warning" isclose @close="show5 = false">
     标签五
   </tyh-tag>
   <highlightjs autodetect :code="tag4" />
@@ -74,8 +75,9 @@ export default {
     const configures = [
       { param: 'color', explain: '标签的颜色类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
       { param: 'size', explain: '标签的尺寸', type: 'string', value: ' — / small / mini', default: '最大尺寸' },
-      { param: 'round', explain: '配置圆角显示', type: 'Boolean', value: '', default: 'false' },
-      { param: 'close', explain: '关闭 Tag 时触发的事件', type: '——', value: '——', default: '——' },
+      { param: 'round', explain: '配置圆角显示', type: 'boolean', value: '', default: 'false' },
+      { param: 'isclose', explain: '是否显示关闭按钮', type: 'boolean', value: '——', default: 'false' },
+      { param: 'close', explain: '关闭 Tag 时触发的事件', type: '——', value: '——', default: '——' }
     ]
     return {
       show1,

@@ -201,11 +201,19 @@ export default {
     `,
     tag4: `
 <template>
-  <tyh-tag v-show="show1" @close="show1 = false">标签一</tyh-tag>
-  <tyh-tag v-show="show2" color="primary" @close="show2 = false">标签二</tyh-tag>
-  <tyh-tag v-show="show3" color="success" @close="show3 = false">标签三</tyh-tag>
-  <tyh-tag v-show="show4" color="danger" @close="show4 = false">标签四</tyh-tag>
-  <tyh-tag v-show="show5" color="warning" @close="show5 = false">标签五</tyh-tag>
+  <tyh-tag v-show="show1" isclose @close="show1 = false">标签一</tyh-tag>
+  <tyh-tag v-show="show2" color="primary" isclose @close="show2 = false">
+    标签二
+  </tyh-tag>
+  <tyh-tag v-show="show3" color="success" isclose @close="show3 = false">
+    标签三
+  </tyh-tag>
+  <tyh-tag v-show="show4" color="danger" isclose @close="show4 = false">
+    标签四
+  </tyh-tag>
+  <tyh-tag v-show="show5" color="warning" isclose @close="show5 = false">
+    标签五
+  </tyh-tag>
 </template>
 
 <script>
