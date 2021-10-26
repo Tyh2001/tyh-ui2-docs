@@ -8,7 +8,7 @@
   <highlightjs autodetect :code="ins2" />
 
   <tyh-turn-page style="margin: 50px 0">
-    <tyh-turn-page-item direction="left" url="" icon="tyh-ui-home-01">
+    <tyh-turn-page-item direction="left" url="/" icon="tyh-ui-home-01">
       首页
     </tyh-turn-page-item>
     <tyh-turn-page-item direction="right" url="/component/button">
