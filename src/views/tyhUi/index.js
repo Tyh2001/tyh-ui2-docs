@@ -458,6 +458,35 @@ export default {
 <tyh-icon size="40" icon="tyh-ui-huojian-01" />
 <tyh-icon size="30" icon="tyh-ui-PaperPlane-01" />
     `
+  },
+  // 翻页
+  turnpage: {
+    tur1: `
+<tyh-turn-page>
+  <tyh-turn-page-item direction="left" url="">上一页</tyh-turn-page-item>
+  <tyh-turn-page-item direction="right" url="">下一页</tyh-turn-page-item>
+</tyh-turn-page>
+    `,
+    tur2: `
+<tyh-turn-page center>
+  <tyh-turn-page-item direction="left" url="">
+    上一页 - 居中
+  </tyh-turn-page-item>
+  <tyh-turn-page-item direction="right" url="">
+    下一页 - 居中
+  </tyh-turn-page-item>
+</tyh-turn-page>
+    `,
+    tur3: `
+<tyh-turn-page>
+  <tyh-turn-page-item direction="left" url="" icon="tyh-ui-home-01">
+    首页
+  </tyh-turn-page-item>
+  <tyh-turn-page-item direction="right" url="" icon="tyh-ui-right-01">
+    下一页
+  </tyh-turn-page-item>
+</tyh-turn-page>
+    `,
   }
 }
 

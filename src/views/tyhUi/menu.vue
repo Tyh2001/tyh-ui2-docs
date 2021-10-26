@@ -58,6 +58,15 @@
 
   <h3 class="Subtitle">tyh-menu-item 子组件</h3>
   <ConfigTable :configures="configures2" />
+
+  <tyh-turn-page style="margin: 50px 0">
+    <tyh-turn-page-item direction="left" url="/component/input">
+      Input 输入框
+    </tyh-turn-page-item>
+    <tyh-turn-page-item direction="right" url="/component/division">
+      Division 分割线
+    </tyh-turn-page-item>
+  </tyh-turn-page>
 </template>
 
 <script>

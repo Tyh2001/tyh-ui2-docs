@@ -15,6 +15,15 @@
 
   <h3 class="Subtitle">配置项</h3>
   <ConfigTable :configures="configures" />
+
+  <tyh-turn-page style="margin: 50px 0">
+    <tyh-turn-page-item direction="left" url="/component/menu">
+      Menu 导航栏
+    </tyh-turn-page-item>
+    <tyh-turn-page-item direction="right" url="/component/icon">
+      Icon 图标
+    </tyh-turn-page-item>
+  </tyh-turn-page>
 </template>
 
 <script>

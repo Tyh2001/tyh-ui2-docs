@@ -37,7 +37,8 @@ export default {
       { name: 'Menu 导航栏', url: '/component/menu' },
       { name: 'Division 分割线', url: '/component/division' },
       { name: 'Icon 图标', url: '/component/icon' },
-      { name: 'Crumbs 面包屑', url: '/component/crumbs' }
+      { name: 'Crumbs 面包屑', url: '/component/crumbs' },
+      { name: 'TurnPage 翻页', url: '/component/turnpage' },
     ]
     const router = useRouter()
     const route = useRoute()

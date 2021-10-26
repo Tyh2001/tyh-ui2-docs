@@ -35,7 +35,6 @@ pre code.hljs {
 }
 .Subtitle {
   color: #515a6e;
-  /* line-height: 60px; */
   margin-top: 40px;
   margin-bottom: 10px;
 }

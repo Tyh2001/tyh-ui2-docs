@@ -6,6 +6,15 @@
 
   <p>在 main.js 中引入下面内容</p>
   <highlightjs autodetect :code="ins2" />
+
+  <tyh-turn-page style="margin: 50px 0">
+    <tyh-turn-page-item direction="left" url="" icon="tyh-ui-home-01">
+      首页
+    </tyh-turn-page-item>
+    <tyh-turn-page-item direction="right" url="/component/button">
+      Button 按钮
+    </tyh-turn-page-item>
+  </tyh-turn-page>
 </template>
 
 <script>

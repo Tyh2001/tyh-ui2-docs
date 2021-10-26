@@ -29,6 +29,15 @@
 
   <h3 class="Subtitle">配置项</h3>
   <ConfigTable :configures="configures" />
+
+  <tyh-turn-page style="margin: 50px 0">
+    <tyh-turn-page-item direction="left" url="/component/button">
+      Button 按钮
+    </tyh-turn-page-item>
+    <tyh-turn-page-item direction="right" url="/component/card">
+      Card 卡片
+    </tyh-turn-page-item>
+  </tyh-turn-page>
 </template>
 
 <script>

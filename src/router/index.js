@@ -57,6 +57,10 @@ const routes = [
           {
             path: '/component/crumbs',
             component: () => import('@/views/TyhUi/crumbs.vue')
+          },
+          {
+            path: '/component/turnpage',
+            component: () => import('@/views/TyhUi/turnpage.vue')
           }
         ]
       }

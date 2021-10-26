@@ -63,6 +63,15 @@
 
   <h3 class="Subtitle">配置项</h3>
   <ConfigTable :configures="configures" />
+
+  <tyh-turn-page style="margin: 50px 0">
+    <tyh-turn-page-item direction="left" url="/component/install">
+      快速上手
+    </tyh-turn-page-item>
+    <tyh-turn-page-item direction="right" url="/component/list">
+      List 列表
+    </tyh-turn-page-item>
+  </tyh-turn-page>
 </template>
 
 <script>
