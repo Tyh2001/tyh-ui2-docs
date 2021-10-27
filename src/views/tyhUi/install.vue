@@ -11,8 +11,8 @@
     <tyh-turn-page-item direction="left" url="/" icon="tyh-ui-home-01">
       首页
     </tyh-turn-page-item>
-    <tyh-turn-page-item direction="right" url="/component/button">
-      Button 按钮
+    <tyh-turn-page-item direction="right" url="/component/color">
+      Color 色彩
     </tyh-turn-page-item>
   </tyh-turn-page>
 </template>

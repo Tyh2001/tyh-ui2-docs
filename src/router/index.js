@@ -19,6 +19,10 @@ const routes = [
             component: () => import('@/views/TyhUi/install.vue')
           },
           {
+            path: '/component/color',
+            component: () => import('@/views/TyhUi/color.vue')
+          },
+          {
             path: '/component/button',
             component: () => import('@/views/TyhUi/button.vue')
           },

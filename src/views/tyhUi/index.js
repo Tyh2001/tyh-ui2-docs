@@ -1,13 +1,13 @@
 const data = {
   // 安装
   install: {
-    ins1: 'npm i tyh-ui-next',
+    ins1: 'npm i tyh-ui2',
     ins2: `
 import { createApp } from 'vue'
 import App from './App.vue'
-import tyhUi from 'tyh-ui-next/src'
+import tyhUi2 from 'tyh-ui2'
 
-createApp(App).use(tyhUi).mount('#app')
+createApp(App).use(tyhUi2).mount('#app')
     `,
   },
   // 按钮
