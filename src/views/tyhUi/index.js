@@ -505,6 +505,103 @@ export default {
   <tyh-icon icon="tyh-ui-huojian-01" color="#409eff" />
 </tyh-backTop>
     `
+  },
+  // 提示框
+  msg: {
+    mes1: `
+<template>
+  <tyh-button @click="change1">默认提示</tyh-button>
+  <tyh-button type="primary" @click="change2">主要提示</tyh-button>
+  <tyh-button type="success" @click="change3">成功提示</tyh-button>
+  <tyh-button type="danger" @click="change4">危险提示</tyh-button>
+  <tyh-button type="warning" @click="change5">警告提示</tyh-button>
+</template>
+
+<script>
+import TyhMessage from 'tyh-ui2/packages/message'
+export default {
+  setup () {
+    function change1 () {
+      TyhMessage({ message: '默认提示' })
+    }
+    function change2 () {
+      TyhMessage({ message: '主要提示', type: 'primary' })
+    }
+    function change3 () {
+      TyhMessage({ message: '成功提示', type: 'success' })
+    }
+    function change4 () {
+      TyhMessage({ message: '危险提示', type: 'danger' })
+    }
+    function change5 () {
+      TyhMessage({ message: '警告提示', type: 'warning' })
+    }
+
+    return {
+      change1,
+      change2,
+      change3,
+      change4,
+      change5,
+    }
+  }
+}
+</script>
+    `,
+    mes2: `
+<template>
+  <tyh-button type="primary" @click="change6">展示5000毫秒</tyh-button>
+</template>
+
+<script>
+import TyhMessage from 'tyh-ui2/packages/message'
+export default {
+  setup () {
+    function change6 () {
+      Message({ message: '5000毫秒后隐藏', type: 'primary', time: 5000 })
+    }
+
+    return { change6 }
+  }
+}
+</script>
+
+    `,
+    mes3: `
+<template>
+  <tyh-button type="primary" @click="change7">主要提示</tyh-button>
+  <tyh-button type="success" @click="change8">成功提示</tyh-button>
+  <tyh-button type="danger" @click="change9">危险提示</tyh-button>
+  <tyh-button type="warning" @click="change10">警告提示</tyh-button>
+</template>
+
+<script>
+import TyhMessage from 'tyh-ui2/packages/message'
+export default {
+  setup () {
+    function change7 () {
+      Message({ message: '主要提示', type: 'primary', iconClass: 'tyh-ui-primary-01' })
+    }
+    function change8 () {
+      Message({ message: '成功提示', type: 'success', iconClass: 'tyh-ui-success-01' })
+    }
+    function change9 () {
+      Message({ message: '危险提示', type: 'danger', iconClass: 'tyh-ui-danger-01' })
+    }
+    function change10 () {
+      Message({ message: '警告提示', type: 'warning', iconClass: 'tyh-ui-warning-01' })
+    }
+
+    return {
+      change7,
+      change8,
+      change9,
+      change10
+    }
+  }
+}
+</script>
+    `
   }
 }
 

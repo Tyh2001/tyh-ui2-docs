@@ -24,9 +24,9 @@
     <tyh-turn-page-item direction="left" url="/component/crumbs">
       Turnpage 分页
     </tyh-turn-page-item>
-    <!-- <tyh-turn-page-item direction="right" url="/component/backtop">
-      BackTop 回到顶部
-    </tyh-turn-page-item> -->
+    <tyh-turn-page-item direction="right" url="/component/message">
+      Message 提示框
+    </tyh-turn-page-item>
   </tyh-turn-page>
 </template>
 

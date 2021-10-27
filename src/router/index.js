@@ -69,6 +69,10 @@ const routes = [
           {
             path: '/component/backtop',
             component: () => import('@/views/TyhUi/backtop.vue')
+          },
+          {
+            path: '/component/message',
+            component: () => import('@/views/TyhUi/message.vue')
           }
         ]
       }
