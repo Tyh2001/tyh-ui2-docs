@@ -499,9 +499,9 @@ export default {
   // 回到顶部
   back: {
     back1: `<tyh-back-top>Top</tyh-back-top>`,
-    back2: ` <tyh-backTop bottom="100" right="120">Go</tyh-backTop>`,
+    back2: ` <tyh-backTop bottom="150" right="120">Go</tyh-backTop>`,
     back3: `
-<tyh-backTop>
+<tyh-backTop bottom="100">
   <tyh-icon icon="tyh-ui-huojian-01" color="#409eff" />
 </tyh-backTop>
     `

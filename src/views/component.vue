@@ -19,7 +19,7 @@
       <router-view />
     </div>
 
-    <tyh-backTop>
+    <tyh-backTop v-if="route.path !== '/component/backtop'">
       <tyh-icon icon="tyh-ui-huojian-01" color="#409eff" />
     </tyh-backTop>
   </div>
@@ -58,11 +58,13 @@ export default {
         return { color: '#409eff' }
       }
     }
+    console.log(route.path)
 
     return {
       listPush,
       highLightStyle,
-      listPushClick
+      listPushClick,
+      route
     }
   }
 }
