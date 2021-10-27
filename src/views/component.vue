@@ -59,7 +59,6 @@ export default {
         return { color: '#409eff' }
       }
     }
-    console.log(route.path)
 
     return {
       listPush,
