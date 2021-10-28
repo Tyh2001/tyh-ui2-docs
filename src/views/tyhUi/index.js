@@ -260,6 +260,20 @@ export default {
 <tyh-link hoverline color="success">链接三</tyh-link>
 <tyh-link hoverline color="danger">链接四</tyh-link>
 <tyh-link hoverline color="warning">链接五</tyh-link>
+    `,
+    lin4: `
+<tyh-link url="" prohibit>禁用链接一</tyh-link>
+<tyh-link url="" prohibit type="primary">禁用链接二</tyh-link>
+<tyh-link url="" prohibit type="success">禁用链接三</tyh-link>
+<tyh-link url="" prohibit type="danger">禁用链接四</tyh-link>
+<tyh-link url="" prohibit type="warning">禁用链接五</tyh-link>
+    `,
+    lin5: `
+<tyh-link url="" iconClass="tyh-ui-type-01">链接一</tyh-link>
+<tyh-link url="" iconClass="tyh-ui-series-01" type="primary">链接二</tyh-link>
+<tyh-link url="" iconClass="tyh-ui-wenjian-01" type="success">链接三</tyh-link>
+<tyh-link url="" iconClass="tyh-ui-xingxing-01" type="danger">链接四</tyh-link>
+<tyh-link url="" iconClass="tyh-ui-aixin-01" type="warning">链接五</tyh-link>
     `
   },
   // 文本框
@@ -601,6 +615,30 @@ export default {
   }
 }
 </script>
+    `,
+    mes4: `import Message from 'tyh-ui2/packages/message'`
+  },
+  // 骨架
+  skeleton: {
+    ske1: `
+<tyh-skeleton />
+<tyh-skeleton />
+<tyh-skeleton />
+    `,
+    ske2: `
+<tyh-skeleton round />
+<tyh-skeleton round />
+<tyh-skeleton round />
+    `,
+    ske3: `
+<tyh-skeleton width="75%" />
+<tyh-skeleton width="150px" />
+<tyh-skeleton width="100px" height="100px" />
+    `,
+    ske4: `
+<tyh-skeleton animation />
+<tyh-skeleton animation />
+<tyh-skeleton animation />
     `
   }
 }

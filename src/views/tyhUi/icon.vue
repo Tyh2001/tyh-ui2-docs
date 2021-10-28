@@ -58,6 +58,7 @@
 import index from './index'
 import ConfigTable from '@/components/ConfigTable.vue'
 import Clipboard from 'clipboard'
+import Message from 'tyh-ui2/packages/message'
 export default {
   components: {
     ConfigTable
@@ -127,6 +128,7 @@ export default {
       const clipboard = new Clipboard('.allIcon-li')
       // 复制成功
       clipboard.on('success', e => {
+        Message({ message: '复制成功', type: 'success', iconClass: 'tyh-ui-success-01' })
         clipboard.destroy()
       })
     }

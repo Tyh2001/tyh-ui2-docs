@@ -73,6 +73,10 @@ const routes = [
           {
             path: '/component/message',
             component: () => import('@/views/TyhUi/message.vue')
+          },
+          {
+            path: '/component/skeleton',
+            component: () => import('@/views/TyhUi/skeleton.vue')
           }
         ]
       }

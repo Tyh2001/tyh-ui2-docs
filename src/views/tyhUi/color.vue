@@ -66,6 +66,7 @@
 
 <script>
 import Clipboard from 'clipboard'
+import Message from 'tyh-ui2/packages/message'
 export default {
   setup () {
     const colorList1 = [
@@ -124,7 +125,7 @@ export default {
       const clipboard = new Clipboard(dom)
       // 复制成功
       clipboard.on('success', e => {
-        console.log('ok')
+        Message({ message: '复制成功', type: 'success', iconClass: 'tyh-ui-success-01' })
         clipboard.destroy()
       })
     }

@@ -45,7 +45,8 @@ export default {
       { name: 'Crumbs 面包屑', url: '/component/crumbs' },
       { name: 'TurnPage 翻页', url: '/component/turnpage' },
       { name: 'BackTop 回到顶部', url: '/component/backtop' },
-      { name: 'Message 提示框', url: '/component/message' }
+      { name: 'Message 提示框', url: '/component/message' },
+      { name: 'Skeleton 骨架', url: '/component/skeleton' }
     ]
     const router = useRouter()
     const route = useRoute()

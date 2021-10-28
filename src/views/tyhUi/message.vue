@@ -1,6 +1,10 @@
 <template>
   <h1 class="title">Message 提示框</h1>
 
+  <h3 class="Subtitle">使用前</h3>
+  <p>使用前，你必须先引入它</p>
+  <highlightjs autodetect :code="mes4" />
+
   <h3 class="Subtitle">基本使用</h3>
   <p>提示框的基本使用</p>
   <p>通过引入 message 方法，接收一个对象，可以使用 message 定义内容</p>
@@ -32,9 +36,9 @@
     <tyh-turn-page-item direction="left" url="/component/backtop">
       BackTop 回到顶部
     </tyh-turn-page-item>
-    <!-- <tyh-turn-page-item direction="right" url="/component/message">
-      Message 提示框
-    </tyh-turn-page-item> -->
+    <tyh-turn-page-item direction="right" url="/component/skeleton">
+      Skeleton 骨架
+    </tyh-turn-page-item>
   </tyh-turn-page>
 </template>
 
@@ -47,7 +51,7 @@ export default {
     ConfigTable
   },
   setup () {
-    const { mes1, mes2, mes3 } = index.msg
+    const { mes1, mes2, mes3, mes4 } = index.msg
     const configures = [
       { param: 'message', explain: '显示文字', type: 'string', value: '——', default: '——' },
       { param: 'type', explain: '提示框的类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
@@ -90,6 +94,7 @@ export default {
       mes1,
       mes2,
       mes3,
+      mes4,
       configures,
       change1,
       change2,
