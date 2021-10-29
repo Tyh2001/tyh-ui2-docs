@@ -63,10 +63,12 @@
 <script>
 import index from './index'
 import ConfigTable from '@/components/ConfigTable.vue'
+import EventsTable from '@/components/EventsTable.vue'
 import { ref } from 'vue'
 export default {
   components: {
-    ConfigTable
+    ConfigTable,
+    EventsTable
   },
   setup () {
     const show1 = ref(true)
