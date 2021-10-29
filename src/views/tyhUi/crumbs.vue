@@ -12,8 +12,8 @@
   <highlightjs autodetect :code="cru1" />
 
   <h3 class="Subtitle">不同的分隔符</h3>
-  <p>通过给父组件separator 属性可以配置不同的分隔符，使用 icon 类名</p>
-  <tyh-crumbs separator="tyh-ui-right-02">
+  <p>通过给父组件 separator 属性可以配置不同的分隔符，使用 icon 类名</p>
+  <tyh-crumbs separator="tyh-ui-link">
     <tyh-crumbs-item to="/">首页</tyh-crumbs-item>
     <tyh-crumbs-item>学员管理</tyh-crumbs-item>
     <tyh-crumbs-item>文章管理</tyh-crumbs-item>

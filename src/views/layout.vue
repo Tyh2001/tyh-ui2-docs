@@ -40,9 +40,9 @@ export default {
     const route = useRoute()
     function highLightStyle (url) {
       const path = route.path
-      if (path === '/') return url === path ? '#409eff' : '#000'
+      if (path === '/') return url === path ? '#3a6ff4' : '#000'
       const res = path.match(/\/[a-zA-Z]+/gi)[0]
-      return url === res ? '#409eff' : '#000'
+      return url === res ? '#3a6ff4' : '#000'
     }
 
     return {

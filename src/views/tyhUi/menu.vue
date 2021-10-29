@@ -35,20 +35,20 @@
   <h3 class="Subtitle">带有 icon</h3>
   <tyh-menu>
     <tyh-menu-item url="/home">
-      <tyh-icon icon="tyh-ui-home-01" color="#fff" />
+      <tyh-icon icon="tyh-ui-shouye-xianxing" color="#fff" />
       首页
     </tyh-menu-item>
     <tyh-menu-item url="/abc">
-      <tyh-icon icon="tyh-ui-PaperPlane-01" color="#fff" />
+      <tyh-icon icon="tyh-ui-training" color="#fff" />
       内容
     </tyh-menu-item>
     <tyh-menu-item url="">
-      <tyh-icon icon="tyh-ui-setting-01" color="#fff" />
+      <tyh-icon icon="tyh-ui-setting-filling" color="#fff" />
       设置
     </tyh-menu-item>
     <tyh-menu-item url="">
-      <tyh-icon icon="tyh-ui-trash-01" color="#fff" />
-      回收站
+      <tyh-icon icon="tyh-ui-discount" color="#fff" />
+      标签
     </tyh-menu-item>
   </tyh-menu>
   <highlightjs autodetect :code="men4" />

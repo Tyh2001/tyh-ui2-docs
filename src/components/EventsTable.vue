@@ -1,18 +1,14 @@
 <template>
   <table id="table">
     <tr>
-      <th>参数</th>
+      <th>事件名称</th>
       <th>说明</th>
-      <th>类型</th>
-      <th>可选值</th>
-      <th>默认值</th>
+      <th>回调参数</th>
     </tr>
-    <tr v-for="(configure, index) in configures" :key="index">
-      <td>{{ configure.param }}</td>
-      <td>{{ configure.explain }}</td>
-      <td>{{ configure.type }}</td>
-      <td>{{ configure.value }}</td>
-      <td>{{ configure.default }}</td>
+    <tr v-for="(evt, index) in events" :key="index">
+      <td>{{ evt.name }}</td>
+      <td>{{ evt.explain }}</td>
+      <td>{{ evt.param }}</td>
     </tr>
   </table>
 </template>
@@ -20,7 +16,7 @@
 <script>
 export default {
   props: {
-    configures: {
+    events: {
       type: Array,
       required: true
     }

@@ -47,6 +47,9 @@
   <h3 class="Subtitle">配置项</h3>
   <ConfigTable :configures="configures" />
 
+  <h3 class="Subtitle">事件</h3>
+  <EventsTable :events="configEvt" />
+
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/card">
       Card 卡片
@@ -77,7 +80,9 @@ export default {
       { param: 'size', explain: '标签的尺寸', type: 'string', value: ' — / small / mini', default: '最大尺寸' },
       { param: 'round', explain: '配置圆角显示', type: 'boolean', value: '', default: 'false' },
       { param: 'isclose', explain: '是否显示关闭按钮', type: 'boolean', value: '——', default: 'false' },
-      { param: 'close', explain: '关闭 Tag 时触发的事件', type: '——', value: '——', default: '——' }
+    ]
+    const configEvt = [
+      { name: 'close', explain: '关闭 Tag 时触发的事件', param: '——' }
     ]
     return {
       show1,
@@ -89,7 +94,8 @@ export default {
       tag2,
       tag3,
       tag4,
-      configures
+      configures,
+      configEvt
     }
   }
 }

@@ -78,16 +78,16 @@ export default {
       Message({ message: '5000毫秒后隐藏', type: 'primary', time: 5000 })
     }
     function change7 () {
-      Message({ message: '主要提示', type: 'primary', iconClass: 'tyh-ui-primary-01' })
+      Message({ message: '主要提示', type: 'primary', iconClass: 'tyh-ui-smile' })
     }
     function change8 () {
-      Message({ message: '成功提示', type: 'success', iconClass: 'tyh-ui-success-01' })
+      Message({ message: '成功提示', type: 'success', iconClass: 'tyh-ui-success-filling' })
     }
     function change9 () {
-      Message({ message: '危险提示', type: 'danger', iconClass: 'tyh-ui-danger-01' })
+      Message({ message: '危险提示', type: 'danger', iconClass: 'tyh-ui-prompt' })
     }
     function change10 () {
-      Message({ message: '警告提示', type: 'warning', iconClass: 'tyh-ui-warning-01' })
+      Message({ message: '警告提示', type: 'warning', iconClass: 'tyh-ui-warning-filling' })
     }
 
     return {

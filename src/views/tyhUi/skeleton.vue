@@ -39,9 +39,9 @@
     <tyh-turn-page-item direction="left" url="/component/message">
       Message 提示框
     </tyh-turn-page-item>
-    <!-- <tyh-turn-page-item direction="right" url="/component/skeleton">
-      Skeleton 骨架
-    </tyh-turn-page-item> -->
+    <tyh-turn-page-item direction="right" url="/component/alert">
+      Alert 提示
+    </tyh-turn-page-item>
   </tyh-turn-page>
 </template>
 

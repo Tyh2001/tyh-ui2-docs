@@ -26,10 +26,10 @@ createApp(App).use(tyhUi2).mount('#app')
 <tyh-button simple type="warning">警告按钮</tyh-button>
     `,
     btn3: `
-<tyh-button icon="tyh-ui-setting-01" type="primary"></tyh-button>
-<tyh-button icon="tyh-ui-phone-01" type="success"></tyh-button>
-<tyh-button icon="tyh-ui-huojian-01" type="danger">火箭</tyh-button>
-<tyh-button icon="tyh-ui-PaperPlane-01" type="warning">飞机</tyh-button>
+<tyh-button icon="tyh-ui-tyhui" type="primary">tyh-ui</tyh-button>
+<tyh-button icon="tyh-ui-fabulous" type="success"></tyh-button>
+<tyh-button icon="tyh-ui-discount" type="danger"></tyh-button>
+<tyh-button icon="tyh-ui-chart-bar" type="warning"></tyh-button>
     `,
     btn4: `
 <tyh-button prohibit>默认按钮</tyh-button>
@@ -412,20 +412,20 @@ export default {
     men4: `
 <tyh-menu>
   <tyh-menu-item url="/home">
-    <tyh-icon icon="tyh-ui-home-01" color="#fff" />
+    <tyh-icon icon="tyh-ui-shouye-xianxing" color="#fff" />
     首页
   </tyh-menu-item>
   <tyh-menu-item url="/abc">
-    <tyh-icon icon="tyh-ui-PaperPlane-01" color="#fff" />
+    <tyh-icon icon="tyh-ui-training" color="#fff" />
     内容
   </tyh-menu-item>
   <tyh-menu-item url="">
-    <tyh-icon icon="tyh-ui-setting-01" color="#fff" />
+    <tyh-icon icon="tyh-ui-setting-filling" color="#fff" />
     设置
   </tyh-menu-item>
   <tyh-menu-item url="">
-    <tyh-icon icon="tyh-ui-trash-01" color="#fff" />
-    回收站
+    <tyh-icon icon="tyh-ui-discount" color="#fff" />
+    标签
   </tyh-menu-item>
 </tyh-menu>
     `,
@@ -450,12 +450,13 @@ export default {
 </tyh-crumbs>
     `,
     cru2: `
-<tyh-crumbs separator="tyh-ui-right-02">
+<tyh-crumbs separator="tyh-ui-link">
   <tyh-crumbs-item to="/">首页</tyh-crumbs-item>
   <tyh-crumbs-item>学员管理</tyh-crumbs-item>
   <tyh-crumbs-item>文章管理</tyh-crumbs-item>
   <tyh-crumbs-item>设置</tyh-crumbs-item>
-</tyh-crumbs>`,
+</tyh-crumbs>
+    `,
     cru3: `
   <tyh-crumbs>
   <tyh-crumbs-item to="/">首页</tyh-crumbs-item>
@@ -516,7 +517,7 @@ export default {
     back2: ` <tyh-backTop bottom="150" right="120">Go</tyh-backTop>`,
     back3: `
 <tyh-backTop bottom="100">
-  <tyh-icon icon="tyh-ui-huojian-01" color="#409eff" />
+  <tyh-icon icon="tyh-ui-top" color="#409eff" />
 </tyh-backTop>
     `
   },
@@ -594,16 +595,16 @@ import TyhMessage from 'tyh-ui2/packages/message'
 export default {
   setup () {
     function change7 () {
-      Message({ message: '主要提示', type: 'primary', iconClass: 'tyh-ui-primary-01' })
+      Message({ message: '主要提示', type: 'primary', iconClass: 'tyh-ui-smile' })
     }
     function change8 () {
-      Message({ message: '成功提示', type: 'success', iconClass: 'tyh-ui-success-01' })
+      Message({ message: '成功提示', type: 'success', iconClass: 'tyh-ui-success-filling' })
     }
     function change9 () {
-      Message({ message: '危险提示', type: 'danger', iconClass: 'tyh-ui-danger-01' })
+      Message({ message: '危险提示', type: 'danger', iconClass: 'tyh-ui-prompt' })
     }
     function change10 () {
-      Message({ message: '警告提示', type: 'warning', iconClass: 'tyh-ui-warning-01' })
+      Message({ message: '警告提示', type: 'warning', iconClass: 'tyh-ui-warning-filling' })
     }
 
     return {
@@ -640,6 +641,83 @@ export default {
 <tyh-skeleton animation />
 <tyh-skeleton animation />
     `
+  },
+  // 提示
+  alert: {
+    ale1: `
+<tyh-alert message="这是一个普通提示" />
+<tyh-alert type="primary" message="这是一个主要提示" />
+<tyh-alert type="success" message="这是一个成功提示" />
+<tyh-alert type="danger" message="这是一个危险提示" />
+<tyh-alert type="warning" message="这是一个警告提示" />
+    `,
+    ale2: `
+<tyh-alert iconClass="tyh-ui-githublogo" message="这是一个普通提示" />
+<tyh-alert iconClass="tyh-ui-home" type="primary" message="这是一个主要提示" />
+<tyh-alert iconClass="tyh-ui-history" type="success" message="这是一个成功提示" />
+<tyh-alert iconClass="tyh-ui-smile" type="danger" message="这是一个危险提示" />
+<tyh-alert iconClass="tyh-ui-warning" type="warning" message="这是一个警告提示" />
+    `,
+    ale3: `
+<template>
+  <tyh-alert
+    v-show="isShow1"
+    close
+    type="primary"
+    message="点击关闭主要提示"
+    @close-alert="isShow1 = false"
+  />
+  <tyh-alert
+    v-show="isShow2"
+    close
+    type="success"
+    message="点击关闭成功提示"
+    @close-alert="isShow2 = false"
+  />
+  <tyh-alert
+    v-show="isShow3"
+    close
+    type="danger"
+    message="点击关闭危险提示"
+    @close-alert="isShow3 = false"
+  />
+  <tyh-alert
+    v-show="isShow4"
+    close
+    type="warning"
+    message="点击关闭警告提示"
+    @close-alert="isShow4 = false"
+  />
+</template>
+
+<script>
+import { ref } from 'vue'
+export default {
+  setup () {
+    const isShow1 = ref(true)
+    const isShow2 = ref(true)
+    const isShow3 = ref(true)
+    const isShow4 = ref(true)
+  
+    return { isShow1, isShow2, isShow3, isShow4 }
+  }
+}
+</script>
+    `,
+    ale4: `
+<tyh-alert center message="这是一个普通提示" />
+<tyh-alert center type="primary" message="这是一个主要提示" />
+<tyh-alert center type="success" message="这是一个成功提示" />
+<tyh-alert center type="danger" message="这是一个危险提示" />
+<tyh-alert center type="warning" message="这是一个警告提示" />
+    `,
+    ale5: `
+<tyh-alert simple message="简约的普通提示" />
+<tyh-alert simple type="primary" message="简约的主要提示" />
+<tyh-alert simple type="success" message="简约的成功提示" />
+<tyh-alert simple type="danger" message="简约的危险提示" />
+<tyh-alert simple type="warning" message="简约的警告提示" />
+    `,
   }
 }
 

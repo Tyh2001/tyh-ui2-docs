@@ -21,10 +21,10 @@
 
   <h3 class="Subtitle">图标按钮</h3>
   <p>icon 属性可以配置图标按钮</p>
-  <tyh-button icon="tyh-ui-setting-01" type="primary"></tyh-button>
-  <tyh-button icon="tyh-ui-phone-01" type="success"></tyh-button>
-  <tyh-button icon="tyh-ui-huojian-01" type="danger">火箭</tyh-button>
-  <tyh-button icon="tyh-ui-PaperPlane-01" type="warning">飞机</tyh-button>
+  <tyh-button icon="tyh-ui-tyhui" type="primary">tyh-ui</tyh-button>
+  <tyh-button icon="tyh-ui-fabulous" type="success"></tyh-button>
+  <tyh-button icon="tyh-ui-discount" type="danger"></tyh-button>
+  <tyh-button icon="tyh-ui-chart-bar" type="warning"></tyh-button>
   <highlightjs autodetect :code="btn3" />
 
   <h3 class="Subtitle">禁用状态</h3>

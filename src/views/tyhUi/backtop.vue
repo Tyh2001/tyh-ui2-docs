@@ -13,7 +13,7 @@
 
   <h3 class="Subtitle">插入 Icon</h3>
   <tyh-backTop bottom="100">
-    <tyh-icon icon="tyh-ui-huojian-01" color="#409eff" />
+    <tyh-icon icon="tyh-ui-top" color="#409eff" />
   </tyh-backTop>
   <highlightjs autodetect :code="back3" />
 

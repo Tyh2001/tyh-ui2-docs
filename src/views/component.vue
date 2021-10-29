@@ -20,7 +20,7 @@
     </div>
 
     <tyh-backTop v-if="route.path !== '/component/backtop'">
-      <tyh-icon icon="tyh-ui-huojian-01" color="#409eff" />
+      <tyh-icon icon="tyh-ui-top" color="#409eff" />
     </tyh-backTop>
   </div>
 </template>
@@ -46,7 +46,8 @@ export default {
       { name: 'TurnPage 翻页', url: '/component/turnpage' },
       { name: 'BackTop 回到顶部', url: '/component/backtop' },
       { name: 'Message 提示框', url: '/component/message' },
-      { name: 'Skeleton 骨架', url: '/component/skeleton' }
+      { name: 'Skeleton 骨架', url: '/component/skeleton' },
+      { name: 'Alert 提示', url: '/component/alert' },
     ]
     const router = useRouter()
     const route = useRoute()
@@ -58,7 +59,7 @@ export default {
     // 高亮显示
     function highLightStyle (index) {
       if (listPush[index].url === route.path) {
-        return { color: '#409eff' }
+        return { color: '#3a6ff4', borderLeft: '4px solid #3a6ff4' }
       }
     }
 
