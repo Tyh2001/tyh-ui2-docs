@@ -469,17 +469,18 @@ export default {
   icon: {
     icon1: `
 <tyh-icon icon="tyh-ui-tyhui" />
-<tyh-icon icon="tyh-ui-huojian-01" />
-<tyh-icon icon="tyh-ui-PaperPlane-01" />
+<tyh-icon icon="tyh-ui-ashbin" />
+<tyh-icon icon="tyh-ui-data-view" />
     `,
     icon2: `
-<tyh-icon color="skyblue" icon="tyh-ui-tyhui" />
-<tyh-icon color="orange" icon="tyh-ui-huojian-01" />
-<tyh-icon color="pink" icon="tyh-ui-PaperPlane-01" />`,
+<tyh-icon color="skyblue" icon="tyh-ui-favorite" />
+<tyh-icon color="red" icon="tyh-ui-fabulous" />
+<tyh-icon color="pink" icon="tyh-ui-good" />
+    `,
     icon3: `
-<tyh-icon size="50" icon="tyh-ui-tyhui" />
-<tyh-icon size="40" icon="tyh-ui-huojian-01" />
-<tyh-icon size="30" icon="tyh-ui-PaperPlane-01" />
+<tyh-icon size="50" icon="tyh-ui-hide" />
+<tyh-icon size="40" icon="tyh-ui-shouye-xianxing" />
+<tyh-icon size="30" icon="tyh-ui-huojian" />
     `
   },
   // 翻页

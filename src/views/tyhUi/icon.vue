@@ -5,23 +5,23 @@
   <p>icon 的基本使用</p>
   <p>通过 icon 属性来给 icon 添加类名，来显示不同的图标</p>
   <tyh-icon icon="tyh-ui-tyhui" />
-  <tyh-icon icon="tyh-ui-huojian-01" />
-  <tyh-icon icon="tyh-ui-PaperPlane-01" />
+  <tyh-icon icon="tyh-ui-ashbin" />
+  <tyh-icon icon="tyh-ui-data-view" />
   <highlightjs autodetect :code="icon1" />
 
   <h3 class="Subtitle">配置颜色</h3>
   <p>color 属性改变 icon 的颜色</p>
-  <tyh-icon color="skyblue" icon="tyh-ui-tyhui" />
-  <tyh-icon color="orange" icon="tyh-ui-huojian-01" />
-  <tyh-icon color="pink" icon="tyh-ui-PaperPlane-01" />
+  <tyh-icon color="skyblue" icon="tyh-ui-favorite" />
+  <tyh-icon color="red" icon="tyh-ui-fabulous" />
+  <tyh-icon color="pink" icon="tyh-ui-good" />
   <highlightjs autodetect :code="icon2" />
 
   <h3 class="Subtitle">配置大小</h3>
   <p>size 属性可以改变 icon 的大小</p>
   <p>这里采用的是字体大小形式，只需要传递具体数值，并不需要传递单位</p>
-  <tyh-icon size="50" icon="tyh-ui-tyhui" />
-  <tyh-icon size="40" icon="tyh-ui-huojian-01" />
-  <tyh-icon size="30" icon="tyh-ui-PaperPlane-01" />
+  <tyh-icon size="50" icon="tyh-ui-hide" />
+  <tyh-icon size="40" icon="tyh-ui-shouye-xianxing" />
+  <tyh-icon size="30" icon="tyh-ui-huojian" />
   <highlightjs autodetect :code="icon3" />
 
   <h3 class="Subtitle">配置项</h3>
