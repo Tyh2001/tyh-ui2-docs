@@ -4,11 +4,7 @@
 
 <script>
 export default {
-  name: '',
-  setup () {
-
-    return {}
-  }
+  name: 'app'
 }
 </script>
 
