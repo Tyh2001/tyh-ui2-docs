@@ -104,48 +104,27 @@
   </tyh-turn-page>
 </template>
 
-<script>
+<script setup>
 import index from './index'
 import ConfigTable from '@/components/ConfigTable.vue'
 import EventsTable from '@/components/EventsTable.vue'
 import { ref } from 'vue'
-export default {
-  components: {
-    ConfigTable,
-    EventsTable
-  },
-  setup () {
-    const isShow1 = ref(true)
-    const isShow2 = ref(true)
-    const isShow3 = ref(true)
-    const isShow4 = ref(true)
-    const { ale1, ale2, ale3, ale4, ale5 } = index.alert
-    const configures = [
-      { param: 'message', explain: '提示的文字', type: 'string', value: '——', default: '——' },
-      { param: 'type', explain: '提示类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
-      { param: 'iconClass', explain: 'icon 类名', type: 'string', value: '——', default: '——' },
-      { param: 'close', explain: '是否展示关闭按钮', type: 'boolean', value: '——', default: 'false' },
-      { param: 'center', explain: '是否文字居中对齐', type: 'boolean', value: '——', default: 'false' },
-      { param: 'simple', explain: '简约的提示', type: 'boolean', value: '——', default: 'false' },
-    ]
-    const configEvt = [
-      { name: 'close-alert', explain: '关闭 Alert 时触发的事件', param: '——' }
-    ]
-    return {
-      ale1,
-      ale2,
-      ale3,
-      ale4,
-      ale5,
-      configures,
-      isShow1,
-      isShow2,
-      isShow3,
-      isShow4,
-      configEvt
-    }
-  }
-}
+const isShow1 = ref(true)
+const isShow2 = ref(true)
+const isShow3 = ref(true)
+const isShow4 = ref(true)
+const { ale1, ale2, ale3, ale4, ale5 } = index.alert
+const configures = [
+  { param: 'message', explain: '提示的文字', type: 'string', value: '——', default: '——' },
+  { param: 'type', explain: '提示类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
+  { param: 'iconClass', explain: 'icon 类名', type: 'string', value: '——', default: '——' },
+  { param: 'close', explain: '是否展示关闭按钮', type: 'boolean', value: '——', default: 'false' },
+  { param: 'center', explain: '是否文字居中对齐', type: 'boolean', value: '——', default: 'false' },
+  { param: 'simple', explain: '简约的提示', type: 'boolean', value: '——', default: 'false' },
+]
+const configEvt = [
+  { name: 'close-alert', explain: '关闭 Alert 时触发的事件', param: '——' }
+]
 </script>
 
 <style scoped>

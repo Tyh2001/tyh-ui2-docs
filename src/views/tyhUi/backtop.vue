@@ -30,21 +30,12 @@
   </tyh-turn-page>
 </template>
 
-<script>
+<script setup>
 import index from './index'
 import ConfigTable from '@/components/ConfigTable.vue'
-export default {
-  components: {
-    ConfigTable
-  },
-  setup () {
-    const { back1, back2, back3 } = index.back
-    const configures = [
-      { param: 'bottom', explain: '距离下面的距离', type: 'string', value: '——', default: '50' },
-      { param: 'right', explain: '距离右面的距离', type: 'string', value: '——', default: '50' }
-    ]
-
-    return { back1, back2, back3, configures }
-  }
-}
+const { back1, back2, back3 } = index.back
+const configures = [
+  { param: 'bottom', explain: '距离下面的距离', type: 'string', value: '——', default: '50' },
+  { param: 'right', explain: '距离右面的距离', type: 'string', value: '——', default: '50' }
+]
 </script>

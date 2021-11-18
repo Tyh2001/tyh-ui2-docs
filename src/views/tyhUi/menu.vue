@@ -69,25 +69,17 @@
   </tyh-turn-page>
 </template>
 
-<script>
+<script setup>
 import index from './index'
 import ConfigTable from '@/components/ConfigTable.vue'
-export default {
-  components: {
-    ConfigTable
-  },
-  setup () {
-    const { men1, men2, men3, men4 } = index.menu
-    const configures = [
-      { param: 'backgroundColor', explain: '导航栏背景色', type: 'string', value: '——', default: '——' },
-      { param: 'buttomShadow', explain: '底部是否显示阴影', type: 'boolean', value: '——', default: 'false' }
-    ]
-    const configures2 = [
-      { param: 'url', explain: '跳转的路径', type: 'string', value: '——', default: '——' },
-      { param: 'prohibit', explain: '是否禁用', type: 'boolean', value: '——', default: '——' },
-      { param: 'color', explain: '文字颜色', type: 'string', value: '——', default: '#fff' }
-    ]
-    return { men1, men2, men3, men4, configures, configures2 }
-  }
-}
+const { men1, men2, men3, men4 } = index.menu
+const configures = [
+  { param: 'backgroundColor', explain: '导航栏背景色', type: 'string', value: '——', default: '——' },
+  { param: 'buttomShadow', explain: '底部是否显示阴影', type: 'boolean', value: '——', default: 'false' }
+]
+const configures2 = [
+  { param: 'url', explain: '跳转的路径', type: 'string', value: '——', default: '——' },
+  { param: 'prohibit', explain: '是否禁用', type: 'boolean', value: '——', default: '——' },
+  { param: 'color', explain: '文字颜色', type: 'string', value: '——', default: '#fff' }
+]
 </script>

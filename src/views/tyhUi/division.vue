@@ -26,19 +26,11 @@
   </tyh-turn-page>
 </template>
 
-<script>
+<script setup>
 import index from './index'
 import ConfigTable from '@/components/ConfigTable.vue'
-export default {
-  components: {
-    ConfigTable
-  },
-  setup () {
-    const configures = [
-      { param: 'position', explain: '文字位置', type: 'string', value: 'left / center / right', default: 'left' }
-    ]
-    const { div1, div2 } = index.division
-    return { div1, div2, configures }
-  }
-}
+const configures = [
+  { param: 'position', explain: '文字位置', type: 'string', value: 'left / center / right', default: 'left' }
+]
+const { div1, div2 } = index.division
 </script>

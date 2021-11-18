@@ -67,27 +67,19 @@
   </tyh-turn-page>
 </template>
 
-<script>
+<script setup>
 import index from './index'
 import ConfigTable from '@/components/ConfigTable.vue'
-export default {
-  components: {
-    ConfigTable
-  },
-  setup () {
-    const { lin1, lin2, lin3, lin4, lin5 } = index.link
-    const configures = [
-      { param: 'url', explain: '跳转的路径', type: 'string', value: '——', default: '——' },
-      { param: 'type', explain: '链接的类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
-      { param: 'underline', explain: '下划线', type: 'boolean', value: '——', default: 'fasle' },
-      { param: 'hoverline', explain: '鼠标移入下划线', type: 'boolean', value: '——', default: 'fasle' },
-      { param: 'target', explain: '以新的窗口打开', type: 'string', value: '同原生 target 属性 _blank', default: '——' },
-      { param: 'iconClass', explain: 'icon', type: 'string', value: '——', default: '——' },
-      { param: 'prohibit', explain: '禁用状态', type: 'boolean', value: '——', default: 'false' },
-    ]
-    return { lin1, lin2, lin3, lin4, lin5, configures }
-  }
-}
+const { lin1, lin2, lin3, lin4, lin5 } = index.link
+const configures = [
+  { param: 'url', explain: '跳转的路径', type: 'string', value: '——', default: '——' },
+  { param: 'type', explain: '链接的类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
+  { param: 'underline', explain: '下划线', type: 'boolean', value: '——', default: 'fasle' },
+  { param: 'hoverline', explain: '鼠标移入下划线', type: 'boolean', value: '——', default: 'fasle' },
+  { param: 'target', explain: '以新的窗口打开', type: 'string', value: '同原生 target 属性 _blank', default: '——' },
+  { param: 'iconClass', explain: 'icon', type: 'string', value: '——', default: '——' },
+  { param: 'prohibit', explain: '禁用状态', type: 'boolean', value: '——', default: 'false' },
+]
 </script>
 
 <style scoped>

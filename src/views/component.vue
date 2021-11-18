@@ -25,50 +25,38 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { useRouter, useRoute } from 'vue-router'
-export default {
-  name: '',
-  setup () {
-    const listPush = [
-      { name: '快速上手', url: '/component/install' },
-      { name: 'Color 色彩', url: '/component/color' },
-      { name: 'Button 按钮', url: '/component/button' },
-      { name: 'List 列表', url: '/component/list' },
-      { name: 'Card 卡片', url: '/component/card' },
-      { name: 'Tag 标签', url: '/component/tag' },
-      { name: 'Link 链接', url: '/component/link' },
-      { name: 'Input 输入框', url: '/component/input' },
-      { name: 'Menu 导航栏', url: '/component/menu' },
-      { name: 'Division 分割线', url: '/component/division' },
-      { name: 'Icon 图标', url: '/component/icon' },
-      { name: 'Crumbs 面包屑', url: '/component/crumbs' },
-      { name: 'TurnPage 翻页', url: '/component/turnpage' },
-      { name: 'BackTop 回到顶部', url: '/component/backtop' },
-      { name: 'Message 提示框', url: '/component/message' },
-      { name: 'Skeleton 骨架', url: '/component/skeleton' },
-      { name: 'Alert 提示', url: '/component/alert' },
-    ]
-    const router = useRouter()
-    const route = useRoute()
-    // 点击跳转
-    function listPushClick (index) {
-      router.push(listPush[index].url)
-    }
+const listPush = [
+  { name: '快速上手', url: '/component/install' },
+  { name: 'Color 色彩', url: '/component/color' },
+  { name: 'Button 按钮', url: '/component/button' },
+  { name: 'List 列表', url: '/component/list' },
+  { name: 'Card 卡片', url: '/component/card' },
+  { name: 'Tag 标签', url: '/component/tag' },
+  { name: 'Link 链接', url: '/component/link' },
+  { name: 'Input 输入框', url: '/component/input' },
+  { name: 'Menu 导航栏', url: '/component/menu' },
+  { name: 'Division 分割线', url: '/component/division' },
+  { name: 'Icon 图标', url: '/component/icon' },
+  { name: 'Crumbs 面包屑', url: '/component/crumbs' },
+  { name: 'TurnPage 翻页', url: '/component/turnpage' },
+  { name: 'BackTop 回到顶部', url: '/component/backtop' },
+  { name: 'Message 提示框', url: '/component/message' },
+  { name: 'Skeleton 骨架', url: '/component/skeleton' },
+  { name: 'Alert 提示', url: '/component/alert' },
+]
+const router = useRouter()
+const route = useRoute()
+// 点击跳转
+function listPushClick (index) {
+  router.push(listPush[index].url)
+}
 
-    // 高亮显示
-    function highLightStyle (index) {
-      if (listPush[index].url === route.path) {
-        return { color: '#3a6ff4', borderLeft: '4px solid #3a6ff4' }
-      }
-    }
-
-    return {
-      listPush,
-      highLightStyle,
-      listPushClick,
-      route
-    }
+// 高亮显示
+function highLightStyle (index) {
+  if (listPush[index].url === route.path) {
+    return { color: '#3a6ff4', borderLeft: '4px solid #3a6ff4' }
   }
 }
 </script>

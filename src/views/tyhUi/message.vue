@@ -42,72 +42,47 @@
   </tyh-turn-page>
 </template>
 
-<script>
+<script setup>
 import Message from 'tyh-ui2/packages/message'
 import index from './index'
 import ConfigTable from '@/components/ConfigTable.vue'
-export default {
-  components: {
-    ConfigTable
-  },
-  setup () {
-    const { mes1, mes2, mes3, mes4 } = index.msg
-    const configures = [
-      { param: 'message', explain: '显示文字', type: 'string', value: '——', default: '——' },
-      { param: 'type', explain: '提示框的类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
-      { param: 'time', explain: '展示的时间', type: 'number', value: '——', default: '2000' },
-      { param: 'iconClass', explain: '展示的 icon', type: 'string', value: '——', default: '——' }
-    ]
+const { mes1, mes2, mes3, mes4 } = index.msg
+const configures = [
+  { param: 'message', explain: '显示文字', type: 'string', value: '——', default: '——' },
+  { param: 'type', explain: '提示框的类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
+  { param: 'time', explain: '展示的时间', type: 'number', value: '——', default: '2000' },
+  { param: 'iconClass', explain: '展示的 icon', type: 'string', value: '——', default: '——' }
+]
 
-    function change1 () {
-      Message({ message: '默认提示' })
-    }
-    function change2 () {
-      Message({ message: '主要提示', type: 'primary' })
-    }
-    function change3 () {
-      Message({ message: '成功提示', type: 'success' })
-    }
-    function change4 () {
-      Message({ message: '危险提示', type: 'danger' })
-    }
-    function change5 () {
-      Message({ message: '警告提示', type: 'warning' })
-    }
-    function change6 () {
-      Message({ message: '5000毫秒后隐藏', type: 'primary', time: 5000 })
-    }
-    function change7 () {
-      Message({ message: '主要提示', type: 'primary', iconClass: 'tyh-ui-smile' })
-    }
-    function change8 () {
-      Message({ message: '成功提示', type: 'success', iconClass: 'tyh-ui-success-filling' })
-    }
-    function change9 () {
-      Message({ message: '危险提示', type: 'danger', iconClass: 'tyh-ui-prompt' })
-    }
-    function change10 () {
-      Message({ message: '警告提示', type: 'warning', iconClass: 'tyh-ui-warning-filling' })
-    }
-
-    return {
-      mes1,
-      mes2,
-      mes3,
-      mes4,
-      configures,
-      change1,
-      change2,
-      change3,
-      change4,
-      change5,
-      change6,
-      change7,
-      change8,
-      change9,
-      change10,
-    }
-  }
+function change1 () {
+  Message({ message: '默认提示' })
+}
+function change2 () {
+  Message({ message: '主要提示', type: 'primary' })
+}
+function change3 () {
+  Message({ message: '成功提示', type: 'success' })
+}
+function change4 () {
+  Message({ message: '危险提示', type: 'danger' })
+}
+function change5 () {
+  Message({ message: '警告提示', type: 'warning' })
+}
+function change6 () {
+  Message({ message: '5000毫秒后隐藏', type: 'primary', time: 5000 })
+}
+function change7 () {
+  Message({ message: '主要提示', type: 'primary', iconClass: 'tyh-ui-smile' })
+}
+function change8 () {
+  Message({ message: '成功提示', type: 'success', iconClass: 'tyh-ui-success-filling' })
+}
+function change9 () {
+  Message({ message: '危险提示', type: 'danger', iconClass: 'tyh-ui-prompt' })
+}
+function change10 () {
+  Message({ message: '警告提示', type: 'warning', iconClass: 'tyh-ui-warning-filling' })
 }
 </script>
 

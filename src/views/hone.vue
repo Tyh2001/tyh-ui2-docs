@@ -43,14 +43,8 @@
   <Footer />
 </template>
 
-<script>
+<script setup>
 import Footer from '@/components/Footer.vue'
-export default {
-  name: 'home',
-  components: {
-    Footer
-  }
-}
 </script>
 
 <style lang='less' scoped>

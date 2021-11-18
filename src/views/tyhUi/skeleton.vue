@@ -45,24 +45,16 @@
   </tyh-turn-page>
 </template>
 
-<script>
+<script setup>
 import index from './index'
 import ConfigTable from '@/components/ConfigTable.vue'
-export default {
-  components: {
-    ConfigTable
-  },
-  setup () {
-    const { ske1, ske2, ske3, ske4 } = index.skeleton
-    const configures = [
-      { param: 'round', explain: '圆角', type: 'boolean', value: '——', default: 'false' },
-      { param: 'width', explain: '宽度', type: 'string', value: '——', default: '100%' },
-      { param: 'height', explain: '高度', type: 'string', value: '——', default: '15px' },
-      { param: 'animation', explain: '是否启用动画', type: 'boolean', value: '——', default: 'false' }
-    ]
-    return { ske1, ske2, ske3, ske4, configures }
-  }
-}
+const { ske1, ske2, ske3, ske4 } = index.skeleton
+const configures = [
+  { param: 'round', explain: '圆角', type: 'boolean', value: '——', default: 'false' },
+  { param: 'width', explain: '宽度', type: 'string', value: '——', default: '100%' },
+  { param: 'height', explain: '高度', type: 'string', value: '——', default: '15px' },
+  { param: 'animation', explain: '是否启用动画', type: 'boolean', value: '——', default: 'false' }
+]
 </script>
 
 <style scoped>

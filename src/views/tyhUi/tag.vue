@@ -60,47 +60,26 @@
   </tyh-turn-page>
 </template>
 
-<script>
+<script setup>
 import index from './index'
 import ConfigTable from '@/components/ConfigTable.vue'
 import EventsTable from '@/components/EventsTable.vue'
 import { ref } from 'vue'
-export default {
-  components: {
-    ConfigTable,
-    EventsTable
-  },
-  setup () {
-    const show1 = ref(true)
-    const show2 = ref(true)
-    const show3 = ref(true)
-    const show4 = ref(true)
-    const show5 = ref(true)
-    const { tag1, tag2, tag3, tag4 } = index.tag
-    const configures = [
-      { param: 'color', explain: '标签的颜色类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
-      { param: 'size', explain: '标签的尺寸', type: 'string', value: ' — / small / mini', default: '最大尺寸' },
-      { param: 'round', explain: '配置圆角显示', type: 'boolean', value: '', default: 'false' },
-      { param: 'isclose', explain: '是否显示关闭按钮', type: 'boolean', value: '——', default: 'false' },
-    ]
-    const configEvt = [
-      { name: 'onClose', explain: '关闭 Tag 时触发的事件', param: '——' }
-    ]
-    return {
-      show1,
-      show2,
-      show3,
-      show4,
-      show5,
-      tag1,
-      tag2,
-      tag3,
-      tag4,
-      configures,
-      configEvt
-    }
-  }
-}
+const show1 = ref(true)
+const show2 = ref(true)
+const show3 = ref(true)
+const show4 = ref(true)
+const show5 = ref(true)
+const { tag1, tag2, tag3, tag4 } = index.tag
+const configures = [
+  { param: 'color', explain: '标签的颜色类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
+  { param: 'size', explain: '标签的尺寸', type: 'string', value: ' — / small / mini', default: '最大尺寸' },
+  { param: 'round', explain: '配置圆角显示', type: 'boolean', value: '', default: 'false' },
+  { param: 'isclose', explain: '是否显示关闭按钮', type: 'boolean', value: '——', default: 'false' },
+]
+const configEvt = [
+  { name: 'onClose', explain: '关闭 Tag 时触发的事件', param: '——' }
+]
 </script>
 
 <style scoped>

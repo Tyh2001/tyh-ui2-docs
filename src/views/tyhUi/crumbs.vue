@@ -50,22 +50,14 @@
   </tyh-turn-page>
 </template>
 
-<script>
+<script setup>
 import index from './index'
 import ConfigTable from '@/components/ConfigTable.vue'
-export default {
-  components: {
-    ConfigTable
-  },
-  setup () {
-    const configures = [
-      { param: 'separator', explain: '分隔符，icon 的类名', type: 'string', value: '——', default: 'tyh-ui-xiexian-01' }
-    ]
-    const configures2 = [
-      { param: 'to', explain: '跳转的路径', type: 'string', value: '——', default: '——' }
-    ]
-    const { cru1, cru2, cru3 } = index.crumbs
-    return { cru1, cru2, cru3, configures, configures2 }
-  }
-}
+const configures = [
+  { param: 'separator', explain: '分隔符，icon 的类名', type: 'string', value: '——', default: 'tyh-ui-xiexian-01' }
+]
+const configures2 = [
+  { param: 'to', explain: '跳转的路径', type: 'string', value: '——', default: '——' }
+]
+const { cru1, cru2, cru3 } = index.crumbs
 </script>

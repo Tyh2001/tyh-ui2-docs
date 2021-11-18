@@ -17,15 +17,13 @@
   </table>
 </template>
 
-<script>
-export default {
-  props: {
-    configures: {
-      type: Array,
-      required: true
-    }
+<script setup>
+defineProps({
+  configures: {
+    type: Array,
+    required: true
   }
-}
+})
 </script>
 
 <style lang='less' scoped>

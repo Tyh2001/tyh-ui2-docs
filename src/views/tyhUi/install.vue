@@ -17,12 +17,7 @@
   </tyh-turn-page>
 </template>
 
-<script>
+<script setup>
 import index from './index'
-export default {
-  setup () {
-    const { ins1, ins2 } = index.install
-    return { ins1, ins2 }
-  }
-}
+const { ins1, ins2 } = index.install
 </script>

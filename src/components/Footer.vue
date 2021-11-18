@@ -77,9 +77,7 @@
 </template>
 
 <script>
-export default {
-  name: 'Footer'
-}
+export default { name: 'Footer' }
 </script>
 
 <style lang='less' scoped>

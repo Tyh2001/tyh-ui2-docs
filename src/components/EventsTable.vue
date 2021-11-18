@@ -13,15 +13,13 @@
   </table>
 </template>
 
-<script>
-export default {
-  props: {
-    events: {
-      type: Array,
-      required: true
-    }
+<script setup>
+defineProps({
+  events: {
+    type: Array,
+    required: true
   }
-}
+})
 </script>
 
 <style lang='less' scoped>

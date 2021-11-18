@@ -53,24 +53,16 @@
   </tyh-turn-page>
 </template>
 
-<script>
+<script setup>
 import index from './index'
 import ConfigTable from '@/components/ConfigTable.vue'
-export default {
-  components: {
-    ConfigTable
-  },
-  setup () {
-    const configures = [
-      { param: 'center', explain: '居中显示', type: 'boolean', value: '——', default: 'false' }
-    ]
-    const configures2 = [
-      { param: 'direction', explain: '文字位置', type: 'string', value: 'left / right', default: '——' },
-      { param: 'url', explain: '跳转的路由', type: 'string', value: '——', default: '——' },
-      { param: 'icon', explain: '左右的图标', type: 'string', value: '——', default: '——' },
-    ]
-    const { tur1, tur2, tur3 } = index.turnpage
-    return { tur1, tur2, tur3, configures, configures2 }
-  }
-}
+const configures = [
+  { param: 'center', explain: '居中显示', type: 'boolean', value: '——', default: 'false' }
+]
+const configures2 = [
+  { param: 'direction', explain: '文字位置', type: 'string', value: 'left / right', default: '——' },
+  { param: 'url', explain: '跳转的路由', type: 'string', value: '——', default: '——' },
+  { param: 'icon', explain: '左右的图标', type: 'string', value: '——', default: '——' },
+]
+const { tur1, tur2, tur3 } = index.turnpage
 </script>
