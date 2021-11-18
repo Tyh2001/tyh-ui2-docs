@@ -28,18 +28,18 @@
 
   <h3 class="Subtitle">可关闭</h3>
   <p>设置 isclose 属性可以定义一个标签是否可移除</p>
-  <p>动态编辑标签可以通过点击标签关闭按钮后触发的 close 事件来实现</p>
-  <tyh-tag v-show="show1" isclose @close="show1 = false">标签一</tyh-tag>
-  <tyh-tag v-show="show2" color="primary" isclose @close="show2 = false">
+  <p>动态编辑标签可以通过点击标签关闭按钮后触发的 onClose 事件来实现</p>
+  <tyh-tag v-show="show1" isclose @onClose="show1 = false">标签一</tyh-tag>
+  <tyh-tag v-show="show2" color="primary" isclose @onClose="show2 = false">
     标签二
   </tyh-tag>
-  <tyh-tag v-show="show3" color="success" isclose @close="show3 = false">
+  <tyh-tag v-show="show3" color="success" isclose @onClose="show3 = false">
     标签三
   </tyh-tag>
-  <tyh-tag v-show="show4" color="danger" isclose @close="show4 = false">
+  <tyh-tag v-show="show4" color="danger" isclose @onClose="show4 = false">
     标签四
   </tyh-tag>
-  <tyh-tag v-show="show5" color="warning" isclose @close="show5 = false">
+  <tyh-tag v-show="show5" color="warning" isclose @onClose="show5 = false">
     标签五
   </tyh-tag>
   <highlightjs autodetect :code="tag4" />
@@ -84,7 +84,7 @@ export default {
       { param: 'isclose', explain: '是否显示关闭按钮', type: 'boolean', value: '——', default: 'false' },
     ]
     const configEvt = [
-      { name: 'close', explain: '关闭 Tag 时触发的事件', param: '——' }
+      { name: 'onClose', explain: '关闭 Tag 时触发的事件', param: '——' }
     ]
     return {
       show1,

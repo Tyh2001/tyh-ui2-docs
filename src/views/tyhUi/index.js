@@ -201,17 +201,17 @@ export default {
     `,
     tag4: `
 <template>
-  <tyh-tag v-show="show1" isclose @close="show1 = false">标签一</tyh-tag>
-  <tyh-tag v-show="show2" color="primary" isclose @close="show2 = false">
+  <tyh-tag v-show="show1" isclose @onClose="show1 = false">标签一</tyh-tag>
+  <tyh-tag v-show="show2" color="primary" isclose @onClose="show2 = false">
     标签二
   </tyh-tag>
-  <tyh-tag v-show="show3" color="success" isclose @close="show3 = false">
+  <tyh-tag v-show="show3" color="success" isclose @onClose="show3 = false">
     标签三
   </tyh-tag>
-  <tyh-tag v-show="show4" color="danger" isclose @close="show4 = false">
+  <tyh-tag v-show="show4" color="danger" isclose @onClose="show4 = false">
     标签四
   </tyh-tag>
-  <tyh-tag v-show="show5" color="warning" isclose @close="show5 = false">
+  <tyh-tag v-show="show5" color="warning" isclose @onClose="show5 = false">
     标签五
   </tyh-tag>
 </template>
@@ -242,24 +242,24 @@ export default {
   link: {
     lin1: `
 <tyh-link url="">链接一</tyh-link>
-<tyh-link url="" color="primary">链接二</tyh-link>
-<tyh-link url="" color="success">链接三</tyh-link>
-<tyh-link url="" color="danger">链接四</tyh-link>
-<tyh-link url="" color="warning">链接五</tyh-link>
+<tyh-link url="" type="primary">链接二</tyh-link>
+<tyh-link url="" type="success">链接三</tyh-link>
+<tyh-link url="" type="danger">链接四</tyh-link>
+<tyh-link url="" type="warning">链接五</tyh-link>
     `,
     lin2: `
 <tyh-link underline>链接一</tyh-link>
-<tyh-link underline color="primary">链接二</tyh-link>
-<tyh-link underline color="success">链接三</tyh-link>
-<tyh-link underline color="danger">链接四</tyh-link>
-<tyh-link underline color="warning">链接五</tyh-link>
+<tyh-link underline type="primary">链接二</tyh-link>
+<tyh-link underline type="success">链接三</tyh-link>
+<tyh-link underline type="danger">链接四</tyh-link>
+<tyh-link underline type="warning">链接五</tyh-link>
     `,
     lin3: `
 <tyh-link hoverline>链接一</tyh-link>
-<tyh-link hoverline color="primary">链接二</tyh-link>
-<tyh-link hoverline color="success">链接三</tyh-link>
-<tyh-link hoverline color="danger">链接四</tyh-link>
-<tyh-link hoverline color="warning">链接五</tyh-link>
+<tyh-link hoverline type="primary">链接二</tyh-link>
+<tyh-link hoverline type="success">链接三</tyh-link>
+<tyh-link hoverline type="danger">链接四</tyh-link>
+<tyh-link hoverline type="warning">链接五</tyh-link>
     `,
     lin4: `
 <tyh-link url="" prohibit>禁用链接一</tyh-link>
@@ -458,7 +458,7 @@ export default {
 </tyh-crumbs>
     `,
     cru3: `
-  <tyh-crumbs>
+<tyh-crumbs>
   <tyh-crumbs-item to="/">首页</tyh-crumbs-item>
   <tyh-crumbs-item to="/student">学员管理</tyh-crumbs-item>
   <tyh-crumbs-item>文章管理</tyh-crumbs-item>
