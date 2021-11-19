@@ -79,7 +79,7 @@ import index from './index'
 import ConfigTable from '@/components/ConfigTable.vue'
 const { btn1, btn2, btn3, btn4, btn5, btn6, btn7 } = index.button
 const configures = [
-  { param: 'type', explain: '按钮的类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
+  { param: 'type', explain: '按钮的类型', type: 'string', value: 'primary / success / danger / warning', default: 'default' },
   { param: 'round', explain: '是否为圆角按钮', type: 'boolean', value: '——', default: 'false' },
   { param: 'prohibit', explain: '按钮是否禁用', type: 'boolean', value: '——', default: 'false' },
   { param: 'icon', explain: '按钮上的 icon', type: 'string', value: '——', default: '——' },
