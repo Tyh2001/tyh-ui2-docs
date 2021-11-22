@@ -43,6 +43,14 @@
                 NPM
               </tyh-link>
             </li>
+            <li>
+              <tyh-link
+                target="_blank"
+                url="https://github.com/Tyh2001/tyh-ui2/blob/master/CHANGELOG.md"
+              >
+                更新日志
+              </tyh-link>
+            </li>
           </ul>
         </div>
         <div class="link">
