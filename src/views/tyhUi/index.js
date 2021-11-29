@@ -719,6 +719,39 @@ export default {
 <tyh-alert simple type="danger" message="简约的危险提示" />
 <tyh-alert simple type="warning" message="简约的警告提示" />
     `,
+  },
+  // 评分
+  rate: {
+    rate1: `
+<template>
+  <tyh-rate v-model="value1" />
+</template>
+
+<script setup>
+import { ref } from 'vue'
+const value1 = ref(2)
+</script>
+    `,
+    rate2: `
+<template>
+  <tyh-rate v-model="value2" color="blue" voidColor="red" />
+</template>
+
+<script setup>
+import { ref } from 'vue'
+const value2 = ref(2)
+</script>
+    `,
+    rate3: `
+<template>
+  <tyh-rate v-model="value3" :SayText="[1, 2, 3, 4, 5]" />
+</template>
+
+<script setup>
+import { ref } from 'vue'
+const value3 = ref(2)
+</script>
+    `
   }
 }
 

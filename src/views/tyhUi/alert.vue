@@ -98,9 +98,9 @@
     <tyh-turn-page-item direction="left" url="/component/skeleton">
       Skeleton 骨架
     </tyh-turn-page-item>
-    <!-- <tyh-turn-page-item direction="right" url="/component/skeleton">
-      Skeleton 骨架
-    </tyh-turn-page-item> -->
+    <tyh-turn-page-item direction="right" url="/component/rate">
+      Rate 评分
+    </tyh-turn-page-item>
   </tyh-turn-page>
 </template>
 
