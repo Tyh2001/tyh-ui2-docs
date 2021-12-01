@@ -109,7 +109,7 @@ export default {
   }
 }
 </script>
-        `,
+    `,
     lis3: `
 <template>
   <tyh-list zebra num :content="arr" iskey="name" header="这是头部" footer="这是页脚" />
@@ -134,7 +134,32 @@ export default {
   }
 }
 </script>
-      `
+    `,
+    lis4: `
+<template>
+  <tyh-list hoverShow :content="arr" iskey="name" />
+</template>
+
+<script>
+export default {
+  setup () {
+    const arr = [
+      { name: '小明1', age: 11 },
+      { name: '小明2', age: 12 },
+      { name: '小明3', age: 13 },
+      { name: '小明4', age: 14 },
+      { name: '小明5', age: 15 },
+      { name: '小明6', age: 16 },
+      { name: '小明7', age: 17 },
+      { name: '小明8', age: 18 }
+    ]
+    return {
+      arr
+    }
+  }
+}
+</script>  
+    `
   },
   // 卡片
   card: {
@@ -432,10 +457,30 @@ export default {
   },
   // 分割线
   division: {
-    div1: `<tyh-division>这是分割线</tyh-division>`,
+    div1: `
+<tyh-division></tyh-division>
+<p>这是一段文字</p>
+<tyh-division></tyh-division>
+  `,
     div2: `
 <tyh-division position="left">这是左边文字</tyh-division>
+<p>这是一段文字</p>
 <tyh-division position="center">这是中间文字</tyh-division>
+<p>这是一段文字</p>
+<tyh-division position="right">这是右边文字</tyh-division>
+    `,
+    div3: `
+<tyh-division position="left" textColor="red">这是左边文字</tyh-division>
+<p>这是一段文字</p>
+<tyh-division position="center" textColor="blue">这是中间文字</tyh-division>
+<p>这是一段文字</p>
+<tyh-division position="right" textColor="green">这是右边文字</tyh-division>
+    `,
+    div4: `
+<tyh-division position="left" margin="0px">这是左边文字</tyh-division>
+<p>这是一段文字</p>
+<tyh-division position="center" margin="20px">这是中间文字</tyh-division>
+<p>这是一段文字</p>
 <tyh-division position="right">这是右边文字</tyh-division>
     `
   },

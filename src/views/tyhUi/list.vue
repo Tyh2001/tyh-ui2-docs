@@ -27,6 +27,11 @@
   />
   <highlightjs autodetect :code="lis3" />
 
+  <h3 class="Subtitle">Hover 状态展示投影</h3>
+  <p>hoverShow 配置 Hover 状态展示投影</p>
+  <tyh-list hoverShow :content="arr" iskey="name" />
+  <highlightjs autodetect :code="lis4" />
+
   <h3 class="Subtitle">配置项</h3>
   <ConfigTable :configures="configures" />
 
@@ -59,7 +64,8 @@ const configures = [
   { param: 'content', explain: '主体内容', type: 'array / string', value: '——', default: '——' },
   { param: 'iskey', explain: '循环对象键名', type: 'string', value: '——', default: '——' },
   { param: 'zebra', explain: '是否显示斑马纹', type: 'boolean', value: '——', default: '——' },
-  { param: 'num', explain: '是否显示序号', type: 'boolean', value: '——', default: 'false' }
+  { param: 'num', explain: '是否显示序号', type: 'boolean', value: '——', default: 'false' },
+  { param: 'hoverShow', explain: 'hover 状态显示阴影', type: 'boolean', value: '——', default: 'false' },
 ]
-const { lis1, lis2, lis3 } = index.list
+const { lis1, lis2, lis3, lis4 } = index.list
 </script>

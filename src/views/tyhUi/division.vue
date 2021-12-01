@@ -3,15 +3,37 @@
 
   <h3 class="Subtitle">基本使用</h3>
   <p>分割线的基本使用</p>
-  <tyh-division>这是分割线</tyh-division>
+  <tyh-division></tyh-division>
+  <p>这是一段文字</p>
+  <tyh-division></tyh-division>
   <highlightjs autodetect :code="div1" />
 
   <h3 class="Subtitle">文字位置</h3>
   <p>position 属性可以配置文字的位置</p>
   <tyh-division position="left">这是左边文字</tyh-division>
+  <p>这是一段文字</p>
   <tyh-division position="center">这是中间文字</tyh-division>
+  <p>这是一段文字</p>
   <tyh-division position="right">这是右边文字</tyh-division>
   <highlightjs autodetect :code="div2" />
+
+  <h3 class="Subtitle">文字颜色</h3>
+  <p>textColor 属性可以配置文字的颜色</p>
+  <tyh-division position="left" textColor="red">这是左边文字</tyh-division>
+  <p>这是一段文字</p>
+  <tyh-division position="center" textColor="blue">这是中间文字</tyh-division>
+  <p>这是一段文字</p>
+  <tyh-division position="right" textColor="green">这是右边文字</tyh-division>
+  <highlightjs autodetect :code="div3" />
+
+  <h3 class="Subtitle">上下的边距</h3>
+  <p>margin 属性可以配置上下的边距</p>
+  <tyh-division position="left" margin="0px">这是左边文字</tyh-division>
+  <p>这是一段文字</p>
+  <tyh-division position="center" margin="20px">这是中间文字</tyh-division>
+  <p>这是一段文字</p>
+  <tyh-division position="right">这是右边文字</tyh-division>
+  <highlightjs autodetect :code="div4" />
 
   <h3 class="Subtitle">配置项</h3>
   <ConfigTable :configures="configures" />
@@ -30,7 +52,9 @@
 import index from './index'
 import ConfigTable from '@/components/ConfigTable.vue'
 const configures = [
-  { param: 'position', explain: '文字位置', type: 'string', value: 'left / center / right', default: 'left' }
+  { param: 'position', explain: '文字位置', type: 'string', value: 'left / center / right', default: 'left' },
+  { param: 'textColor', explain: '文字颜色', type: 'string', value: '——', default: '#515a6e' },
+  { param: 'margin', explain: '上下的边距', type: 'string', value: '——', default: '16px' },
 ]
-const { div1, div2 } = index.division
+const { div1, div2, div3, div4 } = index.division
 </script>
