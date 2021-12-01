@@ -1,7 +1,10 @@
 <template>
   <div id="top-list">
     <img draggable="false" class="logo" src="./images/logo.png" alt="" />
-    <h1 class="MainTitle">Tyh UI</h1>
+    <h1 class="MainTitle">
+      Tyh UI
+      <span class="version">v&nbsp;{{ tyhUi2.version }}</span>
+    </h1>
     <p class="Subtitle">
       tyh-ui 的下一代 ui 组件库，基于 vue3.0 版本，全面拥抱 vue3.0
     </p>
@@ -44,6 +47,7 @@
 </template>
 
 <script setup>
+import tyhUi2 from 'tyh-ui2'
 import Footer from '@/components/Footer.vue'
 </script>
 
@@ -65,6 +69,18 @@ import Footer from '@/components/Footer.vue'
     color: #515a6e;
     margin-top: 20px;
     font-size: 40px;
+    position: relative;
+    .version {
+      text-align: center;
+      position: absolute;
+      font-size: 18px;
+      display: inline-block;
+      background: #3a6ff4;
+      color: #fff;
+      border-radius: 10px;
+      padding: 3px 10px;
+      left: 140px;
+    }
   }
   // 副标题
   .Subtitle {
@@ -83,7 +99,7 @@ import Footer from '@/components/Footer.vue'
       width: 200px;
       height: 50px;
       margin: 20px;
-      /deep/ .tyh-ui-github {
+      .tyh-ui-github {
         color: #606266 !important;
       }
     }

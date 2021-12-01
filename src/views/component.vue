@@ -47,6 +47,7 @@ const listPush = [
   { name: 'Alert 提示', url: '/component/alert' },
   { name: 'Rate 评分', url: '/component/rate' },
   { name: 'Image 图片', url: '/component/image' },
+  { name: 'Avatar 头像', url: '/component/avatar' },
 ]
 const router = useRouter()
 const route = useRoute()

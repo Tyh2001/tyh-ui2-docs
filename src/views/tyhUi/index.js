@@ -822,6 +822,44 @@ const value3 = ref(2)
 const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
 </script>
     `
+  },
+  // 头像
+  avatar: {
+    ava1: `
+<tyh-avatar
+  size="10"
+  src="https://tianyuhao.icu/tyhui/v3/assets/giraffe.jpg"
+/>
+    `,
+    ava2: `
+<tyh-avatar round src="https://tianyuhao.icu/tyhui/v3/assets/giraffe.jpg" />
+    `,
+    ava3: `
+<template>
+  <div class="fitBox">
+    <div class="item" v-for="fit in fits" :key="fit">
+      <span class="text">{{ fit }}</span>
+      <tyh-avatar
+        round
+        src="https://tianyuhao.icu/tyhui/v3/assets/giraffe.jpg"
+        :fit="fit"
+      />
+    </div>
+  </div>
+</template>
+
+<script setup>
+const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
+</script>
+    `,
+    ava4: `
+<tyh-avatar border src="https://tianyuhao.icu/tyhui/v3/assets/giraffe.jpg" />
+<tyh-avatar
+  border
+  round
+  src="https://tianyuhao.icu/tyhui/v3/assets/giraffe.jpg"
+/>
+    `
   }
 }
 
