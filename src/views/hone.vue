@@ -14,7 +14,7 @@
         快速开始
       </tyh-button>
 
-      <a target="_back" href="https://github.com/Tyh2001/tyh-ui-next">
+      <a target="_back" href="https://github.com/Tyh2001/tyh-ui2">
         <tyh-button round icon="tyh-ui-githublogo">Github</tyh-button>
       </a>
     </div>
