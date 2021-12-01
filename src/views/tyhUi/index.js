@@ -65,24 +65,17 @@ createApp(App).use(tyhUi2).mount('#app')
   <tyh-list :content="arr" iskey="name" />
 </template>
 
-<script>
-export default {
-  setup () {
-    const arr = [
-      { name: '小明1', age: 11 },
-      { name: '小明2', age: 12 },
-      { name: '小明3', age: 13 },
-      { name: '小明4', age: 14 },
-      { name: '小明5', age: 15 },
-      { name: '小明6', age: 16 },
-      { name: '小明7', age: 17 },
-      { name: '小明8', age: 18 }
-    ]
-    return {
-      arr
-    }
-  }
-}
+<script setup>
+const arr = [
+  { name: '小明1', age: 11 },
+  { name: '小明2', age: 12 },
+  { name: '小明3', age: 13 },
+  { name: '小明4', age: 14 },
+  { name: '小明5', age: 15 },
+  { name: '小明6', age: 16 },
+  { name: '小明7', age: 17 },
+  { name: '小明8', age: 18 }
+]
 </script>
     `,
     lis2: `
@@ -90,24 +83,17 @@ export default {
   <tyh-list :content="arr" iskey="name" header="这是头部" footer="这是页脚" />
 </template>
 
-<script>
-export default {
-  setup () {
-    const arr = [
-      { name: '小明1', age: 11 },
-      { name: '小明2', age: 12 },
-      { name: '小明3', age: 13 },
-      { name: '小明4', age: 14 },
-      { name: '小明5', age: 15 },
-      { name: '小明6', age: 16 },
-      { name: '小明7', age: 17 },
-      { name: '小明8', age: 18 }
-    ]
-    return {
-      arr
-    }
-  }
-}
+<script setup>
+const arr = [
+  { name: '小明1', age: 11 },
+  { name: '小明2', age: 12 },
+  { name: '小明3', age: 13 },
+  { name: '小明4', age: 14 },
+  { name: '小明5', age: 15 },
+  { name: '小明6', age: 16 },
+  { name: '小明7', age: 17 },
+  { name: '小明8', age: 18 }
+]
 </script>
     `,
     lis3: `
@@ -115,24 +101,17 @@ export default {
   <tyh-list zebra num :content="arr" iskey="name" header="这是头部" footer="这是页脚" />
 </template>
 
-<script>
-export default {
-  setup () {
-    const arr = [
-      { name: '小明1', age: 11 },
-      { name: '小明2', age: 12 },
-      { name: '小明3', age: 13 },
-      { name: '小明4', age: 14 },
-      { name: '小明5', age: 15 },
-      { name: '小明6', age: 16 },
-      { name: '小明7', age: 17 },
-      { name: '小明8', age: 18 }
-    ]
-    return {
-      arr
-    }
-  }
-}
+<script setup>
+const arr = [
+  { name: '小明1', age: 11 },
+  { name: '小明2', age: 12 },
+  { name: '小明3', age: 13 },
+  { name: '小明4', age: 14 },
+  { name: '小明5', age: 15 },
+  { name: '小明6', age: 16 },
+  { name: '小明7', age: 17 },
+  { name: '小明8', age: 18 }
+]
 </script>
     `,
     lis4: `
@@ -140,24 +119,17 @@ export default {
   <tyh-list hoverShow :content="arr" iskey="name" />
 </template>
 
-<script>
-export default {
-  setup () {
-    const arr = [
-      { name: '小明1', age: 11 },
-      { name: '小明2', age: 12 },
-      { name: '小明3', age: 13 },
-      { name: '小明4', age: 14 },
-      { name: '小明5', age: 15 },
-      { name: '小明6', age: 16 },
-      { name: '小明7', age: 17 },
-      { name: '小明8', age: 18 }
-    ]
-    return {
-      arr
-    }
-  }
-}
+<script setup>
+const arr = [
+  { name: '小明1', age: 11 },
+  { name: '小明2', age: 12 },
+  { name: '小明3', age: 13 },
+  { name: '小明4', age: 14 },
+  { name: '小明5', age: 15 },
+  { name: '小明6', age: 16 },
+  { name: '小明7', age: 17 },
+  { name: '小明8', age: 18 }
+]
 </script>  
     `
   },
@@ -241,25 +213,13 @@ export default {
   </tyh-tag>
 </template>
 
-<script>
+<script setup>
 import { ref } from 'vue'
-export default {
-  setup () {
-    const show1 = ref(true)
-    const show2 = ref(true)
-    const show3 = ref(true)
-    const show4 = ref(true)
-    const show5 = ref(true)
-
-    return {
-      show1,
-      show2,
-      show3,
-      show4,
-      show5
-    }
-  }
-}
+const show1 = ref(true)
+const show2 = ref(true)
+const show3 = ref(true)
+const show4 = ref(true)
+const show5 = ref(true)
 </script>
     `
   },
@@ -308,15 +268,9 @@ export default {
   <tyh-input v-model="text1" />
 </template>
 
-<script>
+<script setup>
 import { ref } from 'vue'
-export default {
-  setup () {
-    const text1 = ref('')
-    
-    return { text1 }
-  }
-}
+const text1 = ref('')
 </script>
     `,
     inp2: `
@@ -325,15 +279,10 @@ export default {
   <tyh-input inpType="password" v-model="text3" />
 </template>
 
-<script>
+<script setup>
 import { ref } from 'vue'
-export default {
-  setup () {
-    const text2 = ref('')
-    const text3 = ref('')
-    return { text2, text3 }
-  }
-}
+const text2 = ref('')
+const text3 = ref('')
 </script>
     `,
     inp3: `
@@ -344,22 +293,12 @@ export default {
   <tyh-input size="mini" v-model="text7" />
 </template>
 
-<script>
+<script setup>
 import { ref } from 'vue'
-export default {
-  setup () {
-    const text4 = ref('')
-    const text5 = ref('')
-    const text6 = ref('')
-    const text7 = ref('')
-    return {
-      text4,
-      text5,
-      text6,
-      text7
-    }
-  }
-}
+const text4 = ref('')
+const text5 = ref('')
+const text6 = ref('')
+const text7 = ref('')
 </script>
     `,
     inp4: `
@@ -367,14 +306,9 @@ export default {
   <tyh-input v-model="text8" clear />
 </template>
 
-<script>
+<script setup>
 import { ref } from 'vue'
-export default {
-  setup () {
-    const text8 = ref('')
-    return { text8 }
-  }
-}
+const text8 = ref('')
 </script>
     `,
     inp5: `
@@ -382,14 +316,9 @@ export default {
   <tyh-input v-model="text9" showIcon="tyh-ui-huojian-01" />
 </template>
 
-<script>
+<script setup>
 import { ref } from 'vue'
-export default {
-  setup () {
-    const text9 = ref('')
-    return { text9 }
-  }
-}
+const text9 = ref('')
 </script>
     `,
     inp6: `
@@ -397,14 +326,9 @@ export default {
   <tyh-input v-model="text10" prohibit" />
 </template>
 
-<script>
+<script setup>
 import { ref } from 'vue'
-export default {
-  setup () {
-    const text10 = ref('')
-    return { text10 }
-  }
-}
+const text10 = ref('')
 </script>
     `
   },
@@ -578,34 +502,22 @@ export default {
   <tyh-button type="warning" @click="change5">警告提示</tyh-button>
 </template>
 
-<script>
+<script setup>
 import TyhMessage from 'tyh-ui2/packages/message'
-export default {
-  setup () {
-    function change1 () {
-      TyhMessage({ message: '默认提示' })
-    }
-    function change2 () {
-      TyhMessage({ message: '主要提示', type: 'primary' })
-    }
-    function change3 () {
-      TyhMessage({ message: '成功提示', type: 'success' })
-    }
-    function change4 () {
-      TyhMessage({ message: '危险提示', type: 'danger' })
-    }
-    function change5 () {
-      TyhMessage({ message: '警告提示', type: 'warning' })
-    }
-
-    return {
-      change1,
-      change2,
-      change3,
-      change4,
-      change5,
-    }
-  }
+function change1 () {
+  TyhMessage({ message: '默认提示' })
+}
+function change2 () {
+  TyhMessage({ message: '主要提示', type: 'primary' })
+}
+function change3 () {
+  TyhMessage({ message: '成功提示', type: 'success' })
+}
+function change4 () {
+  TyhMessage({ message: '危险提示', type: 'danger' })
+}
+function change5 () {
+  TyhMessage({ message: '警告提示', type: 'warning' })
 }
 </script>
     `,
@@ -614,19 +526,12 @@ export default {
   <tyh-button type="primary" @click="change6">展示5000毫秒</tyh-button>
 </template>
 
-<script>
+<script setup>
 import TyhMessage from 'tyh-ui2/packages/message'
-export default {
-  setup () {
-    function change6 () {
-      Message({ message: '5000毫秒后隐藏', type: 'primary', time: 5000 })
-    }
-
-    return { change6 }
-  }
+function change6 () {
+  Message({ message: '5000毫秒后隐藏', type: 'primary', time: 5000 })
 }
 </script>
-
     `,
     mes3: `
 <template>
@@ -636,30 +541,19 @@ export default {
   <tyh-button type="warning" @click="change10">警告提示</tyh-button>
 </template>
 
-<script>
+<script setup>
 import TyhMessage from 'tyh-ui2/packages/message'
-export default {
-  setup () {
-    function change7 () {
-      Message({ message: '主要提示', type: 'primary', iconClass: 'tyh-ui-smile' })
-    }
-    function change8 () {
-      Message({ message: '成功提示', type: 'success', iconClass: 'tyh-ui-success-filling' })
-    }
-    function change9 () {
-      Message({ message: '危险提示', type: 'danger', iconClass: 'tyh-ui-prompt' })
-    }
-    function change10 () {
-      Message({ message: '警告提示', type: 'warning', iconClass: 'tyh-ui-warning-filling' })
-    }
-
-    return {
-      change7,
-      change8,
-      change9,
-      change10
-    }
-  }
+function change7 () {
+  Message({ message: '主要提示', type: 'primary', iconClass: 'tyh-ui-smile' })
+}
+function change8 () {
+  Message({ message: '成功提示', type: 'success', iconClass: 'tyh-ui-success-filling' })
+}
+function change9 () {
+  Message({ message: '危险提示', type: 'danger', iconClass: 'tyh-ui-prompt' })
+}
+function change10 () {
+  Message({ message: '警告提示', type: 'warning', iconClass: 'tyh-ui-warning-filling' })
 }
 </script>
     `,
@@ -736,18 +630,12 @@ export default {
   />
 </template>
 
-<script>
+<script setup>
 import { ref } from 'vue'
-export default {
-  setup () {
-    const isShow1 = ref(true)
-    const isShow2 = ref(true)
-    const isShow3 = ref(true)
-    const isShow4 = ref(true)
-  
-    return { isShow1, isShow2, isShow3, isShow4 }
-  }
-}
+const isShow1 = ref(true)
+const isShow2 = ref(true)
+const isShow3 = ref(true)
+const isShow4 = ref(true)
 </script>
     `,
     ale4: `

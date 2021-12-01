@@ -296,7 +296,7 @@ function copy (icon) {
       }
       &:hover {
         transition: background 0.3s;
-        background: #c5e0ff;
+        background: #dcdfe6;
       }
     }
   }
