@@ -21,6 +21,7 @@ function changeList () {
     'skeleton',
     'alert',
     'rate',
+    'image'
   ]
   comItem.forEach(item => {
     const obj = {

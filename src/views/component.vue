@@ -46,6 +46,7 @@ const listPush = [
   { name: 'Skeleton 骨架', url: '/component/skeleton' },
   { name: 'Alert 提示', url: '/component/alert' },
   { name: 'Rate 评分', url: '/component/rate' },
+  { name: 'Image 图片', url: '/component/image' },
 ]
 const router = useRouter()
 const route = useRoute()

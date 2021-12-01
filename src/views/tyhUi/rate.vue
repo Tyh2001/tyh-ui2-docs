@@ -18,7 +18,7 @@
   <p>showText 属性可以配置是否显示辅助文字</p>
   <p>SayText 属性可以配置辅助文字数组</p>
   <tyh-rate v-model="value3" showText />
-  <tyh-rate v-model="value3" showText :SayText="[1, 2, 3, 4, 5]" />
+  <tyh-rate v-model="value3" :SayText="['1星', '2星', '3星', '4星', '5星']" />
   <highlightjs autodetect :code="rate3" />
 
   <h3 class="Subtitle">配置项</h3>
@@ -31,9 +31,9 @@
     <tyh-turn-page-item direction="left" url="/component/alert">
       Alert 提示
     </tyh-turn-page-item>
-    <!-- <tyh-turn-page-item direction="right" url="/component/skeleton">
-      Skeleton 骨架
-    </tyh-turn-page-item> -->
+    <tyh-turn-page-item direction="right" url="/component/image">
+      Image 图片
+    </tyh-turn-page-item>
   </tyh-turn-page>
 </template>
 

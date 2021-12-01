@@ -744,12 +744,37 @@ const value2 = ref(2)
     `,
     rate3: `
 <template>
-  <tyh-rate v-model="value3" :SayText="[1, 2, 3, 4, 5]" />
+  <tyh-rate v-model="value3" :SayText="['1星', '2星', '3星', '4星', '5星']" />
 </template>
 
 <script setup>
 import { ref } from 'vue'
 const value3 = ref(2)
+</script>
+    `
+  },
+  // 图片
+  image: {
+    img1: `
+<tyh-image width="300px" src="https://tianyuhao.icu/tyhui/v3/assets/giraffe.jpg" />
+    `,
+    img2: `
+<template>
+  <div class="fitBox">
+    <div class="item" v-for="fit in fits" :key="fit">
+      <span class="text">{{ fit }}</span>
+      <tyh-image
+        width="100px"
+        height="100px"
+        src="https://tianyuhao.icu/tyhui/v3/assets/giraffe.jpg"
+        :fit="fit"
+      />
+    </div>
+  </div>
+</template>
+
+<script setup>
+const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
 </script>
     `
   }
