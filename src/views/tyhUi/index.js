@@ -1,7 +1,7 @@
 const data = {
   // 安装
   install: {
-    ins1: 'npm i tyh-ui2',
+    ins1: 'npm install tyh-ui2',
     ins2: `
 import { createApp } from 'vue'
 import App from './App.vue'

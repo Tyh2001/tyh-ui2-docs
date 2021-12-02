@@ -3,7 +3,6 @@
 
   <h3 class="Subtitle">基本使用</h3>
   <p>用于布局的容器组件，方便快速搭建页面的基本结构：</p>
-  <p>flex 属性可以配置是否水平排列，否则为竖直排列</p>
   <p>&lt;tyh-container&gt;：外层容器</p>
   <p>&lt;tyh-header&gt;：顶栏容器</p>
   <p>&lt;tyh-aside&gt;：侧边栏容器</p>
@@ -11,6 +10,7 @@
   <p>&lt;tyh-footer&gt;：底栏容器</p>
 
   <h3 class="Subtitle">常见页面布局</h3>
+  <p>flex 属性可以配置是否水平排列，否则为竖直排列</p>
   <tyh-container>
     <tyh-header>Header</tyh-header>
     <tyh-main>Main</tyh-main>
@@ -79,6 +79,15 @@
   <h3 class="Subtitle">tyh-container 配置项</h3>
   <ConfigTable :configures="configures" />
 
+  <h3 class="Subtitle">tyh-header 配置项</h3>
+  <ConfigTable :configures="configures1" />
+
+  <h3 class="Subtitle">tyh-aside 配置项</h3>
+  <ConfigTable :configures="configures2" />
+
+  <h3 class="Subtitle">tyh-footer 配置项</h3>
+  <ConfigTable :configures="configures3" />
+
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/color">
       Color 色彩
@@ -95,6 +104,15 @@ import ConfigTable from '@/components/ConfigTable.vue'
 const { cont1 } = index.container
 const configures = [
   { param: 'flex', explain: '是否水平排列', type: 'boolean', value: '——', default: 'false' },
+]
+const configures1 = [
+  { param: 'height', explain: '顶栏高度', type: 'string', value: '——', default: '60px' },
+]
+const configures2 = [
+  { param: 'width', explain: '侧边栏宽度', type: 'string', value: '——', default: '200px' },
+]
+const configures3 = [
+  { param: 'height', explain: '底栏高度', type: 'string', value: '——', default: '60px' },
 ]
 </script>
 
