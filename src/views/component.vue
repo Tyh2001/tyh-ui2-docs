@@ -30,6 +30,7 @@ import { useRouter, useRoute } from 'vue-router'
 const listPush = [
   { name: '快速上手', url: '/component/install' },
   { name: 'Color 色彩', url: '/component/color' },
+  { name: 'Container 布局容器', url: '/component/container' },
   { name: 'Button 按钮', url: '/component/button' },
   { name: 'List 列表', url: '/component/list' },
   { name: 'Card 卡片', url: '/component/card' },

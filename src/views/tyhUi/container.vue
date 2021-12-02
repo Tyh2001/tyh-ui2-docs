@@ -1,0 +1,136 @@
+<template>
+  <h1 class="title">Container 布局容器</h1>
+
+  <h3 class="Subtitle">基本使用</h3>
+  <p>用于布局的容器组件，方便快速搭建页面的基本结构：</p>
+  <p>flex 属性可以配置是否水平排列，否则为竖直排列</p>
+  <p>&lt;tyh-container&gt;：外层容器</p>
+  <p>&lt;tyh-header&gt;：顶栏容器</p>
+  <p>&lt;tyh-aside&gt;：侧边栏容器</p>
+  <p>&lt;tyh-main&gt;：主要区域容器</p>
+  <p>&lt;tyh-footer&gt;：底栏容器</p>
+
+  <h3 class="Subtitle">常见页面布局</h3>
+  <tyh-container>
+    <tyh-header>Header</tyh-header>
+    <tyh-main>Main</tyh-main>
+  </tyh-container>
+
+  <br /><br /><br /><br />
+
+  <tyh-container>
+    <tyh-header>Header</tyh-header>
+    <tyh-main>Main</tyh-main>
+    <tyh-footer>Footer</tyh-footer>
+  </tyh-container>
+
+  <br /><br /><br /><br />
+
+  <tyh-container flex>
+    <tyh-aside width="200px">Aside</tyh-aside>
+    <tyh-main>Main</tyh-main>
+  </tyh-container>
+
+  <br /><br /><br /><br />
+
+  <tyh-container>
+    <tyh-header>Header</tyh-header>
+    <tyh-container flex>
+      <tyh-aside width="200px">Aside</tyh-aside>
+      <tyh-main>Main</tyh-main>
+    </tyh-container>
+  </tyh-container>
+
+  <br /><br /><br /><br />
+
+  <tyh-container>
+    <tyh-header>Header</tyh-header>
+    <tyh-container flex>
+      <tyh-aside width="200px">Aside</tyh-aside>
+      <tyh-container>
+        <tyh-main>Main</tyh-main>
+        <tyh-footer>Footer</tyh-footer>
+      </tyh-container>
+    </tyh-container>
+  </tyh-container>
+
+  <br /><br /><br /><br />
+
+  <tyh-container flex>
+    <tyh-aside width="200px">Aside</tyh-aside>
+    <tyh-container>
+      <tyh-header>Header</tyh-header>
+      <tyh-main>Main</tyh-main>
+    </tyh-container>
+  </tyh-container>
+
+  <br /><br /><br /><br />
+
+  <tyh-container flex>
+    <tyh-aside width="200px">Aside</tyh-aside>
+    <tyh-container>
+      <tyh-header>Header</tyh-header>
+      <tyh-main>Main</tyh-main>
+      <tyh-footer>Footer</tyh-footer>
+    </tyh-container>
+  </tyh-container>
+  <highlightjs autodetect :code="cont1" />
+
+  <h3 class="Subtitle">tyh-container 配置项</h3>
+  <ConfigTable :configures="configures" />
+
+  <tyh-turn-page style="margin: 50px 0">
+    <tyh-turn-page-item direction="left" url="/component/color">
+      Color 色彩
+    </tyh-turn-page-item>
+    <tyh-turn-page-item direction="right" url="/component/button">
+      Button 按钮
+    </tyh-turn-page-item>
+  </tyh-turn-page>
+</template>
+
+<script setup>
+import index from './index'
+import ConfigTable from '@/components/ConfigTable.vue'
+const { cont1 } = index.container
+const configures = [
+  { param: 'flex', explain: '是否水平排列', type: 'boolean', value: '——', default: 'false' },
+]
+</script>
+
+<style scoped>
+.tyh-header,
+.tyh-footer {
+  background-color: #b3c0d1;
+  color: #333;
+  text-align: center;
+  line-height: 60px;
+}
+
+.tyh-aside {
+  background-color: #d3dce6;
+  color: #333;
+  text-align: center;
+  line-height: 200px;
+}
+
+.tyh-main {
+  background-color: #e9eef3;
+  color: #333;
+  text-align: center;
+  line-height: 160px;
+}
+
+body > .tyh-container {
+  margin-bottom: 40px;
+}
+
+.tyh-container:nth-child(5) .tyh-aside,
+.tyh-container:nth-child(6) .tyh-aside {
+  line-height: 260px;
+}
+
+.tyh-container:nth-child(7) .tyh-aside {
+  line-height: 320px;
+}
+</style>

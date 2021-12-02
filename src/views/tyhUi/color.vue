@@ -58,8 +58,8 @@
     <tyh-turn-page-item direction="left" url="/component/install">
       快速上手
     </tyh-turn-page-item>
-    <tyh-turn-page-item direction="right" url="/component/button">
-      Button 按钮
+    <tyh-turn-page-item direction="right" url="/component/container">
+      Container 布局容器
     </tyh-turn-page-item>
   </tyh-turn-page>
 </template>

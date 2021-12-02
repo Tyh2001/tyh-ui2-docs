@@ -65,8 +65,8 @@
   <ConfigTable :configures="configures" />
 
   <tyh-turn-page style="margin: 50px 0">
-    <tyh-turn-page-item direction="left" url="/component/color">
-      Color 色彩
+    <tyh-turn-page-item direction="left" url="/component/container">
+      Container 布局容器
     </tyh-turn-page-item>
     <tyh-turn-page-item direction="right" url="/component/list">
       List 列表
