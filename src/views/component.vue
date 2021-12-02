@@ -16,6 +16,19 @@
     </div>
 
     <div class="content">
+      <div class="contentList_phone">
+        <ul>
+          <li v-for="(item, index) in listPush" :key="index">
+            <p
+              class="urlPush"
+              :style="highLightStyle(index)"
+              @click="listPushClick(index)"
+            >
+              {{ item.name }}
+            </p>
+          </li>
+        </ul>
+      </div>
       <router-view />
     </div>
 
@@ -105,6 +118,33 @@ function highLightStyle (index) {
       }
     }
   }
+  // 手机端导航栏
+  .contentList_phone {
+    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #fff;
+    user-select: none;
+    ul {
+      padding-bottom: 150px;
+      li {
+        list-style: none;
+        line-height: 40px;
+        .urlPush {
+          padding-left: 20px;
+          width: 100%;
+          display: inline-block;
+          text-decoration: none;
+          color: #333;
+          font-size: 14px;
+          cursor: pointer;
+          &:hover {
+            background: rgb(247, 247, 247);
+          }
+        }
+      }
+    }
+  }
   // 内容
   .content {
     padding: 24px;
@@ -113,6 +153,22 @@ function highLightStyle (index) {
     position: absolute;
     right: 0px;
     z-index: 50;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contentList {
+    display: none;
+  }
+  #conponentIndex {
+    width: 100%;
+    .content {
+      width: 100%;
+    }
+  }
+}
+@media screen and (min-width: 700px) {
+  .contentList_phone {
+    display: none;
   }
 }
 </style>

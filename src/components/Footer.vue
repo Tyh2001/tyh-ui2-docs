@@ -84,10 +84,6 @@
   </div>
 </template>
 
-<script>
-export default { name: 'Footer' }
-</script>
-
 <style lang='less' scoped>
 // 页脚
 #Footer {
@@ -151,6 +147,19 @@ export default { name: 'Footer' }
         color: #409eff;
       }
     }
+  }
+}
+@media screen and (max-width: 700px) {
+  #Footer {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    .foot-box {
+      width: 100%;
+    }
+  }
+  .code {
+    display: none !important;
   }
 }
 </style>

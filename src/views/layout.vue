@@ -81,5 +81,35 @@ function highLightStyle (url) {
 #content {
   margin-top: 120px;
 }
+@media screen and (max-width: 700px) {
+  .tyh-menu {
+    width: 100vw;
+  }
+  .logolink {
+    .logo {
+      width: 25px;
+      height: 25px !important;
+    }
+    .name {
+      display: none;
+    }
+  }
+  .tyh-menu-item-span {
+    font-size: 12px !important;
+  }
+}
+</style>
+
+<style>
+@media screen and (max-width: 700px) {
+  .tyh-menu-item-span {
+    font-size: 12px !important;
+    padding: 0 12px;
+    width: auto;
+  }
+  .card {
+    margin-right: 0 !important;
+  }
+}
 </style>
 

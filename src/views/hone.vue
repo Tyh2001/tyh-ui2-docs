@@ -128,4 +128,23 @@ import Footer from '@/components/Footer.vue'
     }
   }
 }
+@media screen and (max-width: 700px) {
+  #top-list {
+    width: 100%;
+    display: flex;
+    .logo {
+      width: 150px;
+      height: 150px;
+    }
+    .summary {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .btnBox {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
 </style>
