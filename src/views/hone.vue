@@ -90,6 +90,7 @@ import Footer from '@/components/Footer.vue'
     color: #515a6e;
     margin-top: 20px;
     font-size: 22px;
+    padding: 0 19px;
   }
   // 开始按钮
   .btnBox {
