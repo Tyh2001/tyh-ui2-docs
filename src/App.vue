@@ -6,6 +6,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "微软雅黑";
 }
 pre {
   margin-top: 12px;
