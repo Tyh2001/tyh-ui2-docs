@@ -18,68 +18,31 @@
       </tyh-link>
 
       <h3 class="title-footer">链接</h3>
-      <div id="footer-link">
-        <!-- 链接 -->
-        <div class="link">
-          <ul class="link-ul">
-            <li>
-              <tyh-link target="_blank" url="https://github.com/Tyh2001">
-                Github
-              </tyh-link>
-            </li>
-            <li>
-              <tyh-link
-                target="_blank"
-                url="https://github.com/Tyh2001/tyh-ui-next"
-              >
-                官方仓库
-              </tyh-link>
-            </li>
-            <li>
-              <tyh-link
-                target="_blank"
-                url="https://www.npmjs.com/package/tyh-ui-next"
-              >
-                NPM
-              </tyh-link>
-            </li>
-            <li>
-              <tyh-link
-                target="_blank"
-                url="https://github.com/Tyh2001/tyh-ui2/blob/master/CHANGELOG.md"
-              >
-                更新日志
-              </tyh-link>
-            </li>
-          </ul>
-        </div>
-        <div class="link">
-          <ul class="link-ul">
-            <li>
-              <tyh-link target="_blank" url="https://v3.cn.vuejs.org/">
-                Vue3
-              </tyh-link>
-            </li>
-            <li>
-              <tyh-link target="_blank" url="https://cn.vitejs.dev/">
-                Vite
-              </tyh-link>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <p class="code">
-        <img
-          draggable="false"
-          class="image-logo"
-          src="../views/images/logo.png"
-        />
-        &nbsp;&nbsp;|&nbsp;&nbsp;
-        <tyh-link target="_blank" url="https://beian.miit.gov.cn">
-          浙ICP备2021024540号-1
-        </tyh-link>
-      </p>
+      <ul class="link-ul">
+        <li>
+          <tyh-link target="_blank" url="https://github.com/Tyh2001">
+            Github
+          </tyh-link>
+        </li>
+        <li>
+          <tyh-link target="_blank" url="https://github.com/Tyh2001/tyh-ui2">
+            官方仓库
+          </tyh-link>
+        </li>
+        <li>
+          <tyh-link target="_blank" url="https://www.npmjs.com/package/tyh-ui2">
+            NPM
+          </tyh-link>
+        </li>
+        <li>
+          <tyh-link
+            target="_blank"
+            url="https://github.com/Tyh2001/tyh-ui2/blob/master/CHANGELOG.md"
+          >
+            更新日志
+          </tyh-link>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -109,13 +72,11 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        // 头像
         .myPhoto {
           width: 45px;
           height: 45px;
           border-radius: 50%;
         }
-        // 用户昵称
         .userName {
           font-size: 20px;
           color: #515a6e;
@@ -123,28 +84,10 @@
         }
       }
     }
-    #footer-link {
-      display: flex;
-      .link {
-        width: 180px;
-        .link-ul {
-          li {
-            list-style: none;
-            line-height: 40px;
-          }
-        }
-      }
-    }
-    .code {
-      margin-top: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      .image-logo {
-        width: 20px;
-      }
-      .tyh-link:hover {
-        color: #409eff;
+    .link-ul {
+      li {
+        list-style: none;
+        line-height: 40px;
       }
     }
   }
@@ -157,9 +100,6 @@
     .foot-box {
       width: 100%;
     }
-  }
-  .code {
-    display: none !important;
   }
 }
 </style>
