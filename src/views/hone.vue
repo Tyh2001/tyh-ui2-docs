@@ -1,5 +1,5 @@
 <template>
-  <div id="top-list">
+  <div id="home">
     <img draggable="false" class="logo" src="./images/logo.png" alt="" />
     <h1 class="MainTitle">
       Tyh UI
@@ -52,7 +52,7 @@ import Footer from '@/components/Footer.vue'
 </script>
 
 <style lang='less' scoped>
-#top-list {
+#home {
   width: 800px;
   padding-bottom: 40px;
   margin: auto;
@@ -129,7 +129,7 @@ import Footer from '@/components/Footer.vue'
   }
 }
 @media screen and (max-width: 700px) {
-  #top-list {
+  #home {
     width: 100%;
     display: flex;
     .logo {

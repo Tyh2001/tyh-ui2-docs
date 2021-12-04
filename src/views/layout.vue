@@ -5,7 +5,6 @@
       <span class="name">Tyh UI</span>
     </div>
 
-    <!-- 导航栏选项 -->
     <div class="card">
       <tyh-menu-item
         v-for="(list, index) in layoutList"
@@ -25,6 +24,8 @@
         <tyh-menu-item color="#000">v2</tyh-menu-item>
       </tyh-link>
     </div>
+
+    <tyh-icon icon="tyh-ui-menu" />
   </tyh-menu>
 
   <div id="content">
@@ -38,7 +39,6 @@ const layoutList = [
   { title: '首页', url: '/' },
   { title: '组件', url: '/component' }
 ]
-
 // 导航栏高亮显示
 const route = useRoute()
 function highLightStyle (url) {
@@ -85,31 +85,16 @@ function highLightStyle (url) {
   .tyh-menu {
     width: 100vw;
   }
-  .logolink {
-    .logo {
-      width: 25px;
-      height: 25px !important;
-    }
-    .name {
-      display: none;
-    }
-  }
-  .tyh-menu-item-span {
-    font-size: 12px !important;
-  }
-}
-</style>
-
-<style>
-@media screen and (max-width: 700px) {
-  .tyh-menu-item-span {
-    font-size: 12px !important;
-    padding: 0 12px;
-    width: auto;
-  }
   .card {
-    margin-right: 0 !important;
+    display: none;
+  }
+  .tyh-ui-menu {
+    display: block;
+  }
+}
+@media screen and (min-width: 700px) {
+  .tyh-ui-menu {
+    display: none;
   }
 }
 </style>
-
