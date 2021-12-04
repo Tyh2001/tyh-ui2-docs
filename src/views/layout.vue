@@ -39,7 +39,7 @@
 <script setup>
 import Sidebar from '@/components/Sidebar.vue'
 import { useRoute } from 'vue-router'
-import { ref, onMounted } from 'vue'
+import { ref, watch } from 'vue'
 const layoutList = [
   { title: '首页', url: '/' },
   { title: '组件', url: '/component' }
@@ -53,6 +53,9 @@ function highLightStyle (url) {
   return url === res ? '#3a6ff4' : '#000'
 }
 const drawer = ref(false)
+watch(() => route.path, () => {
+  drawer.value = false
+})
 </script>
 
 <style lang='less' scoped>
@@ -98,7 +101,6 @@ const drawer = ref(false)
   overflow-y: auto;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
 }
-
 // 手机端
 @media screen and (max-width: 700px) {
   .tyh-menu {

@@ -69,6 +69,7 @@ import Footer from '@/components/Footer.vue'
     color: #515a6e;
     margin-top: 20px;
     font-size: 40px;
+    align-items: center;
     position: relative;
     .version {
       text-align: center;
@@ -80,6 +81,7 @@ import Footer from '@/components/Footer.vue'
       border-radius: 10px;
       padding: 3px 10px;
       left: 140px;
+      top: 0px;
     }
   }
   // 副标题

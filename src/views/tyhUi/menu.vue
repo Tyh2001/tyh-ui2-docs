@@ -53,10 +53,10 @@
   </tyh-menu>
   <highlightjs autodetect :code="men4" />
 
-  <h3 class="Subtitle">tyh-menu 组件</h3>
+  <h3 class="Subtitle">tyh-menu 配置项</h3>
   <ConfigTable :configures="configures" />
 
-  <h3 class="Subtitle">tyh-menu-item 子组件</h3>
+  <h3 class="Subtitle">tyh-menu-item 配置项</h3>
   <ConfigTable :configures="configures2" />
 
   <tyh-turn-page style="margin: 50px 0">

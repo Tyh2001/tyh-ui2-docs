@@ -19,7 +19,7 @@
           <p class="urlPush">更新日志</p>
         </li>
       </a>
-      <a target="_blank" url="https://tianyuhao.icu/tyhui">
+      <a target="_blank" href="https://tianyuhao.icu/tyhui">
         <li>
           <p class="urlPush">v2</p>
         </li>
