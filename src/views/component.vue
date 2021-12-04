@@ -5,7 +5,6 @@
     </div>
 
     <div class="content">
-      <Sidebar class="contentList_phone" />
       <router-view />
     </div>
 

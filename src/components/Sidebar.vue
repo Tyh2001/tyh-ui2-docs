@@ -1,5 +1,32 @@
 <template>
   <ul>
+    <template v-if="phone">
+      <router-link to="/">
+        <li>
+          <p class="urlPush">首页</p>
+        </li>
+      </router-link>
+      <router-link to="/component/install">
+        <li>
+          <p class="urlPush">组件</p>
+        </li>
+      </router-link>
+      <a
+        target="_blank"
+        href="https://github.com/Tyh2001/tyh-ui2/blob/master/CHANGELOG.md"
+      >
+        <li>
+          <p class="urlPush">更新日志</p>
+        </li>
+      </a>
+      <a target="_blank" url="https://tianyuhao.icu/tyhui">
+        <li>
+          <p class="urlPush">v2</p>
+        </li>
+      </a>
+      <br /><br />
+    </template>
+
     <li v-for="(item, index) in listPush" :key="index">
       <p
         class="urlPush"
@@ -13,6 +40,9 @@
 </template>
 
 <script setup>
+defineProps({
+  phone: Boolean
+})
 import { useRouter, useRoute } from 'vue-router'
 const listPush = [
   { name: '快速上手', url: '/component/install' },
@@ -65,6 +95,9 @@ ul {
       color: #333;
       font-size: 14px;
       cursor: pointer;
+      a {
+        text-decoration: none;
+      }
       &:hover {
         background: rgb(247, 247, 247);
       }
