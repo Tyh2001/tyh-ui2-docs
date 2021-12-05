@@ -37,6 +37,7 @@
 </template>
 
 <script setup>
+import { ElDrawer } from 'element-plus'
 import Sidebar from '@/components/Sidebar.vue'
 import { useRoute } from 'vue-router'
 import { ref, watch } from 'vue'
