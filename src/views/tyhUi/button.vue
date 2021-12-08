@@ -10,31 +10,23 @@
   <tyh-button type="warning">警告按钮</tyh-button>
   <highlightjs autodetect :code="btn1" />
 
-  <h3 class="Subtitle">朴素的按钮</h3>
-  <p>simple 属性可以配置朴素的按钮</p>
-  <tyh-button simple>默认按钮</tyh-button>
-  <tyh-button simple type="primary">主要按钮</tyh-button>
-  <tyh-button simple type="success">成功按钮</tyh-button>
-  <tyh-button simple type="danger">危险按钮</tyh-button>
-  <tyh-button simple type="warning">警告按钮</tyh-button>
-  <highlightjs autodetect :code="btn2" />
-
   <h3 class="Subtitle">图标按钮</h3>
   <p>icon 属性可以配置图标按钮</p>
+  <tyh-button icon="tyh-ui-setting-filling">设置</tyh-button>
   <tyh-button icon="tyh-ui-tyhui" type="primary">tyh-ui</tyh-button>
   <tyh-button icon="tyh-ui-fabulous" type="success"></tyh-button>
   <tyh-button icon="tyh-ui-discount" type="danger"></tyh-button>
   <tyh-button icon="tyh-ui-chart-bar" type="warning"></tyh-button>
-  <highlightjs autodetect :code="btn3" />
+  <highlightjs autodetect :code="btn2" />
 
   <h3 class="Subtitle">禁用状态</h3>
-  <p>prohibit 属性可以配置禁用状态</p>
-  <tyh-button prohibit>默认按钮</tyh-button>
-  <tyh-button prohibit type="primary">主要按钮</tyh-button>
-  <tyh-button prohibit type="success">成功按钮</tyh-button>
-  <tyh-button prohibit type="danger">危险按钮</tyh-button>
-  <tyh-button prohibit type="warning">警告按钮</tyh-button>
-  <highlightjs autodetect :code="btn4" />
+  <p>disabled 属性可以配置禁用状态</p>
+  <tyh-button disabled>默认按钮</tyh-button>
+  <tyh-button disabled type="primary">主要按钮</tyh-button>
+  <tyh-button disabled type="success">成功按钮</tyh-button>
+  <tyh-button disabled type="danger">危险按钮</tyh-button>
+  <tyh-button disabled type="warning">警告按钮</tyh-button>
+  <highlightjs autodetect :code="btn3" />
 
   <h3 class="Subtitle">圆角按钮</h3>
   <p>round 属性可以配置圆角按钮</p>
@@ -43,23 +35,18 @@
   <tyh-button round type="success">成功按钮</tyh-button>
   <tyh-button round type="danger">危险按钮</tyh-button>
   <tyh-button round type="warning">警告按钮</tyh-button>
-  <highlightjs autodetect :code="btn5" />
+  <highlightjs autodetect :code="btn4" />
 
   <h3 class="Subtitle">不同尺寸</h3>
   <p>size 属性可以配置按钮尺寸</p>
-  <tyh-button type="primary">正常大小</tyh-button>
-  <tyh-button size="small" type="primary">中等按钮</tyh-button>
   <tyh-button size="mini" type="primary">小型按钮</tyh-button>
-  <highlightjs autodetect :code="btn6" />
-
-  <h3 class="Subtitle">大号按钮</h3>
-  <p>big 属性可以配置按钮 按钮长度变为百分百</p>
-  <tyh-button big>默认按钮</tyh-button>
-  <tyh-button big type="primary">主要按钮</tyh-button>
-  <tyh-button big type="success">成功按钮</tyh-button>
-  <tyh-button big type="danger">危险按钮</tyh-button>
-  <tyh-button big type="warning">警告按钮</tyh-button>
-  <highlightjs autodetect :code="btn7" />
+  <br /><br />
+  <tyh-button size="small" type="primary">中等按钮</tyh-button>
+  <br /><br />
+  <tyh-button type="primary">正常大小</tyh-button>
+  <br /><br />
+  <tyh-button size="large" type="primary">大号按钮</tyh-button>
+  <highlightjs autodetect :code="btn5" />
 
   <h3 class="Subtitle">配置项</h3>
   <ConfigTable :configures="configures" />
@@ -77,15 +64,15 @@
 <script setup>
 import index from './index'
 import ConfigTable from '@/components/ConfigTable.vue'
-const { btn1, btn2, btn3, btn4, btn5, btn6, btn7 } = index.button
+const { btn1, btn2, btn3, btn4, btn5 } = index.button
 const configures = [
-  { param: 'type', explain: '按钮的类型', type: 'string', value: 'primary / success / danger / warning', default: 'default' },
+  { param: 'type', explain: '按钮的类型', type: 'string', value: 'default / primary / success / danger / warning', default: 'default' },
   { param: 'round', explain: '是否为圆角按钮', type: 'boolean', value: '——', default: 'false' },
-  { param: 'prohibit', explain: '按钮是否禁用', type: 'boolean', value: '——', default: 'false' },
+  { param: 'disabled', explain: '按钮是否禁用', type: 'boolean', value: '——', default: 'false' },
   { param: 'icon', explain: '按钮上的 icon', type: 'string', value: '——', default: '——' },
-  { param: 'simple', explain: '是否为朴素按钮', type: 'boolean', value: '——', default: 'fasle' },
-  { param: 'size', explain: '按钮尺寸', type: 'string', value: '—— / small / mini', default: '——' },
-  { param: 'big', explain: '宽度百分百的按钮', type: 'boolean', value: '', default: 'false' }
+  { param: 'size', explain: '按钮尺寸', type: 'string', value: 'large / small / mini', default: '——' },
+  { param: 'big', explain: '宽度百分百的按钮', type: '', value: '', default: '已废除' },
+  { param: 'simple', explain: '是否为朴素按钮', type: '', value: '', default: '已废除' },
 ]
 </script>
 
