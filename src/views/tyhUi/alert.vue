@@ -39,34 +39,40 @@
 
   <h3 class="Subtitle">可以关闭的</h3>
   <p>close 属性可以配置宽度</p>
-  <p>动态编辑标签可以通过点击标签关闭按钮后触发的 close-alert 事件来实现</p>
+  <p>动态编辑标签可以通过点击标签关闭按钮后触发的 close 事件来实现</p>
+  <tyh-alert
+    v-show="isShow"
+    close
+    message="点击关闭默认提示"
+    @close="isShow = false"
+  />
   <tyh-alert
     v-show="isShow1"
     close
     type="primary"
     message="点击关闭主要提示"
-    @close-alert="isShow1 = false"
+    @close="isShow1 = false"
   />
   <tyh-alert
     v-show="isShow2"
     close
     type="success"
     message="点击关闭成功提示"
-    @close-alert="isShow2 = false"
+    @close="isShow2 = false"
   />
   <tyh-alert
     v-show="isShow3"
     close
     type="danger"
     message="点击关闭危险提示"
-    @close-alert="isShow3 = false"
+    @close="isShow3 = false"
   />
   <tyh-alert
     v-show="isShow4"
     close
     type="warning"
     message="点击关闭警告提示"
-    @close-alert="isShow4 = false"
+    @close="isShow4 = false"
   />
   <highlightjs autodetect :code="ale3" />
 
@@ -109,6 +115,7 @@ import index from './index'
 import ConfigTable from '@/components/ConfigTable.vue'
 import EventsTable from '@/components/EventsTable.vue'
 import { ref } from 'vue'
+const isShow = ref(true)
 const isShow1 = ref(true)
 const isShow2 = ref(true)
 const isShow3 = ref(true)
@@ -123,7 +130,7 @@ const configures = [
   { param: 'simple', explain: '简约的提示', type: 'boolean', value: '——', default: 'false' },
 ]
 const configEvt = [
-  { name: 'close-alert', explain: '关闭 Alert 时触发的回调', param: '——' }
+  { name: 'close', explain: '关闭 Alert 时触发的回调', param: '——' }
 ]
 </script>
 
