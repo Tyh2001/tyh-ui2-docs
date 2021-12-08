@@ -24,7 +24,7 @@
   <h3 class="Subtitle">配置项</h3>
   <ConfigTable :configures="configures" />
 
-  <h3 class="Subtitle">事件</h3>
+  <h3 class="Subtitle">Events</h3>
   <EventsTable :events="configEvt" />
 
   <tyh-turn-page style="margin: 50px 0">
@@ -54,6 +54,6 @@ const configures = [
   { param: 'SayText', explain: '自定义辅助文字数组', type: 'boolean', value: '——', default: "['极差', '失望', '一般', '惊喜', '满意']" }
 ]
 const configEvt = [
-  { name: 'change', explain: '分值改变时触发', param: '——' }
+  { name: 'change', explain: '分值改变时的回调', param: '——' }
 ]
 </script>

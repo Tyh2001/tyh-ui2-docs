@@ -168,36 +168,36 @@ const arr = [
   tag: {
     tag1: `
 <tyh-tag>标签一</tyh-tag>
-<tyh-tag color="primary">标签二</tyh-tag>
-<tyh-tag color="success">标签三</tyh-tag>
-<tyh-tag color="danger">标签四</tyh-tag>
-<tyh-tag color="warning">标签五</tyh-tag>
+<tyh-tag type="primary">标签二</tyh-tag>
+<tyh-tag type="success">标签三</tyh-tag>
+<tyh-tag type="danger">标签四</tyh-tag>
+<tyh-tag type="warning">标签五</tyh-tag>
     `,
     tag2: `
-<tyh-tag color="primary">标签</tyh-tag>
-<tyh-tag size="small" color="primary">标签</tyh-tag>
-<tyh-tag size="mini" color="primary">标签</tyh-tag>
+<tyh-tag type="primary">标签</tyh-tag>
+<tyh-tag size="small" type="primary">标签</tyh-tag>
+<tyh-tag size="mini" type="primary">标签</tyh-tag>
     `,
     tag3: `
 <tyh-tag round>标签一</tyh-tag>
-<tyh-tag round color="primary">标签二</tyh-tag>
-<tyh-tag round color="success">标签三</tyh-tag>
-<tyh-tag round color="danger">标签四</tyh-tag>
-<tyh-tag round color="warning">标签五</tyh-tag>
+<tyh-tag round type="primary">标签二</tyh-tag>
+<tyh-tag round type="success">标签三</tyh-tag>
+<tyh-tag round type="danger">标签四</tyh-tag>
+<tyh-tag round type="warning">标签五</tyh-tag>
     `,
     tag4: `
 <template>
-  <tyh-tag v-show="show1" isclose @onClose="show1 = false">标签一</tyh-tag>
-  <tyh-tag v-show="show2" color="primary" isclose @onClose="show2 = false">
+  <tyh-tag v-show="show1" isClose @close="show1 = false">标签一</tyh-tag>
+  <tyh-tag v-show="show2" type="primary" isClose @close="show2 = false">
     标签二
   </tyh-tag>
-  <tyh-tag v-show="show3" color="success" isclose @onClose="show3 = false">
+  <tyh-tag v-show="show3" type="success" isClose @close="show3 = false">
     标签三
   </tyh-tag>
-  <tyh-tag v-show="show4" color="danger" isclose @onClose="show4 = false">
+  <tyh-tag v-show="show4" type="danger" isClose @close="show4 = false">
     标签四
   </tyh-tag>
-  <tyh-tag v-show="show5" color="warning" isclose @onClose="show5 = false">
+  <tyh-tag v-show="show5" type="warning" isClose @close="show5 = false">
     标签五
   </tyh-tag>
 </template>

@@ -91,7 +91,7 @@
   <h3 class="Subtitle">配置项</h3>
   <ConfigTable :configures="configures" />
 
-  <h3 class="Subtitle">事件</h3>
+  <h3 class="Subtitle">Events</h3>
   <EventsTable :events="configEvt" />
 
   <tyh-turn-page style="margin: 50px 0">
@@ -123,7 +123,7 @@ const configures = [
   { param: 'simple', explain: '简约的提示', type: 'boolean', value: '——', default: 'false' },
 ]
 const configEvt = [
-  { name: 'close-alert', explain: '关闭 Alert 时触发的事件', param: '——' }
+  { name: 'close-alert', explain: '关闭 Alert 时触发的回调', param: '——' }
 ]
 </script>
 
