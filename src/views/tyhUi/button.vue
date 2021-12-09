@@ -70,9 +70,7 @@ const configures = [
   { param: 'round', explain: '是否为圆角按钮', type: 'boolean', value: '——', default: 'false' },
   { param: 'disabled', explain: '按钮是否禁用', type: 'boolean', value: '——', default: 'false' },
   { param: 'icon', explain: '按钮上的 icon', type: 'string', value: '——', default: '——' },
-  { param: 'size', explain: '按钮尺寸', type: 'string', value: 'large / small / mini', default: '——' },
-  { param: 'big', explain: '宽度百分百的按钮', type: '', value: '', default: '已废除' },
-  { param: 'simple', explain: '是否为朴素按钮', type: '', value: '', default: '已废除' },
+  { param: 'size', explain: '按钮尺寸', type: 'string', value: 'large / small / mini', default: '——' }
 ]
 </script>
 
