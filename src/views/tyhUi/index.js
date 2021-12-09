@@ -6,9 +6,78 @@ const data = {
 import { createApp } from 'vue'
 import App from './App.vue'
 import tyhUi2 from 'tyh-ui2'
+import 'tyh-ui2/style/index.css'
 
 createApp(App).use(tyhUi2).mount('#app')
     `,
+    ins3: `
+import { createApp } from 'vue'
+import App from './App.vue'
+import { TyhButton } from 'tyh-ui2'
+import 'tyh-ui2/style/index.css'
+
+createApp(App).use(TyhButton).mount('#app')
+    `,
+    ins4: `
+import { createApp } from 'vue'
+import App from './App.vue'
+import {
+  TyhButton,
+  TyhList,
+  TyhCard,
+  TyhTag,
+  TyhLink,
+  TyhMenu,
+  TyhMenuItem,
+  TyhDivision,
+  TyhIcon,
+  TyhCrumbs,
+  TyhCrumbsItem,
+  TyhInput,
+  TyhTurnPage,
+  TyhTurnPageItem,
+  TyhBackTop,
+  TyhSkeleton,
+  TyhAlert,
+  TyhRate,
+  TyhImage,
+  TyhAvatar,
+  TyhAside,
+  TyhContainer,
+  TyhFooter,
+  TyhHeader,
+  TyhMain
+} from 'tyh-ui2'
+import 'tyh-ui2/style/index.css'
+
+createApp(App)
+  .use(TyhButton)
+  .use(TyhList)
+  .use(TyhCard)
+  .use(TyhTag)
+  .use(TyhLink)
+  .use(TyhMenu)
+  .use(TyhMenuItem)
+  .use(TyhDivision)
+  .use(TyhIcon)
+  .use(TyhCrumbs)
+  .use(TyhCrumbsItem)
+  .use(TyhInput)
+  .use(TyhTurnPage)
+  .use(TyhTurnPageItem)
+  .use(TyhBackTop)
+  .use(TyhSkeleton)
+  .use(TyhAlert)
+  .use(TyhRate)
+  .use(TyhImage)
+  .use(TyhAvatar)
+  .use(TyhAside)
+  .use(TyhContainer)
+  .use(TyhFooter)
+  .use(TyhHeader)
+  .use(TyhMain)
+  .mount('#app')
+    `
   },
   // 按钮
   button: {

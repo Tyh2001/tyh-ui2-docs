@@ -12,7 +12,6 @@ pre {
   margin-top: 12px;
 }
 pre code.hljs {
-  padding: 20px 0px;
   font-family: "微软雅黑";
   font-size: 18px;
   border-radius: 10px;
