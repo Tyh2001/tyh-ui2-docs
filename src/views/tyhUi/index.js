@@ -257,8 +257,8 @@ const text1 = ref('')
     `,
     inp2: `
 <template>
-  <tyh-input inpType="text" v-model="text2" />
-  <tyh-input inpType="password" v-model="text3" />
+  <tyh-input type="text" v-model="text2" />
+  <tyh-input type="password" v-model="text3" />
 </template>
 
 <script setup>
@@ -269,7 +269,7 @@ const text3 = ref('')
     `,
     inp3: `
 <template>
-  <tyh-input size="big" v-model="text4" />
+  <tyh-input size="large" v-model="text4" />
   <tyh-input size="medium" v-model="text5" />
   <tyh-input size="small" v-model="text6" />
   <tyh-input size="mini" v-model="text7" />
@@ -295,7 +295,7 @@ const text8 = ref('')
     `,
     inp5: `
 <template>
-  <tyh-input v-model="text9" showIcon="tyh-ui-huojian-01" />
+  <tyh-input v-model="text9" icon="tyh-ui-electronics" />
 </template>
 
 <script setup>
@@ -305,12 +305,22 @@ const text9 = ref('')
     `,
     inp6: `
 <template>
-  <tyh-input v-model="text10" prohibit" />
+  <tyh-input v-model="text10" disabled />
 </template>
 
 <script setup>
 import { ref } from 'vue'
 const text10 = ref('')
+</script>
+    `,
+    inp7: `
+<template>
+  <tyh-input v-model="text11" type="password" showPassword />
+</template>
+
+<script setup>
+import { ref } from 'vue'
+const text11 = ref('')
 </script>
     `
   },
