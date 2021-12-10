@@ -56,9 +56,9 @@
     <tyh-turn-page-item direction="left" url="/component/image">
       Image 头像
     </tyh-turn-page-item>
-    <!-- <tyh-turn-page-item direction="right" url="/component/avatar">
-      Avatar 头像
-    </tyh-turn-page-item> -->
+    <tyh-turn-page-item direction="right" url="/component/text">
+      Text 文字
+    </tyh-turn-page-item>
   </tyh-turn-page>
 </template>
 

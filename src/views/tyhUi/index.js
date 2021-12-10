@@ -46,7 +46,8 @@ import {
   TyhContainer,
   TyhFooter,
   TyhHeader,
-  TyhMain
+  TyhMain,
+  TyhText
 } from 'tyh-ui2'
 import 'tyh-ui2/style/index.css'
 
@@ -76,6 +77,7 @@ createApp(App)
   .use(TyhFooter)
   .use(TyhHeader)
   .use(TyhMain)
+  .use(TyhText)
   .mount('#app')
     `
   },
@@ -919,6 +921,37 @@ body > .tyh-container {
 }
 </style>
     `
+  },
+  // 文字
+  text: {
+    text1: `
+<tyh-text>这是一段普通文字</tyh-text>
+<tyh-text type="primary">这是主要普通文字</tyh-text>
+<tyh-text type="success">这是一段成功文字</tyh-text>
+<tyh-text type="danger">这是一段危险文字</tyh-text>
+<tyh-text type="warning">这是一段警告文字</tyh-text>
+    `,
+    text2: `
+<tyh-text block>这是一段普通文字</tyh-text>
+<tyh-text block type="primary">这是主要普通文字</tyh-text>
+<tyh-text block type="success">这是一段成功文字</tyh-text>
+<tyh-text block type="danger">这是一段危险文字</tyh-text>
+<tyh-text block type="warning">这是一段警告文字</tyh-text>
+    `,
+    text3: `
+<tyh-text block size="15">这是一段普通文字</tyh-text>
+<tyh-text block size="18" type="primary">这是主要普通文字</tyh-text>
+<tyh-text block size="21" type="success">这是一段成功文字</tyh-text>
+<tyh-text block size="24" type="danger">这是一段危险文字</tyh-text>
+<tyh-text block size="27" type="warning">这是一段警告文字</tyh-text>
+    `,
+    text4: `
+<tyh-text block color="red">这是一段文字</tyh-text>
+<tyh-text block color="skyblue" type="primary">这是主要文字</tyh-text>
+<tyh-text block color="orange" type="success">这是一段文字</tyh-text>
+<tyh-text block color="pink" type="danger">这是一段文字</tyh-text>
+<tyh-text block color="black" type="warning">这是一段文字</tyh-text>
+    `,
   }
 }
 
