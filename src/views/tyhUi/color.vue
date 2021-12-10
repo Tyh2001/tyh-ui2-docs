@@ -38,7 +38,7 @@
   </div>
 
   <h3 class="Subtitle">其他推荐</h3>
-  <p>下面是 tyh-ui 推荐的一些其他色彩</p>
+  <p>下面是 tyh-ui 推荐的一些其它色彩</p>
   <p>点击即可复制颜色色号</p>
   <div id="colorList3">
     <div
