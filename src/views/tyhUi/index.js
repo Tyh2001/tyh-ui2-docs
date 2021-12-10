@@ -108,6 +108,12 @@ createApp(App)
 <tyh-button round type="success">成功按钮</tyh-button>
 <tyh-button round type="danger">危险按钮</tyh-button>
 <tyh-button round type="warning">警告按钮</tyh-button>
+
+<tyh-button square>默认按钮</tyh-button>
+<tyh-button square type="primary">主要按钮</tyh-button>
+<tyh-button square type="success">成功按钮</tyh-button>
+<tyh-button square type="danger">危险按钮</tyh-button>
+<tyh-button square type="warning">警告按钮</tyh-button>
     `,
     btn5: `
 <tyh-button size="mini" type="primary">小型按钮</tyh-button>
@@ -735,7 +741,8 @@ const value1 = ref(2)
     `,
     rate2: `
 <template>
-  <tyh-rate v-model="value2" color="blue" voidColor="red" />
+  <tyh-rate v-model="value2" />
+  <tyh-rate v-model="value2" color="red" voidColor="#eee" />
 </template>
 
 <script setup>
@@ -745,7 +752,8 @@ const value2 = ref(2)
     `,
     rate3: `
 <template>
-  <tyh-rate v-model="value3" :SayText="['1星', '2星', '3星', '4星', '5星']" />
+  <tyh-rate v-model="value3" showText />
+  <tyh-rate v-model="value3" showText :sayText="['1星', '2星', '3星', '4星', '5星']" />
 </template>
 
 <script setup>

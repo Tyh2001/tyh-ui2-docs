@@ -37,10 +37,10 @@
   </tyh-turn-page>
   <highlightjs autodetect :code="tur3" />
 
-  <h3 class="Subtitle">tyh-turn-page 组件</h3>
+  <h3 class="Subtitle">tyh-turn-page 配置项</h3>
   <ConfigTable :configures="configures" />
 
-  <h3 class="Subtitle">tyh-turn-page-item 子组件</h3>
+  <h3 class="Subtitle">tyh-turn-page-item 配置项</h3>
   <ConfigTable :configures="configures2" />
 
   <tyh-turn-page style="margin: 50px 0">
@@ -63,6 +63,7 @@ const configures2 = [
   { param: 'direction', explain: '文字位置', type: 'string', value: 'left / right', default: '——' },
   { param: 'url', explain: '跳转的路由', type: 'string', value: '——', default: '——' },
   { param: 'icon', explain: '左右的图标', type: 'string', value: '——', default: '——' },
+  { param: 'prohibit', explain: '是否禁用', type: 'boolean', value: '——', default: 'false' }
 ]
 const { tur1, tur2, tur3 } = index.turnpage
 </script>

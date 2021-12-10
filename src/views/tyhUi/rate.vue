@@ -18,7 +18,11 @@
   <p>showText 属性可以配置是否显示辅助文字</p>
   <p>SayText 属性可以配置辅助文字数组</p>
   <tyh-rate v-model="value3" showText />
-  <tyh-rate v-model="value3" :SayText="['1星', '2星', '3星', '4星', '5星']" />
+  <tyh-rate
+    v-model="value3"
+    showText
+    :sayText="['1星', '2星', '3星', '4星', '5星']"
+  />
   <highlightjs autodetect :code="rate3" />
 
   <h3 class="Subtitle">配置项</h3>
@@ -51,7 +55,7 @@ const configures = [
   { param: 'color', explain: '选中的 icon 颜色', type: 'string', value: '', default: '#fbcc30' },
   { param: 'voidColor', explain: '未选中的 icon 颜色', type: 'string', value: '——', default: '#C6D1DE' },
   { param: 'showText', explain: '是否显示辅助文字', type: 'boolean', value: '——', default: 'false' },
-  { param: 'SayText', explain: '自定义辅助文字数组', type: 'boolean', value: '——', default: "['极差', '失望', '一般', '惊喜', '满意']" }
+  { param: 'sayText', explain: '自定义辅助文字数组', type: 'boolean', value: '——', default: "['极差', '失望', '一般', '惊喜', '满意']" }
 ]
 const configEvt = [
   { name: 'change', explain: '分值改变时的回调', param: '——' }
