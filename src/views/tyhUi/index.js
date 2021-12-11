@@ -1294,7 +1294,7 @@ const columns2 = [
   },
   {
     title: '地址',
-    key: 'address',
+    key: 'address'
   }
 ]
 const tableData = [
