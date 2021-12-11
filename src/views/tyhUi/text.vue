@@ -46,9 +46,9 @@
     <tyh-turn-page-item direction="left" url="/component/avatar">
       Avatar 头像
     </tyh-turn-page-item>
-    <!-- <tyh-turn-page-item direction="right" url="/component/tag">
-      Tag 标签
-    </tyh-turn-page-item> -->
+    <tyh-turn-page-item direction="right" url="/component/table">
+      Table 表格
+    </tyh-turn-page-item>
   </tyh-turn-page>
 </template>
 

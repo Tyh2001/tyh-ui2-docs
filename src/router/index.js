@@ -24,7 +24,8 @@ function changeList () {
     'image',
     'avatar',
     'container',
-    'text'
+    'text',
+    'table',
   ]
   comItem.forEach(item => {
     const obj = {
