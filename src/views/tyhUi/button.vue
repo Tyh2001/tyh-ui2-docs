@@ -56,7 +56,7 @@
   <highlightjs autodetect :code="btn5" />
 
   <h3 class="Subtitle">配置项</h3>
-  <ConfigTable :configures="configures" />
+  <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/container">
@@ -70,15 +70,16 @@
 
 <script setup>
 import index from './index'
-import ConfigTable from '@/components/ConfigTable.vue'
+import table from './table'
 const { btn1, btn2, btn3, btn4, btn5 } = index.button
+const { columns } = table
 const configures = [
   { param: 'type', explain: '按钮的类型', type: 'string', value: 'default / primary / success / danger / warning', default: 'default' },
   { param: 'round', explain: '是否为圆角按钮', type: 'boolean', value: '——', default: 'false' },
   { param: 'disabled', explain: '按钮是否禁用', type: 'boolean', value: '——', default: 'false' },
   { param: 'icon', explain: '按钮上的 icon', type: 'string', value: '——', default: '——' },
   { param: 'size', explain: '按钮尺寸', type: 'string', value: 'large / small / mini', default: '——' },
-  { param: 'square', explain: '方形按钮', type: 'boolean', value: '', default: 'false' }
+  { param: 'square', explain: '方形按钮', type: 'boolean', value: '——', default: 'false' }
 ]
 </script>
 

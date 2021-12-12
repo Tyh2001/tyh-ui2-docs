@@ -46,7 +46,7 @@
   <highlightjs autodetect :code="lin4" />
 
   <h3 class="Subtitle">配置项</h3>
-  <ConfigTable :configures="configures" />
+  <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/tag">
@@ -60,7 +60,8 @@
 
 <script setup>
 import index from './index'
-import ConfigTable from '@/components/ConfigTable.vue'
+import table from './table'
+const { columns } = table
 const { lin1, lin2, lin3, lin4 } = index.link
 const configures = [
   { param: 'url', explain: '跳转的路径', type: 'string', value: '——', default: '——' },

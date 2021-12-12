@@ -35,10 +35,10 @@
   <highlightjs autodetect :code="cru3" />
 
   <h3 class="Subtitle">tyh-crumbs 配置项</h3>
-  <ConfigTable :configures="configures" />
+  <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <h3 class="Subtitle">tyh-crumbs-item 配置项</h3>
-  <ConfigTable :configures="configures2" />
+  <tyh-table zebra align="center" :data="configures2" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/icon">
@@ -52,7 +52,8 @@
 
 <script setup>
 import index from './index'
-import ConfigTable from '@/components/ConfigTable.vue'
+import table from './table'
+const { columns } = table
 const configures = [
   { param: 'separator', explain: '分隔符，icon 的类名', type: 'string', value: '——', default: 'tyh-ui-xiexian-01' }
 ]

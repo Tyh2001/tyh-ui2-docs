@@ -38,10 +38,10 @@
   <highlightjs autodetect :code="tur3" />
 
   <h3 class="Subtitle">tyh-turn-page 配置项</h3>
-  <ConfigTable :configures="configures" />
+  <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <h3 class="Subtitle">tyh-turn-page-item 配置项</h3>
-  <ConfigTable :configures="configures2" />
+  <tyh-table zebra align="center" :data="configures2" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/crumbs">
@@ -55,7 +55,8 @@
 
 <script setup>
 import index from './index'
-import ConfigTable from '@/components/ConfigTable.vue'
+import table from './table'
+const { columns } = table
 const configures = [
   { param: 'center', explain: '居中显示', type: 'boolean', value: '——', default: 'false' }
 ]

@@ -77,16 +77,16 @@
   <highlightjs autodetect :code="cont1" />
 
   <h3 class="Subtitle">tyh-container 配置项</h3>
-  <ConfigTable :configures="configures" />
+  <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <h3 class="Subtitle">tyh-header 配置项</h3>
-  <ConfigTable :configures="configures1" />
+  <tyh-table zebra align="center" :data="configures1" :columns="columns" />
 
   <h3 class="Subtitle">tyh-aside 配置项</h3>
-  <ConfigTable :configures="configures2" />
+  <tyh-table zebra align="center" :data="configures2" :columns="columns" />
 
   <h3 class="Subtitle">tyh-footer 配置项</h3>
-  <ConfigTable :configures="configures3" />
+  <tyh-table zebra align="center" :data="configures3" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/color">
@@ -100,7 +100,8 @@
 
 <script setup>
 import index from './index'
-import ConfigTable from '@/components/ConfigTable.vue'
+import table from './table'
+const { columns } = table
 const { cont1 } = index.container
 const configures = [
   { param: 'flex', explain: '是否水平排列', type: 'boolean', value: '——', default: 'false' },

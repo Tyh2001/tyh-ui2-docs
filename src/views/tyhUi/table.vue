@@ -8,23 +8,29 @@
     columns 属性可以配置表格的标题和键值，它接收一个数组，里面是对象，对象的
     title 配置标题，key 配置键值，名字是必须的，否则将不能正常工作！详情参考文档
   </p>
-  <tyh-table :data="tableData" :columns="columns" />
+  <tyh-table :data="tableData" :columns="columns3" />
   <highlightjs autodetect :code="tab1" />
 
   <h3 class="Subtitle">配置行高</h3>
   <p>trHeight 属性可以表格行高</p>
-  <tyh-table :data="tableData" :columns="columns" trHeight="50px" />
+  <tyh-table :data="tableData" :columns="columns3" trHeight="50px" />
   <highlightjs autodetect :code="tab2" />
 
   <h3 class="Subtitle">文字放置方向</h3>
   <p>align 属性可以表格文字居中还是居两侧</p>
-  <tyh-table :data="tableData" :columns="columns" align="center" />
+  <tyh-table :data="tableData" :columns="columns3" align="center" />
   <highlightjs autodetect :code="tab3" />
 
   <h3 class="Subtitle">斑马纹和边框</h3>
   <p>zebra 属性可以配置斑马纹</p>
   <p>border 属性可以配置边框</p>
-  <tyh-table :data="tableData" :columns="columns" align="center" border zebra />
+  <tyh-table
+    :data="tableData"
+    :columns="columns3"
+    align="center"
+    border
+    zebra
+  />
   <highlightjs autodetect :code="tab4" />
 
   <h3 class="Subtitle">自定义宽高</h3>
@@ -32,7 +38,7 @@
   <p>height 属性可以配置表格高度</p>
   <tyh-table
     :data="tableData"
-    :columns="columns"
+    :columns="columns3"
     align="center"
     width="500px"
     height="200px"
@@ -41,7 +47,7 @@
 
   <h3 class="Subtitle">带有序号</h3>
   <p>num 属性可以配置带有序号的表格</p>
-  <tyh-table :data="tableData" :columns="columns" align="center" num />
+  <tyh-table :data="tableData" :columns="columns3" align="center" num />
   <highlightjs autodetect :code="tab6" />
 
   <h3 class="Subtitle">重点行标注</h3>
@@ -50,7 +56,7 @@
   </p>
   <tyh-table
     :data="tableData"
-    :columns="columns"
+    :columns="columns3"
     align="center"
     num
     :important="[2, 4]"
@@ -66,7 +72,7 @@
   <highlightjs autodetect :code="tab8" />
 
   <h3 class="Subtitle">配置项</h3>
-  <ConfigTable :configures="configures" />
+  <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/text">
@@ -80,8 +86,9 @@
 
 <script setup>
 import index from './index'
-import ConfigTable from '@/components/ConfigTable.vue'
-const columns = [
+import table from './table'
+const { columns } = table
+const columns3 = [
   {
     title: '日期',
     key: 'date'

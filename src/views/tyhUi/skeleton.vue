@@ -33,7 +33,7 @@
   <highlightjs autodetect :code="ske4" />
 
   <h3 class="Subtitle">配置项</h3>
-  <ConfigTable :configures="configures" />
+  <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/message">
@@ -47,7 +47,8 @@
 
 <script setup>
 import index from './index'
-import ConfigTable from '@/components/ConfigTable.vue'
+import table from './table'
+const { columns } = table
 const { ske1, ske2, ske3, ske4 } = index.skeleton
 const configures = [
   { param: 'round', explain: '圆角', type: 'boolean', value: '——', default: 'false' },

@@ -95,10 +95,10 @@
   <highlightjs autodetect :code="ale5" />
 
   <h3 class="Subtitle">配置项</h3>
-  <ConfigTable :configures="configures" />
+  <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <h3 class="Subtitle">Events</h3>
-  <EventsTable :events="configEvt" />
+  <tyh-table zebra align="center" :data="configEvt" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/skeleton">
@@ -112,8 +112,7 @@
 
 <script setup>
 import index from './index'
-import ConfigTable from '@/components/ConfigTable.vue'
-import EventsTable from '@/components/EventsTable.vue'
+import table from './table'
 import { ref } from 'vue'
 const isShow = ref(true)
 const isShow1 = ref(true)
@@ -121,6 +120,7 @@ const isShow2 = ref(true)
 const isShow3 = ref(true)
 const isShow4 = ref(true)
 const { ale1, ale2, ale3, ale4, ale5 } = index.alert
+const { columns } = table
 const configures = [
   { param: 'message', explain: '提示的文字', type: 'string', value: '——', default: '——' },
   { param: 'type', explain: '提示类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },

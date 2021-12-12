@@ -36,7 +36,7 @@
   <highlightjs autodetect :code="img2" />
 
   <h3 class="Subtitle">配置项</h3>
-  <ConfigTable :configures="configures" />
+  <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/rate">
@@ -50,7 +50,8 @@
 
 <script setup>
 import index from './index'
-import ConfigTable from '@/components/ConfigTable.vue'
+import table from './table'
+const { columns } = table
 const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
 const { img1, img2 } = index.image
 const configures = [

@@ -25,7 +25,7 @@
   <highlightjs autodetect :code="icon3" />
 
   <h3 class="Subtitle">配置项</h3>
-  <ConfigTable :configures="configures" />
+  <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <h3 class="Subtitle">Icon 集合</h3>
   <p>点击即可复制代码</p>
@@ -57,9 +57,10 @@
 
 <script setup>
 import index from './index'
-import ConfigTable from '@/components/ConfigTable.vue'
+import table from './table'
 import Clipboard from 'clipboard'
 import Message from 'tyh-ui2/packages/message'
+const { columns } = table
 const { icon1, icon2, icon3 } = index.icon
 const iconList = [
   'tyh-ui-tyhui',

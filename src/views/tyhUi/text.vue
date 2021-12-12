@@ -40,7 +40,7 @@
   <highlightjs autodetect :code="text4" />
 
   <h3 class="Subtitle">配置项</h3>
-  <ConfigTable :configures="configures" />
+  <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/avatar">
@@ -54,11 +54,12 @@
 
 <script setup>
 import index from './index'
-import ConfigTable from '@/components/ConfigTable.vue'
+import table from './table'
+const { columns } = table
 const { text1, text2, text3, text4 } = index.text
 const configures = [
   { param: 'type', explain: '按钮的类型', type: 'string', value: 'default / primary / success / danger / warning', default: 'default' },
-  { param: 'block', explain: '是否独占一行', type: 'boolean', value: '', default: 'false' },
+  { param: 'block', explain: '是否独占一行', type: 'boolean', value: '——', default: 'false' },
   { param: 'size', explain: '文字大小', type: 'string', value: '——', default: '16' },
   { param: 'color', explain: '自定义颜色', type: 'string', value: '——', default: '——' }
 ]

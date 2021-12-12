@@ -30,7 +30,7 @@
   <highlightjs autodetect :code="mes3" />
 
   <h3 class="Subtitle">配置项</h3>
-  <ConfigTable :configures="configures" />
+  <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/backtop">
@@ -45,7 +45,8 @@
 <script setup>
 import Message from 'tyh-ui2/packages/message'
 import index from './index'
-import ConfigTable from '@/components/ConfigTable.vue'
+import table from './table'
+const { columns } = table
 const { mes1, mes2, mes3, mes4 } = index.msg
 const configures = [
   { param: 'message', explain: '显示文字', type: 'string', value: '——', default: '——' },

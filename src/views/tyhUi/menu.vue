@@ -54,10 +54,10 @@
   <highlightjs autodetect :code="men4" />
 
   <h3 class="Subtitle">tyh-menu 配置项</h3>
-  <ConfigTable :configures="configures" />
+  <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <h3 class="Subtitle">tyh-menu-item 配置项</h3>
-  <ConfigTable :configures="configures2" />
+  <tyh-table zebra align="center" :data="configures2" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/input">
@@ -71,7 +71,8 @@
 
 <script setup>
 import index from './index'
-import ConfigTable from '@/components/ConfigTable.vue'
+import table from './table'
+const { columns } = table
 const { men1, men2, men3, men4 } = index.menu
 const configures = [
   { param: 'backgroundColor', explain: '导航栏背景色', type: 'string', value: '——', default: '——' },

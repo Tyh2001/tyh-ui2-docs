@@ -41,10 +41,10 @@
   <highlightjs autodetect :code="inp7" />
 
   <h3 class="Subtitle">配置项</h3>
-  <ConfigTable :configures="configures" />
+  <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <h3 class="Subtitle">Events</h3>
-  <EventsTable :events="configEvt" />
+  <tyh-table zebra align="center" :data="configEvt" :columns="columns2" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/link">
@@ -59,8 +59,8 @@
 <script setup>
 import { ref } from 'vue'
 import index from './index'
-import ConfigTable from '@/components/ConfigTable.vue'
-import EventsTable from '@/components/EventsTable.vue'
+import table from './table'
+const { columns, columns2 } = table
 const text1 = ref('')
 const text2 = ref('')
 const text3 = ref('')

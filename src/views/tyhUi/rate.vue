@@ -26,10 +26,10 @@
   <highlightjs autodetect :code="rate3" />
 
   <h3 class="Subtitle">配置项</h3>
-  <ConfigTable :configures="configures" />
+  <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <h3 class="Subtitle">Events</h3>
-  <EventsTable :events="configEvt" />
+  <tyh-table zebra align="center" :data="configEvt" :columns="columns2" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/alert">
@@ -43,8 +43,8 @@
 
 <script setup>
 import index from './index'
-import ConfigTable from '@/components/ConfigTable.vue'
-import EventsTable from '@/components/EventsTable.vue'
+import table from './table'
+const { columns, columns2 } = table
 import { ref } from 'vue'
 const value1 = ref(null)
 const value2 = ref(2)

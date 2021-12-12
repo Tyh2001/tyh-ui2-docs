@@ -36,7 +36,7 @@
   <highlightjs autodetect :code="div4" />
 
   <h3 class="Subtitle">配置项</h3>
-  <ConfigTable :configures="configures" />
+  <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/menu">
@@ -50,7 +50,8 @@
 
 <script setup>
 import index from './index'
-import ConfigTable from '@/components/ConfigTable.vue'
+import table from './table'
+const { columns } = table
 const configures = [
   { param: 'position', explain: '文字位置', type: 'string', value: 'left / center / right', default: 'left' },
   { param: 'textColor', explain: '文字颜色', type: 'string', value: '——', default: '#515a6e' },

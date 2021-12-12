@@ -47,7 +47,7 @@
   <highlightjs autodetect :code="car3" />
 
   <h3 class="Subtitle">配置项</h3>
-  <ConfigTable :configures="configures" />
+  <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/list">
@@ -61,7 +61,8 @@
 
 <script setup>
 import index from './index'
-import ConfigTable from '@/components/ConfigTable.vue'
+import table from './table'
+const { columns } = table
 const { car1, car2, car3 } = index.card
 const configures = [
   { param: 'simple', explain: '简约卡片', type: 'boolean', value: '——', default: 'false' },

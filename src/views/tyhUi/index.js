@@ -964,16 +964,16 @@ body > .tyh-container {
 const columns = [
   {
     title: '日期',
-    key: 'date',
+    key: 'date'
   },
   {
     title: '姓名',
-    key: 'name',
+    key: 'name'
   },
   {
     title: '地址',
-    key: 'address',
-  },
+    key: 'address'
+  }
 ]
 const tableData = [
   {
@@ -1008,16 +1008,16 @@ const tableData = [
 const columns = [
   {
     title: '日期',
-    key: 'date',
+    key: 'date'
   },
   {
     title: '姓名',
-    key: 'name',
+    key: 'name'
   },
   {
     title: '地址',
-    key: 'address',
-  },
+    key: 'address'
+  }
 ]
 const tableData = [
   {
@@ -1052,16 +1052,16 @@ const tableData = [
 const columns = [
   {
     title: '日期',
-    key: 'date',
+    key: 'date'
   },
   {
     title: '姓名',
-    key: 'name',
+    key: 'name'
   },
   {
     title: '地址',
-    key: 'address',
-  },
+    key: 'address'
+  }
 ]
 const tableData = [
   {
@@ -1096,16 +1096,16 @@ const tableData = [
 const columns = [
   {
     title: '日期',
-    key: 'date',
+    key: 'date'
   },
   {
     title: '姓名',
-    key: 'name',
+    key: 'name'
   },
   {
     title: '地址',
-    key: 'address',
-  },
+    key: 'address'
+  }
 ]
 const tableData = [
   {
@@ -1146,16 +1146,16 @@ const tableData = [
 const columns = [
   {
     title: '日期',
-    key: 'date',
+    key: 'date'
   },
   {
     title: '姓名',
-    key: 'name',
+    key: 'name'
   },
   {
     title: '地址',
-    key: 'address',
-  },
+    key: 'address'
+  }
 ]
 const tableData = [
   {
@@ -1190,16 +1190,16 @@ const tableData = [
 const columns = [
   {
     title: '日期',
-    key: 'date',
+    key: 'date'
   },
   {
     title: '姓名',
-    key: 'name',
+    key: 'name'
   },
   {
     title: '地址',
-    key: 'address',
-  },
+    key: 'address'
+  }
 ]
 const tableData = [
   {
@@ -1240,16 +1240,16 @@ const tableData = [
 const columns = [
   {
     title: '日期',
-    key: 'date',
+    key: 'date'
   },
   {
     title: '姓名',
-    key: 'name',
+    key: 'name'
   },
   {
     title: '地址',
-    key: 'address',
-  },
+    key: 'address'
+  }
 ]
 const tableData = [
   {

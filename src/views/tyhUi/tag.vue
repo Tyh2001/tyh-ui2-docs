@@ -45,10 +45,10 @@
   <highlightjs autodetect :code="tag4" />
 
   <h3 class="Subtitle">配置项</h3>
-  <ConfigTable :configures="configures" />
+  <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <h3 class="Subtitle">Events</h3>
-  <EventsTable :events="configEvt" />
+  <tyh-table zebra align="center" :data="configEvt" :columns="columns2" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/card">
@@ -62,8 +62,8 @@
 
 <script setup>
 import index from './index'
-import ConfigTable from '@/components/ConfigTable.vue'
-import EventsTable from '@/components/EventsTable.vue'
+import table from './table'
+const { columns, columns2 } = table
 import { ref } from 'vue'
 const show1 = ref(true)
 const show2 = ref(true)
@@ -74,7 +74,7 @@ const { tag1, tag2, tag3, tag4 } = index.tag
 const configures = [
   { param: 'type', explain: '标签的类型', type: 'string', value: 'default / primary / success / danger / warning', default: 'default' },
   { param: 'size', explain: '标签的尺寸', type: 'string', value: ' — / small / mini', default: '——' },
-  { param: 'round', explain: '配置圆角显示', type: 'boolean', value: '', default: 'false' },
+  { param: 'round', explain: '配置圆角显示', type: 'boolean', value: '——', default: 'false' },
   { param: 'isClose', explain: '是否显示关闭按钮', type: 'boolean', value: '——', default: 'false' },
 ]
 const configEvt = [

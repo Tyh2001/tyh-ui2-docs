@@ -50,7 +50,7 @@
   <highlightjs autodetect :code="ava4" />
 
   <h3 class="Subtitle">配置项</h3>
-  <ConfigTable :configures="configures" />
+  <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/image">
@@ -64,9 +64,10 @@
 
 <script setup>
 import index from './index'
-import ConfigTable from '@/components/ConfigTable.vue'
+import table from './table'
 const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
 const { ava1, ava2, ava3, ava4 } = index.avatar
+const { columns } = table
 const configures = [
   { param: 'src', explain: '图片路径', type: 'string', value: '——', default: '——' },
   { param: 'size', explain: '图片大小', type: 'string / number', value: '——', default: '8(计算方式：(size*10)px)' },
