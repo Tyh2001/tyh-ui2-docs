@@ -17,7 +17,6 @@ pre code.hljs {
   border-radius: 10px;
   background: rgb(243, 247, 255);
 }
-
 .title {
   font-weight: 500;
   color: #1f2f3d;
