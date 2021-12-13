@@ -10,6 +10,15 @@
   <tyh-button type="warning">警告按钮</tyh-button>
   <highlightjs autodetect :code="btn1" />
 
+  <h3 class="Subtitle">简约按钮</h3>
+  <p>simple 属性可以配置简约按钮</p>
+  <tyh-button simple>默认按钮</tyh-button>
+  <tyh-button simple type="primary">主要按钮</tyh-button>
+  <tyh-button simple type="success">成功按钮</tyh-button>
+  <tyh-button simple type="danger">危险按钮</tyh-button>
+  <tyh-button simple type="warning">警告按钮</tyh-button>
+  <highlightjs autodetect :code="btn6" />
+
   <h3 class="Subtitle">图标按钮</h3>
   <p>icon 属性可以配置图标按钮</p>
   <tyh-button icon="tyh-ui-setting-filling">设置</tyh-button>
@@ -17,6 +26,12 @@
   <tyh-button icon="tyh-ui-fabulous" type="success"></tyh-button>
   <tyh-button icon="tyh-ui-discount" type="danger"></tyh-button>
   <tyh-button icon="tyh-ui-chart-bar" type="warning"></tyh-button>
+  <br /><br />
+  <tyh-button simple icon="tyh-ui-setting-filling">设置</tyh-button>
+  <tyh-button simple icon="tyh-ui-tyhui" type="primary">tyh-ui</tyh-button>
+  <tyh-button simple icon="tyh-ui-fabulous" type="success"></tyh-button>
+  <tyh-button simple icon="tyh-ui-discount" type="danger"></tyh-button>
+  <tyh-button simple icon="tyh-ui-chart-bar" type="warning"></tyh-button>
   <highlightjs autodetect :code="btn2" />
 
   <h3 class="Subtitle">禁用状态</h3>
@@ -26,6 +41,12 @@
   <tyh-button disabled type="success">成功按钮</tyh-button>
   <tyh-button disabled type="danger">危险按钮</tyh-button>
   <tyh-button disabled type="warning">警告按钮</tyh-button>
+  <br /><br />
+  <tyh-button simple disabled>默认按钮</tyh-button>
+  <tyh-button simple disabled type="primary">主要按钮</tyh-button>
+  <tyh-button simple disabled type="success">成功按钮</tyh-button>
+  <tyh-button simple disabled type="danger">危险按钮</tyh-button>
+  <tyh-button simple disabled type="warning">警告按钮</tyh-button>
   <highlightjs autodetect :code="btn3" />
 
   <h3 class="Subtitle">圆角按钮</h3>
@@ -53,7 +74,15 @@
   <tyh-button type="primary">正常大小</tyh-button>
   <br /><br />
   <tyh-button size="large" type="primary">大号按钮</tyh-button>
-  <highlightjs autodetect :code="btn5" />
+  <br /><br />
+  <tyh-button simple size="mini" type="primary">小型按钮</tyh-button>
+  <br /><br />
+  <tyh-button simple size="small" type="primary">中等按钮</tyh-button>
+  <br /><br />
+  <tyh-button simple type="primary">正常大小</tyh-button>
+  <br /><br />
+  <tyh-button simple size="large" type="primary">大号按钮</tyh-button>
+  <highlightjs simple autodetect :code="btn5" />
 
   <h3 class="Subtitle">配置项</h3>
   <tyh-table zebra align="center" :data="configures" :columns="columns" />
@@ -71,11 +100,12 @@
 <script setup>
 import index from './index'
 import table from './table'
-const { btn1, btn2, btn3, btn4, btn5 } = index.button
+const { btn1, btn2, btn3, btn4, btn5, btn6 } = index.button
 const { columns } = table
 const configures = [
   { param: 'type', explain: '按钮的类型', type: 'string', value: 'default / primary / success / danger / warning', default: 'default' },
   { param: 'round', explain: '是否为圆角按钮', type: 'boolean', value: '——', default: 'false' },
+  { param: 'simple', explain: '简约按钮', type: 'boolean', value: '——', default: 'false' },
   { param: 'disabled', explain: '按钮是否禁用', type: 'boolean', value: '——', default: 'false' },
   { param: 'icon', explain: '按钮上的 icon', type: 'string', value: '——', default: '——' },
   { param: 'size', explain: '按钮尺寸', type: 'string', value: 'large / small / mini', default: '——' },

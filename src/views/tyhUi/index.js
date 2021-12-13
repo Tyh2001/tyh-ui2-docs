@@ -47,7 +47,8 @@ import {
   TyhFooter,
   TyhHeader,
   TyhMain,
-  TyhText
+  TyhText,
+  TyhTable
 } from 'tyh-ui2'
 import 'tyh-ui2/style/index.css'
 
@@ -78,6 +79,7 @@ createApp(App)
   .use(TyhHeader)
   .use(TyhMain)
   .use(TyhText)
+  .use(TyhTable)
   .mount('#app')
     `
   },
@@ -96,6 +98,12 @@ createApp(App)
 <tyh-button icon="tyh-ui-fabulous" type="success"></tyh-button>
 <tyh-button icon="tyh-ui-discount" type="danger"></tyh-button>
 <tyh-button icon="tyh-ui-chart-bar" type="warning"></tyh-button>
+
+<tyh-button simple icon="tyh-ui-setting-filling">设置</tyh-button>
+<tyh-button simple icon="tyh-ui-tyhui" type="primary">tyh-ui</tyh-button>
+<tyh-button simple icon="tyh-ui-fabulous" type="success"></tyh-button>
+<tyh-button simple icon="tyh-ui-discount" type="danger"></tyh-button>
+<tyh-button simple icon="tyh-ui-chart-bar" type="warning"></tyh-button>
     `,
     btn3: `
 <tyh-button disabled>默认按钮</tyh-button>
@@ -103,6 +111,12 @@ createApp(App)
 <tyh-button disabled type="success">成功按钮</tyh-button>
 <tyh-button disabled type="danger">危险按钮</tyh-button>
 <tyh-button disabled type="warning">警告按钮</tyh-button>
+
+<tyh-button simple disabled>默认按钮</tyh-button>
+<tyh-button simple disabled type="primary">主要按钮</tyh-button>
+<tyh-button simple disabled type="success">成功按钮</tyh-button>
+<tyh-button simple disabled type="danger">危险按钮</tyh-button>
+<tyh-button simple disabled type="warning">警告按钮</tyh-button>
     `,
     btn4: `
 <tyh-button round>默认按钮</tyh-button>
@@ -122,6 +136,18 @@ createApp(App)
 <tyh-button size="small" type="primary">中等按钮</tyh-button>
 <tyh-button type="primary">正常大小</tyh-button>
 <tyh-button size="large" type="primary">大号按钮</tyh-button>
+
+<tyh-button simple size="mini" type="primary">小型按钮</tyh-button>
+<tyh-button simple size="small" type="primary">中等按钮</tyh-button>
+<tyh-button simple type="primary">正常大小</tyh-button>
+<tyh-button simple size="large" type="primary">大号按钮</tyh-button>
+    `,
+    btn6: `
+<tyh-button simple>默认按钮</tyh-button>
+<tyh-button simple type="primary">主要按钮</tyh-button>
+<tyh-button simple type="success">成功按钮</tyh-button>
+<tyh-button simple type="danger">危险按钮</tyh-button>
+<tyh-button simple type="warning">警告按钮</tyh-button>
     `
   },
   // 列表
