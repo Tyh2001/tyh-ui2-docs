@@ -4,6 +4,8 @@
 
 <p align="center"><a href="https://github.com/Tyh2001/tyh-ui2/blob/master/README_zh.md">Chinese</a> | English</p>
 
+<p align="center"><a href="http://tianyuhao.icu/tyhui/v3">tyhUI2 docs</a></p>
+
 ## Introduction:bulb:
 
 The next generation UI component library of tyh UI is based on vue3 Version, fully embrace vue3
@@ -32,10 +34,6 @@ import 'tyh-ui2/style/index.css'
 
 createApp(App).use(tyhUi2).mount('#app')
 ```
-
-## Documentation:earth_africa:
-
-To check out live docs, visit [website](https://tianyuhao.icu/tyhui/v3).
 
 ## Changelog:page_facing_up:
 
