@@ -47,6 +47,10 @@ const routes = [
         component: () => import('@/views/hone.vue'),
       },
       {
+        path: '/about',
+        component: () => import('@/views/about.vue'),
+      },
+      {
         path: '/component',
         redirect: '/component/install',
         component: () => import('@/views/component.vue'),

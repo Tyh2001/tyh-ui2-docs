@@ -43,7 +43,8 @@ import { useRoute } from 'vue-router'
 import { ref, watch } from 'vue'
 const layoutList = [
   { title: '首页', url: '/' },
-  { title: '组件', url: '/component' }
+  { title: '组件', url: '/component' },
+  { title: '关于', url: '/about' },
 ]
 // 导航栏高亮显示
 const route = useRoute()
