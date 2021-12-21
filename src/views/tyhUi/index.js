@@ -48,7 +48,8 @@ import {
   TyhHeader,
   TyhMain,
   TyhText,
-  TyhTable
+  TyhTable,
+  TyhButtonGroup
 } from 'tyh-ui2'
 import 'tyh-ui2/style/index.css'
 
@@ -80,6 +81,7 @@ createApp(App)
   .use(TyhMain)
   .use(TyhText)
   .use(TyhTable)
+  .use(TyhButtonGroup)
   .mount('#app')
     `
   },
