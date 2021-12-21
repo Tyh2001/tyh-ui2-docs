@@ -148,6 +148,28 @@ createApp(App)
 <tyh-button simple type="success">成功按钮</tyh-button>
 <tyh-button simple type="danger">危险按钮</tyh-button>
 <tyh-button simple type="warning">警告按钮</tyh-button>
+    `,
+    btn7: `
+<tyh-button-group>
+  <tyh-button type="primary">上一页</tyh-button>
+  <tyh-button type="primary">下一页</tyh-button>
+</tyh-button-group>
+
+<tyh-button-group>
+  <tyh-button simple type="primary">左</tyh-button>
+  <tyh-button simple type="success">右</tyh-button>
+</tyh-button-group>
+
+<tyh-button-group>
+  <tyh-button icon="tyh-ui-arrow-left-filling" type="primary"></tyh-button>
+  <tyh-button icon="tyh-ui-arrow-right-filling" type="success"></tyh-button>
+</tyh-button-group>
+
+<tyh-button-group>
+  <tyh-button type="primary">左</tyh-button>
+  <tyh-button type="success">中</tyh-button>
+  <tyh-button type="primary">右</tyh-button>
+</tyh-button-group>
     `
   },
   // 列表
