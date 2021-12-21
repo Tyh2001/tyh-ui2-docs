@@ -67,7 +67,7 @@ watch(() => route.path, () => {
   top: 0px;
   right: 0px;
   left: 0px;
-  z-index: 800;
+  z-index: 200;
   .logolink {
     display: flex;
     justify-content: center;
