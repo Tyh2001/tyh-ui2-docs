@@ -817,7 +817,7 @@ const value3 = ref(2)
   // 图片
   image: {
     img1: `
-<tyh-image width="300px" src="https://tianyuhao.icu/tyhui/v3/assets/giraffe.jpg" />
+<tyh-image width="300px" src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg" />
     `,
     img2: `
 <template>
@@ -827,7 +827,7 @@ const value3 = ref(2)
       <tyh-image
         width="100px"
         height="100px"
-        src="https://tianyuhao.icu/tyhui/v3/assets/giraffe.jpg"
+        src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
         :fit="fit"
       />
     </div>
@@ -844,11 +844,11 @@ const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
     ava1: `
 <tyh-avatar
   size="10"
-  src="https://tianyuhao.icu/tyhui/v3/assets/giraffe.jpg"
+  src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
 />
     `,
     ava2: `
-<tyh-avatar round src="https://tianyuhao.icu/tyhui/v3/assets/giraffe.jpg" />
+<tyh-avatar round src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg" />
     `,
     ava3: `
 <template>
@@ -857,7 +857,7 @@ const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
       <span class="text">{{ fit }}</span>
       <tyh-avatar
         round
-        src="https://tianyuhao.icu/tyhui/v3/assets/giraffe.jpg"
+        src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
         :fit="fit"
       />
     </div>
@@ -869,11 +869,11 @@ const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
 </script>
     `,
     ava4: `
-<tyh-avatar border src="https://tianyuhao.icu/tyhui/v3/assets/giraffe.jpg" />
+<tyh-avatar border src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg" />
 <tyh-avatar
   border
   round
-  src="https://tianyuhao.icu/tyhui/v3/assets/giraffe.jpg"
+  src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
 />
     `
   },

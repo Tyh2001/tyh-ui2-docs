@@ -1,10 +1,10 @@
 <p align="center">
-  <img height="260px" src="https://tianyuhao.icu/tyhui/v3/assets/logo.1320fb15.png">
+  <img height="260px" src="https://tianyuhao.cn/tyhui/v3/assets/logo.1320fb15.png">
 </p>
 
 <p align="center"><a href="https://github.com/Tyh2001/tyh-ui2/blob/master/README_zh.md">Chinese</a> | English</p>
 
-<p align="center"><a href="http://tianyuhao.icu/tyhui/v3">tyhUI2 docs</a></p>
+<p align="center"><a href="https://tianyuhao.cn/tyhui/v3">tyhUI2 docs</a></p>
 
 ## Introduction:bulb:
 
