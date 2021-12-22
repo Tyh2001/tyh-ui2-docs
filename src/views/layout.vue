@@ -21,7 +21,7 @@
       >
         <tyh-menu-item color="#000">更新日志</tyh-menu-item>
       </tyh-link>
-      <tyh-link target="_blank" url="https://tianyuhao.icu/tyhui">
+      <tyh-link target="_blank" url="https://tianyuhao.cn/tyhui">
         <tyh-menu-item color="#000">v2</tyh-menu-item>
       </tyh-link>
     </div>
