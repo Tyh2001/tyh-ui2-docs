@@ -12,9 +12,9 @@
   <highlightjs autodetect :code="men1" />
 
   <h3 class="Subtitle">颜色配置</h3>
-  <p>通过 backgroundColor 属性可以配置导航栏背景色</p>
+  <p>通过 background 属性可以配置导航栏背景色</p>
   <p>通过 color 属性可以配置子菜单颜色</p>
-  <tyh-menu backgroundColor="#eee">
+  <tyh-menu background="#eee">
     <tyh-menu-item color="#000">首页</tyh-menu-item>
     <tyh-menu-item color="#000">内容</tyh-menu-item>
     <tyh-menu-item color="#000">设置</tyh-menu-item>
@@ -75,8 +75,8 @@ import table from './table'
 const { columns } = table
 const { men1, men2, men3, men4 } = index.menu
 const configures = [
-  { param: 'backgroundColor', explain: '导航栏背景色', type: 'string', value: '——', default: '——' },
-  { param: 'buttomShadow', explain: '底部是否显示阴影', type: 'boolean', value: '——', default: 'false' }
+  { param: 'background', explain: '导航栏背景色', type: 'string', value: '——', default: '——' },
+  { param: 'shadow', explain: '底部是否显示阴影', type: 'boolean', value: '——', default: 'false' }
 ]
 const configures2 = [
   { param: 'url', explain: '跳转的路径', type: 'string', value: '——', default: '——' },

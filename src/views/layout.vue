@@ -1,6 +1,6 @@
 <template>
-  <tyh-menu backgroundColor="#f8faff" buttomShadow>
-    <div class="logolink" url="/" @click="$router.push('/')">
+  <tyh-menu background="#f8faff" shadow>
+    <div class="logoLink" url="/" @click="$router.push('/')">
       <img draggable="false" class="logo" src="./images/logo.png" alt="logo" />
       <span class="name">Tyh UI</span>
     </div>
@@ -68,7 +68,7 @@ watch(() => route.path, () => {
   right: 0px;
   left: 0px;
   z-index: 200;
-  .logolink {
+  .logoLink {
     display: flex;
     justify-content: center;
     align-items: center;

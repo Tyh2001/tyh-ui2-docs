@@ -11,6 +11,11 @@
           <p class="urlPush">组件</p>
         </li>
       </router-link>
+      <router-link to="/about">
+        <li>
+          <p class="urlPush">关于</p>
+        </li>
+      </router-link>
       <a
         target="_blank"
         href="https://github.com/Tyh2001/tyh-ui2/blob/master/CHANGELOG.md"

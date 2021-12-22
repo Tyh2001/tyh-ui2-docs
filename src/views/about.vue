@@ -1,33 +1,33 @@
 <template>
   <div id="about">
-    <div id="myLogo">
+    <div class="logoBox">
       <img draggable="false" class="logo" src="./images/logo.png" />
     </div>
     <h3 class="about_title">关于 tyh-ui2</h3>
     <p>tyh-ui 的下一代 ui 组件库，基于 vue3.0 版本，全面拥抱 vue3.0。</p>
     <h3 class="about_title">开发靠个人</h3>
-    <p>
+    <tyh-text>
       tyh-ui 是由
       <tyh-link target="_blank" url="https://github.com/Tyh2001" type="primary">
         tyh2001
       </tyh-link>
       独立开发的一款基于 Vue 3.0 的桌面端轻量级 UI 组件库。
-    </p>
+    </tyh-text>
     <h3 class="about_title">简洁至上</h3>
-    <p>
+    <tyh-text>
       tyh-ui
       整体非常简洁明了，虽没有很多高级的组件，但它是使用最简单的方式达到实用的效果。
-    </p>
+    </tyh-text>
     <h3 class="about_title">轻量容易</h3>
-    <p>
+    <tyh-text>
       使用方便，配置简单，目录清晰，结构简单，组件轻量级，上手简单，像复制粘贴一样容易。
-    </p>
+    </tyh-text>
 
     <h3 class="about_title">赞助我</h3>
-    <p>开发不易，欢迎大家赞助！</p>
+    <tyh-text>开发不易，欢迎大家赞助！</tyh-text>
     <div id="sponsor">
-      <img draggable="false" src="./images/weixin.jpg" alt="" />
-      <img draggable="false" src="./images/zhifubao.jpg" alt="" />
+      <img draggable="false" src="./images/weixin.jpg" alt="微信二维码" />
+      <img draggable="false" src="./images/zhifubao.jpg" alt="支付宝二维码" />
     </div>
   </div>
   <Footer />
@@ -45,19 +45,13 @@ import Footer from '@/components/Footer.vue'
   box-sizing: border-box;
   padding-bottom: 99px;
 }
-#about p {
-  color: #515a6e;
-  font-size: 15px;
-  font-family: "微软雅黑";
-  line-height: 35px;
-}
-#about #myLogo {
+#about .logoBox {
   width: 260px;
   height: 300px;
   margin: auto;
   user-select: none;
 }
-#about #myLogo .logo {
+#about .logoBox .logo {
   width: 260px;
 }
 #about .about_title {

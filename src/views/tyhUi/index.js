@@ -462,7 +462,7 @@ const text11 = ref('')
 </tyh-menu>
     `,
     men2: `
-<tyh-menu backgroundColor="#eee">
+<tyh-menu background="#eee">
   <tyh-menu-item color="#000">首页</tyh-menu-item>
   <tyh-menu-item color="#000">内容</tyh-menu-item>
   <tyh-menu-item color="#000">设置</tyh-menu-item>
