@@ -55,6 +55,9 @@
   <h3 class="Subtitle">Events</h3>
   <tyh-table align="center" :data="configEvt" :columns="columns2" />
 
+  <h3 class="Subtitle">Slots</h3>
+  <tyh-table align="center" :data="slotConfig" :columns="columns3" />
+
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/image">
       Image 头像
@@ -70,7 +73,7 @@ import index from './index'
 import table from './table'
 const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
 const { ava1, ava2, ava3, ava4 } = index.avatar
-const { columns, columns2 } = table
+const { columns, columns2, columns3 } = table
 const configures = [
   { param: 'src', explain: '图片路径', type: 'string', value: '——', default: '——' },
   { param: 'size', explain: '图片大小', type: 'string / number', value: '——', default: '8(计算方式：(size*10)px)' },
@@ -85,6 +88,9 @@ const configures = [
 const configEvt = [
   { name: 'load', explain: '图片加载成功触发', param: '——' },
   { name: 'error', explain: '图片加载失败触发', param: '——' }
+]
+const slotConfig = [
+  { name: 'error', explain: '自定义失败提示' }
 ]
 </script>
 

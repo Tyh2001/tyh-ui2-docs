@@ -41,6 +41,9 @@
   <h3 class="Subtitle">Events</h3>
   <tyh-table align="center" :data="configEvt" :columns="columns2" />
 
+  <h3 class="Subtitle">Slots</h3>
+  <tyh-table align="center" :data="slotConfig" :columns="columns3" />
+
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/rate">
       Rate 评分
@@ -54,7 +57,7 @@
 <script setup>
 import index from './index'
 import table from './table'
-const { columns, columns2 } = table
+const { columns, columns2, columns3 } = table
 const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
 const { img1, img2 } = index.image
 const configures = [
@@ -69,6 +72,9 @@ const configures = [
 const configEvt = [
   { name: 'load', explain: '图片加载成功触发', param: '——' },
   { name: 'error', explain: '图片加载失败触发', param: '——' }
+]
+const slotConfig = [
+  { name: 'error', explain: '自定义失败提示' }
 ]
 </script>
 
