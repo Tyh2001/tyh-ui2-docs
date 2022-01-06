@@ -32,7 +32,7 @@
   <tyh-skeleton animation />
   <highlightjs autodetect :code="ske4" />
 
-  <h3 class="Subtitle">配置项</h3>
+  <h3 class="Subtitle">Attributes</h3>
   <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">

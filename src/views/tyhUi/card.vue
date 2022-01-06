@@ -46,8 +46,11 @@
   </tyh-card>
   <highlightjs autodetect :code="car3" />
 
-  <h3 class="Subtitle">配置项</h3>
-  <tyh-table zebra align="center" :data="configures" :columns="columns" />
+  <h3 class="Subtitle">Attributes</h3>
+  <tyh-table align="center" :data="configures" :columns="columns" />
+
+  <h3 class="Subtitle">Slots</h3>
+  <tyh-table align="center" :data="slotConfig" :columns="columns3" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/list">
@@ -62,13 +65,15 @@
 <script setup>
 import index from './index'
 import table from './table'
-const { columns } = table
+const { columns, columns3 } = table
 const { car1, car2, car3 } = index.card
 const configures = [
   { param: 'simple', explain: '简约卡片', type: 'boolean', value: '——', default: 'false' },
   { param: 'shadow', explain: '阴影显示时机', type: 'string', value: 'always / hover / noShadow', default: '——' },
-  { param: 'title（具名插槽）', explain: '自定义卡片的主标题', type: '——', value: '——', default: '——' },
-  { param: 'subtitle（具名插槽）', explain: '自定义卡片的副标题', type: '——', value: '——', default: '——' }
+]
+const slotConfig = [
+  { name: 'title', explain: '自定义卡片的主标题' },
+  { name: 'subtitle', explain: '自定义卡片的副标题' }
 ]
 </script>
 

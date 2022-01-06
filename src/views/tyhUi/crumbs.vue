@@ -34,10 +34,10 @@
   </tyh-crumbs>
   <highlightjs autodetect :code="cru3" />
 
-  <h3 class="Subtitle">tyh-crumbs 配置项</h3>
+  <h3 class="Subtitle">tyh-crumbs Attributes</h3>
   <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
-  <h3 class="Subtitle">tyh-crumbs-item 配置项</h3>
+  <h3 class="Subtitle">tyh-crumbs-item Attributes</h3>
   <tyh-table zebra align="center" :data="configures2" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">

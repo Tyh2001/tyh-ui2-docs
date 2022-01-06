@@ -35,8 +35,11 @@
   </div>
   <highlightjs autodetect :code="img2" />
 
-  <h3 class="Subtitle">配置项</h3>
+  <h3 class="Subtitle">Attributes</h3>
   <tyh-table zebra align="center" :data="configures" :columns="columns" />
+
+  <h3 class="Subtitle">Events</h3>
+  <tyh-table zebra align="center" :data="configEvt" :columns="columns2" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/rate">
@@ -51,7 +54,7 @@
 <script setup>
 import index from './index'
 import table from './table'
-const { columns } = table
+const { columns, columns2 } = table
 const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
 const { img1, img2 } = index.image
 const configures = [
@@ -61,7 +64,11 @@ const configures = [
   { param: 'fit', explain: '确定图片如何适应容器框', type: 'string', value: '——', default: '——' },
   { param: 'alt', explain: '原生 alt 属性', type: 'string', value: '——', default: '——' },
   { param: 'select', explain: '是否可以选择', type: 'boolean', value: '——', default: 'false' },
-  { param: 'draggable', explain: '是否可以拖动', type: 'boolean', value: '——', default: 'false' }
+  { param: 'draggable', explain: '是否可以拖动', type: 'boolean', value: '——', default: 'false' },
+]
+const configEvt = [
+  { name: 'load', explain: '图片加载成功触发', param: '——' },
+  { name: 'error', explain: '图片加载失败触发', param: '——' }
 ]
 </script>
 

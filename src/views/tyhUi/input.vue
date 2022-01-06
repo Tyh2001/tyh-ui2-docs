@@ -40,7 +40,7 @@
   <tyh-input v-model="text11" type="password" showPassword />
   <highlightjs autodetect :code="inp7" />
 
-  <h3 class="Subtitle">配置项</h3>
+  <h3 class="Subtitle">Attributes</h3>
   <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <h3 class="Subtitle">Events</h3>

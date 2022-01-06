@@ -94,7 +94,7 @@
   <tyh-alert simple type="warning" message="简约的警告提示" />
   <highlightjs autodetect :code="ale5" />
 
-  <h3 class="Subtitle">配置项</h3>
+  <h3 class="Subtitle">Attributes</h3>
   <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <h3 class="Subtitle">Events</h3>

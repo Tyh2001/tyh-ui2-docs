@@ -71,7 +71,7 @@
   <tyh-table :data="tableData" :columns="columns2" align="center" />
   <highlightjs autodetect :code="tab8" />
 
-  <h3 class="Subtitle">配置项</h3>
+  <h3 class="Subtitle">Attributes</h3>
   <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">

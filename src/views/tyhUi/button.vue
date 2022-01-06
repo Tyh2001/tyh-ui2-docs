@@ -3,7 +3,7 @@
 
   <h3 class="Subtitle">基本使用</h3>
   <p>按钮的基础用法</p>
-  <tyh-button>默认按钮</tyh-button>
+  <tyh-button class="right">默认按钮</tyh-button>
   <tyh-button class="right" type="primary">主要按钮</tyh-button>
   <tyh-button class="right" type="success">成功按钮</tyh-button>
   <tyh-button class="right" type="danger">危险按钮</tyh-button>
@@ -127,7 +127,7 @@
   <tyh-button simple size="large" type="primary">大号按钮</tyh-button>
   <highlightjs simple autodetect :code="btn5" />
 
-  <h3 class="Subtitle">配置项</h3>
+  <h3 class="Subtitle">Attributes</h3>
   <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">

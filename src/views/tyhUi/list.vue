@@ -27,12 +27,12 @@
   />
   <highlightjs autodetect :code="lis3" />
 
-  <h3 class="Subtitle">Hover 状态展示投影</h3>
+  <h3 class="Subtitle">hover 状态展示投影</h3>
   <p>hoverShow 配置 Hover 状态展示投影</p>
   <tyh-list hoverShow :content="arr" iskey="name" />
   <highlightjs autodetect :code="lis4" />
 
-  <h3 class="Subtitle">配置项</h3>
+  <h3 class="Subtitle">Attributes</h3>
   <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">

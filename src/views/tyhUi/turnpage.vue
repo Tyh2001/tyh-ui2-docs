@@ -37,10 +37,10 @@
   </tyh-turn-page>
   <highlightjs autodetect :code="tur3" />
 
-  <h3 class="Subtitle">tyh-turn-page 配置项</h3>
+  <h3 class="Subtitle">tyh-turn-page Attributes</h3>
   <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
-  <h3 class="Subtitle">tyh-turn-page-item 配置项</h3>
+  <h3 class="Subtitle">tyh-turn-page-item Attributes</h3>
   <tyh-table zebra align="center" :data="configures2" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">

@@ -1,4 +1,5 @@
 const table = {
+  // Attributes
   columns: [
     {
       title: '参数',
@@ -21,6 +22,7 @@ const table = {
       key: 'default'
     }
   ],
+  // Events
   columns2: [
     {
       title: '事件名称',
@@ -33,6 +35,17 @@ const table = {
     {
       title: '回调参数',
       key: 'param'
+    }
+  ],
+  // Slots
+  columns3: [
+    {
+      title: '插槽名称',
+      key: 'name'
+    },
+    {
+      title: '说明',
+      key: 'explain'
     }
   ]
 }
