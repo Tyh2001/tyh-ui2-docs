@@ -25,7 +25,7 @@
   <highlightjs autodetect :code="icon3" />
 
   <h3 class="Subtitle">Attributes</h3>
-  <tyh-table zebra align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="columns" />
 
   <h3 class="Subtitle">Icon 集合</h3>
   <p>点击即可复制代码</p>

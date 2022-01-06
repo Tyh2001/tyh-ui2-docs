@@ -77,16 +77,16 @@
   <highlightjs autodetect :code="cont1" />
 
   <h3 class="Subtitle">tyh-container Attributes</h3>
-  <tyh-table zebra align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="columns" />
 
   <h3 class="Subtitle">tyh-header Attributes</h3>
-  <tyh-table zebra align="center" :data="configures1" :columns="columns" />
+  <tyh-table align="center" :data="configures1" :columns="columns" />
 
   <h3 class="Subtitle">tyh-aside Attributes</h3>
-  <tyh-table zebra align="center" :data="configures2" :columns="columns" />
+  <tyh-table align="center" :data="configures2" :columns="columns" />
 
   <h3 class="Subtitle">tyh-footer Attributes</h3>
-  <tyh-table zebra align="center" :data="configures3" :columns="columns" />
+  <tyh-table align="center" :data="configures3" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/color">

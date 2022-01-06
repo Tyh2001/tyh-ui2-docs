@@ -31,22 +31,16 @@
   <h3 class="Subtitle">带有 Icon</h3>
   <p>icon 属性可以配置 icon</p>
   <tyh-link url="" icon="tyh-ui-favorite-filling">链接一</tyh-link>
-  <tyh-link url="" icon="tyh-ui-attachment" type="primary">
-    链接二
-  </tyh-link>
+  <tyh-link url="" icon="tyh-ui-attachment" type="primary"> 链接二 </tyh-link>
   <tyh-link url="" icon="tyh-ui-customer-service" type="success">
     链接三
   </tyh-link>
-  <tyh-link url="" icon="tyh-ui-filter" type="danger">
-    链接四
-  </tyh-link>
-  <tyh-link url="" icon="tyh-ui-good" type="warning">
-    链接五
-  </tyh-link>
+  <tyh-link url="" icon="tyh-ui-filter" type="danger"> 链接四 </tyh-link>
+  <tyh-link url="" icon="tyh-ui-good" type="warning"> 链接五 </tyh-link>
   <highlightjs autodetect :code="lin4" />
 
   <h3 class="Subtitle">Attributes</h3>
-  <tyh-table zebra align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/tag">

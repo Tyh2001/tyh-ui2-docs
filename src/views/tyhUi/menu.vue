@@ -54,10 +54,10 @@
   <highlightjs autodetect :code="men4" />
 
   <h3 class="Subtitle">tyh-menu Attributes</h3>
-  <tyh-table zebra align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="columns" />
 
   <h3 class="Subtitle">tyh-menu-item Attributes</h3>
-  <tyh-table zebra align="center" :data="configures2" :columns="columns" />
+  <tyh-table align="center" :data="configures2" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/input">

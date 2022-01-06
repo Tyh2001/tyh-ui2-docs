@@ -72,7 +72,7 @@
   <highlightjs autodetect :code="tab8" />
 
   <h3 class="Subtitle">Attributes</h3>
-  <tyh-table zebra align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/text">
