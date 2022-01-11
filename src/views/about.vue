@@ -1,7 +1,12 @@
 <template>
   <div id="about">
     <div class="logoBox">
-      <img draggable="false" class="logo" src="./images/logo.png" />
+      <img
+        draggable="false"
+        class="logo"
+        src="./images/tyh-ui2-logo.svg"
+        alt="logo"
+      />
     </div>
     <h3 class="about_title">关于 tyh-ui2</h3>
     <p>tyh-ui 的下一代 ui 组件库，基于 vue3.0 版本，全面拥抱 vue3.0。</p>
@@ -46,13 +51,13 @@ import Footer from '@/components/Footer.vue'
   padding-bottom: 99px;
 }
 #about .logoBox {
-  width: 260px;
+  width: 220px;
   height: 300px;
   margin: auto;
   user-select: none;
 }
 #about .logoBox .logo {
-  width: 260px;
+  width: 220px;
 }
 #about .about_title {
   margin: 40px 0 20px 0;
