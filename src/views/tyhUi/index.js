@@ -1371,6 +1371,64 @@ const tableData = [
 ]
 </script>
         `,
+  },
+  // 开关
+  switch: {
+    swi1: `
+<template>
+  <tyh-switch v-model="value1" />
+  <tyh-switch v-model="value1" />
+</template>
+
+<script setup>
+import { ref } 'vue'
+const value1 = ref(true)
+</script>
+    `,
+    swi2: `
+<template>
+  <tyh-switch v-model="value2" closeText="关闭" openText="开启" />
+</template>
+
+<script setup>
+import { ref } 'vue'
+const value2 = ref(true)
+</script>
+    `,
+    swi3: `
+<template>
+  <tyh-switch v-model="value3" disabled />
+  <tyh-switch v-model="value4" disabled />
+</template>
+
+<script setup>
+import { ref } 'vue'
+const value3 = ref(true)
+const value4 = ref(false)
+</script>
+    `,
+    swi4: `
+<template>
+  <tyh-switch v-model="value5" closeColor="red" openColor="green" />
+  <tyh-switch v-model="value6" closeColor="black" openColor="#eee" />
+</template>
+
+<script setup>
+import { ref } 'vue'
+const value5 = ref(true)
+const value6 = ref(false)
+</script>
+    `,
+    swi5: `
+<template>
+  <tyh-switch v-model="value7" :width="60" />
+</template>
+
+<script setup>
+import { ref } 'vue'
+const value7 = ref(true)
+</script>
+    `,
   }
 }
 

@@ -26,6 +26,7 @@ function changeList () {
     'container',
     'text',
     'table',
+    'switch'
   ]
   comItem.forEach(item => {
     const obj = {

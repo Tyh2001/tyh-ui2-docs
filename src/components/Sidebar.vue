@@ -73,6 +73,7 @@ const listPush = [
   { name: 'Avatar 头像', url: '/component/avatar' },
   { name: 'Text 文字', url: '/component/text' },
   { name: 'Table 表格', url: '/component/table' },
+  { name: 'Switch 开关', url: '/component/switch' },
 ]
 const router = useRouter()
 const route = useRoute()
