@@ -28,7 +28,7 @@
   <highlightjs autodetect :code="swi4" />
 
   <h3 class="Subtitle">自定义尺寸</h3>
-  <p>width 属性可以自定义开关的尺寸</p>
+  <p>width 属性可以自定义开关的尺寸 最小宽度为20</p>
   <tyh-switch v-model="value7" :width="60" />
   <highlightjs autodetect :code="swi5" />
 
