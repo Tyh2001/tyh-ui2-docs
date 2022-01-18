@@ -13,8 +13,8 @@ pre {
 }
 pre code.hljs {
   font-family: "微软雅黑";
-  font-size: 18px;
-  border-radius: 10px;
+  font-size: 15px;
+  border-radius: 15px;
   background: rgb(243, 247, 255);
 }
 .title {

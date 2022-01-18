@@ -28,10 +28,10 @@
   <h3 class="Subtitle">自定义图标</h3>
   <p>icon 属性可以配置其他 icon</p>
   <tyh-turn-page>
-    <tyh-turn-page-item direction="left" url="" icon="tyh-ui-home-01">
+    <tyh-turn-page-item direction="left" url="" icon="tyh-ui-shouye-xianxing">
       首页
     </tyh-turn-page-item>
-    <tyh-turn-page-item direction="right" url="" icon="tyh-ui-right-01">
+    <tyh-turn-page-item direction="right" url="" icon="tyh-ui-direction-right">
       下一页
     </tyh-turn-page-item>
   </tyh-turn-page>

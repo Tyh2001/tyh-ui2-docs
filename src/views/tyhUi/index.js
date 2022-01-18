@@ -49,7 +49,8 @@ import {
   TyhMain,
   TyhText,
   TyhTable,
-  TyhButtonGroup
+  TyhButtonGroup,
+  TyhSwitch
 } from 'tyh-ui2'
 import 'tyh-ui2/style/index.css'
 
@@ -82,6 +83,7 @@ createApp(App)
   .use(TyhText)
   .use(TyhTable)
   .use(TyhButtonGroup)
+  .use(TyhSwitch)
   .mount('#app')
     `
   },
@@ -591,10 +593,10 @@ const text11 = ref('')
     `,
     tur3: `
 <tyh-turn-page>
-  <tyh-turn-page-item direction="left" url="" icon="tyh-ui-home-01">
+  <tyh-turn-page-item direction="left" url="" icon="tyh-ui-shouye-xianxing">
     首页
   </tyh-turn-page-item>
-  <tyh-turn-page-item direction="right" url="" icon="tyh-ui-right-01">
+  <tyh-turn-page-item direction="right" url="" icon="tyh-ui-direction-right">
     下一页
   </tyh-turn-page-item>
 </tyh-turn-page>
@@ -676,7 +678,7 @@ function change10 () {
 }
 </script>
     `,
-    mes4: `import Message from 'tyh-ui2/packages/message'`
+    mes4: `import TyhMessage from 'tyh-ui2/packages/message'`
   },
   // 骨架
   skeleton: {
