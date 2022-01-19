@@ -74,6 +74,7 @@ const listPush = [
   { name: 'Text 文字', url: '/component/text' },
   { name: 'Table 表格', url: '/component/table' },
   { name: 'Switch 开关', url: '/component/switch' },
+  { name: 'Calendar 日历', url: '/component/calendar' },
 ]
 const router = useRouter()
 const route = useRoute()

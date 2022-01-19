@@ -26,7 +26,8 @@ function changeList () {
     'container',
     'text',
     'table',
-    'switch'
+    'switch',
+    'calendar'
   ]
   comItem.forEach(item => {
     const obj = {

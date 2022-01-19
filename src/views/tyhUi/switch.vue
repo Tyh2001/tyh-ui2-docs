@@ -42,9 +42,9 @@
     <tyh-turn-page-item direction="left" url="/component/table">
       Table 表格
     </tyh-turn-page-item>
-    <!-- <tyh-turn-page-item direction="right" url="/component/table">
-      Table 表格
-    </tyh-turn-page-item> -->
+    <tyh-turn-page-item direction="right" url="/component/calendar">
+      Calendar 日历
+    </tyh-turn-page-item>
   </tyh-turn-page>
 </template>
 

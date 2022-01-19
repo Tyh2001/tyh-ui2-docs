@@ -1431,6 +1431,31 @@ import { ref } 'vue'
 const value7 = ref(true)
 </script>
     `,
+  },
+  // 日历
+  calendar: {
+    cal1: `
+<template>
+  <tyh-calendar v-model="value" />
+</template>
+
+<script setup>
+import { ref } from 'vue'
+const value = ref(new Date())
+</script>
+    `,
+    cal2: `
+<template>
+  <tyh-calendar v-model="value" :cellWidth="70" />
+
+  <tyh-calendar v-model="value" :cellWidth="10" />
+</template>
+
+<script setup>
+import { ref } from 'vue'
+const value = ref(new Date())
+</script>
+    `,
   }
 }
 
