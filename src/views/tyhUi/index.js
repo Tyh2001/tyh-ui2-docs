@@ -515,11 +515,11 @@ const text11 = ref('')
 <tyh-division position="right">这是右边文字</tyh-division>
     `,
     div3: `
-<tyh-division position="left" textColor="red">这是左边文字</tyh-division>
+<tyh-division position="left" color="red">这是左边文字</tyh-division>
 <p>这是一段文字</p>
-<tyh-division position="center" textColor="blue">这是中间文字</tyh-division>
+<tyh-division position="center" color="blue">这是中间文字</tyh-division>
 <p>这是一段文字</p>
-<tyh-division position="right" textColor="green">这是右边文字</tyh-division>
+<tyh-division position="right" color="green">这是右边文字</tyh-division>
     `,
     div4: `
 <tyh-division position="left" margin="0px">这是左边文字</tyh-division>
@@ -527,6 +527,13 @@ const text11 = ref('')
 <tyh-division position="center" margin="20px">这是中间文字</tyh-division>
 <p>这是一段文字</p>
 <tyh-division position="right">这是右边文字</tyh-division>
+    `,
+    div5: `
+<tyh-division position="left" color="red" icon="tyh-ui-githublogo" />
+<p>这是一段文字</p>
+<tyh-division position="center" color="blue" icon="tyh-ui-notification-filling"/>
+<p>这是一段文字</p>
+<tyh-division position="right" color="black" icon="tyh-ui-cry"/>
     `
   },
   // 面包屑

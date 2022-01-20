@@ -18,12 +18,12 @@
   <highlightjs autodetect :code="div2" />
 
   <h3 class="Subtitle">文字颜色</h3>
-  <p>textColor 属性可以配置文字的颜色</p>
-  <tyh-division position="left" textColor="red">这是左边文字</tyh-division>
+  <p>color 属性可以配置文字的颜色</p>
+  <tyh-division position="left" color="red">这是左边文字</tyh-division>
   <p>这是一段文字</p>
-  <tyh-division position="center" textColor="blue">这是中间文字</tyh-division>
+  <tyh-division position="center" color="blue">这是中间文字</tyh-division>
   <p>这是一段文字</p>
-  <tyh-division position="right" textColor="green">这是右边文字</tyh-division>
+  <tyh-division position="right" color="green">这是右边文字</tyh-division>
   <highlightjs autodetect :code="div3" />
 
   <h3 class="Subtitle">上下的边距</h3>
@@ -34,6 +34,20 @@
   <p>这是一段文字</p>
   <tyh-division position="right">这是右边文字</tyh-division>
   <highlightjs autodetect :code="div4" />
+
+  <h3 class="Subtitle">带有 Icon</h3>
+  <p>icon 属性可以配置 icon</p>
+  <p>icon 的优先级大于描述文字</p>
+  <tyh-division position="left" color="red" icon="tyh-ui-githublogo" />
+  <p>这是一段文字</p>
+  <tyh-division
+    position="center"
+    color="blue"
+    icon="tyh-ui-notification-filling"
+  />
+  <p>这是一段文字</p>
+  <tyh-division position="right" color="black" icon="tyh-ui-cry" />
+  <highlightjs autodetect :code="div5" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />
@@ -54,8 +68,9 @@ import table from './table'
 const { columns } = table
 const configures = [
   { param: 'position', explain: '文字位置', type: 'string', value: 'left / center / right', default: 'left' },
-  { param: 'textColor', explain: '文字颜色', type: 'string', value: '——', default: '#515a6e' },
-  { param: 'margin', explain: '上下的边距', type: 'string', value: '——', default: '16px' },
+  { param: 'color', explain: '文字颜色', type: 'string', value: '——', default: '#515a6e' },
+  { param: 'margin', explain: '上下的边距', type: 'number', value: '——', default: '25' },
+  { param: 'icon', explain: '配置 icon', type: 'string', value: '——', default: '——' },
 ]
-const { div1, div2, div3, div4 } = index.division
+const { div1, div2, div3, div4, div5 } = index.division
 </script>
