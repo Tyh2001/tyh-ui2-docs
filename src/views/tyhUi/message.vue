@@ -1,5 +1,9 @@
 <template>
   <h1 class="title">Message 提示框</h1>
+  <tyh-alert
+    type="danger"
+    message="该组件尚未完善！目前存在 Bug，正在修复中，谨慎使用！！！"
+  />
 
   <h3 class="Subtitle">使用前</h3>
   <p>使用前，你必须先引入它</p>

@@ -20,13 +20,8 @@
       <h3 class="title-footer">链接</h3>
       <ul class="link-ul">
         <li>
-          <tyh-link target="_blank" url="https://github.com/Tyh2001">
-            Github
-          </tyh-link>
-        </li>
-        <li>
           <tyh-link target="_blank" url="https://github.com/Tyh2001/tyh-ui2">
-            官方仓库
+            Github
           </tyh-link>
         </li>
         <li>
@@ -40,6 +35,11 @@
             url="https://github.com/Tyh2001/tyh-ui2/blob/master/CHANGELOG.md"
           >
             更新日志
+          </tyh-link>
+        </li>
+        <li>
+          <tyh-link target="_blank" url="https://tianyuhao.cn">
+            关于我
           </tyh-link>
         </li>
       </ul>

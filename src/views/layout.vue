@@ -20,15 +20,6 @@
       >
         {{ list.title }}
       </tyh-menu-item>
-      <tyh-link
-        target="_blank"
-        href="https://github.com/Tyh2001/tyh-ui2/blob/master/CHANGELOG.md"
-      >
-        <tyh-menu-item color="#000">更新日志</tyh-menu-item>
-      </tyh-link>
-      <tyh-link target="_blank" url="https://tianyuhao.cn/tyhui">
-        <tyh-menu-item color="#000">v2</tyh-menu-item>
-      </tyh-link>
     </div>
   </tyh-menu>
 

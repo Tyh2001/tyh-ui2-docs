@@ -28,9 +28,9 @@
 
   <h3 class="Subtitle">上下的边距</h3>
   <p>margin 属性可以配置上下的边距</p>
-  <tyh-division position="left" margin="0px">这是左边文字</tyh-division>
+  <tyh-division position="left" :margin="0">这是左边文字</tyh-division>
   <p>这是一段文字</p>
-  <tyh-division position="center" margin="20px">这是中间文字</tyh-division>
+  <tyh-division position="center" :margin="20">这是中间文字</tyh-division>
   <p>这是一段文字</p>
   <tyh-division position="right">这是右边文字</tyh-division>
   <highlightjs autodetect :code="div4" />

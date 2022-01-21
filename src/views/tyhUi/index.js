@@ -522,9 +522,9 @@ const text11 = ref('')
 <tyh-division position="right" color="green">这是右边文字</tyh-division>
     `,
     div4: `
-<tyh-division position="left" margin="0px">这是左边文字</tyh-division>
+<tyh-division position="left" :margin="0">这是左边文字</tyh-division>
 <p>这是一段文字</p>
-<tyh-division position="center" margin="20px">这是中间文字</tyh-division>
+<tyh-division position="center" :margin="20">这是中间文字</tyh-division>
 <p>这是一段文字</p>
 <tyh-division position="right">这是右边文字</tyh-division>
     `,
@@ -1390,7 +1390,7 @@ const tableData = [
 </template>
 
 <script setup>
-import { ref } 'vue'
+import { ref } from 'vue'
 const value1 = ref(true)
 </script>
     `,
@@ -1400,7 +1400,7 @@ const value1 = ref(true)
 </template>
 
 <script setup>
-import { ref } 'vue'
+import { ref } from 'vue'
 const value2 = ref(true)
 </script>
     `,
@@ -1411,7 +1411,7 @@ const value2 = ref(true)
 </template>
 
 <script setup>
-import { ref } 'vue'
+import { ref } from 'vue'
 const value3 = ref(true)
 const value4 = ref(false)
 </script>
@@ -1423,7 +1423,7 @@ const value4 = ref(false)
 </template>
 
 <script setup>
-import { ref } 'vue'
+import { ref } from 'vue'
 const value5 = ref(true)
 const value6 = ref(false)
 </script>
@@ -1434,7 +1434,7 @@ const value6 = ref(false)
 </template>
 
 <script setup>
-import { ref } 'vue'
+import { ref } from 'vue'
 const value7 = ref(true)
 </script>
     `,
