@@ -27,7 +27,7 @@
     <router-view />
   </div>
 
-  <el-drawer v-model="drawer" size="200px" direction="ltr">
+  <el-drawer v-model="drawer" size="200px" direction="rtl">
     <Sidebar phone />
   </el-drawer>
 </template>
