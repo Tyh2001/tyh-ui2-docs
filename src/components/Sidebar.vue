@@ -85,7 +85,13 @@ function listPushClick (index) {
 // 高亮显示
 function highLightStyle (index) {
   if (listPush[index].url === route.path) {
-    return { color: '#3a6ff4', borderLeft: '4px solid #3a6ff4' }
+    return {
+      color: '#3a6ff4',
+      borderLeft: '4px solid #3a6ff4',
+      fontWeight: 600,
+      fontSize: '16px',
+      backgroundColor: 'rgb(247, 247, 247)'
+    }
   }
 }
 </script>
@@ -104,6 +110,7 @@ ul {
       color: #333;
       font-size: 14px;
       cursor: pointer;
+      transition: 0.3s;
       a {
         text-decoration: none;
       }
