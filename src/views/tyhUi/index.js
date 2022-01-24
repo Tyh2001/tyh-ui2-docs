@@ -852,7 +852,7 @@ const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
   avatar: {
     ava1: `
 <tyh-avatar
-  size="10"
+  :size="10"
   src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
 />
     `,
@@ -883,6 +883,13 @@ const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
   border
   round
   src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
+/>
+    `,
+    ava5: `
+<tyh-avatar src="https://tianyuhao.cn2/tyhui/v3/assets/giraffe.jpg" />
+<tyh-avatar
+  errorIcon="tyh-ui-githublogo"
+  src="https://tianyuhao.cn2/tyhui/v3/assets/giraffe.jpg"
 />
     `
   },

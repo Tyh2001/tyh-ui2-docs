@@ -6,7 +6,7 @@
   <p>src 属性可以添加图片路径</p>
   <p>size 可以配置头像大小</p>
   <tyh-avatar
-    size="10"
+    :size="10"
     src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
   />
   <highlightjs autodetect :code="ava1" />
@@ -49,6 +49,15 @@
   />
   <highlightjs autodetect :code="ava4" />
 
+  <h3 class="Subtitle">加载失败</h3>
+  <p>errorIcon 属性配置加载失败的 icon</p>
+  <tyh-avatar src="https://tianyuhao.cn2/tyhui/v3/assets/giraffe.jpg" />
+  <tyh-avatar
+    errorIcon="tyh-ui-githublogo"
+    src="https://tianyuhao.cn2/tyhui/v3/assets/giraffe.jpg"
+  />
+  <highlightjs autodetect :code="ava5" />
+
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />
 
@@ -72,11 +81,11 @@
 import index from './index'
 import table from './table'
 const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
-const { ava1, ava2, ava3, ava4 } = index.avatar
+const { ava1, ava2, ava3, ava4, ava4 } = index.avatar
 const { columns, columns2, columns3 } = table
 const configures = [
   { param: 'src', explain: '图片路径', type: 'string', value: '——', default: '——' },
-  { param: 'size', explain: '图片大小', type: 'string / number', value: '——', default: '8(计算方式：(size*10)px)' },
+  { param: 'size', explain: '图片大小', type: 'number', value: '——', default: '8，(计算方式：(size*10)px)' },
   { param: 'round', explain: '圆角', type: 'boolean', value: '——', default: 'false' },
   { param: 'border', explain: '边框', type: 'boolean', value: '——', default: 'false' },
   { param: 'fit', explain: '确定图片如何适应容器框', type: 'string', value: '——', default: '——' },
