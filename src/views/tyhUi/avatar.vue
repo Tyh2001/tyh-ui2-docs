@@ -81,7 +81,7 @@
 import index from './index'
 import table from './table'
 const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
-const { ava1, ava2, ava3, ava4, ava4 } = index.avatar
+const { ava1, ava2, ava3, ava4, ava5 } = index.avatar
 const { columns, columns2, columns3 } = table
 const configures = [
   { param: 'src', explain: '图片路径', type: 'string', value: '——', default: '——' },
