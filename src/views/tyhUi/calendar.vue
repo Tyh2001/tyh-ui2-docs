@@ -9,7 +9,7 @@
 
   <h3 class="Subtitle">定制大小</h3>
   <p>cellWidth 属性可以配置日期单元格的宽度</p>
-  <p>最小宽度为 25，如果小于 25 则按照 25 计算</p>
+  <p>最小宽度为 28，如果小于 28 则按照 28 计算</p>
   <tyh-calendar v-model="value" :cellWidth="70" />
   <br />
   <tyh-calendar v-model="value" :cellWidth="10" />
