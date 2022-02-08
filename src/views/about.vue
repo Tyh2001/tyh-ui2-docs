@@ -46,7 +46,7 @@ import Footer from '@/components/Footer.vue'
 #about {
   max-width: 800px;
   margin: auto;
-  padding: 15px;
+  padding: 22px;
   box-sizing: border-box;
   padding-bottom: 99px;
 }

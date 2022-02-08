@@ -185,4 +185,31 @@ function ListBackgroundColor (item) {
     }
   }
 }
+@media screen and (max-width: 700px) {
+  #colorList1,
+  #colorList2,
+  #colorList3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .colorList-item1,
+    .colorList-item2,
+    .colorList-item3 {
+      margin-top: 10px;
+      width: 48%;
+      height: 70px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+      box-sizing: border-box;
+      cursor: pointer;
+      p {
+        color: #fff;
+      }
+    }
+  }
+}
 </style>

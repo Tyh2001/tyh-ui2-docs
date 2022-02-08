@@ -85,5 +85,6 @@ const configEvt = [
 <style scoped>
 .tyh-tag {
   margin-right: 13px;
+  margin-bottom: 13px;
 }
 </style>

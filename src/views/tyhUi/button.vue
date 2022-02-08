@@ -111,19 +111,19 @@
   <h3 class="Subtitle">不同尺寸</h3>
   <p>size 属性可以配置按钮尺寸</p>
   <tyh-button size="mini" type="primary">小型按钮</tyh-button>
-  <br /><br />
+  <br />
   <tyh-button size="small" type="primary">中等按钮</tyh-button>
-  <br /><br />
+  <br />
   <tyh-button type="primary">正常大小</tyh-button>
-  <br /><br />
+  <br />
   <tyh-button size="large" type="primary">大号按钮</tyh-button>
-  <br /><br />
+  <br />
   <tyh-button simple size="mini" type="primary">小型按钮</tyh-button>
-  <br /><br />
+  <br />
   <tyh-button simple size="small" type="primary">中等按钮</tyh-button>
-  <br /><br />
+  <br />
   <tyh-button simple type="primary">正常大小</tyh-button>
-  <br /><br />
+  <br />
   <tyh-button simple size="large" type="primary">大号按钮</tyh-button>
   <highlightjs simple autodetect :code="btn5" />
 
@@ -159,5 +159,8 @@ const configures = [
 <style scoped>
 .right {
   margin-right: 13px;
+}
+.tyh-button {
+  margin-bottom: 13px;
 }
 </style>

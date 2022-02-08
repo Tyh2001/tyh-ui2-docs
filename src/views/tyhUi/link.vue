@@ -70,5 +70,6 @@ const configures = [
 <style scoped>
 .tyh-link {
   margin-right: 13px;
+  margin-bottom: 13px;
 }
 </style>

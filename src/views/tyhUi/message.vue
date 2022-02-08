@@ -94,5 +94,6 @@ function change10 () {
 <style scoped>
 .tyh-button {
   margin-right: 13px;
+  margin-bottom: 13px;
 }
 </style>

@@ -1,47 +1,34 @@
 <template>
-  <ul>
-    <template v-if="phone">
-      <router-link to="/">
-        <li>
-          <p class="urlPush">首页</p>
-        </li>
-      </router-link>
-      <router-link to="/component/install">
-        <li>
-          <p class="urlPush">组件</p>
-        </li>
-      </router-link>
-      <router-link to="/about">
-        <li>
-          <p class="urlPush">关于</p>
-        </li>
-      </router-link>
-      <a
-        target="_blank"
-        href="https://github.com/Tyh2001/tyh-ui2/blob/master/CHANGELOG.md"
-      >
-        <li>
-          <p class="urlPush">更新日志</p>
-        </li>
-      </a>
-      <a target="_blank" href="https://tianyuhao.cn/tyhui">
-        <li>
-          <p class="urlPush">v2</p>
-        </li>
-      </a>
-      <br /><br />
-    </template>
+  <template v-if="phone">
+    <router-link to="/">
+      <p class="urlPush">首页</p>
+    </router-link>
+    <router-link to="/component/install">
+      <p class="urlPush">组件</p>
+    </router-link>
+    <router-link to="/about">
+      <p class="urlPush">关于</p>
+    </router-link>
 
-    <li v-for="(item, index) in listPush" :key="index">
-      <p
-        class="urlPush"
-        :style="highLightStyle(index)"
-        @click="listPushClick(index)"
-      >
-        {{ item.name }}
-      </p>
-    </li>
-  </ul>
+    <tyh-link
+      target="_blank"
+      url="https://github.com/Tyh2001/tyh-ui2/blob/master/CHANGELOG.md"
+    >
+      <p class="urlPush">更新日志</p>
+    </tyh-link>
+  </template>
+
+  <tyh-division />
+
+  <p
+    v-for="(item, index) in listPush"
+    :key="index"
+    class="urlPush"
+    :style="highLightStyle(index)"
+    @click="listPushClick(index)"
+  >
+    {{ item.name }}
+  </p>
 </template>
 
 <script setup>
@@ -97,27 +84,20 @@ function highLightStyle (index) {
 </script>
 
 <style lang='less' scoped>
-ul {
-  padding-bottom: 150px;
-  li {
-    list-style: none;
-    line-height: 40px;
-    .urlPush {
-      padding-left: 20px;
-      width: 100%;
-      display: inline-block;
-      text-decoration: none;
-      color: #333;
-      font-size: 14px;
-      cursor: pointer;
-      transition: 0.3s;
-      a {
-        text-decoration: none;
-      }
-      &:hover {
-        background: rgb(247, 247, 247);
-      }
-    }
+.urlPush {
+  padding-left: 20px;
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  a {
+    text-decoration: none;
+  }
+  &:hover {
+    background: rgb(247, 247, 247);
   }
 }
 </style>

@@ -83,4 +83,7 @@ const slotConfig = [
   margin-left: 10px;
   display: inline-block;
 }
+.tyh-card {
+  margin-bottom: 13px;
+}
 </style>
