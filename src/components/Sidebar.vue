@@ -16,19 +16,19 @@
     >
       <p class="urlPush">更新日志</p>
     </tyh-link>
+    <tyh-division />
   </template>
-
-  <tyh-division />
 
   <p
     v-for="(item, index) in listPush"
     :key="index"
-    class="urlPush"
+    class="urlPush list"
     :style="highLightStyle(index)"
     @click="listPushClick(index)"
   >
     {{ item.name }}
   </p>
+  <br /><br /><br /><br />
 </template>
 
 <script setup>

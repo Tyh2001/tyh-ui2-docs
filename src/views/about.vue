@@ -51,13 +51,12 @@ import Footer from '@/components/Footer.vue'
   padding-bottom: 99px;
 }
 #about .logoBox {
-  width: 220px;
-  height: 300px;
+  width: 150px;
   margin: auto;
   user-select: none;
 }
 #about .logoBox .logo {
-  width: 220px;
+  width: 150px;
 }
 #about .about_title {
   margin: 40px 0 20px 0;
