@@ -9,17 +9,17 @@
     title 配置标题，key 配置键值，名字是必须的，否则将不能正常工作！详情参考文档
   </p>
   <tyh-table :data="tableData" :columns="columns3" />
-  <highlightjs autodetect :code="tab1" />
+  <highlightjs autodetect :code="tableCode.tab1" />
 
   <h3 class="Subtitle">配置行高</h3>
   <p>trHeight 属性可以表格行高</p>
   <tyh-table :data="tableData" :columns="columns3" trHeight="50px" />
-  <highlightjs autodetect :code="tab2" />
+  <highlightjs autodetect :code="tableCode.tab2" />
 
   <h3 class="Subtitle">文字放置方向</h3>
   <p>align 属性可以表格文字居中还是居两侧</p>
   <tyh-table :data="tableData" :columns="columns3" align="center" />
-  <highlightjs autodetect :code="tab3" />
+  <highlightjs autodetect :code="tableCode.tab3" />
 
   <h3 class="Subtitle">斑马纹和边框</h3>
   <p>zebra 属性可以配置斑马纹</p>
@@ -31,7 +31,7 @@
     border
     zebra
   />
-  <highlightjs autodetect :code="tab4" />
+  <highlightjs autodetect :code="tableCode.tab4" />
 
   <h3 class="Subtitle">自定义宽高</h3>
   <p>width 属性可以配置表格宽度</p>
@@ -43,12 +43,12 @@
     width="500px"
     height="200px"
   />
-  <highlightjs autodetect :code="tab5" />
+  <highlightjs autodetect :code="tableCode.tab5" />
 
   <h3 class="Subtitle">带有序号</h3>
   <p>num 属性可以配置带有序号的表格</p>
   <tyh-table :data="tableData" :columns="columns3" align="center" num />
-  <highlightjs autodetect :code="tab6" />
+  <highlightjs autodetect :code="tableCode.tab6" />
 
   <h3 class="Subtitle">重点行标注</h3>
   <p>
@@ -61,7 +61,7 @@
     num
     :important="[2, 4]"
   />
-  <highlightjs autodetect :code="tab7" />
+  <highlightjs autodetect :code="tableCode.tab7" />
 
   <h3 class="Subtitle">单独配置列度</h3>
   <p>
@@ -69,7 +69,7 @@
     键值，来配置单独的列宽，比如下面将第一列和第二列设置宽度为 100px
   </p>
   <tyh-table :data="tableData" :columns="columns2" align="center" />
-  <highlightjs autodetect :code="tab8" />
+  <highlightjs autodetect :code="tableCode.tab8" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />
@@ -85,7 +85,7 @@
 </template>
 
 <script setup>
-import index from './index'
+import { tableCode } from './index'
 import table from './table'
 const { columns } = table
 const columns3 = [
@@ -140,7 +140,6 @@ const tableData = [
     address: '浙江省杭州市拱墅区 199 号'
   }
 ]
-const { tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 } = index.table
 const configures = [
   { param: 'data', explain: '表单的内容数据', type: 'array', value: '——', default: '[]' },
   { param: 'columns', explain: '表头和键值', type: 'array', value: '——', default: '[]' },

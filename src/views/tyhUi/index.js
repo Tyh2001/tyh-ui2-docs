@@ -1021,7 +1021,7 @@ const text = {
     `,
 }
 // 表格
-const table = {
+const tableCode = {
   tab1: `
 <template>
   <tyh-table :data="tableData" :columns="columns" />
@@ -1557,7 +1557,7 @@ export {
   avatar,
   container,
   text,
-  table,
+  tableCode,
   Switch,
   calendar,
   radio,

@@ -9,7 +9,7 @@
   <tyh-text style="margin-left: 10px" type="success">这是一段成功文字</tyh-text>
   <tyh-text style="margin-left: 10px" type="danger">这是一段危险文字</tyh-text>
   <tyh-text style="margin-left: 10px" type="warning">这是一段警告文字</tyh-text>
-  <highlightjs autodetect :code="text1" />
+  <highlightjs autodetect :code="text.text1" />
 
   <h3 class="Subtitle">独占一行</h3>
   <p>block 属性可以配置独占一行</p>
@@ -18,7 +18,7 @@
   <tyh-text block type="success">这是一段成功文字</tyh-text>
   <tyh-text block type="danger">这是一段危险文字</tyh-text>
   <tyh-text block type="warning">这是一段警告文字</tyh-text>
-  <highlightjs autodetect :code="text2" />
+  <highlightjs autodetect :code="text.text2" />
 
   <h3 class="Subtitle">文字大小</h3>
   <p>size 属性可以配置文字大小</p>
@@ -27,7 +27,7 @@
   <tyh-text block size="21" type="success">这是一段成功文字</tyh-text>
   <tyh-text block size="24" type="danger">这是一段危险文字</tyh-text>
   <tyh-text block size="27" type="warning">这是一段警告文字</tyh-text>
-  <highlightjs autodetect :code="text3" />
+  <highlightjs autodetect :code="text.text3" />
 
   <h3 class="Subtitle">自定义颜色</h3>
   <p>color 属性可以配置自定义颜色</p>
@@ -37,7 +37,7 @@
   <tyh-text block color="orange" type="success">这是一段文字</tyh-text>
   <tyh-text block color="pink" type="danger">这是一段文字</tyh-text>
   <tyh-text block color="black" type="warning">这是一段文字</tyh-text>
-  <highlightjs autodetect :code="text4" />
+  <highlightjs autodetect :code="text.text4" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />
@@ -53,10 +53,9 @@
 </template>
 
 <script setup>
-import index from './index'
+import { text } from './index'
 import table from './table'
 const { columns } = table
-const { text1, text2, text3, text4 } = index.text
 const configures = [
   { param: 'type', explain: '按钮的类型', type: 'string', value: 'default / primary / success / danger / warning', default: 'default' },
   { param: 'block', explain: '是否独占一行', type: 'boolean', value: '——', default: 'false' },

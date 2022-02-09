@@ -9,12 +9,12 @@
     :size="10"
     src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
   />
-  <highlightjs autodetect :code="ava1" />
+  <highlightjs autodetect :code="avatar.ava1" />
 
   <h3 class="Subtitle">配置圆角</h3>
   <p>round 属性配置头像的圆角</p>
   <tyh-avatar round src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg" />
-  <highlightjs autodetect :code="ava2" />
+  <highlightjs autodetect :code="avatar.ava2" />
 
   <h3 class="Subtitle">如何适应容器框</h3>
   <p>
@@ -37,7 +37,7 @@
       />
     </div>
   </div>
-  <highlightjs autodetect :code="ava3" />
+  <highlightjs autodetect :code="avatar.ava3" />
 
   <h3 class="Subtitle">配置边框</h3>
   <p>border 属性配置头像的边框</p>
@@ -47,7 +47,7 @@
     round
     src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
   />
-  <highlightjs autodetect :code="ava4" />
+  <highlightjs autodetect :code="avatar.ava4" />
 
   <h3 class="Subtitle">加载失败</h3>
   <p>errorIcon 属性配置加载失败的 icon</p>
@@ -56,7 +56,7 @@
     errorIcon="tyh-ui-githublogo"
     src="https://tianyuhao.cn2/tyhui/v3/assets/giraffe.jpg"
   />
-  <highlightjs autodetect :code="ava5" />
+  <highlightjs autodetect :code="avatar.ava5" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />
@@ -78,10 +78,9 @@
 </template>
 
 <script setup>
-import index from './index'
+import { avatar } from './index'
 import table from './table'
 const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
-const { ava1, ava2, ava3, ava4, ava5 } = index.avatar
 const { columns, columns2, columns3 } = table
 const configures = [
   { param: 'src', explain: '图片路径', type: 'string', value: '——', default: '——' },

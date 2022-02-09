@@ -6,13 +6,13 @@
   <p>content 属性可以绑定需要展示的数组元素</p>
   <p>iskey 属性可以绑定数组中每个元素的键值</p>
   <tyh-list :content="arr" iskey="name" />
-  <highlightjs autodetect :code="lis1" />
+  <highlightjs autodetect :code="list.lis1" />
 
   <h3 class="Subtitle">配置表头和页脚</h3>
   <p>header 表头内容</p>
   <p>footer 页脚内容</p>
   <tyh-list :content="arr" iskey="name" header="这是头部" footer="这是页脚" />
-  <highlightjs autodetect :code="lis2" />
+  <highlightjs autodetect :code="list.lis2" />
 
   <h3 class="Subtitle">斑马纹</h3>
   <p>zebra 是否显示斑马纹</p>
@@ -25,12 +25,12 @@
     header="这是头部"
     footer="这是页脚"
   />
-  <highlightjs autodetect :code="lis3" />
+  <highlightjs autodetect :code="list.lis3" />
 
   <h3 class="Subtitle">hover 状态展示投影</h3>
   <p>hoverShow 配置 Hover 状态展示投影</p>
   <tyh-list hoverShow :content="arr" iskey="name" />
-  <highlightjs autodetect :code="lis4" />
+  <highlightjs autodetect :code="list.lis4" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />
@@ -46,7 +46,7 @@
 </template>
 
 <script setup>
-import index from './index'
+import { list } from './index'
 import table from './table'
 const { columns } = table
 const arr = [
@@ -68,5 +68,4 @@ const configures = [
   { param: 'num', explain: '是否显示序号', type: 'boolean', value: '——', default: 'false' },
   { param: 'hoverShow', explain: 'hover 状态显示阴影', type: 'boolean', value: '——', default: 'false' },
 ]
-const { lis1, lis2, lis3, lis4 } = index.list
 </script>

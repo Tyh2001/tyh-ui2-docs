@@ -74,12 +74,12 @@
   <tyh-table align="center" :data="configEvt" :columns="columns2" />
 
   <tyh-turn-page style="margin: 50px 0">
-    <tyh-turn-page-item direction="left" url="/component/card">
-      Card 卡片
+    <tyh-turn-page-item direction="left" url="/component/calendar">
+     Calendar 日历
     </tyh-turn-page-item>
-    <tyh-turn-page-item direction="right" url="/component/link">
+    <!-- <tyh-turn-page-item direction="right" url="/component/link">
       link 链接
-    </tyh-turn-page-item>
+    </tyh-turn-page-item> -->
   </tyh-turn-page>
 </template>
 

@@ -6,7 +6,7 @@
   <tyh-division></tyh-division>
   <p>这是一段文字</p>
   <tyh-division></tyh-division>
-  <highlightjs autodetect :code="div1" />
+  <highlightjs autodetect :code="division.div1" />
 
   <h3 class="Subtitle">文字位置</h3>
   <p>position 属性可以配置文字的位置</p>
@@ -15,7 +15,7 @@
   <tyh-division position="center">这是中间文字</tyh-division>
   <p>这是一段文字</p>
   <tyh-division position="right">这是右边文字</tyh-division>
-  <highlightjs autodetect :code="div2" />
+  <highlightjs autodetect :code="division.div2" />
 
   <h3 class="Subtitle">文字颜色</h3>
   <p>color 属性可以配置文字的颜色</p>
@@ -24,7 +24,7 @@
   <tyh-division position="center" color="blue">这是中间文字</tyh-division>
   <p>这是一段文字</p>
   <tyh-division position="right" color="green">这是右边文字</tyh-division>
-  <highlightjs autodetect :code="div3" />
+  <highlightjs autodetect :code="division.div3" />
 
   <h3 class="Subtitle">上下的边距</h3>
   <p>margin 属性可以配置上下的边距</p>
@@ -33,7 +33,7 @@
   <tyh-division position="center" :margin="20">这是中间文字</tyh-division>
   <p>这是一段文字</p>
   <tyh-division position="right">这是右边文字</tyh-division>
-  <highlightjs autodetect :code="div4" />
+  <highlightjs autodetect :code="division.div4" />
 
   <h3 class="Subtitle">带有 Icon</h3>
   <p>icon 属性可以配置 icon</p>
@@ -47,7 +47,7 @@
   />
   <p>这是一段文字</p>
   <tyh-division position="right" color="black" icon="tyh-ui-cry" />
-  <highlightjs autodetect :code="div5" />
+  <highlightjs autodetect :code="division.div5" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />
@@ -63,7 +63,7 @@
 </template>
 
 <script setup>
-import index from './index'
+import { division } from './index'
 import table from './table'
 const { columns } = table
 const configures = [
@@ -72,5 +72,4 @@ const configures = [
   { param: 'margin', explain: '上下的边距', type: 'number', value: '——', default: '25' },
   { param: 'icon', explain: '配置 icon', type: 'string', value: '——', default: '——' },
 ]
-const { div1, div2, div3, div4, div5 } = index.division
 </script>

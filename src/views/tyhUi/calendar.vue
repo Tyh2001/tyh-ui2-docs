@@ -5,7 +5,7 @@
   <p>日历的基本使用</p>
   <p>v-model 绑定一个日期</p>
   <tyh-calendar v-model="value" />
-  <highlightjs autodetect :code="cal1" />
+  <highlightjs autodetect :code="calendar.cal1" />
 
   <h3 class="Subtitle">定制大小</h3>
   <p>cellWidth 属性可以配置日期单元格的宽度</p>
@@ -13,7 +13,7 @@
   <tyh-calendar v-model="value" :cellWidth="70" />
   <br />
   <tyh-calendar v-model="value" :cellWidth="10" />
-  <highlightjs autodetect :code="cal2" />
+  <highlightjs autodetect :code="calendar.cal2" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />
@@ -29,11 +29,10 @@
 </template>
 
 <script setup>
-import index from './index'
+import { calendar } from './index'
 import table from './table'
 import { ref } from 'vue'
 const value = ref(new Date())
-const { cal1, cal2 } = index.calendar
 const { columns } = table
 const configures = [
   { param: 'v-model', explain: '绑定的日期', type: 'object', value: '——', default: '——' },

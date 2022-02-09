@@ -74,7 +74,7 @@
       <tyh-footer>Footer</tyh-footer>
     </tyh-container>
   </tyh-container>
-  <highlightjs autodetect :code="cont1" />
+  <highlightjs autodetect :code="container.cont1" />
 
   <h3 class="Subtitle">tyh-container Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />
@@ -99,10 +99,9 @@
 </template>
 
 <script setup>
-import index from './index'
+import { container } from './index'
 import table from './table'
 const { columns } = table
-const { cont1 } = index.container
 const configures = [
   { param: 'flex', explain: '是否水平排列', type: 'boolean', value: '——', default: 'false' },
 ]

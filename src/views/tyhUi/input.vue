@@ -4,13 +4,13 @@
   <h3 class="Subtitle">基本使用</h3>
   <p>输入框的基本用法</p>
   <tyh-input v-model="text1" />
-  <highlightjs autodetect :code="inp1" />
+  <highlightjs autodetect :code="input.inp1" />
 
   <h3 class="Subtitle">输入框类型</h3>
   <p>type 属性可以规定文本框类型</p>
   <tyh-input type="text" v-model="text2" /><br />
   <tyh-input class="size-input" type="password" v-model="text3" />
-  <highlightjs autodetect :code="inp2" />
+  <highlightjs autodetect :code="input.inp2" />
 
   <h3 class="Subtitle">不同尺寸</h3>
   <p>size 属性可以配置文本框尺寸</p>
@@ -18,27 +18,27 @@
   <tyh-input class="size-input" size="medium" v-model="text5" /><br />
   <tyh-input class="size-input" size="small" v-model="text6" /><br />
   <tyh-input class="size-input" size="mini" v-model="text7" /><br />
-  <highlightjs autodetect :code="inp3" />
+  <highlightjs autodetect :code="input.inp3" />
 
   <h3 class="Subtitle">可清空</h3>
   <p>clear 属性可以配置带有清空按钮的文本框</p>
   <tyh-input v-model="text8" clear />
-  <highlightjs autodetect :code="inp4" />
+  <highlightjs autodetect :code="input.inp4" />
 
   <h3 class="Subtitle">带有 icon</h3>
   <p>icon 属性可以配置文本框带有其他图标，直接传递 icon 的名字传递即可</p>
   <tyh-input v-model="text9" icon="tyh-ui-electronics" />
-  <highlightjs autodetect :code="inp5" />
+  <highlightjs autodetect :code="input.inp5" />
 
   <h3 class="Subtitle">禁用状态</h3>
   <p>disabled 属性可以配置文本框禁用状态</p>
   <tyh-input v-model="text10" disabled />
-  <highlightjs autodetect :code="inp6" />
+  <highlightjs autodetect :code="input.inp6" />
 
   <h3 class="Subtitle">查看密码</h3>
   <p>showPassword 属性可以配置查看密码按钮，showPassword 优先级大于 clear</p>
   <tyh-input v-model="text11" type="password" showPassword />
-  <highlightjs autodetect :code="inp7" />
+  <highlightjs autodetect :code="input.inp7" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />
@@ -58,7 +58,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import index from './index'
+import { input } from './index'
 import table from './table'
 const { columns, columns2 } = table
 const text1 = ref('')
@@ -72,7 +72,6 @@ const text8 = ref('')
 const text9 = ref('')
 const text10 = ref('')
 const text11 = ref('1234567')
-const { inp1, inp2, inp3, inp4, inp5, inp6, inp7 } = index.input
 const configures = [
   { param: 'v-model', explain: '绑定值', type: 'string / number', value: '——', default: '——' },
   { param: 'type', explain: '类型', type: 'string', value: 'text / password', default: 'text' },

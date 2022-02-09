@@ -11,7 +11,7 @@
     <tyh-turn-page-item direction="left" url="">上一页</tyh-turn-page-item>
     <tyh-turn-page-item direction="right" url="">下一页</tyh-turn-page-item>
   </tyh-turn-page>
-  <highlightjs autodetect :code="tur1" />
+  <highlightjs autodetect :code="turnpage.tur1" />
 
   <h3 class="Subtitle">居中显示</h3>
   <p>center 属性可以配置居中显示</p>
@@ -23,7 +23,7 @@
       下一页 - 居中
     </tyh-turn-page-item>
   </tyh-turn-page>
-  <highlightjs autodetect :code="tur2" />
+  <highlightjs autodetect :code="turnpage.tur2" />
 
   <h3 class="Subtitle">自定义图标</h3>
   <p>icon 属性可以配置其他 icon</p>
@@ -35,7 +35,7 @@
       下一页
     </tyh-turn-page-item>
   </tyh-turn-page>
-  <highlightjs autodetect :code="tur3" />
+  <highlightjs autodetect :code="turnpage.tur3" />
 
   <h3 class="Subtitle">tyh-turn-page Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />
@@ -54,7 +54,7 @@
 </template>
 
 <script setup>
-import index from './index'
+import { turnpage } from './index'
 import table from './table'
 const { columns } = table
 const configures = [
@@ -66,5 +66,4 @@ const configures2 = [
   { param: 'icon', explain: '左右的图标', type: 'string', value: '——', default: '——' },
   { param: 'prohibit', explain: '是否禁用', type: 'boolean', value: '——', default: 'false' }
 ]
-const { tur1, tur2, tur3 } = index.turnpage
 </script>

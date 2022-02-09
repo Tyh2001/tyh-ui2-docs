@@ -62,7 +62,7 @@ const listPush = [
   { name: 'Table 表格', url: '/component/table' },
   { name: 'Switch 开关', url: '/component/switch' },
   { name: 'Calendar 日历', url: '/component/calendar' },
-  { name: 'Radio 单选', url: '/component/radio' },
+  { name: 'Radio 单选框', url: '/component/radio' },
 ]
 const router = useRouter()
 const route = useRoute()

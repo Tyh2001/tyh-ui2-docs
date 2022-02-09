@@ -6,31 +6,31 @@
   <tyh-switch v-model="value1" />
   <br />
   <tyh-switch v-model="value1" />
-  <highlightjs autodetect :code="swi1" />
+  <highlightjs autodetect :code="Switch.swi1" />
 
   <h3 class="Subtitle">文字描述</h3>
   <p>closeText 属性可以配置左侧的文字</p>
   <p>openText 属性可以配置右侧的文字</p>
   <tyh-switch v-model="value2" closeText="关闭" openText="开启" />
-  <highlightjs autodetect :code="swi2" />
+  <highlightjs autodetect :code="Switch.swi2" />
 
   <h3 class="Subtitle">禁用状态</h3>
   <p>disabled 属性可以配置禁用开关</p>
   <tyh-switch v-model="value3" disabled /><br />
   <tyh-switch v-model="value4" disabled />
-  <highlightjs autodetect :code="swi3" />
+  <highlightjs autodetect :code="Switch.swi3" />
 
   <h3 class="Subtitle">自定义颜色</h3>
   <p>closeColor 属性可以配置自定义关闭颜色</p>
   <p>openColor 属性可以配置自定义开启颜色</p>
   <tyh-switch v-model="value5" closeColor="red" openColor="green" /><br />
   <tyh-switch v-model="value6" closeColor="black" openColor="#eee" />
-  <highlightjs autodetect :code="swi4" />
+  <highlightjs autodetect :code="Switch.swi4" />
 
   <h3 class="Subtitle">自定义尺寸</h3>
   <p>width 属性可以自定义开关的尺寸 最小宽度为20</p>
   <tyh-switch v-model="value7" :width="60" />
-  <highlightjs autodetect :code="swi5" />
+  <highlightjs autodetect :code="Switch.swi5" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />
@@ -49,7 +49,7 @@
 </template>
 
 <script setup>
-import index from './index'
+import { Switch } from './index'
 import table from './table'
 import { ref } from 'vue'
 const value1 = ref(true)
@@ -60,7 +60,6 @@ const value5 = ref(true)
 const value6 = ref(false)
 const value7 = ref(true)
 const { columns, columns2 } = table
-const { swi1, swi2, swi3, swi4, swi5 } = index.switch
 const configures = [
   { param: 'v-model', explain: '绑定的值', type: 'boolean', value: '', default: 'true' },
   { param: 'closeColor', explain: '关闭的颜色', type: 'string', value: '——', default: '#dcdfe6' },

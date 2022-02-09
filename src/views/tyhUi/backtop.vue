@@ -4,18 +4,18 @@
   <h3 class="Subtitle">基本使用</h3>
   <p>回到顶部的基础用法</p>
   <tyh-back-top>Top</tyh-back-top>
-  <highlightjs autodetect :code="back1" />
+  <highlightjs autodetect :code="back.back1" />
 
   <h3 class="Subtitle">位置偏移</h3>
   <p>bottom 和 right 属性可以配置距离右边和下边的距离</p>
   <tyh-backTop bottom="150" right="120">Go</tyh-backTop>
-  <highlightjs autodetect :code="back2" />
+  <highlightjs autodetect :code="back.back2" />
 
   <h3 class="Subtitle">插入 Icon</h3>
   <tyh-backTop bottom="100">
     <tyh-icon icon="tyh-ui-top" color="#409eff" />
   </tyh-backTop>
-  <highlightjs autodetect :code="back3" />
+  <highlightjs autodetect :code="back.back3" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />
@@ -31,9 +31,8 @@
 </template>
 
 <script setup>
-import index from './index'
+import { back } from './index'
 import table from './table'
-const { back1, back2, back3 } = index.back
 const { columns } = table
 const configures = [
   { param: 'bottom', explain: '距离下面的距离', type: 'string', value: '——', default: '50' },

@@ -9,7 +9,7 @@
     <tyh-menu-item>设置</tyh-menu-item>
     <tyh-menu-item>回收站</tyh-menu-item>
   </tyh-menu>
-  <highlightjs autodetect :code="men1" />
+  <highlightjs autodetect :code="menu.men1" />
 
   <h3 class="Subtitle">颜色配置</h3>
   <p>通过 background 属性可以配置导航栏背景色</p>
@@ -20,7 +20,7 @@
     <tyh-menu-item color="#000">设置</tyh-menu-item>
     <tyh-menu-item color="#000">回收站</tyh-menu-item>
   </tyh-menu>
-  <highlightjs autodetect :code="men2" />
+  <highlightjs autodetect :code="menu.men2" />
 
   <h3 class="Subtitle">禁用状态</h3>
   <p>通过 prohibit 属性可以配置子组件链接是否禁用</p>
@@ -30,7 +30,7 @@
     <tyh-menu-item>设置</tyh-menu-item>
     <tyh-menu-item>回收站</tyh-menu-item>
   </tyh-menu>
-  <highlightjs autodetect :code="men3" />
+  <highlightjs autodetect :code="menu.men3" />
 
   <h3 class="Subtitle">带有 icon</h3>
   <tyh-menu>
@@ -51,7 +51,7 @@
       标签
     </tyh-menu-item>
   </tyh-menu>
-  <highlightjs autodetect :code="men4" />
+  <highlightjs autodetect :code="menu.men4" />
 
   <h3 class="Subtitle">tyh-menu Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />
@@ -70,10 +70,9 @@
 </template>
 
 <script setup>
-import index from './index'
+import { menu } from './index'
 import table from './table'
 const { columns } = table
-const { men1, men2, men3, men4 } = index.menu
 const configures = [
   { param: 'background', explain: '导航栏背景色', type: 'string', value: '——', default: '——' },
   { param: 'shadow', explain: '底部是否显示阴影', type: 'boolean', value: '——', default: 'false' }

@@ -6,14 +6,14 @@
   <tyh-skeleton />
   <tyh-skeleton />
   <tyh-skeleton />
-  <highlightjs autodetect :code="ske1" />
+  <highlightjs autodetect :code="skeleton.ske1" />
 
   <h3 class="Subtitle">圆角的</h3>
   <p>round 属性可以配置圆角</p>
   <tyh-skeleton round />
   <tyh-skeleton round />
   <tyh-skeleton round />
-  <highlightjs autodetect :code="ske2" />
+  <highlightjs autodetect :code="skeleton.ske2" />
 
   <h3 class="Subtitle">自定义宽高</h3>
   <p>width 属性可以配置宽度</p>
@@ -23,14 +23,14 @@
   <tyh-skeleton width="150px" />
   <br />
   <tyh-skeleton width="100px" height="100px" />
-  <highlightjs autodetect :code="ske3" />
+  <highlightjs autodetect :code="skeleton.ske3" />
 
   <h3 class="Subtitle">启用动画</h3>
   <p>animation 属性可以配置显示动画</p>
   <tyh-skeleton animation />
   <tyh-skeleton animation />
   <tyh-skeleton animation />
-  <highlightjs autodetect :code="ske4" />
+  <highlightjs autodetect :code="skeleton.ske4" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />
@@ -46,10 +46,9 @@
 </template>
 
 <script setup>
-import index from './index'
+import { skeleton } from './index'
 import table from './table'
 const { columns } = table
-const { ske1, ske2, ske3, ske4 } = index.skeleton
 const configures = [
   { param: 'round', explain: '圆角', type: 'boolean', value: '——', default: 'false' },
   { param: 'width', explain: '宽度', type: 'string', value: '——', default: '100%' },

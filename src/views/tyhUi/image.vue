@@ -9,7 +9,7 @@
     width="300px"
     src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
   />
-  <highlightjs autodetect :code="img1" />
+  <highlightjs autodetect :code="image.img1" />
 
   <h3 class="Subtitle">如何适应容器框</h3>
   <p>
@@ -33,7 +33,7 @@
       />
     </div>
   </div>
-  <highlightjs autodetect :code="img2" />
+  <highlightjs autodetect :code="image.img2" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />
@@ -55,11 +55,10 @@
 </template>
 
 <script setup>
-import index from './index'
+import { image } from './index'
 import table from './table'
 const { columns, columns2, columns3 } = table
 const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
-const { img1, img2 } = index.image
 const configures = [
   { param: 'src', explain: '图片路径', type: 'string', value: '——', default: '——' },
   { param: 'width', explain: '图片宽度', type: 'string', value: '——', default: '——' },

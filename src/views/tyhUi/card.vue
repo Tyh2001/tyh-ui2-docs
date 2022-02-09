@@ -13,7 +13,7 @@
     <p>这是内容部分3</p>
     <p>这是内容部分4</p>
   </tyh-card>
-  <highlightjs autodetect :code="car1" />
+  <highlightjs autodetect :code="card.car1" />
 
   <h3 class="Subtitle">简约卡片</h3>
   <p>simple 属性可以配置简约卡片</p>
@@ -25,7 +25,7 @@
     <p>这是内容部分3</p>
     <p>这是内容部分4</p>
   </tyh-card>
-  <highlightjs autodetect :code="car2" />
+  <highlightjs autodetect :code="card.car2" />
 
   <h3 class="Subtitle">阴影显示时机</h3>
   <p>shadow 属性可以配置阴影显示时机</p>
@@ -44,7 +44,7 @@
     <template v-slot:subtitle>副标题</template>
     <p>从不显示</p>
   </tyh-card>
-  <highlightjs autodetect :code="car3" />
+  <highlightjs autodetect :code="card.car3" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />
@@ -63,10 +63,9 @@
 </template>
 
 <script setup>
-import index from './index'
+import { card } from './index'
 import table from './table'
 const { columns, columns3 } = table
-const { car1, car2, car3 } = index.card
 const configures = [
   { param: 'simple', explain: '简约卡片', type: 'boolean', value: '——', default: 'false' },
   { param: 'shadow', explain: '阴影显示时机', type: 'string', value: 'always / hover / noShadow', default: '——' },
