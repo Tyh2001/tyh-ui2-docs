@@ -50,7 +50,8 @@ import {
   TyhTable,
   TyhButtonGroup,
   TyhSwitch,
-  TyhCalendar
+  TyhCalendar,
+  TyhRadio
 } from 'tyh-ui2'
 import 'tyh-ui2/style/index.css'
 
@@ -85,6 +86,7 @@ createApp(App)
   .use(TyhButtonGroup)
   .use(TyhSwitch)
   .use(TyhCalendar)
+  .use(TyhRadio)
   .mount('#app')
     `
 }
