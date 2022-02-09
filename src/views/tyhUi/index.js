@@ -1474,6 +1474,7 @@ const value = ref(new Date())
 </script>
     `,
 }
+// 单选框
 const radio = {
   rad1: `
 <template>
