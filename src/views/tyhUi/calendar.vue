@@ -22,9 +22,9 @@
     <tyh-turn-page-item direction="left" url="/component/switch">
       Switch 开关
     </tyh-turn-page-item>
-    <!-- <tyh-turn-page-item direction="right" url="/component/rate">
-      Rate 评分
-    </tyh-turn-page-item> -->
+    <tyh-turn-page-item direction="right" url="/component/radio">
+      Radio 单选
+    </tyh-turn-page-item>
   </tyh-turn-page>
 </template>
 
