@@ -75,11 +75,11 @@
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/calendar">
-     Calendar 日历
+      Calendar 日历
     </tyh-turn-page-item>
-    <!-- <tyh-turn-page-item direction="right" url="/component/link">
-      link 链接
-    </tyh-turn-page-item> -->
+    <tyh-turn-page-item direction="right" url="/component/tree">
+      Tree 树形控件
+    </tyh-turn-page-item>
   </tyh-turn-page>
 </template>
 

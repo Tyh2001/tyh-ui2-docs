@@ -51,7 +51,8 @@ import {
   TyhButtonGroup,
   TyhSwitch,
   TyhCalendar,
-  TyhRadio
+  TyhRadio,
+  TyhTree
 } from 'tyh-ui2'
 import 'tyh-ui2/style/index.css'
 
@@ -87,6 +88,7 @@ createApp(App)
   .use(TyhSwitch)
   .use(TyhCalendar)
   .use(TyhRadio)
+  .use(TyhTree)
   .mount('#app')
     `
 }
@@ -1537,6 +1539,74 @@ const radio4 = ref('备选项1')
 </script>
   `,
 }
+// 树形控件
+const tree = {
+  tre1: `
+<template>
+  <tyh-tree :data="data" />
+</template>
+
+<script setup>
+const data = [
+  {
+    label: '一级 1',
+    children: [
+      {
+        label: '二级 1-1',
+        children: [
+          {
+            label: '三级 1-1-1'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    label: '一级 2',
+    children: [
+      {
+        label: '二级 2-1',
+        children: [
+          {
+            label: '三级 2-1-1'
+          }
+        ]
+      },
+      {
+        label: '二级 2-2',
+        children: [
+          {
+            label: '三级 2-2-1'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    label: '一级 3',
+    children: [
+      {
+        label: '二级 3-1',
+        children: [
+          {
+            label: '三级 3-1-1'
+          }
+        ]
+      },
+      {
+        label: '二级 3-2',
+        children: [
+          {
+            label: '三级 3-2-1'
+          }
+        ]
+      }
+    ]
+  }
+]
+</script>
+  `
+}
 
 export {
   install,
@@ -1564,4 +1634,5 @@ export {
   Switch,
   calendar,
   radio,
+  tree
 }

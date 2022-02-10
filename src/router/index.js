@@ -38,6 +38,7 @@ const routes = [
           { path: '/component/switch', component: () => import('../views/TyhUi/switch.vue') },
           { path: '/component/calendar', component: () => import('../views/TyhUi/calendar.vue') },
           { path: '/component/radio', component: () => import('../views/TyhUi/radio.vue') },
+          { path: '/component/tree', component: () => import('../views/TyhUi/tree.vue') },
         ]
       }
     ]
