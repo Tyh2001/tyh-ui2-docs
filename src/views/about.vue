@@ -56,7 +56,7 @@ import Footer from '@/components/Footer.vue'
   user-select: none;
 }
 #about .logoBox .logo {
-  width: 150px;
+  width: 220px;
 }
 #about .about_title {
   margin: 40px 0 20px 0;
@@ -75,6 +75,9 @@ import Footer from '@/components/Footer.vue'
 @media screen and (max-width: 700px) {
   #about #sponsor {
     flex-wrap: wrap;
+  }
+  #about .logoBox .logo {
+    width: 150px;
   }
 }
 </style>
