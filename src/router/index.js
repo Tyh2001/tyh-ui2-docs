@@ -39,6 +39,7 @@ const routes = [
           { path: '/component/calendar', component: () => import('../views/TyhUi/calendar.vue') },
           { path: '/component/radio', component: () => import('../views/TyhUi/radio.vue') },
           { path: '/component/tree', component: () => import('../views/TyhUi/tree.vue') },
+          { path: '/component/pageHeader', component: () => import('../views/TyhUi/pageHeader.vue') },
         ]
       }
     ]

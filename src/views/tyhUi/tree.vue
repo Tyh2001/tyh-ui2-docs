@@ -15,9 +15,9 @@
     <tyh-turn-page-item direction="left" url="/component/radio">
       Radio 单选框
     </tyh-turn-page-item>
-    <!-- <tyh-turn-page-item direction="right" url="/component/link">
-      link 链接
-    </tyh-turn-page-item> -->
+    <tyh-turn-page-item direction="right" url="/component/pageHeader">
+      PageHeader 页头
+    </tyh-turn-page-item>
   </tyh-turn-page>
 </template>
 

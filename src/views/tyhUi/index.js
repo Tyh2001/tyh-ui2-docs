@@ -52,7 +52,8 @@ import {
   TyhSwitch,
   TyhCalendar,
   TyhRadio,
-  TyhTree
+  TyhTree,
+  TyhPageHeader
 } from 'tyh-ui2'
 import 'tyh-ui2/style/index.css'
 
@@ -89,6 +90,7 @@ createApp(App)
   .use(TyhCalendar)
   .use(TyhRadio)
   .use(TyhTree)
+  .use(TyhPageHeader)
   .mount('#app')
     `
 }
@@ -1607,6 +1609,23 @@ const data = [
 </script>
   `
 }
+// 页头
+const pageHeader = {
+  pageHeader1: `
+<template>
+  <tyh-page-header title="返回上一层" content="详情页面" @back="goBack" />
+</template>
+
+<script setup>
+const goBack = () => console.log('goBack')
+</script>
+  `,
+  pageHeader2: `
+<template>
+  <tyh-page-header content="详情页面" icon="tyh-ui-close" />
+</template>
+  `
+}
 
 export {
   install,
@@ -1634,5 +1653,6 @@ export {
   Switch,
   calendar,
   radio,
-  tree
+  tree,
+  pageHeader
 }

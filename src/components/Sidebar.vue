@@ -64,6 +64,7 @@ const listPush = [
   { name: 'Calendar 日历', url: '/component/calendar' },
   { name: 'Radio 单选框', url: '/component/radio' },
   { name: 'Tree 树形控件', url: '/component/tree' },
+  { name: 'PageHeader 页头', url: '/component/pageHeader' },
 ]
 const router = useRouter()
 const route = useRoute()
