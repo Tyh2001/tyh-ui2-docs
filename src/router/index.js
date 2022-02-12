@@ -40,6 +40,7 @@ const routes = [
           { path: '/component/radio', component: () => import('../views/TyhUi/radio.vue') },
           { path: '/component/tree', component: () => import('../views/TyhUi/tree.vue') },
           { path: '/component/pageHeader', component: () => import('../views/TyhUi/pageHeader.vue') },
+          { path: '/component/info', component: () => import('../views/TyhUi/info.vue') },
         ]
       }
     ]

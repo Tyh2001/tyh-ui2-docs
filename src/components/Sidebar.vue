@@ -65,6 +65,7 @@ const listPush = [
   { name: 'Radio 单选框', url: '/component/radio' },
   { name: 'Tree 树形控件', url: '/component/tree' },
   { name: 'PageHeader 页头', url: '/component/pageHeader' },
+  { name: 'Info 信息栏', url: '/component/info' },
 ]
 const router = useRouter()
 const route = useRoute()
