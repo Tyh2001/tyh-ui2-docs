@@ -25,9 +25,9 @@
     <tyh-turn-page-item direction="left" url="/component/tree">
       Tree 树形控件
     </tyh-turn-page-item>
-    <!-- <tyh-turn-page-item direction="right" url="/component/link">
-      link 链接
-    </tyh-turn-page-item> -->
+    <tyh-turn-page-item direction="right" url="/component/info">
+      Info 信息栏
+    </tyh-turn-page-item>
   </tyh-turn-page>
 </template>
 

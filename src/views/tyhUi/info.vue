@@ -82,12 +82,12 @@
   <tyh-table align="center" :data="slotConfig" :columns="columns3" />
 
   <tyh-turn-page style="margin: 50px 0">
-    <tyh-turn-page-item direction="left" url="/component/radio">
-      Radio 单选框
-    </tyh-turn-page-item>
-    <tyh-turn-page-item direction="right" url="/component/pageHeader">
+    <tyh-turn-page-item direction="left" url="/component/pageHeader">
       PageHeader 页头
     </tyh-turn-page-item>
+    <!-- <tyh-turn-page-item direction="right" url="/component/pageHeader">
+      PageHeader 页头
+    </tyh-turn-page-item> -->
   </tyh-turn-page>
 </template>
 
