@@ -85,9 +85,9 @@
     <tyh-turn-page-item direction="left" url="/component/pageHeader">
       PageHeader 页头
     </tyh-turn-page-item>
-    <!-- <tyh-turn-page-item direction="right" url="/component/pageHeader">
-      PageHeader 页头
-    </tyh-turn-page-item> -->
+    <tyh-turn-page-item direction="right" url="/component/textarea">
+      Textarea 文本域
+    </tyh-turn-page-item>
   </tyh-turn-page>
 </template>
 

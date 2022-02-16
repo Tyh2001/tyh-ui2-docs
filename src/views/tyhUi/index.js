@@ -54,7 +54,8 @@ import {
   TyhRadio,
   TyhTree,
   TyhPageHeader,
-  TyhIcon
+  TyhInfo,
+  TyhTextarea
 } from 'tyh-ui2'
 import 'tyh-ui2/style/index.css'
 
@@ -92,7 +93,8 @@ createApp(App)
   .use(TyhRadio)
   .use(TyhTree)
   .use(TyhPageHeader)
-  .use(TyhIcon)
+  .use(TyhInfo)
+  .use(TyhTextarea)
   .mount('#app')
     `
 }
@@ -1686,6 +1688,67 @@ const info = {
 </tyh-info>
   `
 }
+// 文本域
+const textarea = {
+  text1: `
+<template>
+  <tyh-textarea v-model="value1" placeholder="请输入内容..." />
+</template>
+
+<script setup>
+import { ref } from 'vue'
+const value1 = ref('')
+</script>
+    `,
+  text2: `
+<template>
+  <tyh-textarea v-model="value7" />
+  <tyh-textarea v-model="value8" resize="vertical" />
+  <tyh-textarea v-model="value9" resize="horizontal" />
+  <tyh-textarea v-model="value10" resize="none" />
+</template>
+
+<script setup>
+import { ref } from 'vue'
+const value7 = ref('随意拉伸')
+const value8 = ref('只能纵向拉伸')
+const value9 = ref('只能横向拉伸')
+const value10 = ref('禁止拉伸')
+</script>
+    `,
+  text3: `
+<template>
+  <tyh-textarea v-model="value3" rows="5" />
+  <tyh-textarea v-model="value4" cols="10" />
+</template>
+
+<script setup>
+import { ref } from 'vue'
+const value3 = ref('')
+const value4 = ref('')
+</script>
+    `,
+  text4: `
+<template>
+  <tyh-textarea v-model="value5" disabled />
+</template>
+
+<script setup>
+import { ref } from 'vue'
+const text5 = ref('禁用状态')
+</script>
+    `,
+  text5: `
+<template>
+  <tyh-textarea v-model="value6" max="10" />
+</template>
+
+<script setup>
+import { ref } from 'vue'
+const value6 = ref('')
+</script>
+    `
+}
 
 export {
   install,
@@ -1715,5 +1778,6 @@ export {
   radio,
   tree,
   pageHeader,
-  info
+  info,
+  textarea
 }
