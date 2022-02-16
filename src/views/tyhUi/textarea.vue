@@ -51,7 +51,6 @@
 import { ref } from 'vue'
 import { textarea } from './index'
 import table from './table'
-console.log(textarea)
 const { columns, columns2 } = table
 const value1 = ref('')
 const value3 = ref('')
@@ -69,7 +68,7 @@ const configures = [
   { param: 'disabled', explain: '是否禁用', type: 'boolean', value: '——', default: 'false' },
   { param: 'autofocus', explain: '是否自动获取焦点', type: 'boolean', value: '——', default: 'false' },
   { param: 'name', explain: '原生 name 属性', type: 'string', value: '——', default: '——' },
-  { param: 'resize', explain: '拉伸方式', type: 'string', value: 'vertical / horizontal / none', default: 'vertical' },
+  { param: 'resize', explain: '拉伸方式', type: 'string', value: 'vertical / horizontal / none', default: '——' },
   { param: 'rows', explain: '行数', type: 'string / number', value: '——', default: '3' },
   { param: 'cols', explain: '宽度', type: 'string / number', value: '——', default: '——' },
 ]
