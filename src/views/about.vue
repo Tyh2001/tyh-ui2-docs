@@ -8,7 +8,7 @@
         alt="logo"
       />
     </div>
-    <h3 class="about_title">关于 tyh-ui2</h3>
+    <h3 class="about_title">关于 tyh-ui</h3>
     <p>一个轻量级组件库，基于 vue3 版本，全面拥抱 vue3。</p>
     <h3 class="about_title">开发靠个人</h3>
     <tyh-text>
