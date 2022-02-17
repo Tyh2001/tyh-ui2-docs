@@ -67,6 +67,7 @@ const listPush = [
   { name: 'PageHeader 页头', url: '/component/pageHeader' },
   { name: 'Info 信息栏', url: '/component/info' },
   { name: 'Textarea 文本域', url: '/component/textarea' },
+  { name: 'Select 选择器', url: '/component/select' },
 ]
 const router = useRouter()
 const route = useRoute()

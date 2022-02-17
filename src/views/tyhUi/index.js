@@ -55,7 +55,9 @@ import {
   TyhTree,
   TyhPageHeader,
   TyhInfo,
-  TyhTextarea
+  TyhTextarea,
+  TyhSelect,
+  TyhOption
 } from 'tyh-ui2'
 import 'tyh-ui2/style/index.css'
 
@@ -95,6 +97,8 @@ createApp(App)
   .use(TyhPageHeader)
   .use(TyhInfo)
   .use(TyhTextarea)
+  .use(TyhSelect)
+  .use(TyhOption)
   .mount('#app')
     `
 }
@@ -1749,6 +1753,45 @@ const value6 = ref('')
 </script>
     `
 }
+// 选择器
+const select = {
+  sel1: `
+  <template>
+  <tyh-select v-model="value" placeholder="请选择">
+    <tyh-option
+      v-for="(item, index) in options"
+      :key="index"
+      :value="item.value"
+    >
+      {{ item.label }}
+    </tyh-option>
+  </tyh-select>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+const value = ref('选项2')
+const options = [
+  {
+    value: '选项1',
+    label: '上海'
+  }, {
+    value: '选项2',
+    label: '北京'
+  }, {
+    value: '选项3',
+    label: '杭州'
+  }, {
+    value: '选项4',
+    label: '天津'
+  }, {
+    value: '选项5',
+    label: '大连'
+  }
+]
+</script>
+  `
+}
 
 export {
   install,
@@ -1779,5 +1822,6 @@ export {
   tree,
   pageHeader,
   info,
-  textarea
+  textarea,
+  select
 }
