@@ -7,13 +7,13 @@
   <p>size 可以配置头像大小</p>
   <tyh-avatar
     :size="10"
-    src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
+    src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
   />
   <highlightjs autodetect :code="avatar.ava1" />
 
   <h3 class="Subtitle">配置圆角</h3>
   <p>round 属性配置头像的圆角</p>
-  <tyh-avatar round src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg" />
+  <tyh-avatar round src="https://tianyuhao.cn/v3/assets/giraffe.jpg" />
   <highlightjs autodetect :code="avatar.ava2" />
 
   <h3 class="Subtitle">如何适应容器框</h3>
@@ -32,7 +32,7 @@
       <span class="text">{{ fit }}</span>
       <tyh-avatar
         round
-        src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
+        src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
         :fit="fit"
       />
     </div>
@@ -41,20 +41,20 @@
 
   <h3 class="Subtitle">配置边框</h3>
   <p>border 属性配置头像的边框</p>
-  <tyh-avatar border src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg" />
+  <tyh-avatar border src="https://tianyuhao.cn/v3/assets/giraffe.jpg" />
   <tyh-avatar
     border
     round
-    src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
+    src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
   />
   <highlightjs autodetect :code="avatar.ava4" />
 
   <h3 class="Subtitle">加载失败</h3>
   <p>errorIcon 属性配置加载失败的 icon</p>
-  <tyh-avatar src="https://tianyuhao.cn2/tyhui/v3/assets/giraffe.jpg" />
+  <tyh-avatar src="https://tianyuhao.cn2/v3/assets/giraffe.jpg" />
   <tyh-avatar
     errorIcon="tyh-ui-githublogo"
-    src="https://tianyuhao.cn2/tyhui/v3/assets/giraffe.jpg"
+    src="https://tianyuhao.cn2/v3/assets/giraffe.jpg"
   />
   <highlightjs autodetect :code="avatar.ava5" />
 

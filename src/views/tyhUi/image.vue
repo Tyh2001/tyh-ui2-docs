@@ -7,7 +7,7 @@
   <p>width，height 可以配置图片宽高</p>
   <tyh-image
     width="300px"
-    src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
+    src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
   />
   <highlightjs autodetect :code="image.img1" />
 
@@ -28,7 +28,7 @@
       <tyh-image
         width="100px"
         height="100px"
-        src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
+        src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
         :fit="fit"
       />
     </div>

@@ -841,7 +841,7 @@ const value3 = ref(2)
 // 图片
 const image = {
   img1: `
-<tyh-image width="300px" src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg" />
+<tyh-image width="300px" src="https://tianyuhao.cn/v3/assets/giraffe.jpg" />
     `,
   img2: `
 <template>
@@ -851,7 +851,7 @@ const image = {
       <tyh-image
         width="100px"
         height="100px"
-        src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
+        src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
         :fit="fit"
       />
     </div>
@@ -868,11 +868,11 @@ const avatar = {
   ava1: `
 <tyh-avatar
   :size="10"
-  src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
+  src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
 />
     `,
   ava2: `
-<tyh-avatar round src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg" />
+<tyh-avatar round src="https://tianyuhao.cn/v3/assets/giraffe.jpg" />
     `,
   ava3: `
 <template>
@@ -881,7 +881,7 @@ const avatar = {
       <span class="text">{{ fit }}</span>
       <tyh-avatar
         round
-        src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
+        src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
         :fit="fit"
       />
     </div>
@@ -893,18 +893,18 @@ const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
 </script>
     `,
   ava4: `
-<tyh-avatar border src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg" />
+<tyh-avatar border src="https://tianyuhao.cn/v3/assets/giraffe.jpg" />
 <tyh-avatar
   border
   round
-  src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
+  src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
 />
     `,
   ava5: `
-<tyh-avatar src="https://tianyuhao.cn2/tyhui/v3/assets/giraffe.jpg" />
+<tyh-avatar src="https://tianyuhao.cn2/v3/assets/giraffe.jpg" />
 <tyh-avatar
   errorIcon="tyh-ui-githublogo"
-  src="https://tianyuhao.cn2/tyhui/v3/assets/giraffe.jpg"
+  src="https://tianyuhao.cn2/v3/assets/giraffe.jpg"
 />
     `
 }
@@ -1642,7 +1642,7 @@ const info = {
     <tyh-avatar
       round
       size="5"
-      src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
+      src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
     />
   </template>
   <template v-slot:right>
@@ -1656,7 +1656,7 @@ const info = {
     <tyh-avatar
       round
       size="5"
-      src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
+      src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
     />
   </template>
   <template v-slot:right>
@@ -1667,7 +1667,7 @@ const info = {
     <tyh-text block type="success">这是我今天拍的照片，好看吗？</tyh-text>
     <tyh-image
       width="300px"
-      src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
+      src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
     />
   </template>
 
@@ -1686,7 +1686,7 @@ const info = {
     <tyh-avatar
       round
       size="5"
-      src="https://tianyuhao.cn/tyhui/v3/assets/giraffe.jpg"
+      src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
     />
   </template>
 </tyh-info>
