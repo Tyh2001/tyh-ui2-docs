@@ -28,7 +28,7 @@
       <tyh-button simple type="primary" size="mini">关注 TA</tyh-button>
     </template>
   </tyh-info>
-  <highlightjs autodetect :code="info.inf1" />
+  <pre v-highlight><code class="html">{{ info.inf1 }}</code></pre>
 
   <h3 class="Subtitle">更多扩展</h3>
   <p>body 和 footer 插槽可以进行插入身体和页脚的内容</p>
@@ -56,7 +56,7 @@
       <tyh-text type="danger">2022-02-12</tyh-text>
     </template>
   </tyh-info>
-  <highlightjs autodetect :code="info.inf2" />
+  <pre v-highlight><code class="html">{{ info.inf2 }}</code></pre>
 
   <h3 class="Subtitle">昵称超链接</h3>
   <p>使用 linkUrl 属性，传入一个 url 可以配置点击昵称的时候进行超链接跳转</p>
@@ -73,7 +73,7 @@
       />
     </template>
   </tyh-info>
-  <highlightjs autodetect :code="info.inf3" />
+  <pre v-highlight><code class="html">{{ info.inf3 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />

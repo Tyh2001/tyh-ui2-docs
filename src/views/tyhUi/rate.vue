@@ -5,14 +5,14 @@
   <p>评分的基本使用</p>
   <p>v-model 绑定评分值</p>
   <tyh-rate v-model="value1" />
-  <highlightjs autodetect :code="rate.rate1" />
+  <pre v-highlight><code class="html">{{ rate.rate1 }}</code></pre>
 
   <h3 class="Subtitle">配置颜色</h3>
   <p>color 属性可以配置选中的 icon 颜色</p>
   <p>voidColor 属性可以配置未选中的 icon 颜色</p>
   <tyh-rate v-model="value2" />
   <tyh-rate v-model="value2" color="red" voidColor="#eee" />
-  <highlightjs autodetect :code="rate.rate2" />
+  <pre v-highlight><code class="html">{{rate.rate2 }}</code></pre>
 
   <h3 class="Subtitle">辅助文字</h3>
   <p>showText 属性可以配置是否显示辅助文字</p>
@@ -23,7 +23,7 @@
     showText
     :sayText="['1星', '2星', '3星', '4星', '5星']"
   />
-  <highlightjs autodetect :code="rate.rate3" />
+  <pre v-highlight><code class="html">{{ rate.rate3 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />

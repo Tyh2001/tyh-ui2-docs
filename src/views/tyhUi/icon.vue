@@ -7,14 +7,14 @@
   <tyh-icon icon="tyh-ui-tyhui" />
   <tyh-icon icon="tyh-ui-ashbin" />
   <tyh-icon icon="tyh-ui-data-view" />
-  <highlightjs autodetect :code="icon.icon1" />
+  <pre v-highlight><code class="html">{{ icon.icon1 }}</code></pre>
 
   <h3 class="Subtitle">配置颜色</h3>
   <p>color 属性改变 icon 的颜色</p>
   <tyh-icon color="skyblue" icon="tyh-ui-favorite" />
   <tyh-icon color="red" icon="tyh-ui-fabulous" />
   <tyh-icon color="pink" icon="tyh-ui-good" />
-  <highlightjs autodetect :code="icon.icon2" />
+  <pre v-highlight><code class="html">{{ icon.icon2 }}</code></pre>
 
   <h3 class="Subtitle">配置大小</h3>
   <p>size 属性可以改变 icon 的大小</p>
@@ -22,7 +22,7 @@
   <tyh-icon size="50" icon="tyh-ui-hide" />
   <tyh-icon size="40" icon="tyh-ui-shouye-xianxing" />
   <tyh-icon size="30" icon="tyh-ui-huojian" />
-  <highlightjs autodetect :code="icon.icon3" />
+  <pre v-highlight><code class="html">{{ icon.icon3 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />

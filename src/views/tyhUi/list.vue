@@ -6,13 +6,13 @@
   <p>content 属性可以绑定需要展示的数组元素</p>
   <p>iskey 属性可以绑定数组中每个元素的键值</p>
   <tyh-list :content="arr" iskey="name" />
-  <highlightjs autodetect :code="list.lis1" />
+  <pre v-highlight><code class="html">{{ list.lis1 }}</code></pre>
 
   <h3 class="Subtitle">配置表头和页脚</h3>
   <p>header 表头内容</p>
   <p>footer 页脚内容</p>
   <tyh-list :content="arr" iskey="name" header="这是头部" footer="这是页脚" />
-  <highlightjs autodetect :code="list.lis2" />
+  <pre v-highlight><code class="html">{{ list.lis2 }}</code></pre>
 
   <h3 class="Subtitle">斑马纹</h3>
   <p>zebra 是否显示斑马纹</p>
@@ -25,12 +25,12 @@
     header="这是头部"
     footer="这是页脚"
   />
-  <highlightjs autodetect :code="list.lis3" />
+  <pre v-highlight><code class="html">{{ list.lis3 }}</code></pre>
 
   <h3 class="Subtitle">hover 状态展示投影</h3>
   <p>hoverShow 配置 Hover 状态展示投影</p>
   <tyh-list hoverShow :content="arr" iskey="name" />
-  <highlightjs autodetect :code="list.lis4" />
+  <pre v-highlight><code class="html">{{ list.lis4 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />

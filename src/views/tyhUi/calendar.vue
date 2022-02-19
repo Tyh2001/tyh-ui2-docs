@@ -5,15 +5,14 @@
   <p>日历的基本使用</p>
   <p>v-model 绑定一个日期</p>
   <tyh-calendar v-model="value" />
-  <highlightjs autodetect :code="calendar.cal1" />
-
+  <pre v-highlight><code class="html">{{calendar.cal1 }}</code></pre>
   <h3 class="Subtitle">定制大小</h3>
   <p>cellWidth 属性可以配置日期单元格的宽度</p>
   <p>最小宽度为 28，如果小于 28 则按照 28 计算</p>
   <tyh-calendar v-model="value" :cellWidth="70" />
   <br />
   <tyh-calendar v-model="value" :cellWidth="10" />
-  <highlightjs autodetect :code="calendar.cal2" />
+  <pre v-highlight><code class="html">{{ calendar.cal2 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />

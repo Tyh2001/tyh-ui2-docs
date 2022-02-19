@@ -3,13 +3,21 @@ import App from './App.vue'
 import router from './router'
 import tyhUi2 from 'tyh-ui2'
 import 'tyh-ui2/style/index.css'
-import 'highlight.js/styles/stackoverflow-light.css'
-import 'highlight.js/lib/common'
-import hljsVuePlugin from "@highlightjs/vue-plugin"
+import hljs from 'highlight.js'
+import 'highlight.js/styles/github.css'
 import 'element-plus/dist/index.css'
 
 const app = createApp(App)
+app.use(app => {
+  app.directive('highlight', {
+    mounted (el) {
+      let blocks = el.querySelectorAll('pre code')
+      for (let i = 0; i < blocks.length; i++) {
+        hljs.highlightElement(blocks[i])
+      }
+    }
+  })
+})
 app.use(router)
 app.use(tyhUi2)
-app.use(hljsVuePlugin)
 app.mount('#app')

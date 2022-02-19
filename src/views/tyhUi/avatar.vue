@@ -5,16 +5,13 @@
   <p>头像的基本使用</p>
   <p>src 属性可以添加图片路径</p>
   <p>size 可以配置头像大小</p>
-  <tyh-avatar
-    :size="10"
-    src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
-  />
-  <highlightjs autodetect :code="avatar.ava1" />
+  <tyh-avatar :size="10" src="https://tianyuhao.cn/v3/assets/giraffe.jpg" />
+  <pre v-highlight><code class="html">{{ avatar.ava1 }}</code></pre>
 
   <h3 class="Subtitle">配置圆角</h3>
   <p>round 属性配置头像的圆角</p>
   <tyh-avatar round src="https://tianyuhao.cn/v3/assets/giraffe.jpg" />
-  <highlightjs autodetect :code="avatar.ava2" />
+  <pre v-highlight><code class="html">{{ avatar.ava2 }}</code></pre>
 
   <h3 class="Subtitle">如何适应容器框</h3>
   <p>
@@ -37,17 +34,13 @@
       />
     </div>
   </div>
-  <highlightjs autodetect :code="avatar.ava3" />
+  <pre v-highlight><code class="html">{{ avatar.ava3 }}</code></pre>
 
   <h3 class="Subtitle">配置边框</h3>
   <p>border 属性配置头像的边框</p>
   <tyh-avatar border src="https://tianyuhao.cn/v3/assets/giraffe.jpg" />
-  <tyh-avatar
-    border
-    round
-    src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
-  />
-  <highlightjs autodetect :code="avatar.ava4" />
+  <tyh-avatar border round src="https://tianyuhao.cn/v3/assets/giraffe.jpg" />
+  <pre v-highlight><code class="html">{{ avatar.ava4 }}</code></pre>
 
   <h3 class="Subtitle">加载失败</h3>
   <p>errorIcon 属性配置加载失败的 icon</p>
@@ -56,7 +49,7 @@
     errorIcon="tyh-ui-githublogo"
     src="https://tianyuhao.cn2/v3/assets/giraffe.jpg"
   />
-  <highlightjs autodetect :code="avatar.ava5" />
+  <pre v-highlight><code class="html">{{ avatar.ava5 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />

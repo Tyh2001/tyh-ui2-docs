@@ -9,17 +9,17 @@
     title 配置标题，key 配置键值，名字是必须的，否则将不能正常工作！详情参考文档
   </p>
   <tyh-table :data="tableData" :columns="columns3" />
-  <highlightjs autodetect :code="tableCode.tab1" />
+  <pre v-highlight><code class="html">{{ tableCode.tab1 }}</code></pre>
 
   <h3 class="Subtitle">配置行高</h3>
   <p>trHeight 属性可以表格行高</p>
   <tyh-table :data="tableData" :columns="columns3" trHeight="50px" />
-  <highlightjs autodetect :code="tableCode.tab2" />
+  <pre v-highlight><code class="html">{{ tableCode.tab2 }}</code></pre>
 
   <h3 class="Subtitle">文字放置方向</h3>
   <p>align 属性可以表格文字居中还是居两侧</p>
   <tyh-table :data="tableData" :columns="columns3" align="center" />
-  <highlightjs autodetect :code="tableCode.tab3" />
+  <pre v-highlight><code class="html">{{ tableCode.tab3 }}</code></pre>
 
   <h3 class="Subtitle">斑马纹和边框</h3>
   <p>zebra 属性可以配置斑马纹</p>
@@ -31,7 +31,7 @@
     border
     zebra
   />
-  <highlightjs autodetect :code="tableCode.tab4" />
+  <pre v-highlight><code class="html">{{ tableCode.tab4 }}</code></pre>
 
   <h3 class="Subtitle">自定义宽高</h3>
   <p>width 属性可以配置表格宽度</p>
@@ -43,12 +43,12 @@
     width="500px"
     height="200px"
   />
-  <highlightjs autodetect :code="tableCode.tab5" />
+  <pre v-highlight><code class="html">{{ tableCode.tab5 }}</code></pre>
 
   <h3 class="Subtitle">带有序号</h3>
   <p>num 属性可以配置带有序号的表格</p>
   <tyh-table :data="tableData" :columns="columns3" align="center" num />
-  <highlightjs autodetect :code="tableCode.tab6" />
+  <pre v-highlight><code class="html">{{ tableCode.tab6 }}</code></pre>
 
   <h3 class="Subtitle">重点行标注</h3>
   <p>
@@ -61,7 +61,7 @@
     num
     :important="[2, 4]"
   />
-  <highlightjs autodetect :code="tableCode.tab7" />
+  <pre v-highlight><code class="html">{{ tableCode.tab7 }}</code></pre>
 
   <h3 class="Subtitle">单独配置列度</h3>
   <p>
@@ -69,7 +69,7 @@
     键值，来配置单独的列宽，比如下面将第一列和第二列设置宽度为 100px
   </p>
   <tyh-table :data="tableData" :columns="columns2" align="center" />
-  <highlightjs autodetect :code="tableCode.tab8" />
+  <pre v-highlight><code class="html">{{ tableCode.tab8 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />

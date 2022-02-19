@@ -8,7 +8,7 @@
   <tyh-button class="right" type="success">成功按钮</tyh-button>
   <tyh-button class="right" type="danger">危险按钮</tyh-button>
   <tyh-button type="warning">警告按钮</tyh-button>
-  <highlightjs autodetect :code="button.btn1" />
+  <pre v-highlight><code class="html">{{ button.btn1 }}</code></pre>
 
   <h3 class="Subtitle">简约按钮</h3>
   <p>simple 属性可以配置简约按钮</p>
@@ -17,7 +17,7 @@
   <tyh-button class="right" simple type="success">成功按钮</tyh-button>
   <tyh-button class="right" simple type="danger">危险按钮</tyh-button>
   <tyh-button simple type="warning">警告按钮</tyh-button>
-  <highlightjs autodetect :code="button.btn6" />
+  <pre v-highlight><code class="html">{{ button.btn6 }}</code></pre>
 
   <h3 class="Subtitle">图标按钮</h3>
   <p>icon 属性可以配置图标按钮</p>
@@ -53,7 +53,7 @@
     icon="tyh-ui-chart-bar"
     type="warning"
   ></tyh-button>
-  <highlightjs autodetect :code="button.btn2" />
+  <pre v-highlight><code class="html">{{ button.btn2 }}</code></pre>
 
   <h3 class="Subtitle">禁用状态</h3>
   <p>disabled 属性可以配置禁用状态</p>
@@ -68,7 +68,7 @@
   <tyh-button class="right" simple disabled type="success">成功按钮</tyh-button>
   <tyh-button class="right" simple disabled type="danger">危险按钮</tyh-button>
   <tyh-button simple disabled type="warning">警告按钮</tyh-button>
-  <highlightjs autodetect :code="button.btn3" />
+  <pre v-highlight><code class="html">{{ button.btn3 }}</code></pre>
 
   <h3 class="Subtitle">圆角按钮</h3>
   <p>round 属性可以配置圆角按钮</p>
@@ -84,7 +84,7 @@
   <tyh-button class="right" square type="success">成功按钮</tyh-button>
   <tyh-button class="right" square type="danger">危险按钮</tyh-button>
   <tyh-button square type="warning">警告按钮</tyh-button>
-  <highlightjs autodetect :code="button.btn4" />
+  <pre v-highlight><code class="html">{{ button.btn4 }}</code></pre>
 
   <h3 class="Subtitle">按钮组</h3>
   <p>使用 tyh-button-group 标签来嵌套按钮</p>
@@ -106,7 +106,7 @@
     <tyh-button type="primary">右</tyh-button>
   </tyh-button-group>
 
-  <highlightjs autodetect :code="button.btn7" />
+  <pre v-highlight><code class="html">{{ button.btn7 }}</code></pre>
 
   <h3 class="Subtitle">不同尺寸</h3>
   <p>size 属性可以配置按钮尺寸</p>
@@ -125,7 +125,7 @@
   <tyh-button simple type="primary">正常大小</tyh-button>
   <br />
   <tyh-button simple size="large" type="primary">大号按钮</tyh-button>
-  <highlightjs simple autodetect :code="button.btn5" />
+  <pre v-highlight><code class="html">{{ button.btn5 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />

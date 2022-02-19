@@ -8,7 +8,7 @@
   <tyh-link url="" type="success">链接三</tyh-link>
   <tyh-link url="" type="danger">链接四</tyh-link>
   <tyh-link url="" type="warning">链接五</tyh-link>
-  <highlightjs autodetect :code="link.lin1" />
+  <pre v-highlight><code class="html">{{ link.lin1 }}</code></pre>
 
   <h3 class="Subtitle">带有下划线</h3>
   <p>underline 属性可以配置带有下划线</p>
@@ -17,7 +17,7 @@
   <tyh-link :underline="false" type="success">链接三</tyh-link>
   <tyh-link :underline="false" type="danger">链接四</tyh-link>
   <tyh-link :underline="false" type="warning">链接五</tyh-link>
-  <highlightjs autodetect :code="link.lin2" />
+  <pre v-highlight><code class="html">{{ link.lin2 }}</code></pre>
 
   <h3 class="Subtitle">禁用链接</h3>
   <p>prohibit 属性可以禁用链接标签</p>
@@ -26,7 +26,7 @@
   <tyh-link url="" prohibit type="success">禁用链接三</tyh-link>
   <tyh-link url="" prohibit type="danger">禁用链接四</tyh-link>
   <tyh-link url="" prohibit type="warning">禁用链接五</tyh-link>
-  <highlightjs autodetect :code="link.lin3" />
+  <pre v-highlight><code class="html">{{ link.lin3 }}</code></pre>
 
   <h3 class="Subtitle">带有 Icon</h3>
   <p>icon 属性可以配置 icon</p>
@@ -37,7 +37,7 @@
   </tyh-link>
   <tyh-link url="" icon="tyh-ui-filter" type="danger"> 链接四 </tyh-link>
   <tyh-link url="" icon="tyh-ui-good" type="warning"> 链接五 </tyh-link>
-  <highlightjs autodetect :code="link.lin4" />
+  <pre v-highlight><code class="html">{{ link.lin4 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />

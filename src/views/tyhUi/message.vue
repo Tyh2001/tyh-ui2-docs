@@ -4,7 +4,7 @@
 
   <h3 class="Subtitle">使用前</h3>
   <p>使用前，你必须先引入它</p>
-  <highlightjs autodetect :code="msg.mes4" />
+  <pre v-highlight><code class="js">{{ msg.mes4 }}</code></pre>
 
   <h3 class="Subtitle">基本使用</h3>
   <p>提示框的基本使用</p>
@@ -15,12 +15,12 @@
   <tyh-button type="success" @click="change3">成功提示</tyh-button>
   <tyh-button type="danger" @click="change4">危险提示</tyh-button>
   <tyh-button type="warning" @click="change5">警告提示</tyh-button>
-  <highlightjs autodetect :code="msg.mes1" />
+  <pre v-highlight><code class="html">{{ msg.mes1 }}</code></pre>
 
   <h3 class="Subtitle">显示时长</h3>
   <p>time 属性可以配置提示框的显示时长，并在 xxxx 毫秒后消失</p>
   <tyh-button type="primary" @click="change6">展示5000毫秒</tyh-button>
-  <highlightjs autodetect :code="msg.mes2" />
+  <pre v-highlight><code class="html">{{ msg.mes2 }}</code></pre>
 
   <h3 class="Subtitle">带有 icon</h3>
   <p>iconClass 属性可以配置 icon 的类名进行配置</p>
@@ -28,7 +28,7 @@
   <tyh-button type="success" @click="change8">成功提示</tyh-button>
   <tyh-button type="danger" @click="change9">危险提示</tyh-button>
   <tyh-button type="warning" @click="change10">警告提示</tyh-button>
-  <highlightjs autodetect :code="msg.mes3" />
+  <pre v-highlight><code class="html">{{ msg.mes3 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />

@@ -9,7 +9,7 @@
     <tyh-menu-item>设置</tyh-menu-item>
     <tyh-menu-item>回收站</tyh-menu-item>
   </tyh-menu>
-  <highlightjs autodetect :code="menu.men1" />
+  <pre v-highlight><code class="html">{{ menu.men1 }}</code></pre>
 
   <h3 class="Subtitle">颜色配置</h3>
   <p>通过 background 属性可以配置导航栏背景色</p>
@@ -20,7 +20,7 @@
     <tyh-menu-item color="#000">设置</tyh-menu-item>
     <tyh-menu-item color="#000">回收站</tyh-menu-item>
   </tyh-menu>
-  <highlightjs autodetect :code="menu.men2" />
+  <pre v-highlight><code class="html">{{ menu.men2 }}</code></pre>
 
   <h3 class="Subtitle">禁用状态</h3>
   <p>通过 prohibit 属性可以配置子组件链接是否禁用</p>
@@ -30,7 +30,7 @@
     <tyh-menu-item>设置</tyh-menu-item>
     <tyh-menu-item>回收站</tyh-menu-item>
   </tyh-menu>
-  <highlightjs autodetect :code="menu.men3" />
+  <pre v-highlight><code class="html">{{ menu.men3 }}</code></pre>
 
   <h3 class="Subtitle">带有 icon</h3>
   <tyh-menu>
@@ -51,7 +51,7 @@
       标签
     </tyh-menu-item>
   </tyh-menu>
-  <highlightjs autodetect :code="menu.men4" />
+  <pre v-highlight><code class="html">{{ menu.men4 }}</code></pre>
 
   <h3 class="Subtitle">tyh-menu Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="columns" />
