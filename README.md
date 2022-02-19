@@ -13,7 +13,7 @@
   <a style="margin-left:15px;" href="https://github.com/Tyh2001/tyh-ui2/blob/master/CHANGELOG.md">
     <img src="https://img.shields.io/badge/tyh--ui2-CHANGELOG-orange" alt="CHANGELOG">
   </a>
-  <a style="margin-left:15px;" href="https://tianyuhao.cn/tyhui/v3">
+  <a style="margin-left:15px;" href="https://tianyuhao.cn/v3">
     <img src="https://img.shields.io/badge/tyh--ui2-docs-red" alt="docs">
   </a>
   <a style="margin-left:15px;" href="https://github.com/Tyh2001/tyh-ui2/blob/master/README_zh.md">
