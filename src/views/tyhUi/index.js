@@ -57,7 +57,8 @@ import {
   TyhInfo,
   TyhTextarea,
   TyhSelect,
-  TyhOption
+  TyhOption,
+  TyhTagging
 } from 'tyh-ui2'
 import 'tyh-ui2/style/index.css'
 
@@ -99,6 +100,7 @@ createApp(App)
   .use(TyhTextarea)
   .use(TyhSelect)
   .use(TyhOption)
+  .use(TyhTagging)
   .mount('#app')
     `
 }
@@ -1791,6 +1793,27 @@ const options = [
 </script>
   `
 }
+// 标注
+const tagging = {
+  tag1: `
+<tyh-tagging>标注1</tyh-tagging>
+<tyh-tagging type="primary">标注2</tyh-tagging>
+<tyh-tagging type="success">标注3</tyh-tagging>
+<tyh-tagging type="danger">标注4</tyh-tagging>
+<tyh-tagging type="warning">标注5</tyh-tagging>
+  `,
+  tag2: `
+<p>
+  <tyh-tagging type="primary" size="20">tyh-ui</tyh-tagging>
+  整体<tyh-tagging type="danger" color="skyblue">非常简洁明了</tyh-tagging>，
+  虽没有很多高级的组件，但它是使用最简单的方式达到
+  <tyh-tagging type="danger">实用</tyh-tagging>的效果。
+</p>
+<tyh-tagging type="danger">
+  使用方便，配置简单，目录清晰，结构简单，组件轻量级，上手简单，像复制粘贴一样容易。
+</tyh-tagging>
+  `
+}
 
 export {
   install,
@@ -1822,5 +1845,6 @@ export {
   pageHeader,
   info,
   textarea,
-  select
+  select,
+  tagging
 }

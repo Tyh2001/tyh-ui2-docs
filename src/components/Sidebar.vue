@@ -68,6 +68,7 @@ const listPush = [
   { name: 'Info 信息栏', url: '/component/info' },
   { name: 'Textarea 文本域', url: '/component/textarea' },
   { name: 'Select 选择器', url: '/component/select' },
+  { name: 'Tagging 标注', url: '/component/tagging' },
 ]
 const router = useRouter()
 const route = useRoute()
