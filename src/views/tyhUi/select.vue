@@ -16,10 +16,10 @@
   <pre v-highlight><code class="html">{{ select.sel1 }}</code></pre>
 
   <h3 class="Subtitle">tyh-select Attributes</h3>
-  <tyh-table align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="table.columns" />
 
   <h3 class="Subtitle">tyh-option Attributes</h3>
-  <tyh-table align="center" :data="configures2" :columns="columns" />
+  <tyh-table align="center" :data="configures2" :columns="table.columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/textarea">
@@ -35,7 +35,6 @@
 import { ref } from 'vue'
 import { select } from './index'
 import table from './table'
-const { columns } = table
 const value = ref('选项2')
 const configures = [
   { param: 'v-model', explain: '绑定值', type: 'string', value: '——', default: '——' },
@@ -68,6 +67,3 @@ const options = [
   }
 ]
 </script>
-
-<style scoped>
-</style>

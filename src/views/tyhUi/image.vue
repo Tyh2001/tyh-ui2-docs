@@ -33,13 +33,13 @@
   <pre v-highlight><code class="html">{{ image.img2 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
-  <tyh-table align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="table.columns" />
 
   <h3 class="Subtitle">Events</h3>
-  <tyh-table align="center" :data="configEvt" :columns="columns2" />
+  <tyh-table align="center" :data="configEvt" :columns="table.columns2" />
 
   <h3 class="Subtitle">Slots</h3>
-  <tyh-table align="center" :data="slotConfig" :columns="columns3" />
+  <tyh-table align="center" :data="slotConfig" :columns="table.columns3" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/rate">
@@ -54,7 +54,6 @@
 <script setup>
 import { image } from './index'
 import table from './table'
-const { columns, columns2, columns3 } = table
 const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
 const configures = [
   { param: 'src', explain: '图片路径', type: 'string', value: '——', default: '——' },

@@ -47,10 +47,10 @@
   <pre v-highlight><code class="html">{{ card.car3 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
-  <tyh-table align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="table.columns" />
 
   <h3 class="Subtitle">Slots</h3>
-  <tyh-table align="center" :data="slotConfig" :columns="columns3" />
+  <tyh-table align="center" :data="slotConfig" :columns="table.columns3" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/list">
@@ -65,7 +65,6 @@
 <script setup>
 import { card } from './index'
 import table from './table'
-const { columns, columns3 } = table
 const configures = [
   { param: 'simple', explain: '简约卡片', type: 'boolean', value: '——', default: 'false' },
   { param: 'shadow', explain: '阴影显示时机', type: 'string', value: 'always / hover / noShadow', default: '——' },

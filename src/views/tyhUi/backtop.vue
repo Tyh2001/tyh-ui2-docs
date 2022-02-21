@@ -18,7 +18,7 @@
   <pre v-highlight><code class="html">{{ back.back3 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
-  <tyh-table align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="table.columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/crumbs">
@@ -33,7 +33,6 @@
 <script setup>
 import { back } from './index'
 import table from './table'
-const { columns } = table
 const configures = [
   { param: 'bottom', explain: '距离下面的距离', type: 'string / number', value: '——', default: '50' },
   { param: 'right', explain: '距离右面的距离', type: 'string / number', value: '——', default: '50' }

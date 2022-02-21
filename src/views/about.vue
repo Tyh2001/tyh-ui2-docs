@@ -1,12 +1,7 @@
 <template>
   <div id="about">
     <div class="logoBox">
-      <img
-        draggable="false"
-        class="logo"
-        src="./images/tyh-ui2-logo.svg"
-        alt="logo"
-      />
+      <img draggable="false" class="logo" src="./images/tyh-ui2-logo.svg" />
     </div>
     <h3 class="about_title">关于 tyh-ui</h3>
     <p>一个轻量级组件库，基于 vue3 版本，全面拥抱 vue3。</p>
@@ -31,8 +26,8 @@
     <h3 class="about_title">赞助我</h3>
     <tyh-text>开发不易，欢迎大家赞助！</tyh-text>
     <div id="sponsor">
-      <img draggable="false" src="./images/weixin.jpg" alt="微信二维码" />
-      <img draggable="false" src="./images/zhifubao.jpg" alt="支付宝二维码" />
+      <img draggable="false" src="./images/weixin.jpg" />
+      <img draggable="false" src="./images/zhifubao.jpg" />
     </div>
   </div>
   <Footer />

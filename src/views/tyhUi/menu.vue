@@ -54,10 +54,10 @@
   <pre v-highlight><code class="html">{{ menu.men4 }}</code></pre>
 
   <h3 class="Subtitle">tyh-menu Attributes</h3>
-  <tyh-table align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="table.columns" />
 
   <h3 class="Subtitle">tyh-menu-item Attributes</h3>
-  <tyh-table align="center" :data="configures2" :columns="columns" />
+  <tyh-table align="center" :data="configures2" :columns="table.columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/input">
@@ -72,7 +72,6 @@
 <script setup>
 import { menu } from './index'
 import table from './table'
-const { columns } = table
 const configures = [
   { param: 'background', explain: '导航栏背景色', type: 'string', value: '——', default: '——' },
   { param: 'shadow', explain: '底部是否显示阴影', type: 'boolean', value: '——', default: 'false' }

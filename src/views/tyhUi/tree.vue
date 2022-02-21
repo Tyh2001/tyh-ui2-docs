@@ -9,7 +9,7 @@
   <pre v-highlight><code class="html">{{ tree.tre1 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
-  <tyh-table align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="table.columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/radio">
@@ -24,7 +24,6 @@
 <script setup>
 import { tree } from './index'
 import table from './table'
-const { columns } = table
 const configures = [
   { param: 'data', explain: '展示数据', type: 'array', value: '——', default: '[]' },
 ]

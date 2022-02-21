@@ -40,7 +40,7 @@
   <pre v-highlight><code class="html">{{ link.lin4 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
-  <tyh-table align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="table.columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/tag">
@@ -55,7 +55,6 @@
 <script setup>
 import { link } from './index'
 import table from './table'
-const { columns } = table
 const configures = [
   { param: 'url', explain: '跳转的路径', type: 'string', value: '——', default: '——' },
   { param: 'type', explain: '链接的类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },

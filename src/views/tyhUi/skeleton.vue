@@ -33,7 +33,7 @@
   <pre v-highlight><code class="html">{{ skeleton.ske4 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
-  <tyh-table align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="table.columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/message">
@@ -48,7 +48,6 @@
 <script setup>
 import { skeleton } from './index'
 import table from './table'
-const { columns } = table
 const configures = [
   { param: 'round', explain: '圆角', type: 'boolean', value: '——', default: 'false' },
   { param: 'width', explain: '宽度', type: 'string', value: '——', default: '100%' },

@@ -35,10 +35,10 @@
   <pre v-highlight><code class="html">{{ crumbs.cru3 }}</code></pre>
 
   <h3 class="Subtitle">tyh-crumbs Attributes</h3>
-  <tyh-table align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="table.columns" />
 
   <h3 class="Subtitle">tyh-crumbs-item Attributes</h3>
-  <tyh-table align="center" :data="configures2" :columns="columns" />
+  <tyh-table align="center" :data="configures2" :columns="table.columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/icon">
@@ -53,7 +53,6 @@
 <script setup>
 import { crumbs } from './index'
 import table from './table'
-const { columns } = table
 const configures = [
   { param: 'separator', explain: '分隔符，icon 的类名', type: 'string', value: '——', default: 'tyh-ui-xiexian-01' }
 ]

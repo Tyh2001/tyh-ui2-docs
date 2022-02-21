@@ -15,7 +15,7 @@
   <pre v-highlight><code class="html">{{ calendar.cal2 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
-  <tyh-table align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="table.columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/switch">
@@ -32,7 +32,6 @@ import { calendar } from './index'
 import table from './table'
 import { ref } from 'vue'
 const value = ref(new Date())
-const { columns } = table
 const configures = [
   { param: 'v-model', explain: '绑定的日期', type: 'object', value: '——', default: '——' },
   { param: 'cellWidth', explain: '单元格宽度', type: 'number', value: '——', default: '50' }

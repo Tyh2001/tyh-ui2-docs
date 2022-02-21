@@ -40,7 +40,7 @@
   <pre v-highlight><code class="html">{{ text.text4 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
-  <tyh-table align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="table.columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/avatar">
@@ -55,7 +55,6 @@
 <script setup>
 import { text } from './index'
 import table from './table'
-const { columns } = table
 const configures = [
   { param: 'type', explain: '按钮的类型', type: 'string', value: 'default / primary / success / danger / warning', default: 'default' },
   { param: 'block', explain: '是否独占一行', type: 'boolean', value: '——', default: 'false' },

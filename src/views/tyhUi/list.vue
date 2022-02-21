@@ -33,7 +33,7 @@
   <pre v-highlight><code class="html">{{ list.lis4 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
-  <tyh-table align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="table.columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/button">
@@ -48,7 +48,6 @@
 <script setup>
 import { list } from './index'
 import table from './table'
-const { columns } = table
 const arr = [
   { name: '小明1', age: 11 },
   { name: '小明2', age: 12 },

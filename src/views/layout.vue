@@ -1,12 +1,7 @@
 <template>
   <tyh-menu background="#f8faff" shadow>
     <div class="logoLink" url="/" @click="$router.push('/')">
-      <img
-        draggable="false"
-        class="logo"
-        src="./images/tyh-ui2-logo.svg"
-        alt="logo"
-      />
+      <img draggable="false" class="logo" src="./images/tyh-ui2-logo.svg" />
       <span class="name">Tyh UI</span>
     </div>
     <tyh-icon icon="tyh-ui-menu" @click="drawer = true" />

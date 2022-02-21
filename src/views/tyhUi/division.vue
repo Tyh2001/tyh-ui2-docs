@@ -50,7 +50,7 @@
   <pre v-highlight><code class="html">{{ division.div5 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
-  <tyh-table align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="table.columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/menu">
@@ -65,7 +65,6 @@
 <script setup>
 import { division } from './index'
 import table from './table'
-const { columns } = table
 const configures = [
   { param: 'position', explain: '文字位置', type: 'string', value: 'left / center / right', default: 'left' },
   { param: 'color', explain: '文字颜色', type: 'string', value: '——', default: '#515a6e' },

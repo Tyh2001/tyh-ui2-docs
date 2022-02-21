@@ -77,16 +77,16 @@
   <pre v-highlight><code class="html">{{ container.cont1 }}</code></pre>
 
   <h3 class="Subtitle">tyh-container Attributes</h3>
-  <tyh-table align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="table.columns" />
 
   <h3 class="Subtitle">tyh-header Attributes</h3>
-  <tyh-table align="center" :data="configures1" :columns="columns" />
+  <tyh-table align="center" :data="configures1" :columns="table.columns" />
 
   <h3 class="Subtitle">tyh-aside Attributes</h3>
-  <tyh-table align="center" :data="configures2" :columns="columns" />
+  <tyh-table align="center" :data="configures2" :columns="table.columns" />
 
   <h3 class="Subtitle">tyh-footer Attributes</h3>
-  <tyh-table align="center" :data="configures3" :columns="columns" />
+  <tyh-table align="center" :data="configures3" :columns="table.columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/color">
@@ -101,7 +101,6 @@
 <script setup>
 import { container } from './index'
 import table from './table'
-const { columns } = table
 const configures = [
   { param: 'flex', explain: '是否水平排列', type: 'boolean', value: '——', default: 'false' },
 ]

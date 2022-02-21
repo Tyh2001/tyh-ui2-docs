@@ -31,7 +31,7 @@
   <pre v-highlight><code class="html">{{ msg.mes3 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
-  <tyh-table align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="table.columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/backtop">
@@ -47,7 +47,6 @@
 import Message from 'tyh-ui2/packages/message'
 import { msg } from './index'
 import table from './table'
-const { columns } = table
 const configures = [
   { param: 'message', explain: '显示文字', type: 'string', value: '——', default: '——' },
   { param: 'type', explain: '提示框的类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },

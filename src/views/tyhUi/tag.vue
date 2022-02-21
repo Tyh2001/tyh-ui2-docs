@@ -45,10 +45,10 @@
   <pre v-highlight><code class="html">{{ tag.tag4 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
-  <tyh-table align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="table.columns" />
 
   <h3 class="Subtitle">Events</h3>
-  <tyh-table align="center" :data="configEvt" :columns="columns2" />
+  <tyh-table align="center" :data="configEvt" :columns="table.columns2" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/card">
@@ -63,7 +63,6 @@
 <script setup>
 import { tag } from './index'
 import table from './table'
-const { columns, columns2 } = table
 import { ref } from 'vue'
 const show1 = ref(true)
 const show2 = ref(true)

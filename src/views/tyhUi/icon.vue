@@ -25,7 +25,7 @@
   <pre v-highlight><code class="html">{{ icon.icon3 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
-  <tyh-table align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="table.columns" />
 
   <h3 class="Subtitle">Icon 集合</h3>
   <p>点击即可复制代码</p>
@@ -60,7 +60,6 @@ import { icon } from './index'
 import table from './table'
 import Clipboard from 'clipboard'
 import Message from 'tyh-ui2/packages/message'
-const { columns } = table
 const iconList = [
   'tyh-ui-tyhui',
   'tyh-ui-githublogo',

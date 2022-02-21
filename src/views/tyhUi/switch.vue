@@ -33,10 +33,10 @@
   <pre v-highlight><code class="html">{{ Switch.swi5 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
-  <tyh-table align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="table.columns" />
 
   <h3 class="Subtitle">Events</h3>
-  <tyh-table align="center" :data="configEvt" :columns="columns2" />
+  <tyh-table align="center" :data="configEvt" :columns="table.columns2" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/table">
@@ -59,7 +59,6 @@ const value4 = ref(false)
 const value5 = ref(true)
 const value6 = ref(false)
 const value7 = ref(true)
-const { columns, columns2 } = table
 const configures = [
   { param: 'v-model', explain: '绑定的值', type: 'boolean', value: '', default: 'true' },
   { param: 'closeColor', explain: '关闭的颜色', type: 'string', value: '——', default: '#dcdfe6' },

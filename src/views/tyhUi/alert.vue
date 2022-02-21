@@ -95,10 +95,10 @@
   <pre v-highlight><code class="html">{{ alert.ale5 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
-  <tyh-table align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="table.columns" />
 
   <h3 class="Subtitle">Events</h3>
-  <tyh-table align="center" :data="configEvt" :columns="columns" />
+  <tyh-table align="center" :data="configEvt" :columns="table.columns" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/skeleton">
@@ -119,7 +119,6 @@ const isShow1 = ref(true)
 const isShow2 = ref(true)
 const isShow3 = ref(true)
 const isShow4 = ref(true)
-const { columns } = table
 const configures = [
   { param: 'message', explain: '提示的文字', type: 'string', value: '——', default: '——' },
   { param: 'type', explain: '提示类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },

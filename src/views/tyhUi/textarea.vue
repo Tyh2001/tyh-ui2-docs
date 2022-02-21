@@ -32,10 +32,10 @@
   <pre v-highlight><code class="html">{{ textarea.text5 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
-  <tyh-table align="center" :data="configures" :columns="columns" />
+  <tyh-table align="center" :data="configures" :columns="table.columns" />
 
   <h3 class="Subtitle">Events</h3>
-  <tyh-table align="center" :data="configEvt" :columns="columns2" />
+  <tyh-table align="center" :data="configEvt" :columns="table.columns2" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/info">
@@ -51,7 +51,6 @@
 import { ref } from 'vue'
 import { textarea } from './index'
 import table from './table'
-const { columns, columns2 } = table
 const value1 = ref('')
 const value3 = ref('')
 const value4 = ref('')
