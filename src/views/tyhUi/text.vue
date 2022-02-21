@@ -59,7 +59,7 @@ const { columns } = table
 const configures = [
   { param: 'type', explain: '按钮的类型', type: 'string', value: 'default / primary / success / danger / warning', default: 'default' },
   { param: 'block', explain: '是否独占一行', type: 'boolean', value: '——', default: 'false' },
-  { param: 'size', explain: '文字大小', type: 'string', value: '——', default: '16' },
+  { param: 'size', explain: '文字大小', type: 'string / number', value: '——', default: '16' },
   { param: 'color', explain: '自定义颜色', type: 'string', value: '——', default: '——' }
 ]
 </script>

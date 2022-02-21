@@ -69,7 +69,7 @@ const { columns } = table
 const configures = [
   { param: 'position', explain: '文字位置', type: 'string', value: 'left / center / right', default: 'left' },
   { param: 'color', explain: '文字颜色', type: 'string', value: '——', default: '#515a6e' },
-  { param: 'margin', explain: '上下的边距', type: 'number', value: '——', default: '25' },
+  { param: 'margin', explain: '上下的边距', type: 'string / number', value: '——', default: '25' },
   { param: 'icon', explain: '配置 icon', type: 'string', value: '——', default: '——' },
 ]
 </script>

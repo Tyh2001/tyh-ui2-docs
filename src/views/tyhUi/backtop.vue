@@ -35,7 +35,7 @@ import { back } from './index'
 import table from './table'
 const { columns } = table
 const configures = [
-  { param: 'bottom', explain: '距离下面的距离', type: 'string', value: '——', default: '50' },
-  { param: 'right', explain: '距离右面的距离', type: 'string', value: '——', default: '50' }
+  { param: 'bottom', explain: '距离下面的距离', type: 'string / number', value: '——', default: '50' },
+  { param: 'right', explain: '距离右面的距离', type: 'string / number', value: '——', default: '50' }
 ]
 </script>
