@@ -52,6 +52,7 @@ import Footer from '@/components/Footer.vue'
 }
 #about .logoBox .logo {
   width: 220px;
+  height: 220px;
 }
 #about .about_title {
   margin: 40px 0 20px 0;
