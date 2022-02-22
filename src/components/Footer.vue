@@ -47,59 +47,56 @@
   </div>
 </template>
 
-<style lang='less' scoped>
-// 页脚
+<style  scoped>
 #Footer {
   background: #f7fbfd;
   padding: 60px 0;
   box-sizing: border-box;
   user-select: none;
-  .foot-box {
-    width: 800px;
-    margin: auto;
-    .title-footer {
-      margin-top: 50px;
-      font-size: 20px;
-      font-weight: 600;
-      color: #515a6e;
-    }
-    .tyh-link {
-      display: inline-block;
-      .userBox {
-        width: 150px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        .myPhoto {
-          width: 45px;
-          height: 45px;
-          border-radius: 50%;
-        }
-        .userName {
-          font-size: 20px;
-          color: #515a6e;
-          margin-left: 10px;
-        }
-      }
-    }
-    .link-ul {
-      li {
-        list-style: none;
-        line-height: 40px;
-      }
-    }
-  }
+}
+#Footer .foot-box {
+  width: 800px;
+  margin: auto;
+}
+#Footer .foot-box .title-footer {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #515a6e;
+}
+#Footer .foot-box .tyh-link {
+  display: inline-block;
+}
+#Footer .foot-box .tyh-link .userBox {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#Footer .foot-box .tyh-link .userBox .myPhoto {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+#Footer .foot-box .tyh-link .userBox .userName {
+  font-size: 20px;
+  color: #515a6e;
+  margin-left: 10px;
+}
+#Footer .foot-box .link-ul li {
+  list-style: none;
+  line-height: 40px;
 }
 @media screen and (max-width: 700px) {
   #Footer {
     width: 100%;
     padding: 30px;
     box-sizing: border-box;
-    .foot-box {
-      width: 100%;
-    }
+  }
+  #Footer .foot-box {
+    width: 100%;
   }
 }
 </style>

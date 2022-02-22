@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "clipboard": "^2.0.8",
-    "element-plus": "^1.2.0-beta.5",
+    "element3": "^0.0.40",
     "highlight.js": "^11.4.0",
     "rollup-plugin-visualizer": "^5.5.2",
     "tyh-ui2": "^3.2.11",

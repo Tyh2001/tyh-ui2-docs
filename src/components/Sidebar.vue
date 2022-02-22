@@ -32,10 +32,10 @@
 </template>
 
 <script setup>
+import { useRouter, useRoute } from 'vue-router'
 defineProps({
   phone: Boolean
 })
-import { useRouter, useRoute } from 'vue-router'
 const listPush = [
   { name: '快速上手', url: '/component/install' },
   { name: 'Color 色彩', url: '/component/color' },
@@ -90,7 +90,7 @@ function highLightStyle (index) {
 }
 </script>
 
-<style lang='less' scoped>
+<style  scoped>
 .urlPush {
   padding-left: 20px;
   width: 100%;
@@ -100,11 +100,11 @@ function highLightStyle (index) {
   font-size: 14px;
   cursor: pointer;
   transition: 0.3s;
-  a {
-    text-decoration: none;
-  }
-  &:hover {
-    background: rgb(247, 247, 247);
-  }
+}
+.urlPush a {
+  text-decoration: none;
+}
+.urlPush:hover {
+  background: #f7f7f7;
 }
 </style>

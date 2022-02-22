@@ -20,34 +20,34 @@ import Sidebar from '@/components/Sidebar.vue'
 const route = useRoute()
 </script>
 
-<style lang='less' scoped>
+<style  scoped>
 #component {
   display: flex;
   width: 1100px;
   margin: auto;
   position: relative;
-  .contentList {
-    width: 200px;
-    border-right: 1px solid #eee;
-    position: fixed;
-    overflow-y: auto;
-    overflow-x: hidden;
-    background: #fff;
-    top: 60px;
-    padding-top: 40px;
-    bottom: 0px;
-    z-index: 100;
-    user-select: none;
-  }
-  .content {
-    background: #fff;
-    padding: 24px;
-    box-sizing: border-box;
-    width: 900px;
-    position: absolute;
-    right: 0px;
-    z-index: 50;
-  }
+}
+#component .contentList {
+  width: 200px;
+  border-right: 1px solid #eee;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #fff;
+  top: 60px;
+  padding-top: 40px;
+  bottom: 0px;
+  z-index: 100;
+  user-select: none;
+}
+#component .content {
+  background: #fff;
+  padding: 24px;
+  box-sizing: border-box;
+  width: 900px;
+  position: absolute;
+  right: 0px;
+  z-index: 50;
 }
 @media screen and (max-width: 700px) {
   .contentList {
@@ -55,9 +55,9 @@ const route = useRoute()
   }
   #component {
     width: 100%;
-    .content {
-      width: 100%;
-    }
+  }
+  #component .content {
+    width: 100%;
   }
 }
 @media screen and (min-width: 700px) {

@@ -49,7 +49,7 @@ import tyhUi2 from 'tyh-ui2'
 import Footer from '@/components/Footer.vue'
 </script>
 
-<style lang='less' scoped>
+<style scoped>
 #home {
   width: 800px;
   padding-bottom: 40px;
@@ -57,95 +57,93 @@ import Footer from '@/components/Footer.vue'
   display: flex;
   flex-direction: column;
   align-items: center;
-  .logo {
-    width: 220px;
-    user-select: none;
-  }
-  // 主标题
-  .MainTitle {
-    text-align: center;
-    color: #515a6e;
-    margin-top: 20px;
-    font-size: 40px;
-    align-items: center;
-    position: relative;
-    .version {
-      text-align: center;
-      position: absolute;
-      font-size: 18px;
-      display: inline-block;
-      background: #3a6ff4;
-      color: #fff;
-      border-radius: 10px;
-      padding: 3px 10px;
-      left: 140px;
-      top: 0px;
-    }
-  }
-  // 副标题
-  .Subtitle {
-    text-align: center;
-    color: #515a6e;
-    margin-top: 20px;
-    font-size: 22px;
-    padding: 0 19px;
-  }
-  // 开始按钮
-  .btnBox {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .tyh-button {
-      width: 200px;
-      height: 50px;
-      margin: 20px;
-      .tyh-ui-github {
-        color: #606266 !important;
-      }
-    }
-  }
-  // 概述
-  .summary {
-    width: 800px;
-    border-top: 1px solid rgb(219, 219, 219);
-    margin: auto;
-    display: flex;
-    margin-top: 50px;
-    .summary-left,
-    .summary-right {
-      flex: 1;
-      padding: 25px;
-      box-sizing: border-box;
-      .summary-title {
-        line-height: 60px;
-        color: #2d3035;
-        font-weight: 500;
-      }
-      .summary-content {
-        color: #515a6e;
-        line-height: 25px;
-      }
-    }
-  }
+}
+#home .logo {
+  width: 220px;
+  user-select: none;
+}
+#home .MainTitle {
+  text-align: center;
+  color: #515a6e;
+  margin-top: 20px;
+  font-size: 40px;
+  align-items: center;
+  position: relative;
+}
+#home .MainTitle .version {
+  text-align: center;
+  position: absolute;
+  font-size: 18px;
+  display: inline-block;
+  background: #3a6ff4;
+  color: #fff;
+  border-radius: 10px;
+  padding: 3px 10px;
+  left: 140px;
+  top: 0px;
+}
+#home .Subtitle {
+  text-align: center;
+  color: #515a6e;
+  margin-top: 20px;
+  font-size: 22px;
+  padding: 0 19px;
+}
+#home .btnBox {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home .btnBox .tyh-button {
+  width: 200px;
+  height: 50px;
+  margin: 20px;
+}
+#home .btnBox .tyh-button .tyh-ui-github {
+  color: #606266 !important;
+}
+#home .summary {
+  width: 800px;
+  border-top: 1px solid #dbdbdb;
+  margin: auto;
+  display: flex;
+  margin-top: 50px;
+}
+#home .summary .summary-left,
+#home .summary .summary-right {
+  flex: 1;
+  padding: 25px;
+  box-sizing: border-box;
+}
+#home .summary .summary-left .summary-title,
+#home .summary .summary-right .summary-title {
+  line-height: 60px;
+  color: #2d3035;
+  font-weight: 500;
+}
+#home .summary .summary-left .summary-content,
+#home .summary .summary-right .summary-content {
+  color: #515a6e;
+  line-height: 25px;
 }
 @media screen and (max-width: 700px) {
   #home {
     width: 100%;
     display: flex;
-    .logo {
-      width: 150px;
-      height: 150px;
-    }
-    .summary {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    .btnBox {
-      display: flex;
-      flex-direction: column;
-    }
+  }
+  #home .logo {
+    width: 150px;
+    height: 150px;
+  }
+  #home .summary {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #home .btnBox {
+    display: flex;
+    flex-direction: column;
   }
 }
 </style>

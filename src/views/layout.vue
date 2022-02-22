@@ -22,16 +22,21 @@
     <router-view />
   </div>
 
-  <el-drawer v-model="drawer" size="200px" direction="rtl">
+  <!-- <el-drawer v-model="drawer" size="200px" direction="rtl">
+    <Sidebar phone />
+  </el-drawer> -->
+
+  <el-drawer v-model:visible="drawer" direction="rtl">
     <Sidebar phone />
   </el-drawer>
 </template>
 
 <script setup>
-import { ElDrawer } from 'element-plus'
+import { ElDrawer } from 'element3'
 import Sidebar from '@/components/Sidebar.vue'
 import { useRoute } from 'vue-router'
 import { ref, watch } from 'vue'
+// import 'element-plus/dist/index.css'
 const layoutList = [
   { title: '首页', url: '/' },
   { title: '组件', url: '/component' },
@@ -51,7 +56,7 @@ watch(() => route.path, () => {
 })
 </script>
 
-<style lang='less' scoped>
+<style scoped>
 .tyh-menu {
   justify-content: space-between;
   position: fixed;
@@ -59,25 +64,25 @@ watch(() => route.path, () => {
   right: 0px;
   left: 0px;
   z-index: 200;
-  .logoLink {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 30px;
-    cursor: pointer;
-    .logo {
-      height: 36px;
-    }
-    .name {
-      font-size: 20px;
-      color: #6c63ff;
-      font-weight: 600;
-      margin-left: 10px;
-    }
-  }
-  .card {
-    margin-right: 30px;
-  }
+}
+.tyh-menu .logoLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.tyh-menu .logoLink .logo {
+  height: 36px;
+}
+.tyh-menu .logoLink .name {
+  font-size: 20px;
+  color: #6c63ff;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.tyh-menu .card {
+  margin-right: 30px;
 }
 #content {
   margin-top: 120px;
@@ -94,7 +99,6 @@ watch(() => route.path, () => {
   overflow-y: auto;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
 }
-// 手机端
 @media screen and (max-width: 700px) {
   .tyh-menu {
     width: 100vw;
@@ -122,5 +126,8 @@ watch(() => route.path, () => {
 <style>
 .el-drawer {
   overflow-y: auto;
+  width: 200px !important;
 }
 </style>
+
+<style src="element3/lib/theme-chalk/drawer.css"></style>
