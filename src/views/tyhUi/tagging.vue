@@ -13,13 +13,14 @@
   <h3 class="Subtitle">文字配置</h3>
   <p>size 属性可以配置标注的文字大小</p>
   <p>color 属性可以配置标注的文字颜色</p>
-  <p>
-    <tyh-tagging type="primary" size="16">tyh-ui</tyh-tagging>
-    整体<tyh-tagging type="danger" color="black">非常简洁明了</tyh-tagging>，
+  <div>
+    <tyh-tagging type="success" size="16">tyh-ui</tyh-tagging>
+    整体<tyh-tagging type="success" color="#eee">非常简洁明了</tyh-tagging>，
     虽没有很多高级的组件，但它是使用最简单的方式达到
-    <tyh-tagging type="danger">实用</tyh-tagging>的效果。
-  </p>
-  <tyh-tagging type="danger">
+    <tyh-tagging type="success">实用</tyh-tagging>的效果。
+  </div>
+  <br /><br />
+  <tyh-tagging>
     使用方便，配置简单，目录清晰，结构简单，组件轻量级，上手简单，像复制粘贴一样容易。
   </tyh-tagging>
   <pre v-highlight><code class="html">{{ tagging.tag2 }}</code></pre>
@@ -44,7 +45,7 @@ import table from './table'
 const configures = [
   { param: 'type', explain: '类型', type: 'string', value: 'default / primary / success / danger / warning', default: 'default' },
   { param: 'size', explain: '文字大小', type: 'string / number', value: '——', default: '13' },
-  { param: 'color', explain: '文字颜色', type: 'string', value: '——', default: '#333333' }
+  { param: 'color', explain: '文字颜色', type: 'string', value: '——', default: '#333 / #fff' }
 ]
 </script>
 

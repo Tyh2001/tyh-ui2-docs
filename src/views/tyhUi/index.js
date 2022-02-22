@@ -1803,14 +1803,14 @@ const tagging = {
 <tyh-tagging type="warning">标注5</tyh-tagging>
   `,
   tag2: `
-<p>
-  <tyh-tagging type="primary" size="20">tyh-ui</tyh-tagging>
-  整体<tyh-tagging type="danger" color="skyblue">非常简洁明了</tyh-tagging>，
+<div>
+  <tyh-tagging type="success" size="16">tyh-ui</tyh-tagging>
+  整体<tyh-tagging type="success" color="#eee">非常简洁明了</tyh-tagging>，
   虽没有很多高级的组件，但它是使用最简单的方式达到
-  <tyh-tagging type="danger">实用</tyh-tagging>的效果。
-</p>
+  <tyh-tagging type="success">实用</tyh-tagging>的效果。
+</div>
 
-<tyh-tagging type="danger">
+<tyh-tagging>
   使用方便，配置简单，目录清晰，结构简单，组件轻量级，上手简单，像复制粘贴一样容易。
 </tyh-tagging>
   `
