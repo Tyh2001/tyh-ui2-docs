@@ -8,12 +8,9 @@ import 'highlight.js/styles/github.css'
 
 const app = createApp(App)
 app.use(({ directive }) => {
-  // 声明组件中的指令
   directive('highlight', {
     mounted (el) {
-      console.log(el)
-      let blocks = el.querySelectorAll('pre code')
-      console.log(blocks.length)
+      const blocks = el.querySelectorAll('pre code')
       for (let i = 0; i < blocks.length; i++) {
         hljs.highlightElement(blocks[i])
       }

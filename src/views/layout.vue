@@ -36,7 +36,6 @@ import { ElDrawer } from 'element3'
 import Sidebar from '@/components/Sidebar.vue'
 import { useRoute } from 'vue-router'
 import { ref, watch } from 'vue'
-// import 'element-plus/dist/index.css'
 const layoutList = [
   { title: '首页', url: '/' },
   { title: '组件', url: '/component' },
