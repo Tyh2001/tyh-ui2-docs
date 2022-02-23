@@ -47,7 +47,6 @@
 <script setup>
 import { version } from '../tyhUi'
 import Footer from '@/components/Footer.vue'
-console.log(version)
 </script>
 
 <style scoped>

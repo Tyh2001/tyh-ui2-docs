@@ -4,13 +4,13 @@
   <h3 class="Subtitle">基本使用</h3>
   <p>输入框的基本用法</p>
   <tyh-input v-model="text1" />
-  <pre v-highlight><code class="html">{{ input.inp1 }}</code></pre>
+  <pre v-highlight><code>{{ input.inp1 }}</code></pre>
 
   <h3 class="Subtitle">输入框类型</h3>
   <p>type 属性可以规定文本框类型</p>
   <tyh-input type="text" v-model="text2" /><br />
   <tyh-input class="size-input" type="password" v-model="text3" />
-  <pre v-highlight><code class="html">{{ input.inp2 }}</code></pre>
+  <pre v-highlight><code>{{ input.inp2 }}</code></pre>
 
   <h3 class="Subtitle">不同尺寸</h3>
   <p>size 属性可以配置文本框尺寸</p>
@@ -18,27 +18,27 @@
   <tyh-input class="size-input" size="medium" v-model="text5" /><br />
   <tyh-input class="size-input" size="small" v-model="text6" /><br />
   <tyh-input class="size-input" size="mini" v-model="text7" /><br />
-  <pre v-highlight><code class="html">{{ input.inp3 }}</code></pre>
+  <pre v-highlight><code>{{ input.inp3 }}</code></pre>
 
   <h3 class="Subtitle">可清空</h3>
   <p>clear 属性可以配置带有清空按钮的文本框</p>
   <tyh-input v-model="text8" clear />
-  <pre v-highlight><code class="html">{{ input.inp4 }}</code></pre>
+  <pre v-highlight><code>{{ input.inp4 }}</code></pre>
 
   <h3 class="Subtitle">带有 icon</h3>
   <p>icon 属性可以配置文本框带有其他图标，直接传递 icon 的名字传递即可</p>
   <tyh-input v-model="text9" icon="tyh-ui-electronics" />
-  <pre v-highlight><code class="html">{{ input.inp5 }}</code></pre>
+  <pre v-highlight><code>{{ input.inp5 }}</code></pre>
 
   <h3 class="Subtitle">禁用状态</h3>
   <p>disabled 属性可以配置文本框禁用状态</p>
   <tyh-input v-model="text10" disabled />
-  <pre v-highlight><code class="html">{{ input.inp6 }}</code></pre>
+  <pre v-highlight><code>{{ input.inp6 }}</code></pre>
 
   <h3 class="Subtitle">查看密码</h3>
   <p>showPassword 属性可以配置查看密码按钮，showPassword 优先级大于 clear</p>
   <tyh-input v-model="text11" type="password" showPassword />
-  <pre v-highlight><code class="html">{{ input.inp7 }}</code></pre>
+  <pre v-highlight><code>{{ input.inp7 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="table.columns" />

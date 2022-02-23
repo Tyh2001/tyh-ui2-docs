@@ -41,7 +41,6 @@ const layoutList = [
   { title: '组件', url: '/component' },
   { title: '关于', url: '/about' },
 ]
-// 导航栏高亮显示
 const route = useRoute()
 function highLightStyle (url) {
   const path = route.path

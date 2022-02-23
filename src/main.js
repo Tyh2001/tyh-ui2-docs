@@ -10,10 +10,9 @@ const app = createApp(App)
 app.use(({ directive }) => {
   directive('highlight', {
     mounted (el) {
-      const blocks = el.querySelectorAll('pre code')
-      for (let i = 0; i < blocks.length; i++) {
-        hljs.highlightElement(blocks[i])
-      }
+      el.querySelectorAll('pre code').forEach(item => {
+        hljs.highlightElement(item)
+      })
     }
   })
 })
