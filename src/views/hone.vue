@@ -3,7 +3,7 @@
     <img draggable="false" class="logo" src="./images/tyh-ui2-logo.svg" />
     <h1 class="MainTitle">
       Tyh UI
-      <span class="version">v&nbsp;{{ tyhUi2.version }}</span>
+      <span class="version">v&nbsp;{{ version }}</span>
     </h1>
     <p class="Subtitle">一个轻量级组件库，基于 vue3.0 版本，全面拥抱 vue3.0</p>
 
@@ -45,8 +45,9 @@
 </template>
 
 <script setup>
-import tyhUi2 from 'tyh-ui2'
+import { version } from '../tyhUi'
 import Footer from '@/components/Footer.vue'
+console.log(version)
 </script>
 
 <style scoped>

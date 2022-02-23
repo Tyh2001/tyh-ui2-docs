@@ -136,30 +136,25 @@ function ListBackgroundColor (item) {
 }
 </script>
 
-<style lang='less' scoped>
-// 主标题
+<style scoped>
 .title {
   font-weight: 500;
   color: #1f2f3d;
   margin-bottom: 50px;
   user-select: none;
 }
-// 说明
 .explain {
   color: #515a6e;
   line-height: 40px;
   font-size: 15px;
   user-select: none;
 }
-// 副标题
 .Subtitle {
   color: #515a6e;
   line-height: 60px;
   user-select: none;
   margin-top: 30px;
 }
-
-// 颜色列表
 #colorList1,
 #colorList2,
 #colorList3 {
@@ -167,23 +162,37 @@ function ListBackgroundColor (item) {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  .colorList-item1,
-  .colorList-item2,
-  .colorList-item3 {
-    margin-top: 10px;
-    width: 200px;
-    height: 70px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
-    box-sizing: border-box;
-    cursor: pointer;
-    p {
-      color: #fff;
-    }
-  }
+}
+#colorList1 .colorList-item1,
+#colorList2 .colorList-item1,
+#colorList3 .colorList-item1,
+#colorList1 .colorList-item2,
+#colorList2 .colorList-item2,
+#colorList3 .colorList-item2,
+#colorList1 .colorList-item3,
+#colorList2 .colorList-item3,
+#colorList3 .colorList-item3 {
+  margin-top: 10px;
+  width: 200px;
+  height: 70px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+#colorList1 .colorList-item1 p,
+#colorList2 .colorList-item1 p,
+#colorList3 .colorList-item1 p,
+#colorList1 .colorList-item2 p,
+#colorList2 .colorList-item2 p,
+#colorList3 .colorList-item2 p,
+#colorList1 .colorList-item3 p,
+#colorList2 .colorList-item3 p,
+#colorList3 .colorList-item3 p {
+  color: #fff;
 }
 @media screen and (max-width: 700px) {
   #colorList1,
@@ -193,23 +202,37 @@ function ListBackgroundColor (item) {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    .colorList-item1,
-    .colorList-item2,
-    .colorList-item3 {
-      margin-top: 10px;
-      width: 48%;
-      height: 70px;
-      border-radius: 5px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 10px;
-      box-sizing: border-box;
-      cursor: pointer;
-      p {
-        color: #fff;
-      }
-    }
+  }
+  #colorList1 .colorList-item1,
+  #colorList2 .colorList-item1,
+  #colorList3 .colorList-item1,
+  #colorList1 .colorList-item2,
+  #colorList2 .colorList-item2,
+  #colorList3 .colorList-item2,
+  #colorList1 .colorList-item3,
+  #colorList2 .colorList-item3,
+  #colorList3 .colorList-item3 {
+    margin-top: 10px;
+    width: 48%;
+    height: 70px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  #colorList1 .colorList-item1 p,
+  #colorList2 .colorList-item1 p,
+  #colorList3 .colorList-item1 p,
+  #colorList1 .colorList-item2 p,
+  #colorList2 .colorList-item2 p,
+  #colorList3 .colorList-item2 p,
+  #colorList1 .colorList-item3 p,
+  #colorList2 .colorList-item3 p,
+  #colorList3 .colorList-item3 p {
+    color: #fff;
   }
 }
 </style>

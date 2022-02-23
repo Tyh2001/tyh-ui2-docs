@@ -20,7 +20,7 @@ import Sidebar from '@/components/Sidebar.vue'
 const route = useRoute()
 </script>
 
-<style  scoped>
+<style scoped>
 #component {
   display: flex;
   width: 1100px;

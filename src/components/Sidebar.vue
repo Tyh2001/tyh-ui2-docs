@@ -90,7 +90,7 @@ function highLightStyle (index) {
 }
 </script>
 
-<style  scoped>
+<style scoped>
 .urlPush {
   padding-left: 20px;
   width: 100%;

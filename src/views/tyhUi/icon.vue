@@ -266,38 +266,38 @@ function copy (icon) {
 }
 </script>
 
-<style lang='less' scoped>
+<style scoped>
 #allIcon {
   width: 100%;
-  .allIcon-ui {
-    display: flex;
-    flex-wrap: wrap;
-    .allIcon-li {
-      width: 140px;
-      height: 120px;
-      list-style: none;
-      cursor: pointer;
-      padding: 5px;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      .iconTitle {
-        margin-top: 10px;
-        font-size: 12px;
-        color: rgb(138, 138, 138);
-        display: inline-block;
-        max-width: 100px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
-      &:hover {
-        transition: background 0.3s;
-        background: #dcdfe6;
-      }
-    }
-  }
+}
+#allIcon .allIcon-ui {
+  display: flex;
+  flex-wrap: wrap;
+}
+#allIcon .allIcon-ui .allIcon-li {
+  width: 140px;
+  height: 120px;
+  list-style: none;
+  cursor: pointer;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#allIcon .allIcon-ui .allIcon-li .iconTitle {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #8a8a8a;
+  display: inline-block;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#allIcon .allIcon-ui .allIcon-li:hover {
+  transition: background 0.3s;
+  background: #dcdfe6;
 }
 </style>

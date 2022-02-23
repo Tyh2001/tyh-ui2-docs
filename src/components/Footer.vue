@@ -47,7 +47,7 @@
   </div>
 </template>
 
-<style  scoped>
+<style scoped>
 #Footer {
   background: #f7fbfd;
   padding: 60px 0;
