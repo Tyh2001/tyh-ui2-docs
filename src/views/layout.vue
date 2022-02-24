@@ -123,7 +123,7 @@ watch(() => route.path, () => {
 
 <style>
 .el-drawer {
-  overflow-y: auto;
+  overflow-y: auto !important;
   width: 200px !important;
 }
 </style>
