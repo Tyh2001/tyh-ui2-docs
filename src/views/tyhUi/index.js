@@ -648,21 +648,21 @@ const msg = {
 </template>
 
 <script setup>
-import TyhMessage from 'tyh-ui2/packages/message'
+import { Message } from 'tyh-ui2'
 function change1 () {
-  TyhMessage({ message: '默认提示' })
+  Message({ message: '默认提示', type: 'default' })
 }
 function change2 () {
-  TyhMessage({ message: '主要提示', type: 'primary' })
+  Message({ message: '主要提示', type: 'primary' })
 }
 function change3 () {
-  TyhMessage({ message: '成功提示', type: 'success' })
+  Message({ message: '成功提示', type: 'success' })
 }
 function change4 () {
-  TyhMessage({ message: '危险提示', type: 'danger' })
+  Message({ message: '危险提示', type: 'danger' })
 }
 function change5 () {
-  TyhMessage({ message: '警告提示', type: 'warning' })
+  Message({ message: '警告提示', type: 'warning' })
 }
 </script>
     `,
@@ -672,7 +672,7 @@ function change5 () {
 </template>
 
 <script setup>
-import TyhMessage from 'tyh-ui2/packages/message'
+import { Message } from 'tyh-ui2'
 function change6 () {
   Message({ message: '5000毫秒后隐藏', type: 'primary', time: 5000 })
 }
@@ -680,29 +680,29 @@ function change6 () {
     `,
   mes3: `
 <template>
-  <tyh-button type="primary" @click="change7">主要提示</tyh-button>
-  <tyh-button type="success" @click="change8">成功提示</tyh-button>
-  <tyh-button type="danger" @click="change9">危险提示</tyh-button>
-  <tyh-button type="warning" @click="change10">警告提示</tyh-button>
+  <tyh-button type="primary" @click="change7">点击提示</tyh-button>
 </template>
 
 <script setup>
-import TyhMessage from 'tyh-ui2/packages/message'
+import { Message } from 'tyh-ui2'
 function change7 () {
-  Message({ message: '主要提示', type: 'primary', iconClass: 'tyh-ui-smile' })
-}
-function change8 () {
-  Message({ message: '成功提示', type: 'success', iconClass: 'tyh-ui-success-filling' })
-}
-function change9 () {
-  Message({ message: '危险提示', type: 'danger', iconClass: 'tyh-ui-prompt' })
-}
-function change10 () {
-  Message({ message: '警告提示', type: 'warning', iconClass: 'tyh-ui-warning-filling' })
+  Message({ message: '主要提示', type: 'primary', icon: 'tyh-ui-smile' })
 }
 </script>
     `,
-  mes4: `import TyhMessage from 'tyh-ui2/packages/message'`
+  mes4: `import { Message } from 'tyh-ui2'`,
+  mes5: `
+<template>
+  <tyh-button type="primary" @click="change8">点击提示</tyh-button>
+</template>
+
+<script setup>
+import { Message } from 'tyh-ui2'
+function change8 () {
+  Message({ message: '主要提示', type: 'primary', icon: 'tyh-ui-smile', showClose: true })
+}
+</script>
+  `
 }
 // 骨架
 const skeleton = {

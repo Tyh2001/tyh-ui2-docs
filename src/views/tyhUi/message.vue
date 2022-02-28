@@ -1,6 +1,5 @@
 <template>
   <h1 class="title">Message 提示框</h1>
-  <tyh-alert type="danger" message="该组件尚未完善，开发中。。。" />
 
   <h3 class="Subtitle">使用前</h3>
   <p>使用前，你必须先引入它</p>
@@ -23,12 +22,14 @@
   <pre v-highlight><code class="html">{{ msg.mes2 }}</code></pre>
 
   <h3 class="Subtitle">带有 icon</h3>
-  <p>iconClass 属性可以配置 icon 的类名进行配置</p>
-  <tyh-button type="primary" @click="change7">主要提示</tyh-button>
-  <tyh-button type="success" @click="change8">成功提示</tyh-button>
-  <tyh-button type="danger" @click="change9">危险提示</tyh-button>
-  <tyh-button type="warning" @click="change10">警告提示</tyh-button>
+  <p>icon 属性可以配置 icon 的类名进行配置</p>
+  <tyh-button type="primary" @click="change7">点击提示</tyh-button>
   <pre v-highlight><code class="html">{{ msg.mes3 }}</code></pre>
+
+  <h3 class="Subtitle">可关闭</h3>
+  <p>showClose 属性可以配置代码关闭按钮</p>
+  <tyh-button type="primary" @click="change8">点击提示</tyh-button>
+  <pre v-highlight><code class="html">{{ msg.mes5 }}</code></pre>
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="table.columns" />
@@ -44,18 +45,19 @@
 </template>
 
 <script setup>
-import Message from 'tyh-ui2/packages/message'
+import { Message } from 'tyh-ui2'
 import { msg } from './index'
 import table from './table'
 const configures = [
   { param: 'message', explain: '显示文字', type: 'string', value: '——', default: '——' },
-  { param: 'type', explain: '提示框的类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
+  { param: 'type', explain: '提示框的类型', type: 'string', value: 'default / primary / success / danger / warning', default: 'default' },
   { param: 'time', explain: '展示的时间', type: 'number', value: '——', default: '2000' },
-  { param: 'iconClass', explain: '展示的 icon', type: 'string', value: '——', default: '——' }
+  { param: 'icon', explain: '展示的 icon', type: 'string', value: '——', default: '——' },
+  { param: 'showClose', explain: '是否展示关闭按钮', type: 'boolean', value: '——', default: 'false' },
+  { param: 'offset', explain: '距离顶部的距离', type: 'number', value: '——', default: '20' },
 ]
-
 function change1 () {
-  Message({ message: '默认提示' })
+  Message({ message: '默认提示', type: 'default' })
 }
 function change2 () {
   Message({ message: '主要提示', type: 'primary' })
@@ -73,16 +75,10 @@ function change6 () {
   Message({ message: '5000毫秒后隐藏', type: 'primary', time: 5000 })
 }
 function change7 () {
-  Message({ message: '主要提示', type: 'primary', iconClass: 'tyh-ui-smile' })
+  Message({ message: '主要提示', type: 'primary', icon: 'tyh-ui-smile' })
 }
 function change8 () {
-  Message({ message: '成功提示', type: 'success', iconClass: 'tyh-ui-success-filling' })
-}
-function change9 () {
-  Message({ message: '危险提示', type: 'danger', iconClass: 'tyh-ui-prompt' })
-}
-function change10 () {
-  Message({ message: '警告提示', type: 'warning', iconClass: 'tyh-ui-warning-filling' })
+  Message({ message: '主要提示', type: 'primary', icon: 'tyh-ui-smile', showClose: true })
 }
 </script>
 

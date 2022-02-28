@@ -66,7 +66,7 @@
 
 <script setup>
 import Clipboard from 'clipboard'
-import Message from 'tyh-ui2/packages/message'
+import { Message } from 'tyh-ui2'
 const colorList1 = [
   { color: '3a6ff4', type: 'primary' },
   { color: '54c600', type: 'success' },

@@ -59,7 +59,7 @@
 import { icon } from './index'
 import table from './table'
 import Clipboard from 'clipboard'
-import Message from 'tyh-ui2/packages/message'
+import { Message } from 'tyh-ui2'
 const iconList = [
   'tyh-ui-tyhui',
   'tyh-ui-githublogo',
