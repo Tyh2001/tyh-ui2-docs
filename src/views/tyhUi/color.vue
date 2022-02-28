@@ -122,17 +122,15 @@ const colorList3 = [
 function copyColor (dom) {
   const clipboard = new Clipboard(dom)
   // 复制成功
-  clipboard.on('success', e => {
-    Message({ message: '复制成功', type: 'success', iconClass: 'tyh-ui-success-01' })
+  clipboard.on('success', _ => {
+    Message({ message: '复制成功', type: 'success', iconClass: 'tyh-ui-success-01', round: true })
     clipboard.destroy()
   })
 }
 
 // 每个盒子的颜色
 function ListBackgroundColor (item) {
-  return {
-    background: `#${item.color}`
-  }
+  return { background: `#${item.color}` }
 }
 </script>
 

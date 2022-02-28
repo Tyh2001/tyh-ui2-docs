@@ -36,22 +36,27 @@ import { ElDrawer } from 'element3'
 import Sidebar from '@/components/Sidebar.vue'
 import { useRoute } from 'vue-router'
 import { ref, watch } from 'vue'
-const layoutList = [
-  { title: '首页', url: '/' },
-  { title: '组件', url: '/component' },
-  { title: '关于', url: '/about' },
-]
-const route = useRoute()
-function highLightStyle (url) {
-  const path = route.path
-  if (path === '/') return url === path ? '#3a6ff4' : '#000'
-  const res = path.match(/\/[a-zA-Z]+/gi)[0]
-  return url === res ? '#3a6ff4' : '#000'
+
+const { layoutList, highLightStyle, drawer } = layoutOptions()
+function layoutOptions () {
+  const layoutList = [
+    { title: '首页', url: '/' },
+    { title: '组件', url: '/component' },
+    { title: '关于', url: '/about' },
+  ]
+  const route = useRoute()
+  const highLightStyle = url => {
+    const path = route.path
+    if (path === '/') return url === path ? '#3a6ff4' : '#000'
+    const res = path.match(/\/[a-zA-Z]+/gi)[0]
+    return url === res ? '#3a6ff4' : '#000'
+  }
+  const drawer = ref(false)
+  watch(() => route.path, () => {
+    drawer.value = false
+  })
+  return { layoutList, highLightStyle, drawer }
 }
-const drawer = ref(false)
-watch(() => route.path, () => {
-  drawer.value = false
-})
 </script>
 
 <style scoped>

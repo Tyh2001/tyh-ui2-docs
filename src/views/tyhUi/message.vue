@@ -9,6 +9,7 @@
   <p>提示框的基本使用</p>
   <p>通过引入 message 方法，接收一个对象，可以使用 message 定义内容</p>
   <p>type 属性可以定义提示框类型</p>
+  <p>round 属性可以配置圆角</p>
   <tyh-button @click="change1">默认提示</tyh-button>
   <tyh-button type="primary" @click="change2">主要提示</tyh-button>
   <tyh-button type="success" @click="change3">成功提示</tyh-button>
@@ -55,21 +56,22 @@ const configures = [
   { param: 'icon', explain: '展示的 icon', type: 'string', value: '——', default: '——' },
   { param: 'showClose', explain: '是否展示关闭按钮', type: 'boolean', value: '——', default: 'false' },
   { param: 'offset', explain: '距离顶部的距离', type: 'number', value: '——', default: '20' },
+  { param: 'round', explain: '配置圆角', type: 'boolean', value: '——', default: 'false' },
 ]
 function change1 () {
-  Message({ message: '默认提示', type: 'default' })
+  Message({ message: '默认提示', type: 'default', round: true })
 }
 function change2 () {
-  Message({ message: '主要提示', type: 'primary' })
+  Message({ message: '主要提示', type: 'primary', round: true })
 }
 function change3 () {
-  Message({ message: '成功提示', type: 'success' })
+  Message({ message: '成功提示', type: 'success', round: true })
 }
 function change4 () {
-  Message({ message: '危险提示', type: 'danger' })
+  Message({ message: '危险提示', type: 'danger', round: true })
 }
 function change5 () {
-  Message({ message: '警告提示', type: 'warning' })
+  Message({ message: '警告提示', type: 'warning', round: true })
 }
 function change6 () {
   Message({ message: '5000毫秒后隐藏', type: 'primary', time: 5000 })
