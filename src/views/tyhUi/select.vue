@@ -1,6 +1,5 @@
 <template>
   <h1 class="title">Select 选择器</h1>
-  <tyh-alert type="danger" message="该组件尚未完善，开发中。。。" />
 
   <h3 class="Subtitle">基本使用</h3>
   <p>选择器的基本用法</p>
