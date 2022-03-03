@@ -92,6 +92,7 @@ const configEvt = [
 const slotConfig = [
   { name: 'error', explain: '自定义失败提示' }
 ]
+onerror = _ => true
 </script>
 
 <style scoped>
