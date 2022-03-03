@@ -255,7 +255,7 @@ function iconOptions () {
   const configures = [
     { param: 'icon', explain: 'icon 的类名', type: 'string', value: '——', default: '——' },
     { param: 'color', explain: 'icon 的颜色', type: 'string', value: '——', default: '#606266' },
-    { param: 'size', explain: 'icon 的尺寸', type: 'string / number', value: '——', default: '——' }
+    { param: 'size', explain: 'icon 的尺寸', type: 'string / number', value: '——', default: '16' }
   ]
   const iconLength = iconList.length
   // 复制
