@@ -8,14 +8,14 @@
   <tyh-tag type="success">标签三</tyh-tag>
   <tyh-tag type="danger">标签四</tyh-tag>
   <tyh-tag type="warning">标签五</tyh-tag>
-  <pre v-highlight><code class="html">{{ tag.tag1 }}</code></pre>
+  <highlightjs language="javascript" :code="tag.tag1" />
 
   <h3 class="Subtitle">不同尺寸</h3>
   <p>size 属性可以配置不同的尺寸</p>
   <tyh-tag type="primary">标签</tyh-tag>
   <tyh-tag size="small" type="primary">标签</tyh-tag>
   <tyh-tag size="mini" type="primary">标签</tyh-tag>
-  <pre v-highlight><code class="html">{{ tag.tag2 }}</code></pre>
+  <highlightjs language="javascript" :code="tag.tag2" />
 
   <h3 class="Subtitle">圆角标签</h3>
   <p>round 属性可以配置圆角显示</p>
@@ -24,7 +24,7 @@
   <tyh-tag round type="success">标签三</tyh-tag>
   <tyh-tag round type="danger">标签四</tyh-tag>
   <tyh-tag round type="warning">标签五</tyh-tag>
-  <pre v-highlight><code class="html">{{ tag.tag3 }}</code></pre>
+  <highlightjs language="javascript" :code="tag.tag3" />
 
   <h3 class="Subtitle">可关闭</h3>
   <p>设置 isclose 属性可以定义一个标签是否可移除</p>
@@ -42,7 +42,7 @@
   <tyh-tag v-show="show5" type="warning" isClose @close="show5 = false">
     标签五
   </tyh-tag>
-  <pre v-highlight><code class="html">{{ tag.tag4 }}</code></pre>
+  <highlightjs language="javascript" :code="tag.tag4" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="table.columns" />

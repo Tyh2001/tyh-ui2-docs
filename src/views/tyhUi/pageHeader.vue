@@ -6,14 +6,14 @@
   <p>title 属性可以配置页头的标题</p>
   <p>content 属性可以配置页头的内容</p>
   <tyh-page-header title="返回上一层" content="详情页面" @back="goBack" />
-  <pre v-highlight><code class="html">{{ pageHeader.pageHeader1 }}</code></pre>
+  <highlightjs language="javascript" :code="pageHeader.pageHeader1" />
 
   <h3 class="Subtitle">基本使用</h3>
   <p>PageHeader 的基本使用</p>
   <p>title 属性可以配置页头的标题</p>
   <p>icon 属性可以配置页头的 icon</p>
   <tyh-page-header content="详情页面" icon="tyh-ui-close" />
-  <pre v-highlight><code class="html">{{ pageHeader.pageHeader2 }}</code></pre>
+  <highlightjs language="javascript" :code="pageHeader.pageHeader2" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="table.columns" />

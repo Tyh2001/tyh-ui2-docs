@@ -4,7 +4,7 @@
   <h3 class="Subtitle">基本使用</h3>
   <p>文本域的基本用法</p>
   <tyh-textarea v-model="value1" placeholder="请输入内容..." />
-  <pre v-highlight><code class="html">{{ textarea.text1 }}</code></pre>
+  <highlightjs language="javascript" :code="textarea.text1" />
 
   <h3 class="Subtitle">拉伸方式</h3>
   <p>resize 属性可以规定文本域的拉伸方式</p>
@@ -12,24 +12,24 @@
   <tyh-textarea v-model="value8" resize="vertical" /><br />
   <tyh-textarea v-model="value9" resize="horizontal" /><br />
   <tyh-textarea v-model="value10" resize="none" /><br />
-  <pre v-highlight><code class="html">{{ textarea.text2 }}</code></pre>
+  <highlightjs language="javascript" :code="textarea.text2" />
 
   <h3 class="Subtitle">不同尺寸</h3>
   <p>rows 属性可以配置文本域的行数</p>
   <p>cols 属性可以配置文本域的宽度</p>
   <tyh-textarea v-model="value3" rows="5" /><br />
   <tyh-textarea v-model="value4" cols="10" />
-  <pre v-highlight><code class="html">{{ textarea.text3 }}</code></pre>
+  <highlightjs language="javascript" :code="textarea.text3" />
 
   <h3 class="Subtitle">禁用状态</h3>
   <p>disabled 属性可以配置文本域禁用状态</p>
   <tyh-textarea v-model="value5" disabled />
-  <pre v-highlight><code class="html">{{ textarea.text4 }}</code></pre>
+  <highlightjs language="javascript" :code="textarea.text4" />
 
   <h3 class="Subtitle">最大上限</h3>
   <p>max 属性可以配置文本域输入的最大上限文本</p>
   <tyh-textarea v-model="value6" max="10" />
-  <pre v-highlight><code class="html">{{ textarea.text5 }}</code></pre>
+  <highlightjs language="javascript" :code="textarea.text5" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="table.columns" />

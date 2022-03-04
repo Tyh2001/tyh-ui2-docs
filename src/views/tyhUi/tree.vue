@@ -6,7 +6,7 @@
   <p>Tree 的基本使用</p>
   <p>data 属性传递一个树型结构的数据</p>
   <tyh-tree :data="data" />
-  <pre v-highlight><code class="html">{{ tree.tre1 }}</code></pre>
+  <highlightjs language="javascript" :code="tree.tre1" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="table.columns" />

@@ -9,7 +9,7 @@
     <tyh-crumbs-item>文章管理</tyh-crumbs-item>
     <tyh-crumbs-item>设置</tyh-crumbs-item>
   </tyh-crumbs>
-  <pre v-highlight><code class="html">{{ crumbs.cru1 }}</code></pre>
+  <highlightjs language="javascript" :code="crumbs.cru1" />
 
   <h3 class="Subtitle">不同的分隔符</h3>
   <p>通过给父组件 separator 属性可以配置不同的分隔符，使用 icon 类名</p>
@@ -19,7 +19,7 @@
     <tyh-crumbs-item>文章管理</tyh-crumbs-item>
     <tyh-crumbs-item>设置</tyh-crumbs-item>
   </tyh-crumbs>
-  <pre v-highlight><code class="html">{{ crumbs.cru2 }}</code></pre>
+  <highlightjs language="javascript" :code="crumbs.cru2" />
 
   <h3 class="Subtitle">跳转路由</h3>
   <p>
@@ -32,7 +32,7 @@
     <tyh-crumbs-item>文章管理</tyh-crumbs-item>
     <tyh-crumbs-item>设置</tyh-crumbs-item>
   </tyh-crumbs>
-  <pre v-highlight><code class="html">{{ crumbs.cru3 }}</code></pre>
+  <highlightjs language="javascript" :code="crumbs.cru3" />
 
   <h3 class="Subtitle">tyh-crumbs Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="table.columns" />

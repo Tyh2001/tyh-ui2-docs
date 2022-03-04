@@ -8,7 +8,7 @@
   <tyh-tagging class="margin" type="success">标注3</tyh-tagging>
   <tyh-tagging class="margin" type="danger">标注4</tyh-tagging>
   <tyh-tagging class="margin" type="warning">标注5</tyh-tagging>
-  <pre v-highlight><code class="html">{{ tagging.tag1 }}</code></pre>
+  <highlightjs language="javascript" :code="tagging.tag1" />
 
   <h3 class="Subtitle">文字配置</h3>
   <p>size 属性可以配置标注的文字大小</p>
@@ -23,7 +23,7 @@
   <tyh-tagging>
     使用方便，配置简单，目录清晰，结构简单，组件轻量级，上手简单，像复制粘贴一样容易。
   </tyh-tagging>
-  <pre v-highlight><code class="html">{{ tagging.tag2 }}</code></pre>
+  <highlightjs language="javascript" :code="tagging.tag2" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="table.columns" />

@@ -4,18 +4,18 @@
   <h3 class="Subtitle">基本使用</h3>
   <p>回到顶部的基础用法</p>
   <tyh-back-top>Top</tyh-back-top>
-  <pre v-highlight><code class="html">{{ back.back1 }}</code></pre>
+  <highlightjs language="javascript" :code="back.back1" />
 
   <h3 class="Subtitle">位置偏移</h3>
   <p>bottom 和 right 属性可以配置距离右边和下边的距离</p>
   <tyh-backTop bottom="150" right="120">Go</tyh-backTop>
-  <pre v-highlight><code class="html">{{ back.back2 }}</code></pre>
+  <highlightjs language="javascript" :code="back.back2" />
 
   <h3 class="Subtitle">插入 Icon</h3>
   <tyh-backTop bottom="100">
     <tyh-icon icon="tyh-ui-top" color="#409eff" />
   </tyh-backTop>
-  <pre v-highlight><code class="html">{{ back.back3 }}</code></pre>
+  <highlightjs language="javascript" :code="back.back3" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="table.columns" />

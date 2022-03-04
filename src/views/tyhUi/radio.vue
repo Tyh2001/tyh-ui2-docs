@@ -7,21 +7,21 @@
   <tyh-radio v-model="radio1" label="备选项1">备选项1</tyh-radio>
   <tyh-radio v-model="radio1" label="备选项2">备选项2</tyh-radio>
   <tyh-radio v-model="radio1" label="备选项3">备选项3</tyh-radio>
-  <pre v-highlight><code class="html">{{ radio.rad1 }}</code></pre>
+  <highlightjs language="javascript" :code="radio.rad1" />
 
   <h3 class="Subtitle">禁用状态</h3>
   <p>disabled 属性可以配置禁用状态</p>
   <tyh-radio v-model="radio2" disabled label="备选项1">备选项1</tyh-radio>
   <tyh-radio v-model="radio2" label="备选项2">备选项2</tyh-radio>
   <tyh-radio v-model="radio2" label="备选项3">备选项3</tyh-radio>
-  <pre v-highlight><code class="html">{{ radio.rad2 }}</code></pre>
+  <highlightjs language="javascript" :code="radio.rad2" />
 
   <h3 class="Subtitle">带有边框</h3>
   <p>border 属性可以配置边框</p>
   <tyh-radio v-model="radio3" label="备选项1" border>备选项1</tyh-radio>
   <tyh-radio v-model="radio3" label="备选项2" border>备选项2</tyh-radio>
   <tyh-radio v-model="radio3" label="备选项3" border>备选项3</tyh-radio>
-  <pre v-highlight><code class="html">{{ radio.rad3 }}</code></pre>
+  <highlightjs language="javascript" :code="radio.rad3" />
 
   <h3 class="Subtitle">配置大小</h3>
   <p>size 属性可以大小，但是必须是带有 border 属性的前提才可以正常工作</p>
@@ -65,7 +65,7 @@
     备选项3
   </tyh-radio>
   <br />
-  <pre v-highlight><code class="html">{{ radio.rad4 }}</code></pre>
+  <highlightjs language="javascript" :code="radio.rad4" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="table.columns" />

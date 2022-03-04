@@ -6,31 +6,31 @@
   <tyh-switch v-model="value1" />
   <br />
   <tyh-switch v-model="value1" />
-  <pre v-highlight><code class="html">{{ Switch.swi1 }}</code></pre>
+  <highlightjs language="javascript" :code="Switch.swi1" />
 
   <h3 class="Subtitle">文字描述</h3>
   <p>closeText 属性可以配置左侧的文字</p>
   <p>openText 属性可以配置右侧的文字</p>
   <tyh-switch v-model="value2" closeText="关闭" openText="开启" />
-  <pre v-highlight><code class="html">{{ Switch.swi2 }}</code></pre>
+  <highlightjs language="javascript" :code="Switch.swi2" />
 
   <h3 class="Subtitle">禁用状态</h3>
   <p>disabled 属性可以配置禁用开关</p>
   <tyh-switch v-model="value3" disabled /><br />
   <tyh-switch v-model="value4" disabled />
-  <pre v-highlight><code class="html">{{ Switch.swi3 }}</code></pre>
+  <highlightjs language="javascript" :code="Switch.swi3" />
 
   <h3 class="Subtitle">自定义颜色</h3>
   <p>closeColor 属性可以配置自定义关闭颜色</p>
   <p>openColor 属性可以配置自定义开启颜色</p>
   <tyh-switch v-model="value5" closeColor="red" openColor="green" /><br />
   <tyh-switch v-model="value6" closeColor="black" openColor="#eee" />
-  <pre v-highlight><code class="html">{{ Switch.swi4 }}</code></pre>
+  <highlightjs language="javascript" :code="Switch.swi4" />
 
   <h3 class="Subtitle">自定义尺寸</h3>
   <p>width 属性可以自定义开关的尺寸 最小宽度为20</p>
   <tyh-switch v-model="value7" :width="60" />
-  <pre v-highlight><code class="html">{{ Switch.swi5 }}</code></pre>
+  <highlightjs language="javascript" :code="Switch.swi5" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="table.columns" />

@@ -74,7 +74,7 @@
       <tyh-footer>Footer</tyh-footer>
     </tyh-container>
   </tyh-container>
-  <pre v-highlight><code class="html">{{ container.cont1 }}</code></pre>
+  <highlightjs language="javascript" :code="container.cont1" />
 
   <h3 class="Subtitle">tyh-container Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="table.columns" />

@@ -6,7 +6,7 @@
   <p>src 属性可以添加图片路径</p>
   <p>width，height 可以配置图片宽高</p>
   <tyh-image width="300px" src="https://tianyuhao.cn/v3/assets/giraffe.jpg" />
-  <pre v-highlight><code class="html">{{ image.img1 }}</code></pre>
+  <highlightjs language="javascript" :code="image.img1" />
 
   <h3 class="Subtitle">如何适应容器框</h3>
   <p>
@@ -30,7 +30,7 @@
       />
     </div>
   </div>
-  <pre v-highlight><code class="html">{{ image.img2 }}</code></pre>
+  <highlightjs language="javascript" :code="image.img2" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="table.columns" />

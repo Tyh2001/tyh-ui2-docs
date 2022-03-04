@@ -9,17 +9,17 @@
     title 配置标题，key 配置键值，名字是必须的，否则将不能正常工作！详情参考文档
   </p>
   <tyh-table :data="tableData" :columns="columns3" />
-  <pre v-highlight><code class="html">{{ tableCode.tab1 }}</code></pre>
+  <highlightjs language="javascript" :code="tableCode.tab1" />
 
   <h3 class="Subtitle">配置行高</h3>
   <p>trHeight 属性可以表格行高</p>
   <tyh-table :data="tableData" :columns="columns3" trHeight="50px" />
-  <pre v-highlight><code class="html">{{ tableCode.tab2 }}</code></pre>
+  <highlightjs language="javascript" :code="tableCode.tab2" />
 
   <h3 class="Subtitle">文字放置方向</h3>
   <p>align 属性可以表格文字居中还是居两侧</p>
   <tyh-table :data="tableData" :columns="columns3" align="center" />
-  <pre v-highlight><code class="html">{{ tableCode.tab3 }}</code></pre>
+  <highlightjs language="javascript" :code="tableCode.tab3" />
 
   <h3 class="Subtitle">斑马纹和边框</h3>
   <p>zebra 属性可以配置斑马纹</p>
@@ -31,7 +31,7 @@
     border
     zebra
   />
-  <pre v-highlight><code class="html">{{ tableCode.tab4 }}</code></pre>
+  <highlightjs language="javascript" :code="tableCode.tab4" />
 
   <h3 class="Subtitle">自定义宽高</h3>
   <p>width 属性可以配置表格宽度</p>
@@ -43,12 +43,12 @@
     width="500px"
     height="200px"
   />
-  <pre v-highlight><code class="html">{{ tableCode.tab5 }}</code></pre>
+  <highlightjs language="javascript" :code="tableCode.tab5" />
 
   <h3 class="Subtitle">带有序号</h3>
   <p>num 属性可以配置带有序号的表格</p>
   <tyh-table :data="tableData" :columns="columns3" align="center" num />
-  <pre v-highlight><code class="html">{{ tableCode.tab6 }}</code></pre>
+  <highlightjs language="javascript" :code="tableCode.tab6" />
 
   <h3 class="Subtitle">重点行标注</h3>
   <p>
@@ -61,7 +61,7 @@
     num
     :important="[2, 4]"
   />
-  <pre v-highlight><code class="html">{{ tableCode.tab7 }}</code></pre>
+  <highlightjs language="javascript" :code="tableCode.tab7" />
 
   <h3 class="Subtitle">单独配置列度</h3>
   <p>
@@ -69,7 +69,7 @@
     键值，来配置单独的列宽，比如下面将第一列和第二列设置宽度为 100px
   </p>
   <tyh-table :data="tableData" :columns="columns2" align="center" />
-  <pre v-highlight><code class="html">{{ tableCode.tab8 }}</code></pre>
+  <highlightjs language="javascript" :code="tableCode.tab8" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="table.columns" />

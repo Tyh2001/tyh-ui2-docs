@@ -13,7 +13,7 @@
     <p>这是内容部分3</p>
     <p>这是内容部分4</p>
   </tyh-card>
-  <pre v-highlight><code class="html">{{ card.car1}}</code></pre>
+  <highlightjs language="javascript" :code="card.car1" />
 
   <h3 class="Subtitle">简约卡片</h3>
   <p>simple 属性可以配置简约卡片</p>
@@ -25,7 +25,7 @@
     <p>这是内容部分3</p>
     <p>这是内容部分4</p>
   </tyh-card>
-  <pre v-highlight><code class="html">{{ card.car2 }}</code></pre>
+  <highlightjs language="javascript" :code="card.car2" />
 
   <h3 class="Subtitle">阴影显示时机</h3>
   <p>shadow 属性可以配置阴影显示时机</p>
@@ -44,7 +44,7 @@
     <template v-slot:subtitle>副标题</template>
     <p>从不显示</p>
   </tyh-card>
-  <pre v-highlight><code class="html">{{ card.car3 }}</code></pre>
+  <highlightjs language="javascript" :code="card.car3" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="table.columns" />

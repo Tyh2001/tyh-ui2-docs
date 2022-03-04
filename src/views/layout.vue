@@ -22,10 +22,6 @@
     <router-view />
   </div>
 
-  <!-- <el-drawer v-model="drawer" size="200px" direction="rtl">
-    <Sidebar phone />
-  </el-drawer> -->
-
   <el-drawer v-model:visible="drawer" direction="rtl">
     <Sidebar phone />
   </el-drawer>

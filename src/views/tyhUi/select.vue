@@ -12,7 +12,7 @@
       {{ item.label }}
     </tyh-option>
   </tyh-select>
-  <pre v-highlight><code class="html">{{ select.sel1 }}</code></pre>
+  <highlightjs language="javascript" :code="select.sel1" />
 
   <h3 class="Subtitle">tyh-select Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="table.columns" />

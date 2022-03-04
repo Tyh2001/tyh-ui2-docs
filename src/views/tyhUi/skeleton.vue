@@ -6,14 +6,14 @@
   <tyh-skeleton />
   <tyh-skeleton />
   <tyh-skeleton />
-  <pre v-highlight><code class="html">{{ skeleton.ske1 }}</code></pre>
+  <highlightjs language="javascript" :code="skeleton.ske1" />
 
   <h3 class="Subtitle">圆角的</h3>
   <p>round 属性可以配置圆角</p>
   <tyh-skeleton round />
   <tyh-skeleton round />
   <tyh-skeleton round />
-  <pre v-highlight><code class="html">{{ skeleton.ske2 }}</code></pre>
+  <highlightjs language="javascript" :code="skeleton.ske2" />
 
   <h3 class="Subtitle">自定义宽高</h3>
   <p>width 属性可以配置宽度</p>
@@ -23,14 +23,14 @@
   <tyh-skeleton width="150px" />
   <br />
   <tyh-skeleton width="100px" height="100px" />
-  <pre v-highlight><code class="html">{{ skeleton.ske3 }}</code></pre>
+  <highlightjs language="javascript" :code="skeleton.ske3" />
 
   <h3 class="Subtitle">启用动画</h3>
   <p>animation 属性可以配置显示动画</p>
   <tyh-skeleton animation />
   <tyh-skeleton animation />
   <tyh-skeleton animation />
-  <pre v-highlight><code class="html">{{ skeleton.ske4 }}</code></pre>
+  <highlightjs language="javascript" :code="skeleton.ske4" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="table.columns" />

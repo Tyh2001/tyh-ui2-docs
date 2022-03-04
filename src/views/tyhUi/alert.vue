@@ -10,7 +10,7 @@
   <tyh-alert type="success" message="这是一个成功提示" />
   <tyh-alert type="danger" message="这是一个危险提示" />
   <tyh-alert type="warning" message="这是一个警告提示" />
-  <pre v-highlight><code class="html">{{ alert.ale1 }}</code></pre>
+  <highlightjs language="javascript" :code="alert.ale1" />
 
   <h3 class="Subtitle">带有 icon</h3>
   <p>iconClass 属性可以配置 icon</p>
@@ -35,7 +35,7 @@
     type="warning"
     message="这是一个警告提示"
   />
-  <pre v-highlight><code class="html">{{ alert.ale2 }}</code></pre>
+  <highlightjs language="javascript" :code="alert.ale2" />
 
   <h3 class="Subtitle">可以关闭的</h3>
   <p>close 属性可以配置宽度</p>
@@ -74,7 +74,7 @@
     message="点击关闭警告提示"
     @close="isShow4 = false"
   />
-  <pre v-highlight><code class="html">{{ alert.ale3 }}</code></pre>
+  <highlightjs language="javascript" :code="alert.ale3" />
 
   <h3 class="Subtitle">文字居中</h3>
   <p>center 属性可以配置文字居中</p>
@@ -83,7 +83,7 @@
   <tyh-alert center type="success" message="这是一个成功提示" />
   <tyh-alert center type="danger" message="这是一个危险提示" />
   <tyh-alert center type="warning" message="这是一个警告提示" />
-  <pre v-highlight><code class="html">{{ alert.ale4 }}</code></pre>
+  <highlightjs language="javascript" :code="alert.ale4" />
 
   <h3 class="Subtitle">简约提示</h3>
   <p>simple 属性可以配置简约提示</p>
@@ -92,7 +92,7 @@
   <tyh-alert simple type="success" message="简约的成功提示" />
   <tyh-alert simple type="danger" message="简约的危险提示" />
   <tyh-alert simple type="warning" message="简约的警告提示" />
-  <pre v-highlight><code class="html">{{ alert.ale5 }}</code></pre>
+  <highlightjs language="javascript" :code="alert.ale5" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="table.columns" />
