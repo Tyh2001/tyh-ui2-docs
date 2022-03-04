@@ -16,10 +16,7 @@
   <highlightjs language="javascript" :code="card.car1" />
 
   <h3 class="Subtitle">简约卡片</h3>
-  <p>simple 属性可以配置简约卡片</p>
-  <tyh-card simple>
-    <template v-slot:title>主标题</template>
-    <template v-slot:subtitle>副标题</template>
+  <tyh-card>
     <p>这是内容部分1</p>
     <p>这是内容部分2</p>
     <p>这是内容部分3</p>
@@ -66,8 +63,8 @@
 import { card } from './index'
 import table from './table'
 const configures = [
-  { param: 'simple', explain: '简约卡片', type: 'boolean', value: '——', default: 'false' },
   { param: 'shadow', explain: '阴影显示时机', type: 'string', value: 'always / hover / noShadow', default: '——' },
+  { param: 'body-style', explain: '自定义 body 样式', type: 'object', value: '——', default: '{padding:20px}' },
 ]
 const slotConfig = [
   { name: 'title', explain: '自定义卡片的主标题' },
