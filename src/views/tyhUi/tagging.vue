@@ -32,9 +32,9 @@
     <tyh-turn-page-item direction="left" url="/component/select">
       Select 选择器
     </tyh-turn-page-item>
-    <!-- <tyh-turn-page-item direction="right" url="/component/menu">
-      Menu 导航栏
-    </tyh-turn-page-item> -->
+    <tyh-turn-page-item direction="right" url="/component/notification">
+      Notification 通知
+    </tyh-turn-page-item>
   </tyh-turn-page>
 </template>
 

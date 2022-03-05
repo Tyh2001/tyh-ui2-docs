@@ -44,6 +44,7 @@ const routes = [
           { path: '/component/textarea', component: () => import('../views/TyhUi/textarea.vue') },
           { path: '/component/select', component: () => import('../views/TyhUi/select.vue') },
           { path: '/component/tagging', component: () => import('../views/TyhUi/tagging.vue') },
+          { path: '/component/notification', component: () => import('../views/TyhUi/notification.vue') },
         ]
       }
     ]

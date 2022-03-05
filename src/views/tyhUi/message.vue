@@ -30,7 +30,7 @@
   <h3 class="Subtitle">可关闭</h3>
   <p>showClose 属性可以配置代码关闭按钮</p>
   <tyh-button type="primary" @click="change8">点击提示</tyh-button>
-  <highlightjs language="javascript" :code="msg.mes4" />
+  <highlightjs language="javascript" :code="msg.mes5" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="table.columns" />
