@@ -1826,6 +1826,7 @@ import { Notification } from 'tyh-ui2'
 </template>
 
 <script setup>
+import { Notification } from 'tyh-ui2'
 function open1 () {
   Notification({
     title: '提示',
@@ -1843,6 +1844,7 @@ function open1 () {
 </template>
 
 <script setup>
+import { Notification } from 'tyh-ui2'
 function open2 () {
   Notification({
     title: '主要提示',
@@ -1882,6 +1884,7 @@ function open5 () {
 </template>
 
 <script setup>
+import { Notification } from 'tyh-ui2'
 function open6 () {
   Notification({
     title: '提示',
@@ -1918,6 +1921,7 @@ function open9 () {
 </template>
 
 <script setup>
+import { Notification } from 'tyh-ui2'
 function open10 () {
   Notification({
     title: '提示',
