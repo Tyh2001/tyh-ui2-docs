@@ -11,14 +11,19 @@
   </tyh-menu>
   <highlightjs language="javascript" :code="menu.men1" />
 
-  <h3 class="Subtitle">颜色配置</h3>
-  <p>通过 background 属性可以配置导航栏背景色</p>
-  <p>通过 color 属性可以配置子菜单颜色</p>
-  <tyh-menu background="#eee">
-    <tyh-menu-item color="#000">首页</tyh-menu-item>
-    <tyh-menu-item color="#000">内容</tyh-menu-item>
-    <tyh-menu-item color="#000">设置</tyh-menu-item>
-    <tyh-menu-item color="#000">回收站</tyh-menu-item>
+  <h3 class="Subtitle">主题配置</h3>
+  <p>通过 theme 属性可以配置主题</p>
+  <tyh-menu theme="dark">
+    <tyh-menu-item>首页</tyh-menu-item>
+    <tyh-menu-item>内容</tyh-menu-item>
+    <tyh-menu-item>设置</tyh-menu-item>
+    <tyh-menu-item>回收站</tyh-menu-item>
+  </tyh-menu>
+  <tyh-menu theme="light">
+    <tyh-menu-item>首页</tyh-menu-item>
+    <tyh-menu-item>内容</tyh-menu-item>
+    <tyh-menu-item>设置</tyh-menu-item>
+    <tyh-menu-item>回收站</tyh-menu-item>
   </tyh-menu>
   <highlightjs language="javascript" :code="menu.men2" />
 
@@ -32,25 +37,23 @@
   </tyh-menu>
   <highlightjs language="javascript" :code="menu.men3" />
 
-  <h3 class="Subtitle">带有 icon</h3>
-  <tyh-menu>
-    <tyh-menu-item url="/home">
-      <tyh-icon icon="tyh-ui-shouye-xianxing" color="#fff" />
-      首页
-    </tyh-menu-item>
-    <tyh-menu-item url="/abc">
-      <tyh-icon icon="tyh-ui-training" color="#fff" />
-      内容
-    </tyh-menu-item>
-    <tyh-menu-item url="">
-      <tyh-icon icon="tyh-ui-setting-filling" color="#fff" />
-      设置
-    </tyh-menu-item>
-    <tyh-menu-item url="">
-      <tyh-icon icon="tyh-ui-discount" color="#fff" />
-      标签
-    </tyh-menu-item>
-  </tyh-menu>
+  <h3 class="Subtitle">不同排列状态</h3>
+  <p>mode 属性可以配置不同的排列状态</p>
+  <div style="display: flex">
+    <tyh-menu theme="dark" mode="vertical" style="width: 200px">
+      <tyh-menu-item>首页</tyh-menu-item>
+      <tyh-menu-item>内容</tyh-menu-item>
+      <tyh-menu-item>设置</tyh-menu-item>
+      <tyh-menu-item>回收站</tyh-menu-item>
+    </tyh-menu>
+
+    <tyh-menu theme="light" mode="vertical" style="width: 200px">
+      <tyh-menu-item>首页</tyh-menu-item>
+      <tyh-menu-item>内容</tyh-menu-item>
+      <tyh-menu-item>设置</tyh-menu-item>
+      <tyh-menu-item>回收站</tyh-menu-item>
+    </tyh-menu>
+  </div>
   <highlightjs language="javascript" :code="menu.men4" />
 
   <h3 class="Subtitle">tyh-menu Attributes</h3>
@@ -73,12 +76,12 @@
 import { menu } from './index'
 import table from './table'
 const configures = [
-  { param: 'background', explain: '导航栏背景色', type: 'string', value: '——', default: '——' },
-  { param: 'shadow', explain: '底部是否显示阴影', type: 'boolean', value: '——', default: 'false' }
+  { param: 'theme', explain: '主题颜色', type: 'string', value: 'dark / light', default: 'dark' },
+  { param: 'shadow', explain: '底部是否显示阴影', type: 'boolean', value: '——', default: 'false' },
+  { param: 'mode', explain: '排列方式', type: 'string', value: 'horizontal / vertical', default: 'horizontal' },
 ]
 const configures2 = [
-  { param: 'url', explain: '跳转的路径', type: 'string', value: '——', default: '——' },
-  { param: 'prohibit', explain: '是否禁用', type: 'boolean', value: '——', default: '——' },
-  { param: 'color', explain: '文字颜色', type: 'string', value: '——', default: '#fff' }
+  { param: 'to', explain: '跳转的路径', type: 'string', value: '——', default: '——' },
+  { param: 'prohibit', explain: '是否禁用', type: 'boolean', value: '——', default: '——' }
 ]
 </script>

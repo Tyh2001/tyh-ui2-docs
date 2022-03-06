@@ -29,7 +29,7 @@
   <tyh-button type="primary" @click="open9">下右</tyh-button>
   <highlightjs language="javascript" :code="notification.not4" />
 
-  <h3 class="Subtitle">自定义市场</h3>
+  <h3 class="Subtitle">自定义时长</h3>
   <p>time 属性可以自定义通知展示的时长</p>
   <tyh-button type="primary" @click="open10">4000 毫秒后自动关闭</tyh-button>
   <highlightjs language="javascript" :code="notification.not5" />

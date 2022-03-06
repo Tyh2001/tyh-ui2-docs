@@ -481,11 +481,18 @@ const menu = {
 </tyh-menu>
     `,
   men2: `
-<tyh-menu background="#eee">
-  <tyh-menu-item color="#000">首页</tyh-menu-item>
-  <tyh-menu-item color="#000">内容</tyh-menu-item>
-  <tyh-menu-item color="#000">设置</tyh-menu-item>
-  <tyh-menu-item color="#000">回收站</tyh-menu-item>
+<tyh-menu theme="dark">
+  <tyh-menu-item>首页</tyh-menu-item>
+  <tyh-menu-item>内容</tyh-menu-item>
+  <tyh-menu-item>设置</tyh-menu-item>
+  <tyh-menu-item>回收站</tyh-menu-item>
+</tyh-menu>
+
+<tyh-menu theme="light">
+  <tyh-menu-item>首页</tyh-menu-item>
+  <tyh-menu-item>内容</tyh-menu-item>
+  <tyh-menu-item>设置</tyh-menu-item>
+  <tyh-menu-item>回收站</tyh-menu-item>
 </tyh-menu>
     `,
   men3: `
@@ -497,23 +504,18 @@ const menu = {
 </tyh-menu>
     `,
   men4: `
-<tyh-menu>
-  <tyh-menu-item url="/home">
-    <tyh-icon icon="tyh-ui-shouye-xianxing" color="#fff" />
-    首页
-  </tyh-menu-item>
-  <tyh-menu-item url="/abc">
-    <tyh-icon icon="tyh-ui-training" color="#fff" />
-    内容
-  </tyh-menu-item>
-  <tyh-menu-item url="">
-    <tyh-icon icon="tyh-ui-setting-filling" color="#fff" />
-    设置
-  </tyh-menu-item>
-  <tyh-menu-item url="">
-    <tyh-icon icon="tyh-ui-discount" color="#fff" />
-    标签
-  </tyh-menu-item>
+<tyh-menu theme="dark" mode="vertical">
+  <tyh-menu-item>首页</tyh-menu-item>
+  <tyh-menu-item>内容</tyh-menu-item>
+  <tyh-menu-item>设置</tyh-menu-item>
+  <tyh-menu-item>回收站</tyh-menu-item>
+</tyh-menu>
+
+<tyh-menu theme="light" mode="vertical">
+  <tyh-menu-item>首页</tyh-menu-item>
+  <tyh-menu-item>内容</tyh-menu-item>
+  <tyh-menu-item>设置</tyh-menu-item>
+  <tyh-menu-item>回收站</tyh-menu-item>
 </tyh-menu>
     `,
 }

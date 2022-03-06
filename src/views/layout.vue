@@ -1,21 +1,14 @@
 <template>
-  <tyh-menu background="#f8faff" shadow>
-    <div class="logoLink" url="/" @click="$router.push('/')">
-      <img draggable="false" class="logo" src="./images/tyh-ui2-logo.svg" />
-      <span class="name">Tyh UI</span>
-    </div>
-    <tyh-icon icon="tyh-ui-menu" @click="drawer = true" />
-
-    <div class="card">
-      <tyh-menu-item
-        v-for="(list, index) in layoutList"
-        :color="highLightStyle(list.url)"
-        :key="index"
-        :url="list.url"
-      >
-        {{ list.title }}
-      </tyh-menu-item>
-    </div>
+  <tyh-menu theme="light">
+    <template v-slot:left>
+      <div class="logoLink" url="/" @click="$router.push('/')">
+        <img draggable="false" class="logo" src="./images/tyh-ui2-logo.svg" />
+        <span class="name">Tyh UI</span>
+      </div>
+    </template>
+    <tyh-menu-item to="/">首页</tyh-menu-item>
+    <tyh-menu-item to="/component">组件</tyh-menu-item>
+    <tyh-menu-item to="/about">关于</tyh-menu-item>
   </tyh-menu>
 
   <div id="content">
@@ -57,12 +50,12 @@ function layoutOptions () {
 
 <style scoped>
 .tyh-menu {
-  justify-content: space-between;
   position: fixed;
   top: 0px;
   right: 0px;
   left: 0px;
   z-index: 200;
+  display: flex;
 }
 .tyh-menu .logoLink {
   display: flex;
@@ -80,9 +73,9 @@ function layoutOptions () {
   font-weight: 600;
   margin-left: 10px;
 }
-.tyh-menu .card {
+/* .tyh-menu .card {
   margin-right: 30px;
-}
+} */
 #content {
   margin-top: 120px;
 }
