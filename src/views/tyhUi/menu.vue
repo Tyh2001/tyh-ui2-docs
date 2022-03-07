@@ -19,6 +19,7 @@
     <tyh-menu-item>设置</tyh-menu-item>
     <tyh-menu-item>回收站</tyh-menu-item>
   </tyh-menu>
+  <br />
   <tyh-menu theme="light">
     <tyh-menu-item>首页</tyh-menu-item>
     <tyh-menu-item>内容</tyh-menu-item>
@@ -47,7 +48,11 @@
       <tyh-menu-item>回收站</tyh-menu-item>
     </tyh-menu>
 
-    <tyh-menu theme="light" mode="vertical" style="width: 200px">
+    <tyh-menu
+      theme="light"
+      mode="vertical"
+      style="width: 200px; margin-left: 100px"
+    >
       <tyh-menu-item>首页</tyh-menu-item>
       <tyh-menu-item>内容</tyh-menu-item>
       <tyh-menu-item>设置</tyh-menu-item>
@@ -56,11 +61,72 @@
   </div>
   <highlightjs language="javascript" :code="menu.men4" />
 
+  <h3 class="Subtitle">左右插槽</h3>
+  <p>left 插槽可以定制左侧自定义内容</p>
+  <p>right 插槽可以定制右侧自定义内容</p>
+  <tyh-menu>
+    <tyh-menu-item>首页</tyh-menu-item>
+    <tyh-menu-item>内容</tyh-menu-item>
+    <tyh-menu-item>设置</tyh-menu-item>
+    <tyh-menu-item>回收站</tyh-menu-item>
+    <template v-slot:right>
+      <tyh-button>右侧插槽</tyh-button>
+    </template>
+  </tyh-menu>
+  <br />
+  <tyh-menu>
+    <template v-slot:left>
+      <tyh-switch v-model="value" />
+    </template>
+    <tyh-menu-item>首页</tyh-menu-item>
+    <tyh-menu-item>内容</tyh-menu-item>
+    <tyh-menu-item>设置</tyh-menu-item>
+    <tyh-menu-item>回收站</tyh-menu-item>
+  </tyh-menu>
+  <br />
+  <tyh-menu>
+    <template v-slot:left>
+      <tyh-avatar
+        :size="5"
+        round
+        src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
+      />
+    </template>
+    <tyh-menu-item>首页</tyh-menu-item>
+    <tyh-menu-item>内容</tyh-menu-item>
+    <tyh-menu-item>设置</tyh-menu-item>
+    <tyh-menu-item>回收站</tyh-menu-item>
+    <template v-slot:right>
+      <tyh-button simple>右侧插槽</tyh-button>
+    </template>
+  </tyh-menu>
+  <br />
+  <tyh-menu mode="vertical" style="width: 200px">
+    <template v-slot:left>
+      <tyh-avatar
+        :size="5"
+        round
+        src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
+      />
+    </template>
+    <tyh-menu-item>首页</tyh-menu-item>
+    <tyh-menu-item>内容</tyh-menu-item>
+    <tyh-menu-item>设置</tyh-menu-item>
+    <tyh-menu-item>回收站</tyh-menu-item>
+    <template v-slot:right>
+      <tyh-button simple>右侧插槽</tyh-button>
+    </template>
+  </tyh-menu>
+  <highlightjs language="javascript" :code="menu.men5" />
+
   <h3 class="Subtitle">tyh-menu Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="table.columns" />
 
   <h3 class="Subtitle">tyh-menu-item Attributes</h3>
   <tyh-table align="center" :data="configures2" :columns="table.columns" />
+
+  <h3 class="Subtitle">Slots</h3>
+  <tyh-table align="center" :data="slotConfig" :columns="table.columns3" />
 
   <tyh-turn-page style="margin: 50px 0">
     <tyh-turn-page-item direction="left" url="/component/input">
@@ -75,6 +141,8 @@
 <script setup>
 import { menu } from './index'
 import table from './table'
+import { ref } from 'vue'
+const value = ref(true)
 const configures = [
   { param: 'theme', explain: '主题颜色', type: 'string', value: 'dark / light', default: 'dark' },
   { param: 'shadow', explain: '底部是否显示阴影', type: 'boolean', value: '——', default: 'false' },
@@ -83,5 +151,9 @@ const configures = [
 const configures2 = [
   { param: 'to', explain: '跳转的路径', type: 'string', value: '——', default: '——' },
   { param: 'prohibit', explain: '是否禁用', type: 'boolean', value: '——', default: '——' }
+]
+const slotConfig = [
+  { name: 'left', explain: '自定义左侧内容' },
+  { name: 'right', explain: '自定义右侧内容' }
 ]
 </script>

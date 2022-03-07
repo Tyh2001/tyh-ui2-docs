@@ -518,6 +518,68 @@ const menu = {
   <tyh-menu-item>回收站</tyh-menu-item>
 </tyh-menu>
     `,
+  men5: `
+<template>
+  <tyh-menu>
+    <tyh-menu-item>首页</tyh-menu-item>
+    <tyh-menu-item>内容</tyh-menu-item>
+    <tyh-menu-item>设置</tyh-menu-item>
+    <tyh-menu-item>回收站</tyh-menu-item>
+    <template v-slot:right>
+      <tyh-button>右侧插槽</tyh-button>
+    </template>
+  </tyh-menu>
+
+  <tyh-menu>
+    <template v-slot:left>
+      <tyh-switch v-model="false" />
+    </template>
+    <tyh-menu-item>首页</tyh-menu-item>
+    <tyh-menu-item>内容</tyh-menu-item>
+    <tyh-menu-item>设置</tyh-menu-item>
+    <tyh-menu-item>回收站</tyh-menu-item>
+  </tyh-menu>
+
+  <tyh-menu>
+    <template v-slot:left>
+      <tyh-avatar
+        :size="5"
+        round
+        src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
+      />
+    </template>
+    <tyh-menu-item>首页</tyh-menu-item>
+    <tyh-menu-item>内容</tyh-menu-item>
+    <tyh-menu-item>设置</tyh-menu-item>
+    <tyh-menu-item>回收站</tyh-menu-item>
+    <template v-slot:right>
+      <tyh-button simple>右侧插槽</tyh-button>
+    </template>
+  </tyh-menu>
+
+  <tyh-menu mode="vertical" style="width: 200px">
+    <template v-slot:left>
+      <tyh-avatar
+        :size="5"
+        round
+        src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
+      />
+    </template>
+    <tyh-menu-item>首页</tyh-menu-item>
+    <tyh-menu-item>内容</tyh-menu-item>
+    <tyh-menu-item>设置</tyh-menu-item>
+    <tyh-menu-item>回收站</tyh-menu-item>
+    <template v-slot:right>
+      <tyh-button simple>右侧插槽</tyh-button>
+    </template>
+  </tyh-menu>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+const value = ref(true)
+</script>
+  `
 }
 // 分割线
 const division = {

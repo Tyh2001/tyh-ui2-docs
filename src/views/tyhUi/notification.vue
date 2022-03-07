@@ -52,17 +52,12 @@ import { notification } from './index'
 import table from './table'
 import { ref } from 'vue'
 import { Notification } from 'tyh-ui2'
-const isShow = ref(true)
-const isShow1 = ref(true)
-const isShow2 = ref(true)
-const isShow3 = ref(true)
-const isShow4 = ref(true)
 const configures = [
   { param: 'title', explain: '标题', type: 'string', value: '——', default: '——' },
   { param: 'message', explain: '提示信息', type: 'string', value: '——', default: '——' },
   { param: 'type', explain: '通知类型', type: 'string', value: 'primary / success / danger / warning', default: "''" },
   { param: 'time', explain: '展示的市场', type: 'number', value: '——', default: '3500' },
-  { param: 'position', explain: '弹出文职', type: 'string', value: 'top-left / top-right / bottom-left / bottom-right', default: 'top-right' },
+  { param: 'position', explain: '弹出位置', type: 'string', value: 'top-left / top-right / bottom-left / bottom-right', default: 'top-right' },
   { param: 'close', explain: '是否显示关闭按钮', type: 'boolean', value: '——', default: 'true' }
 ]
 function open1 () {

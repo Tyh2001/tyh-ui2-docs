@@ -6,9 +6,19 @@
         <span class="name">Tyh UI</span>
       </div>
     </template>
-    <tyh-menu-item to="/">首页</tyh-menu-item>
-    <tyh-menu-item to="/component">组件</tyh-menu-item>
-    <tyh-menu-item to="/about">关于</tyh-menu-item>
+    <template v-slot:right>
+      <tyh-icon icon="tyh-ui-menu" @click="drawer = true" />
+      <div class="menu-list">
+        <tyh-menu-item
+          v-for="(list, index) in layoutList"
+          :style="highLightStyle(list.url)"
+          :key="index"
+          :to="list.url"
+        >
+          {{ list.title }}
+        </tyh-menu-item>
+      </div>
+    </template>
   </tyh-menu>
 
   <div id="content">
@@ -26,7 +36,7 @@ import Sidebar from '@/components/Sidebar.vue'
 import { useRoute } from 'vue-router'
 import { ref, watch } from 'vue'
 
-const { layoutList, highLightStyle, drawer } = layoutOptions()
+const { highLightStyle, drawer, layoutList } = layoutOptions()
 function layoutOptions () {
   const layoutList = [
     { title: '首页', url: '/' },
@@ -36,15 +46,15 @@ function layoutOptions () {
   const route = useRoute()
   const highLightStyle = url => {
     const path = route.path
-    if (path === '/') return url === path ? '#3a6ff4' : '#000'
+    if (path === '/') return { color: url === path ? '#3a6ff4' : '#000' }
     const res = path.match(/\/[a-zA-Z]+/gi)[0]
-    return url === res ? '#3a6ff4' : '#000'
+    return { color: url === res ? '#3a6ff4' : '#000' }
   }
   const drawer = ref(false)
   watch(() => route.path, () => {
     drawer.value = false
   })
-  return { layoutList, highLightStyle, drawer }
+  return { highLightStyle, drawer, layoutList }
 }
 </script>
 
@@ -61,7 +71,6 @@ function layoutOptions () {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 30px;
   cursor: pointer;
 }
 .tyh-menu .logoLink .logo {
@@ -73,43 +82,22 @@ function layoutOptions () {
   font-weight: 600;
   margin-left: 10px;
 }
-/* .tyh-menu .card {
-  margin-right: 30px;
-} */
 #content {
   margin-top: 120px;
-}
-.showSidebar {
-  position: fixed;
-  width: 200px;
-  top: 60px;
-  right: 0;
-  bottom: 0;
-  z-index: 10000;
-  background: #fff;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
-}
-@media screen and (max-width: 700px) {
-  .tyh-menu {
-    width: 100vw;
-  }
-  .card {
-    display: none;
-  }
-  .tyh-ui-menu {
-    display: block;
-  }
-  .showSidebar {
-    display: v-bind(showSidebar);
-  }
 }
 @media screen and (min-width: 700px) {
   .tyh-ui-menu {
     display: none;
   }
-  .showSidebar {
+  .menu-list {
+    display: flex;
+  }
+}
+@media screen and (max-width: 700px) {
+  .tyh-ui-menu {
+    display: block;
+  }
+  .menu-list {
     display: none;
   }
 }
