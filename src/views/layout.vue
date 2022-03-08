@@ -104,6 +104,7 @@ function layoutOptions () {
 
 <style>
 .tyh-drawer {
+  overflow-x: hidden !important;
   overflow-y: auto !important;
 }
 </style>

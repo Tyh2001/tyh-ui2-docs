@@ -8,7 +8,7 @@
   <tyh-button type="success">成功按钮</tyh-button>
   <tyh-button type="danger">危险按钮</tyh-button>
   <tyh-button type="warning">警告按钮</tyh-button>
-  <highlightjs language="xml" :code="button.btn1" />
+  <highlightjs language="javascript" :code="button.btn1" />
 
   <h3 class="Subtitle">简约按钮</h3>
   <p>simple 属性可以配置简约按钮</p>
@@ -17,7 +17,7 @@
   <tyh-button simple type="success">成功按钮</tyh-button>
   <tyh-button simple type="danger">危险按钮</tyh-button>
   <tyh-button simple type="warning">警告按钮</tyh-button>
-  <highlightjs language="xml" :code="button.btn6" />
+  <highlightjs language="javascript" :code="button.btn6" />
 
   <h3 class="Subtitle">图标按钮</h3>
   <p>icon 属性可以配置图标按钮</p>
@@ -32,7 +32,7 @@
   <tyh-button simple icon="tyh-ui-fabulous" type="success"></tyh-button>
   <tyh-button simple icon="tyh-ui-discount" type="danger"></tyh-button>
   <tyh-button simple icon="tyh-ui-chart-bar" type="warning"></tyh-button>
-  <highlightjs language="xml" :code="button.btn2" />
+  <highlightjs language="javascript" :code="button.btn2" />
 
   <h3 class="Subtitle">禁用状态</h3>
   <p>disabled 属性可以配置禁用状态</p>
@@ -47,7 +47,7 @@
   <tyh-button simple disabled type="success">成功按钮</tyh-button>
   <tyh-button simple disabled type="danger">危险按钮</tyh-button>
   <tyh-button simple disabled type="warning">警告按钮</tyh-button>
-  <highlightjs language="xml" :code="button.btn3" />
+  <highlightjs language="javascript" :code="button.btn3" />
 
   <h3 class="Subtitle">圆角按钮</h3>
   <p>round 属性可以配置圆角按钮</p>
@@ -63,7 +63,7 @@
   <tyh-button square type="success">成功按钮</tyh-button>
   <tyh-button square type="danger">危险按钮</tyh-button>
   <tyh-button square type="warning">警告按钮</tyh-button>
-  <highlightjs language="xml" :code="button.btn4" />
+  <highlightjs language="javascript" :code="button.btn4" />
 
   <h3 class="Subtitle">按钮组</h3>
   <p>使用 tyh-button-group 标签来嵌套按钮</p>
@@ -85,7 +85,7 @@
     <tyh-button type="primary">右</tyh-button>
   </tyh-button-group>
 
-  <highlightjs language="xml" :code="button.btn7" />
+  <highlightjs language="javascript" :code="button.btn7" />
 
   <h3 class="Subtitle">不同尺寸</h3>
   <p>size 属性可以配置按钮尺寸</p>
@@ -104,7 +104,7 @@
   <tyh-button simple type="primary">正常大小</tyh-button>
   <br />
   <tyh-button simple size="large" type="primary">大号按钮</tyh-button>
-  <highlightjs language="xml" :code="button.btn5" />
+  <highlightjs language="javascript" :code="button.btn5" />
 
   <h3 class="Subtitle">Attributes</h3>
   <tyh-table align="center" :data="configures" :columns="table.columns" />
