@@ -3,24 +3,17 @@
 
   <h3 class="Subtitle">基本使用</h3>
   <p>标注的基本用法，用于在文本之间标记重点信息</p>
-  <tyh-tagging class="margin">标注1</tyh-tagging>
-  <tyh-tagging class="margin" type="primary">标注2</tyh-tagging>
-  <tyh-tagging class="margin" type="success">标注3</tyh-tagging>
-  <tyh-tagging class="margin" type="danger">标注4</tyh-tagging>
-  <tyh-tagging class="margin" type="warning">标注5</tyh-tagging>
+  <p>type 属性可以配置标注的类型</p>
+  <tyh-tagging>标注1</tyh-tagging>
+  <tyh-tagging type="primary">标注2</tyh-tagging>
+  <tyh-tagging type="success">标注3</tyh-tagging>
+  <tyh-tagging type="danger">标注4</tyh-tagging>
+  <tyh-tagging type="warning">标注5</tyh-tagging>
   <highlightjs language="javascript" :code="tagging.tag1" />
 
   <h3 class="Subtitle">文字配置</h3>
   <p>size 属性可以配置标注的文字大小</p>
-  <p>color 属性可以配置标注的文字颜色</p>
-  <div>
-    <tyh-tagging type="success" size="16">tyh-ui</tyh-tagging>
-    整体<tyh-tagging type="success" color="#eee">非常简洁明了</tyh-tagging>，
-    虽没有很多高级的组件，但它是使用最简单的方式达到
-    <tyh-tagging type="success">实用</tyh-tagging>的效果。
-  </div>
-  <br /><br />
-  <tyh-tagging>
+  <tyh-tagging size="14">
     使用方便，配置简单，目录清晰，结构简单，组件轻量级，上手简单，像复制粘贴一样容易。
   </tyh-tagging>
   <highlightjs language="javascript" :code="tagging.tag2" />
@@ -50,7 +43,7 @@ const configures = [
 </script>
 
 <style scoped>
-.margin {
+.tyh-tagging {
   margin-right: 13px;
   margin-bottom: 13px;
 }
