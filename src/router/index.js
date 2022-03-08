@@ -45,6 +45,7 @@ const routes = [
           { path: '/component/select', component: () => import('../views/TyhUi/select.vue') },
           { path: '/component/tagging', component: () => import('../views/TyhUi/tagging.vue') },
           { path: '/component/notification', component: () => import('../views/TyhUi/notification.vue') },
+          { path: '/component/drawer', component: () => import('../views/TyhUi/drawer.vue') },
         ]
       }
     ]

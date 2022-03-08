@@ -60,6 +60,7 @@ import Footer from '@/components/Footer.vue'
 }
 #home .logo {
   width: 220px;
+  height: 220px;
   user-select: none;
 }
 #home .MainTitle {

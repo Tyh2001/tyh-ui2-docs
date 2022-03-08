@@ -25,17 +25,15 @@
     <router-view />
   </div>
 
-  <el-drawer v-model:visible="drawer" direction="rtl">
+  <tyh-drawer v-model="drawer" direction="right" size="200px">
     <Sidebar phone />
-  </el-drawer>
+  </tyh-drawer>
 </template>
 
 <script setup>
-import { ElDrawer } from 'element3'
 import Sidebar from '@/components/Sidebar.vue'
 import { useRoute } from 'vue-router'
 import { ref, watch } from 'vue'
-
 const { highLightStyle, drawer, layoutList } = layoutOptions()
 function layoutOptions () {
   const layoutList = [
@@ -64,7 +62,7 @@ function layoutOptions () {
   top: 0px;
   right: 0px;
   left: 0px;
-  z-index: 200;
+  z-index: 20;
   display: flex;
 }
 .tyh-menu .logoLink {
@@ -75,6 +73,7 @@ function layoutOptions () {
 }
 .tyh-menu .logoLink .logo {
   height: 36px;
+  width: 36px;
 }
 .tyh-menu .logoLink .name {
   font-size: 20px;
@@ -104,10 +103,7 @@ function layoutOptions () {
 </style>
 
 <style>
-.el-drawer {
+.tyh-drawer {
   overflow-y: auto !important;
-  width: 200px !important;
 }
 </style>
-
-<style src="element3/lib/theme-chalk/drawer.css"></style>

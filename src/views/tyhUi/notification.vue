@@ -41,9 +41,9 @@
     <tyh-turn-page-item direction="left" url="/component/tagging">
       Tagging 标注
     </tyh-turn-page-item>
-    <!-- <tyh-turn-page-item direction="right" url="/component/rate">
-      Rate 评分
-    </tyh-turn-page-item> -->
+    <tyh-turn-page-item direction="right" url="/component/drawer">
+      Drawer 抽屉
+    </tyh-turn-page-item>
   </tyh-turn-page>
 </template>
 

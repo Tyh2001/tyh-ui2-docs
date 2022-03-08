@@ -37,7 +37,6 @@ const route = useRoute()
   top: 60px;
   padding-top: 40px;
   bottom: 0px;
-  z-index: 100;
   user-select: none;
 }
 #component .content {
@@ -47,7 +46,6 @@ const route = useRoute()
   width: 900px;
   position: absolute;
   right: 0px;
-  z-index: 50;
 }
 @media screen and (max-width: 700px) {
   .contentList {
