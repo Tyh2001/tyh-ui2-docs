@@ -5,7 +5,7 @@ const routes = [
     path: '/',
     component: () => import('@/views/layout.vue'),
     children: [
-      { path: '', component: () => import('@/views/hone.vue') },
+      { path: '', component: () => import('@/views/home.vue') },
       { path: '/about', component: () => import('@/views/about.vue') },
       {
         path: '/component',
