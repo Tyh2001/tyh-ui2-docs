@@ -801,11 +801,11 @@ const alert = {
 <tyh-alert type="warning" message="这是一个警告提示" />
     `,
   ale2: `
-<tyh-alert iconClass="tyh-ui-githublogo" message="这是一个普通提示" />
-<tyh-alert iconClass="tyh-ui-home" type="primary" message="这是一个主要提示" />
-<tyh-alert iconClass="tyh-ui-history" type="success" message="这是一个成功提示" />
-<tyh-alert iconClass="tyh-ui-smile" type="danger" message="这是一个危险提示" />
-<tyh-alert iconClass="tyh-ui-warning" type="warning" message="这是一个警告提示" />
+<tyh-alert icon="tyh-ui-githublogo" message="这是一个普通提示" />
+<tyh-alert icon="tyh-ui-home" type="primary" message="这是一个主要提示" />
+<tyh-alert icon="tyh-ui-history" type="success" message="这是一个成功提示" />
+<tyh-alert icon="tyh-ui-smile" type="danger" message="这是一个危险提示" />
+<tyh-alert icon="tyh-ui-warning" type="warning" message="这是一个警告提示" />
     `,
   ale3: `
 <template>

@@ -13,25 +13,25 @@
   <highlightjs language="javascript" :code="alert.ale1" />
 
   <h3 class="Subtitle">带有 icon</h3>
-  <p>iconClass 属性可以配置 icon</p>
-  <tyh-alert iconClass="tyh-ui-githublogo" message="这是一个普通提示" />
+  <p>icon 属性可以配置 icon</p>
+  <tyh-alert icon="tyh-ui-githublogo" message="这是一个普通提示" />
   <tyh-alert
-    iconClass="tyh-ui-home"
+    icon="tyh-ui-home"
     type="primary"
     message="这是一个主要提示"
   />
   <tyh-alert
-    iconClass="tyh-ui-history"
+    icon="tyh-ui-history"
     type="success"
     message="这是一个成功提示"
   />
   <tyh-alert
-    iconClass="tyh-ui-smile"
+    icon="tyh-ui-smile"
     type="danger"
     message="这是一个危险提示"
   />
   <tyh-alert
-    iconClass="tyh-ui-warning"
+    icon="tyh-ui-warning"
     type="warning"
     message="这是一个警告提示"
   />
@@ -122,7 +122,7 @@ const isShow4 = ref(true)
 const configures = [
   { param: 'message', explain: '提示的文字', type: 'string', value: '——', default: '——' },
   { param: 'type', explain: '提示类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
-  { param: 'iconClass', explain: 'icon 类名', type: 'string', value: '——', default: '——' },
+  { param: 'icon', explain: 'icon 类名', type: 'string', value: '——', default: '——' },
   { param: 'close', explain: '是否展示关闭按钮', type: 'boolean', value: '——', default: 'false' },
   { param: 'center', explain: '是否文字居中对齐', type: 'boolean', value: '——', default: 'false' },
   { param: 'simple', explain: '简约的提示', type: 'boolean', value: '——', default: 'false' },
