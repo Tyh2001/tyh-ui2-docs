@@ -603,9 +603,9 @@ const division = {
 <tyh-division position="right" color="green">这是右边文字</tyh-division>
     `,
   div4: `
-<tyh-division position="left" :margin="0">这是左边文字</tyh-division>
+<tyh-division position="left" margin="0px">这是左边文字</tyh-division>
 <p>这是一段文字</p>
-<tyh-division position="center" :margin="20">这是中间文字</tyh-division>
+<tyh-division position="center" margin="20px">这是中间文字</tyh-division>
 <p>这是一段文字</p>
 <tyh-division position="right">这是右边文字</tyh-division>
     `,
@@ -693,9 +693,9 @@ const turnpage = {
 // 回到顶部
 const back = {
   back1: `<tyh-back-top>Top</tyh-back-top>`,
-  back2: ` <tyh-backTop bottom="150" right="120">Go</tyh-backTop>`,
+  back2: ` <tyh-backTop bottom="150px" right="120px">Go</tyh-backTop>`,
   back3: `
-<tyh-backTop bottom="100">
+<tyh-backTop bottom="100px">
   <tyh-icon icon="tyh-ui-top" color="#409eff" />
 </tyh-backTop>
     `
@@ -960,14 +960,14 @@ const container = {
     <tyh-footer>Footer</tyh-footer>
   </tyh-container>
 
-  <tyh-container flex>
+  <tyh-container>
     <tyh-aside width="200px">Aside</tyh-aside>
     <tyh-main>Main</tyh-main>
   </tyh-container>
 
   <tyh-container>
     <tyh-header>Header</tyh-header>
-    <tyh-container flex>
+    <tyh-container>
       <tyh-aside width="200px">Aside</tyh-aside>
       <tyh-main>Main</tyh-main>
     </tyh-container>
@@ -975,7 +975,7 @@ const container = {
 
   <tyh-container>
     <tyh-header>Header</tyh-header>
-    <tyh-container flex>
+    <tyh-container>
       <tyh-aside width="200px">Aside</tyh-aside>
       <tyh-container>
         <tyh-main>Main</tyh-main>
@@ -984,7 +984,7 @@ const container = {
     </tyh-container>
   </tyh-container>
 
-  <tyh-container flex>
+  <tyh-container>
     <tyh-aside width="200px">Aside</tyh-aside>
     <tyh-container>
       <tyh-header>Header</tyh-header>
@@ -992,7 +992,7 @@ const container = {
     </tyh-container>
   </tyh-container>
 
-  <tyh-container flex>
+  <tyh-container>
     <tyh-aside width="200px">Aside</tyh-aside>
     <tyh-container>
       <tyh-header>Header</tyh-header>
