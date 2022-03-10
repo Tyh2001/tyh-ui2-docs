@@ -12,97 +12,16 @@ createApp(App).use(tyhUi2).mount('#app')
   ins3: `
 import { createApp } from 'vue'
 import App from './App.vue'
-import { TyhButton } from 'tyh-ui2'
-import 'tyh-ui2/style/index.css'
-
-createApp(App).use(TyhButton).mount('#app')
-    `,
-  ins4: `
-import { createApp } from 'vue'
-import App from './App.vue'
-import {
+import { 
   TyhButton,
-  TyhList,
   TyhCard,
-  TyhTag,
-  TyhLink,
-  TyhMenu,
-  TyhMenuItem,
-  TyhDivision,
-  TyhIcon,
-  TyhCrumbs,
-  TyhCrumbsItem,
-  TyhInput,
-  TyhTurnPage,
-  TyhTurnPageItem,
-  TyhBackTop,
-  TyhSkeleton,
-  TyhAlert,
-  TyhRate,
-  TyhImage,
-  TyhAvatar,
-  TyhAside,
-  TyhContainer,
-  TyhFooter,
-  TyhHeader,
-  TyhMain,
-  TyhText,
-  TyhTable,
-  TyhButtonGroup,
-  TyhSwitch,
-  TyhCalendar,
-  TyhRadio,
-  TyhTree,
-  TyhPageHeader,
-  TyhInfo,
-  TyhTextarea,
-  TyhSelect,
-  TyhOption,
-  TyhTagging,
-  TyhNotification
+  // ...
 } from 'tyh-ui2'
 import 'tyh-ui2/style/index.css'
 
 createApp(App)
   .use(TyhButton)
-  .use(TyhList)
   .use(TyhCard)
-  .use(TyhTag)
-  .use(TyhLink)
-  .use(TyhMenu)
-  .use(TyhMenuItem)
-  .use(TyhDivision)
-  .use(TyhIcon)
-  .use(TyhCrumbs)
-  .use(TyhCrumbsItem)
-  .use(TyhInput)
-  .use(TyhTurnPage)
-  .use(TyhTurnPageItem)
-  .use(TyhBackTop)
-  .use(TyhSkeleton)
-  .use(TyhAlert)
-  .use(TyhRate)
-  .use(TyhImage)
-  .use(TyhAvatar)
-  .use(TyhAside)
-  .use(TyhContainer)
-  .use(TyhFooter)
-  .use(TyhHeader)
-  .use(TyhMain)
-  .use(TyhText)
-  .use(TyhTable)
-  .use(TyhButtonGroup)
-  .use(TyhSwitch)
-  .use(TyhCalendar)
-  .use(TyhRadio)
-  .use(TyhTree)
-  .use(TyhPageHeader)
-  .use(TyhInfo)
-  .use(TyhTextarea)
-  .use(TyhSelect)
-  .use(TyhOption)
-  .use(TyhTagging)
-  .use(TyhNotification)
   .mount('#app')
     `
 }
