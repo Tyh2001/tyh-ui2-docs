@@ -2,7 +2,12 @@
   <tyh-menu theme="light">
     <template v-slot:left>
       <div class="logoLink" url="/" @click="$router.push('/')">
-        <img draggable="false" class="logo" src="./images/tyh-ui2-logo.svg" />
+        <img
+          draggable="false"
+          class="logo"
+          src="./images/tyh-ui2-logo.svg"
+          alt="logo"
+        />
         <span class="name">Tyh UI</span>
       </div>
     </template>

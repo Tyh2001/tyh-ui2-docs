@@ -1,33 +1,40 @@
 <template>
   <div id="about">
     <div class="logoBox">
-      <img draggable="false" class="logo" src="./images/tyh-ui2-logo.svg" />
+      <img
+        draggable="false"
+        class="logo"
+        src="./images/tyh-ui2-logo.svg"
+        alt="logo"
+      />
     </div>
-    <h3 class="about_title">关于 tyh-ui</h3>
-    <p>一个轻量级组件库，基于 vue3 版本，全面拥抱 vue3。</p>
-    <h3 class="about_title">开发靠个人</h3>
-    <tyh-text>
-      tyh-ui 是由
-      <tyh-link target="_blank" url="https://github.com/Tyh2001" type="primary">
-        tyh2001
+    <h3 class="about_title">关于</h3>
+    <tyh-text block>一个轻量级组件库，基于 vue3 版本，全面拥抱 vue3。</tyh-text>
+
+    <h3 class="about_title">加入我们</h3>
+    <tyh-text block>
+      欢迎你加入
+      <tyh-link
+        type="primary"
+        target="_blank"
+        url="https://github.com/Tyh2001/tyh-ui"
+      >
+        tyh-ui
       </tyh-link>
-      独立开发的一款基于 Vue 3.0 的桌面端轻量级 UI 组件库。
-    </tyh-text>
-    <h3 class="about_title">简洁至上</h3>
-    <tyh-text>
-      tyh-ui
-      整体非常简洁明了，虽没有很多高级的组件，但它是使用最简单的方式达到实用的效果。
-    </tyh-text>
-    <h3 class="about_title">轻量容易</h3>
-    <tyh-text>
-      使用方便，配置简单，目录清晰，结构简单，组件轻量级，上手简单，像复制粘贴一样容易。
     </tyh-text>
 
-    <h3 class="about_title">赞助我</h3>
+    <tyh-text>
+      在这里，不需要你的技术有多么优秀，只希望你对做开源有足够的热爱。如果你有技术，你可以参加主要的开发；如果你是一个新手，可以来写
+      Ui
+      设计方面的开发，就算你技术水平一团糟，还可以看看文档，找一找错别字，提一提
+      issues 或 pr 呢，不是吗？
+    </tyh-text>
+
+    <h3 class="about_title">赞助我们</h3>
     <tyh-text>开发不易，欢迎大家赞助！</tyh-text>
     <div id="sponsor">
-      <img draggable="false" src="./images/weixin.jpg" />
-      <img draggable="false" src="./images/zhifubao.jpg" />
+      <img draggable="false" src="./images/weixin.jpg" alt="weixin" />
+      <img draggable="false" src="./images/zhifubao.jpg" alt="zhifubao" />
     </div>
   </div>
   <Footer />
