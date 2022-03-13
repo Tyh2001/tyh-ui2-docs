@@ -1,6 +1,11 @@
 <template>
   <div id="home">
-    <img draggable="false" class="logo" src="./images/tyh-ui2-logo.svg" />
+    <img
+      draggable="false"
+      class="logo"
+      src="./images/tyh-ui2-logo.svg"
+      alt="logo"
+    />
     <h1 class="MainTitle">
       Tyh UI
       <span class="version">v&nbsp;{{ version }}</span>

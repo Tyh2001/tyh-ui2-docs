@@ -28,9 +28,15 @@
 
   <h3 class="Subtitle">上下的边距</h3>
   <p>margin 属性可以配置上下的边距</p>
+<<<<<<< HEAD
   <tyh-division position="left" margin="0">这是左边文字</tyh-division>
   <p>这是一段文字</p>
   <tyh-division position="center" margin="20">这是中间文字</tyh-division>
+=======
+  <tyh-division position="left" margin="0px">这是左边文字</tyh-division>
+  <p>这是一段文字</p>
+  <tyh-division position="center" margin="20px">这是中间文字</tyh-division>
+>>>>>>> c3394787ba3d22630d7ca8087e5b00b4d4316ed6
   <p>这是一段文字</p>
   <tyh-division position="right">这是右边文字</tyh-division>
   <highlightjs language="javascript" :code="division.div4" />
@@ -68,7 +74,11 @@ import table from './table'
 const configures = [
   { param: 'position', explain: '文字位置', type: 'string', value: 'left / center / right', default: 'left' },
   { param: 'color', explain: '文字颜色', type: 'string', value: '——', default: '#515a6e' },
+<<<<<<< HEAD
   { param: 'margin', explain: '上下的边距', type: 'string', value: '——', default: '25' },
+=======
+  { param: 'margin', explain: '上下的边距', type: 'string', value: '——', default: '25px' },
+>>>>>>> c3394787ba3d22630d7ca8087e5b00b4d4316ed6
   { param: 'icon', explain: '配置 icon', type: 'string', value: '——', default: '——' },
 ]
 </script>

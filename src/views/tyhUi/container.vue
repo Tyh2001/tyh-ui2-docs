@@ -26,7 +26,7 @@
 
   <br /><br /><br /><br />
 
-  <tyh-container flex>
+  <tyh-container>
     <tyh-aside width="200px">Aside</tyh-aside>
     <tyh-main>Main</tyh-main>
   </tyh-container>
@@ -35,7 +35,7 @@
 
   <tyh-container>
     <tyh-header>Header</tyh-header>
-    <tyh-container flex>
+    <tyh-container>
       <tyh-aside width="200px">Aside</tyh-aside>
       <tyh-main>Main</tyh-main>
     </tyh-container>
@@ -45,7 +45,7 @@
 
   <tyh-container>
     <tyh-header>Header</tyh-header>
-    <tyh-container flex>
+    <tyh-container>
       <tyh-aside width="200px">Aside</tyh-aside>
       <tyh-container>
         <tyh-main>Main</tyh-main>
@@ -56,7 +56,7 @@
 
   <br /><br /><br /><br />
 
-  <tyh-container flex>
+  <tyh-container>
     <tyh-aside width="200px">Aside</tyh-aside>
     <tyh-container>
       <tyh-header>Header</tyh-header>
@@ -66,7 +66,7 @@
 
   <br /><br /><br /><br />
 
-  <tyh-container flex>
+  <tyh-container>
     <tyh-aside width="200px">Aside</tyh-aside>
     <tyh-container>
       <tyh-header>Header</tyh-header>
@@ -102,7 +102,7 @@
 import { container } from './index'
 import table from './table'
 const configures = [
-  { param: 'flex', explain: '是否水平排列', type: 'boolean', value: '——', default: 'false' },
+  { param: 'direction', explain: '子元素的排列方向', type: 'string', value: 'horizontal / vertical', default: '——' },
 ]
 const configures1 = [
   { param: 'height', explain: '顶栏高度', type: 'string', value: '——', default: '60px' },

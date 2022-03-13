@@ -9,7 +9,12 @@
         :key="index"
       >
         <div class="userBox">
-          <img draggable="false" class="myPhoto" :src="item.photo" />
+          <img
+            draggable="false"
+            class="myPhoto"
+            :src="item.photo"
+            alt="photo"
+          />
           <span class="userName">{{ item.name }}</span>
         </div>
       </tyh-link>

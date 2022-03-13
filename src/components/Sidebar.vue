@@ -71,6 +71,7 @@ const listPush = [
   { name: 'Tagging 标注', url: '/component/tagging' },
   { name: 'Notification 通知', url: '/component/notification' },
   { name: 'Drawer 抽屉', url: '/component/drawer' },
+  { name: 'Dialog 对话框', url: '/component/dialog' },
 ]
 const router = useRouter()
 const route = useRoute()
