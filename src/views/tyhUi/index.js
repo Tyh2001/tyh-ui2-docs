@@ -8,101 +8,20 @@ import tyhUi2 from 'tyh-ui2'
 import 'tyh-ui2/style/index.css'
 
 createApp(App).use(tyhUi2).mount('#app')
-    `,
+`,
   ins3: `
-import { createApp } from 'vue'
-import App from './App.vue'
-import { TyhButton } from 'tyh-ui2'
-import 'tyh-ui2/style/index.css'
-
-createApp(App).use(TyhButton).mount('#app')
-    `,
-  ins4: `
 import { createApp } from 'vue'
 import App from './App.vue'
 import {
   TyhButton,
   TyhList,
-  TyhCard,
-  TyhTag,
-  TyhLink,
-  TyhMenu,
-  TyhMenuItem,
-  TyhDivision,
-  TyhIcon,
-  TyhCrumbs,
-  TyhCrumbsItem,
-  TyhInput,
-  TyhTurnPage,
-  TyhTurnPageItem,
-  TyhBackTop,
-  TyhSkeleton,
-  TyhAlert,
-  TyhRate,
-  TyhImage,
-  TyhAvatar,
-  TyhAside,
-  TyhContainer,
-  TyhFooter,
-  TyhHeader,
-  TyhMain,
-  TyhText,
-  TyhTable,
-  TyhButtonGroup,
-  TyhSwitch,
-  TyhCalendar,
-  TyhRadio,
-  TyhTree,
-  TyhPageHeader,
-  TyhInfo,
-  TyhTextarea,
-  TyhSelect,
-  TyhOption,
-  TyhTagging,
-  TyhNotification
+  // ...
 } from 'tyh-ui2'
 import 'tyh-ui2/style/index.css'
 
 createApp(App)
   .use(TyhButton)
   .use(TyhList)
-  .use(TyhCard)
-  .use(TyhTag)
-  .use(TyhLink)
-  .use(TyhMenu)
-  .use(TyhMenuItem)
-  .use(TyhDivision)
-  .use(TyhIcon)
-  .use(TyhCrumbs)
-  .use(TyhCrumbsItem)
-  .use(TyhInput)
-  .use(TyhTurnPage)
-  .use(TyhTurnPageItem)
-  .use(TyhBackTop)
-  .use(TyhSkeleton)
-  .use(TyhAlert)
-  .use(TyhRate)
-  .use(TyhImage)
-  .use(TyhAvatar)
-  .use(TyhAside)
-  .use(TyhContainer)
-  .use(TyhFooter)
-  .use(TyhHeader)
-  .use(TyhMain)
-  .use(TyhText)
-  .use(TyhTable)
-  .use(TyhButtonGroup)
-  .use(TyhSwitch)
-  .use(TyhCalendar)
-  .use(TyhRadio)
-  .use(TyhTree)
-  .use(TyhPageHeader)
-  .use(TyhInfo)
-  .use(TyhTextarea)
-  .use(TyhSelect)
-  .use(TyhOption)
-  .use(TyhTagging)
-  .use(TyhNotification)
   .mount('#app')
     `
 }
@@ -199,7 +118,7 @@ const button = {
 const list = {
   lis1: `
 <template>
-  <tyh-list :content="arr" iskey="name" />
+  <tyh-list :content="arr" keys="name" />
 </template>
 
 <script setup>
@@ -217,7 +136,7 @@ const arr = [
     `,
   lis2: `
 <template>
-  <tyh-list :content="arr" iskey="name" header="这是头部" footer="这是页脚" />
+  <tyh-list :content="arr" keys="name" header="这是头部" footer="这是页脚" />
 </template>
 
 <script setup>
@@ -235,7 +154,7 @@ const arr = [
     `,
   lis3: `
 <template>
-  <tyh-list zebra num :content="arr" iskey="name" header="这是头部" footer="这是页脚" />
+  <tyh-list zebra num :content="arr" keys="name" header="这是头部" footer="这是页脚" />
 </template>
 
 <script setup>
@@ -253,7 +172,7 @@ const arr = [
     `,
   lis4: `
 <template>
-  <tyh-list hoverShow :content="arr" iskey="name" />
+  <tyh-list hoverShow :content="arr" keys="name" />
 </template>
 
 <script setup>
@@ -303,7 +222,7 @@ const card = {
   <p>鼠标移入显示</p>
 </tyh-card>
 
-<tyh-card shadow="noShadow">
+<tyh-card>
   <template v-slot:title>主标题</template>
   <template v-slot:subtitle>副标题</template>
   <p>从不显示</p>
@@ -693,9 +612,9 @@ const turnpage = {
 // 回到顶部
 const back = {
   back1: `<tyh-back-top>Top</tyh-back-top>`,
-  back2: ` <tyh-backTop bottom="150" right="120">Go</tyh-backTop>`,
+  back2: `<tyh-backTop bottom="150px" right="120px">Go</tyh-backTop>`,
   back3: `
-<tyh-backTop bottom="100">
+<tyh-backTop bottom="100px">
   <tyh-icon icon="tyh-ui-top" color="#409eff" />
 </tyh-backTop>
     `
@@ -1706,7 +1625,7 @@ const info = {
   <template v-slot:photo>
     <tyh-avatar
       round
-      size="5"
+      :size="5"
       src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
     />
   </template>
@@ -1720,7 +1639,7 @@ const info = {
   <template v-slot:photo>
     <tyh-avatar
       round
-      size="5"
+      :size="5"
       src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
     />
   </template>
@@ -1750,7 +1669,7 @@ const info = {
   <template v-slot:photo>
     <tyh-avatar
       round
-      size="5"
+      :size="5"
       src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
     />
   </template>
@@ -1821,7 +1740,7 @@ const value6 = ref('')
 // 选择器
 const select = {
   sel1: `
-  <template>
+<template>
   <tyh-select v-model="value" placeholder="请选择">
     <tyh-option
       v-for="(item, index) in options"

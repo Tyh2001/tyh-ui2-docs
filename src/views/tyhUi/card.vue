@@ -36,7 +36,7 @@
     <template v-slot:subtitle>副标题</template>
     <p>鼠标移入显示</p>
   </tyh-card>
-  <tyh-card class="small" shadow="noShadow">
+  <tyh-card class="small">
     <template v-slot:title>主标题</template>
     <template v-slot:subtitle>副标题</template>
     <p>从不显示</p>
@@ -63,7 +63,7 @@
 import { card } from './index'
 import table from './table'
 const configures = [
-  { param: 'shadow', explain: '阴影显示时机', type: 'string', value: 'always / hover / noShadow', default: '——' },
+  { param: 'shadow', explain: '阴影显示时机', type: 'string', value: 'always / hover', default: '——' },
   { param: 'body-style', explain: '自定义 body 样式', type: 'object', value: '——', default: '{padding:20px}' },
 ]
 const slotConfig = [

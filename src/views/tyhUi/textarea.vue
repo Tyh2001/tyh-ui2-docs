@@ -68,8 +68,8 @@ const configures = [
   { param: 'autofocus', explain: '是否自动获取焦点', type: 'boolean', value: '——', default: 'false' },
   { param: 'name', explain: '原生 name 属性', type: 'string', value: '——', default: '——' },
   { param: 'resize', explain: '拉伸方式', type: 'string', value: 'vertical / horizontal / none', default: '——' },
-  { param: 'rows', explain: '行数', type: 'string / number', value: '——', default: '3' },
-  { param: 'cols', explain: '宽度', type: 'string / number', value: '——', default: '——' },
+  { param: 'rows', explain: '行数', type: 'string', value: '——', default: '3' },
+  { param: 'cols', explain: '宽度', type: 'string', value: '——', default: '——' },
 ]
 const configEvt = [
   { name: 'onblur', explain: '失去焦点触发的回调', param: '——' },

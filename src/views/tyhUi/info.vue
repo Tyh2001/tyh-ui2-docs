@@ -20,7 +20,7 @@
     <template v-slot:photo>
       <tyh-avatar
         round
-        size="5"
+        :size="5"
         src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
       />
     </template>
@@ -36,7 +36,7 @@
     <template v-slot:photo>
       <tyh-avatar
         round
-        size="5"
+        :size="5"
         src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
       />
     </template>
@@ -68,7 +68,7 @@
     <template v-slot:photo>
       <tyh-avatar
         round
-        size="5"
+        :size="5"
         src="https://tianyuhao.cn/v3/assets/giraffe.jpg"
       />
     </template>

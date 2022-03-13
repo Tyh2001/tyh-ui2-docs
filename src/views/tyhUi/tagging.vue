@@ -37,8 +37,8 @@ import { tagging } from './index'
 import table from './table'
 const configures = [
   { param: 'type', explain: '类型', type: 'string', value: 'default / primary / success / danger / warning', default: 'default' },
-  { param: 'size', explain: '文字大小', type: 'string / number', value: '——', default: '13' },
-  { param: 'color', explain: '文字颜色', type: 'string', value: '——', default: '#333 / #fff' }
+  { param: 'size', explain: '文字大小', type: 'string', value: '——', default: '13' },
+  { param: 'color', explain: '文字颜色', type: 'string', value: '——', default: '——' }
 ]
 </script>
 

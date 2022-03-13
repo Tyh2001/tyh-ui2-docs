@@ -26,6 +26,7 @@ pre code.hljs {
   color: #515a6e;
   margin-top: 40px;
   margin-bottom: 10px;
+  font-size: 18px;
 }
 p {
   color: #515a6e;

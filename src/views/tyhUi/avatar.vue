@@ -79,7 +79,7 @@ const configures = [
   { param: 'size', explain: '图片大小', type: 'number', value: '——', default: '8，(计算方式：(size*10)px)' },
   { param: 'round', explain: '圆角', type: 'boolean', value: '——', default: 'false' },
   { param: 'border', explain: '边框', type: 'boolean', value: '——', default: 'false' },
-  { param: 'fit', explain: '确定图片如何适应容器框', type: 'string', value: '——', default: '——' },
+  { param: 'fit', explain: '图片如何适应容器框', type: 'string', value: 'fill / contain / cover / none / scale-down', default: '——' },
   { param: 'alt', explain: '原生 alt 属性', type: 'string', value: '——', default: '——' },
   { param: 'select', explain: '是否可以选择', type: 'boolean', value: '——', default: 'false' },
   { param: 'draggable', explain: '是否可以拖动', type: 'boolean', value: '——', default: 'false' },

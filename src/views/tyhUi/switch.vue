@@ -66,7 +66,7 @@ const configures = [
   { param: 'closeText', explain: '左侧的文字描述', type: 'string', value: '——', default: '——' },
   { param: 'openText', explain: '右侧的文字描述', type: 'string', value: '——', default: '——' },
   { param: 'disabled', explain: '是否禁用', type: 'boolean', value: '——', default: 'false' },
-  { param: 'width', explain: '开关尺寸', type: 'string / number', value: '——', default: '40' }
+  { param: 'width', explain: '开关尺寸', type: 'number', value: '——', default: '40' }
 ]
 const configEvt = [
   { name: 'change', explain: 'switch 状态发生变化时的回调函数', param: '新状态的值' }

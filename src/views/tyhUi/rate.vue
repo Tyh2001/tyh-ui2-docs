@@ -50,7 +50,7 @@ const value2 = ref(2)
 const value3 = ref(2)
 const configures = [
   { param: 'v-model', explain: '绑定的值', type: 'number', value: '——', default: '——' },
-  { param: 'color', explain: '选中的 icon 颜色', type: 'string', value: '', default: '#fbcc30' },
+  { param: 'color', explain: '选中的 icon 颜色', type: 'string', value: '——', default: '#fbcc30' },
   { param: 'voidColor', explain: '未选中的 icon 颜色', type: 'string', value: '——', default: '#C6D1DE' },
   { param: 'showText', explain: '是否显示辅助文字', type: 'boolean', value: '——', default: 'false' },
   { param: 'sayText', explain: '自定义辅助文字数组', type: 'boolean', value: '——', default: "['极差', '失望', '一般', '惊喜', '满意']" }

@@ -3,7 +3,7 @@
   <tyh-alert type="danger" message="该组件尚未完善，开发中。。。" />
 
   <h3 class="Subtitle">基本使用</h3>
-  <p>Tree 的基本使用</p>
+  <p>tree 的基本使用</p>
   <p>data 属性传递一个树型结构的数据</p>
   <tyh-tree :data="data" />
   <highlightjs language="javascript" :code="tree.tre1" />
