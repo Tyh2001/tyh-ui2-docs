@@ -12,16 +12,16 @@ createApp(App).use(tyhUi2).mount('#app')
   ins3: `
 import { createApp } from 'vue'
 import App from './App.vue'
-import {
+import { 
   TyhButton,
-  TyhList,
+  TyhCard,
   // ...
 } from 'tyh-ui2'
 import 'tyh-ui2/style/index.css'
 
 createApp(App)
   .use(TyhButton)
-  .use(TyhList)
+  .use(TyhCard)
   .mount('#app')
     `
 }
@@ -522,9 +522,9 @@ const division = {
 <tyh-division position="right" color="green">这是右边文字</tyh-division>
     `,
   div4: `
-<tyh-division position="left" :margin="0">这是左边文字</tyh-division>
+<tyh-division position="left" margin="0px">这是左边文字</tyh-division>
 <p>这是一段文字</p>
-<tyh-division position="center" :margin="20">这是中间文字</tyh-division>
+<tyh-division position="center" margin="20px">这是中间文字</tyh-division>
 <p>这是一段文字</p>
 <tyh-division position="right">这是右边文字</tyh-division>
     `,
@@ -612,7 +612,7 @@ const turnpage = {
 // 回到顶部
 const back = {
   back1: `<tyh-back-top>Top</tyh-back-top>`,
-  back2: `<tyh-backTop bottom="150px" right="120px">Go</tyh-backTop>`,
+  back2: ` <tyh-backTop bottom="150px" right="120px">Go</tyh-backTop>`,
   back3: `
 <tyh-backTop bottom="100px">
   <tyh-icon icon="tyh-ui-top" color="#409eff" />
@@ -728,49 +728,20 @@ const alert = {
     `,
   ale3: `
 <template>
-  <tyh-alert
-    v-show="isShow"
-    close
-    message="点击关闭普通提示"
-    @close="isShow = false"
-  />
-  <tyh-alert
-    v-show="isShow1"
-    close
-    type="primary"
-    message="点击关闭主要提示"
-    @close="isShow1 = false"
-  />
-  <tyh-alert
-    v-show="isShow2"
-    close
-    type="success"
-    message="点击关闭成功提示"
-    @close="isShow2 = false"
-  />
-  <tyh-alert
-    v-show="isShow3"
-    close
-    type="danger"
-    message="点击关闭危险提示"
-    @close="isShow3 = false"
-  />
-  <tyh-alert
-    v-show="isShow4"
-    close
-    type="warning"
-    message="点击关闭警告提示"
-    @close="isShow4 = false"
-  />
+  <tyh-alert v-show="isShow1" close message="点击关闭普通提示" @close="isShow1 = false" />
+  <tyh-alert v-show="isShow2" close type="primary" message="点击关闭主要提示" @close="isShow2 = false" />
+  <tyh-alert v-show="isShow3" close type="success" message="点击关闭成功提示" @close="isShow3 = false" />
+  <tyh-alert v-show="isShow4" close type="danger" message="点击关闭危险提示" @close="isShow4 = false" />
+  <tyh-alert v-show="isShow5" close type="warning" message="点击关闭警告提示" @close="isShow5 = false" />
 </template>
 
 <script setup>
 import { ref } from 'vue'
-const isShow = ref(true)
 const isShow1 = ref(true)
 const isShow2 = ref(true)
 const isShow3 = ref(true)
 const isShow4 = ref(true)
+const isShow5 = ref(true)
 </script>
     `,
   ale4: `
@@ -908,14 +879,14 @@ const container = {
     <tyh-footer>Footer</tyh-footer>
   </tyh-container>
 
-  <tyh-container flex>
+  <tyh-container>
     <tyh-aside width="200px">Aside</tyh-aside>
     <tyh-main>Main</tyh-main>
   </tyh-container>
 
   <tyh-container>
     <tyh-header>Header</tyh-header>
-    <tyh-container flex>
+    <tyh-container>
       <tyh-aside width="200px">Aside</tyh-aside>
       <tyh-main>Main</tyh-main>
     </tyh-container>
@@ -923,7 +894,7 @@ const container = {
 
   <tyh-container>
     <tyh-header>Header</tyh-header>
-    <tyh-container flex>
+    <tyh-container>
       <tyh-aside width="200px">Aside</tyh-aside>
       <tyh-container>
         <tyh-main>Main</tyh-main>
@@ -932,7 +903,7 @@ const container = {
     </tyh-container>
   </tyh-container>
 
-  <tyh-container flex>
+  <tyh-container>
     <tyh-aside width="200px">Aside</tyh-aside>
     <tyh-container>
       <tyh-header>Header</tyh-header>
@@ -940,7 +911,7 @@ const container = {
     </tyh-container>
   </tyh-container>
 
-  <tyh-container flex>
+  <tyh-container>
     <tyh-aside width="200px">Aside</tyh-aside>
     <tyh-container>
       <tyh-header>Header</tyh-header>
@@ -1961,6 +1932,64 @@ const open4 = ref(false)
 </script>
   `,
 }
+// 对话框
+const dialog = {
+  dia1: `
+<template>
+  <tyh-button simple @click="open1 = true">点我打开</tyh-button>
+
+  <tyh-dialog v-model="open1" title="这是标题">
+    欢迎使用 tyh-ui 的 dialog 对话框！
+    <template v-slot:footer>
+      <tyh-button type="primary" style="margin-right: 20px">确定</tyh-button>
+      <tyh-button type="primary" simple @click="open1 = false">取消</tyh-button>
+    </template>
+  </tyh-dialog>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+const open1 = ref(false)
+</script>
+  `,
+  dia2: `
+<template>
+  <tyh-button simple @click="open2 = true">点我打开</tyh-button>
+
+  <tyh-dialog v-model="open2" title="这是标题" :showHeader="false">
+    欢迎使用 tyh-ui 的 dialog 对话框！
+    <template v-slot:footer>
+      <tyh-button type="primary" style="margin-right: 20px">确定</tyh-button>
+      <tyh-button type="primary" simple @click="open2 = false">取消</tyh-button>
+    </template>
+  </tyh-dialog>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+const open2 = ref(false)
+</script>
+  `,
+  dia3: `
+<template>
+  <tyh-button simple @click="open3 = true">点我打开第一层</tyh-button>
+
+  <tyh-dialog v-model="open3" title="这是标题" width="50%">
+    欢迎使用 tyh-ui 的 dialog 对话框！
+    <tyh-button type="success" @click="open4 = true">打开第二层</tyh-button>
+    <tyh-dialog v-model="open4" title="这是标题" top="10vh">
+      hi～我是第二层的 dialog 对话框
+    </tyh-dialog>
+  </tyh-dialog>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+const open3 = ref(false)
+const open4 = ref(false)
+</script>
+  `
+}
 
 export {
   install,
@@ -1995,5 +2024,6 @@ export {
   select,
   tagging,
   notification,
-  drawer
+  drawer,
+  dialog
 }

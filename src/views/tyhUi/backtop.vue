@@ -34,7 +34,9 @@
 import { back } from './index'
 import table from './table'
 const configures = [
-  { param: 'bottom', explain: '距离下面的距离', type: 'string / number', value: '——', default: '50' },
-  { param: 'right', explain: '距离右面的距离', type: 'string / number', value: '——', default: '50' }
+  { param: 'bottom', explain: '距离下面的距离', type: 'string', value: '——', default: '50px' },
+  { param: 'right', explain: '距离右面的距离', type: 'string', value: '——', default: '50px' },
+  { param: 'behavior', explain: '滚动模式', type: 'string', value: 'smooth / instant', default: 'smooth' },
+  { param: 'beyond', explain: '超出xx范围显示', type: 'number', value: '——', default: '100' },
 ]
 </script>
