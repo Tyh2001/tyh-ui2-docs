@@ -867,7 +867,7 @@ const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
 // 布局
 const container = {
   cont1: `
-<template>  
+<template>
   <tyh-container>
     <tyh-header>Header</tyh-header>
     <tyh-main>Main</tyh-main>
