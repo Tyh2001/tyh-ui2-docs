@@ -63,7 +63,7 @@ const open2 = ref(false)
 const open3 = ref(false)
 const open4 = ref(false)
 const configures = [
-  { param: 'modelValue', explain: '绑定值', type: 'boolean', value: '——', default: 'false' },
+  { param: 'v-model', explain: '绑定值', type: 'boolean', value: '——', default: 'false' },
   { param: 'direction', explain: '弹出方向', type: 'string', value: 'top / left / bottom / right', default: 'right' },
   { param: 'size', explain: '宽度或高度', type: 'string', value: '——', default: '30%' },
   { param: 'title', explain: '标题', type: 'string', value: '——', default: '——' },

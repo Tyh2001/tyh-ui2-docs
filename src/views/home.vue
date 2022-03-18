@@ -10,7 +10,9 @@
       Tyh UI
       <span class="version">v&nbsp;{{ version }}</span>
     </h1>
-    <p class="Subtitle">一个轻量级组件库，基于 vue3.0 版本，全面拥抱 vue3.0</p>
+    <p class="Subtitle">
+      一个轻量级组件库，基于 vue3 + typescript，全面拥抱 vue3
+    </p>
 
     <div class="btnBox">
       <tyh-button type="primary" round @click="$router.push('/component')">
