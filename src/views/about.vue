@@ -9,7 +9,9 @@
       />
     </div>
     <h3 class="about_title">关于</h3>
-    <tyh-text block>一个轻量级组件库，基于 vue3 版本，全面拥抱 vue3。</tyh-text>
+    <tyh-text block>
+      一个轻量级组件库，基于 vue3 + typescript，全面拥抱 vue3。
+    </tyh-text>
 
     <h3 class="about_title">加入我们</h3>
     <tyh-text block>
