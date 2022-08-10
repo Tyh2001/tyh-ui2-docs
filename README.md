@@ -52,6 +52,6 @@ createApp(App).use(tyhUi2).mount('#app')
 
 ## About:page_facing_up:
 
-- Detailed changes for each release are documented in the [CHANGELOG](https://github.com/Tyh2001/tyh-ui/blob/master/CHANGELOG.md).
-- For the installation and contribution of the project, please refer to [contributing](https://github.com/Tyh2001/tyh-ui/blob/master/contributing.md).
-- [Vulnerabilities](https://github.com/Tyh2001/tyh-ui/blob/master/SECURITY.md) can be reported here
+- Detailed changes for each release are documented in the [CHANGELOG](https://github.com/Tyh2001/tyh-ui2/blob/master/CHANGELOG.md).
+- For the installation and contribution of the project, please refer to [contributing](https://github.com/Tyh2001/tyh-ui2/blob/master/contributing.md).
+- [Vulnerabilities](https://github.com/Tyh2001/tyh-ui2/blob/master/SECURITY.md) can be reported here
