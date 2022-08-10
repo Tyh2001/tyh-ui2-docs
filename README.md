@@ -10,7 +10,7 @@
   <a href="https://www.npmjs.com/package/tyh-ui2">
     <img src="https://badgen.net/npm/v/tyh-ui2" alt="npm package">
   </a>
-  <a style="margin-left:15px;" href="https://github.com/Tyh2001/tyh-ui/blob/master/CHANGELOG.md">
+  <a style="margin-left:15px;" href="https://github.com/Tyh2001/tyh-ui2/blob/master/CHANGELOG.md">
     <img src="https://img.shields.io/badge/tyh--ui-CHANGELOG-orange" alt="CHANGELOG">
   </a>
   <a style="margin-left:15px;" href="https://v3/tianyuhao.cn">
